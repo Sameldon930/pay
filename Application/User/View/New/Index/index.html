@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Favicon icon -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <title><{$sitename}></title>
+  <!-- Bootstrap Core CSS -->
+  <link href="Public/New/plugins/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="Public/New/plugins/vendors/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+  <!-- This page CSS -->
+  <!--Toaster Popup message CSS -->
+  <link href="Public/New/plugins/vendors/toast-master/css/jquery.toast.css" rel="stylesheet">
+  <!-- Dashboard server Page CSS -->
+  <link href="Public/New/assets/css/pages/dashboard-server.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="Public/New/assets/css/style.css" rel="stylesheet">
+  <link href="Public/New/assets/css/responsive.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="Public/New/js/html5shiv.js"></script>
+  <script src="Public/New/js/respond.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+    .container {
+      width: 100%;
+      max-width:100%;
+    }
+  </style>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div class="preloader">
+  <div class="loader">
+    <div class="loader__figure"></div>
+    <p class="loader__label">API系统</p>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+  <!-- ============================================================== -->
+  <!-- Container1140px -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- Topbar header - style you can find in pages.scss -->
+  <!-- ============================================================== -->
+  <header class="topbar">
+    <div Class="container">
+      <nav class="navbar top-navbar navbar-expand-md navbar-light">
+        <!-- ============================================================== -->
+        <!-- Logo -->
+        <!-- ============================================================== -->
+        <div class="navbar-header"> <a class="navbar-brand" href="/">
+          <!-- Logo icon -->
+          <b>
+            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+            <!-- Dark Logo icon -->
+            <img src="<if condition="$siteconfig['logo']"><{$siteconfig['logo']}><else/>Public/New/assets/imgs/logo_zuy.png</if>" alt="homepage" class="dark-logo" width="150"/>
+          </b>
+          <!--End Logo icon -->
+          <!-- Logo text -->
+          </a> </div>
+        <!-- ============================================================== -->
+        <!-- End Logo -->
+        <!-- ============================================================== -->
+        <div class="top-bar-main">
+          <div class="float-left" id="mooc">
+            <ul id="moocBox">
+              <!-- ============================================================== -->
+              <!-- Search -->
+              <!-- ============================================================== -->
+              <volist name="announces" id="vo">
+              <li class="nav-item hidden-xs-down">
+                <a href="<{:U("Index/showcontent",["id"=>$vo["id"]])}>" target="iframe0"><i class="mdi mdi-bell-outline"></i> <{$vo.title}></a>
+              </li>
+              </volist>
+            </ul>
+          </div>
+          <!-- ============================================================== -->
+          <!-- toggle and nav items -->
+          <!-- ============================================================== -->
+          <!-- ============================================================== -->
+          <!-- User profile and search -->
+          <!-- ============================================================== -->
+          <div class="float-right pr-3">
+            <ul class="navbar-nav my-lg-0 float-right">
+              <li class="nav-item all-notice"> <a class="nav-link waves-effect waves-dark" href="<{:U("Index/gonggao")}>" target="iframe0"> <i class="mdi mdi-bell"></i>
+                <!--<div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>-->
+              </a>
+              </li>
+              <li class="nav-item dropdown u-pro">
+                <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <{$fans.username}>[<switch name="fans[authorized]"><case value="0">未认证</case><case value="1">已认证</case><case value="2">等待审核</case><default /></switch>]</a>
+                <div class="dropdown-menu dropdown-menu-right animated fadeIn">
+                  <ul class="dropdown-user">
+                    <li><a href="<{:U("Account/profile")}>" target="iframe0"><i class="fas fa-user mr-1"></i> 资料设置</a></li>
+                    <li><a href="<{:U("Account/editPassword")}>" target="iframe0"><i class="fas fa-cog mr-1"></i> 修改密码</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="<{$loginout}>" target="iframe0"><i class="fas fa-sign-in-alt mr-1"></i> 退出</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <!--左侧导航开始-->
+    <include file="left-nav" />
+    <!--左侧导航结束-->
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+      <!-- ============================================================== -->
+      <!-- Container fluid  -->
+      <!-- ============================================================== -->
+      <iframe class="J_iframe" id="J_iframe" name="iframe0" width="100%" height="100%" src="<{:U('Index/main')}>"  onload="changeFrameHeight()" frameborder="0"
+              data-id="<{:U('Index/main')}>" seamless></iframe>
+    </div>
+  </div>
+
+</div>
+<script src="Public/New/plugins/vendors/jquery/jquery.min.js"></script>
+<!-- Bootstrap popper Core JavaScript -->
+<script src="Public/New/plugins/vendors/bootstrap/js/popper.min.js"></script>
+<script src="Public/New/plugins/vendors/bootstrap/js/bootstrap.min.js"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="Public/New/plugins/vendors/ps/perfect-scrollbar.jquery.min.js"></script>
+<!--Wave Effects -->
+<script src="Public/New/assets/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="Public/New/assets/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="Public/New/assets/js/custom.min.js"></script>
+<!-- ============================================================== -->
+
+<script>
+    $({animatedVal: 0}).animate({animatedVal: 80}, {
+        duration: 2000,
+        easing: "swing",
+        step: function() {
+            $(".dial").val(Math.ceil(this.animatedVal)).trigger("change");
+        }
+    });
+    $(function(){
+        var cotrs = $("#sidebarnav li a");
+        cotrs.click(function(){
+            $(this).parent().siblings().children("a").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+    function changeFrameHeight(){
+        var ifm= document.getElementById("J_iframe");
+        ifm.height=document.documentElement.clientHeight;
+    }
+
+    window.onresize=function(){
+        changeFrameHeight();
+
+    }
+    $(function() {
+        var windowWidth = $(window).width();
+        var oFrm = document.getElementById('J_iframe');
+        oFrm.onload = oFrm.onreadystatechange = function () {
+            if (windowWidth <= 800 && $('body').hasClass('mini-sidebar') == false) {
+                $('.navbar-toggler').click();
+            }
+        }
+    });
+
+</script>
+<!-- ============================================================== -->
+<script type="text/javascript">
+    var area = document.getElementById('moocBox');
+    var iliHeight = 24;//单行滚动的高度
+    var speed = 50;//滚动的速度
+    var time;
+    var delay= 2000;
+    area.scrollTop=0;
+    area.innerHTML+=area.innerHTML;//克隆一份一样的内容
+    function startScroll(){
+        time=setInterval("scrollUp()",speed);
+        area.scrollTop++;
+    }
+    function scrollUp(){
+        if(area.scrollTop % iliHeight==0){
+            clearInterval(time);
+            setTimeout(startScroll,delay);
+        }else{
+            area.scrollTop++;
+            if(area.scrollTop >= area.scrollHeight/2){
+                area.scrollTop =0;
+            }
+        }
+    }
+    setTimeout(startScroll,delay)
+</script>
+</body>
+</html>

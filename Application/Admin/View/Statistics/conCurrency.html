@@ -1,0 +1,460 @@
+<include file="Public/header"/>
+
+<form class="layui-form layui-form-pane" action="" method="get" autocomplete="off" id="orderform">
+
+<div class="row">
+    <div class="col-md-12">
+        <!--<div class="layui-form-item layui-inline">-->
+            <!--<label class="layui-form-label">日期范围</label>-->
+            <!--<div class="layui-input-inline">-->
+                <!--<input type="text" class="layui-input  layui-btn-small" name="dateRange" id="dateRange"-->
+                       <!--placeholder="日期范围" value="<{$dateRange}>" autocomplete="off">-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class=" layui-form-item  layui-inline">
+            <label class="layui-form-label">日期时间</label>
+            <div class="layui-input-inline">
+                <input type="text" class="layui-input" name="dateRange" id="dateRange" placeholder="日期范围"
+                       value="<{$dateRange}>" autocomplete="off">
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline" style="margin-top: -8px;">
+            <button type="submit" class="layui-btn"><span
+                    class="glyphicon glyphicon-search"></span> 查询
+            </button>
+        </div>
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5 style="margin: 0">客户并发量统计</h5>
+            </div>
+            <div class="ibox-content">
+                <div id="main" style="height:300px"></div>
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">入金渠道</label>
+            <div class="layui-input-inline">
+                <select name="channel1" lay-filter="channel1"  data-child="account">
+                    <option value="">全部渠道</option>
+                    <volist name="channelList" id="em">
+                        <option <if condition="$channel1 eq $em['title']">selected</if>
+                        value="<{$em.title}>"><{$em.title}></option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">日期时间</label>
+            <div class="layui-input-inline">
+                <input type="text" class="layui-input" name="dateRange1" id="dateRange1" placeholder="日期范围"
+                       value="<{$dateRange1}>" autocomplete="off">
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline" style="margin-top: -8px;">
+            <button type="submit" class="layui-btn"><span
+                    class="glyphicon glyphicon-search"></span> 查询
+            </button>
+        </div>
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5 style="margin: 0">入金渠道并发量统计</h5>
+            </div>
+            <div class="ibox-content">
+                <div id="main1" style="height:300px"></div>
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">入金渠道</label>
+            <div class="layui-input-inline">
+                <select name="channel" lay-filter="channel"  data-child="account">
+                    <option value="" >请选择</option>
+                    <volist name="channellist" id="vo">
+                        <option <if condition="$channel eq $vo['id']">selected</if>
+                        value="<{$vo.id}>"><{$vo.title}></option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">通道子账号</label>
+            <div class="layui-input-inline">
+                <select name="account" lay-filter="account">
+                    <option value="">全部子账号</option>
+                    <if condition="$accountlist">
+                        <volist name="accountlist" id="vo">
+                            <option <if condition="$account eq $vo['id']">selected</if>
+                            value="<{$vo.id}>"><{$vo.title}></option>
+                        </volist>
+                    </if>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">日期时间</label>
+            <div class="layui-input-inline">
+                <input type="text" class="layui-input" name="dateRange2" id="dateRange2" placeholder="日期范围"
+                       value="<{$dateRange2}>" autocomplete="off">
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline" style="margin-top: -8px;">
+            <button type="submit" class="layui-btn"><span
+                    class="glyphicon glyphicon-search"></span> 查询
+            </button>
+        </div>
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5 style="margin: 0">入金渠道子账户并发量统计</h5>
+            </div>
+            <div class="ibox-content">
+                <div id="main2" style="height:300px"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<include file="Public/footer"/>
+<script>
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'form'], function() {
+        var laydate = layui.laydate //日期
+            ,form = layui.form //表单
+        //日期
+        laydate.render({
+            elem: '#date'
+            , type: 'date'
+            ,theme: 'molv'
+        });
+        // //日期时间范围
+        // laydate.render({
+        //     elem: '#dateRange'
+        //     , type: 'date'
+        //     ,theme: 'molv'
+        //     , range: '|'
+        // });
+        //日期时间选择范围
+        laydate.render({
+            elem: '#dateRange'
+            ,type: 'datetime'
+        });
+        //日期时间选择范围
+        laydate.render({
+            elem: '#dateRange1'
+            ,type: 'datetime'
+        });
+        //日期时间选择范围
+        laydate.render({
+            elem: '#dateRange2'
+            ,type: 'datetime'
+        });
+        form.on('select(channel)', function(data){
+            var  channel_id = data.elem[data.elem.selectedIndex].value;
+            var name = data.elem.dataset.child;
+            console.log(name);
+            if(channel_id) {
+                $.ajax({
+                    type:'get',
+                    data:{'channel_id':channel_id},
+                    dataType:'json',
+                    url:'<{:U("Statistics/getAccount")}>',
+                    success:function(info){
+                        if(info['status'] == 1){
+                            var selectName = $('select[name="' + name + '"]');
+                            selectName.html('<option value="">请选择</option>');
+                            for(k in info['data']){
+                                selectName.append('<option value="'+ info['data'][k]['id'] +'">' + info['data'][k]['title'] + '</option>');
+                                form.render('select');
+                            }
+                        }else{
+                            layer.msg('获取子账号列表失败',{time: 2000, icon:'error'});
+                        }
+                    },
+                    error:function(){
+                        layer.msg('通讯错误,请重新刷新页面',{time: 2000, icon:'error'});
+                    },
+                });
+            }
+        });
+
+
+    });
+</script>
+<script src="/Public/Front/js/echarts.common.min.js"></script>
+<!--客户并发量 开始-->
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main'));
+    var option = {
+        grid:{
+            x:40,
+            x2:40,
+            y:70,
+            y2:40,
+            borderWidth:1
+        },
+        title : {
+            text: '客户并发量概况',
+            subtext: ''
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['并发量']
+        },
+        toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        calculable : true,
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : false,
+                data : <{$category}>
+    }
+    ],
+    yAxis : [
+        {
+            splitLine:{
+                show: true,
+                lineStyle:{
+                    type:"dashed",
+                    color:"#dfdfdf"
+                }
+            },
+            axisLabel:{
+                textStyle:{
+                    fontSize:14,
+                    color:'#5b6e89'
+                }
+            },
+            type : 'value'
+        }
+    ],
+        series : [
+    {
+        name:'并发量',
+            type:'line',
+        smooth:true,
+        itemStyle: {
+        normal: {
+            areaStyle: {
+                type: 'default',
+                    color: {
+                    type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [{
+                        offset: 0, color: '#e7dde7'
+                    }, {
+                        offset: 1, color: '#ffffff'
+                    }],
+                        globalCoord: false
+                }
+            }
+        ,color:'#6e94ff'
+        }
+    },
+        data:<{$chartData}>
+    }
+    ]
+    };
+
+    // 为echarts对象加载数据
+    myChart.setOption(option);
+</script>
+<!--客户并发量 结束-->
+
+<!--入金渠道并发量 开始-->
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main1'));
+    var option = {
+        grid:{
+            x:40,
+            x2:40,
+            y:70,
+            y2:40,
+            borderWidth:1
+        },
+        title : {
+            text: '入金渠道并发量概况',
+            subtext: ''
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['并发量']
+        },
+        toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        calculable : true,
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : false,
+                data : <{$category1}>
+    }
+    ],
+    yAxis : [
+        {
+            splitLine:{
+                show: true,
+                lineStyle:{
+                    type:"dashed",
+                    color:"#dfdfdf"
+                }
+            },
+            axisLabel:{
+                textStyle:{
+                    fontSize:14,
+                    color:'#5b6e89'
+                }
+            },
+            type : 'value'
+        }
+    ],
+        series : [
+        {
+            name:'并发量',
+            type:'line',
+            smooth:true,
+            itemStyle: {
+                normal: {
+                    areaStyle: {
+                        type: 'default',
+                        color: {
+                            type: 'linear',
+                            x: 0,
+                            y: 0,
+                            x2: 0,
+                            y2: 1,
+                            colorStops: [{
+                                offset: 0, color: '#e7dde7'
+                            }, {
+                                offset: 1, color: '#ffffff'
+                            }],
+                            globalCoord: false
+                        }
+                    }
+                    ,color:'#6e94ff'
+                }
+            },
+            data:<{$chartData1}>
+    }
+    ]
+    };
+
+    // 为echarts对象加载数据
+    myChart.setOption(option);
+</script>
+<!--入金渠道并发量 结束-->
+
+<!--入金渠道子账户并发量 开始-->
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main2'));
+    var option = {
+        grid:{
+            x:40,
+            x2:40,
+            y:70,
+            y2:40,
+            borderWidth:1
+        },
+        title : {
+            text: '入金渠道子账户并发量概况',
+            subtext: ''
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['并发量']
+        },
+        toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        calculable : true,
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : false,
+                data : <{$category2}>
+    }
+    ],
+    yAxis : [
+        {
+            splitLine:{
+                show: true,
+                lineStyle:{
+                    type:"dashed",
+                    color:"#dfdfdf"
+                }
+            },
+            axisLabel:{
+                textStyle:{
+                    fontSize:14,
+                    color:'#5b6e89'
+                }
+            },
+            type : 'value'
+        }
+    ],
+        series : [
+        {
+            name:'并发量',
+            type:'line',
+            smooth:true,
+            itemStyle: {
+                normal: {
+                    areaStyle: {
+                        type: 'default',
+                        color: {
+                            type: 'linear',
+                            x: 0,
+                            y: 0,
+                            x2: 0,
+                            y2: 1,
+                            colorStops: [{
+                                offset: 0, color: '#e7dde7'
+                            }, {
+                                offset: 1, color: '#ffffff'
+                            }],
+                            globalCoord: false
+                        }
+                    }
+                    ,color:'#6e94ff'
+                }
+            },
+            data:<{$chartData2}>
+    }
+    ]
+    };
+
+    // 为echarts对象加载数据
+    myChart.setOption(option);
+</script>
+<!--入金渠道子账户并发量 结束-->
+</body>
+</html>

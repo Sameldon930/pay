@@ -1,0 +1,389 @@
+<include file="Public/header"/>
+
+<form class="layui-form layui-form-pane" action="" method="get" autocomplete="off" id="orderform">
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">日期范围</label>
+            <div class="layui-input-inline">
+                <input type="text" class="layui-input  layui-btn-small" name="dateRange" id="dateRange"
+                       placeholder="日期范围" value="<{$dateRange}>" autocomplete="off">
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline" style="margin-top: -8px;">
+            <button type="submit" class="layui-btn"><span
+                    class="glyphicon glyphicon-search"></span> 查询
+            </button>
+        </div>
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5 style="margin: 0">客户成功率统计</h5>
+            </div>
+            <div class="ibox-content">
+                <div id="main" style="height:300px"></div>
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">日期范围</label>
+            <div class="layui-input-inline">
+                <input type="text" class="layui-input  layui-btn-small" name="dateRange1" id="dateRange1"
+                       placeholder="日期范围" value="<{$dateRange1}>" autocomplete="off">
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline" style="margin-top: -8px;">
+            <button type="submit" class="layui-btn"><span
+                    class="glyphicon glyphicon-search"></span> 查询
+            </button>
+        </div>
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5 style="margin: 0">入金渠道成功率统计</h5>
+            </div>
+            <div class="ibox-content">
+                <div id="main1" style="height:300px"></div>
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">日期范围</label>
+            <div class="layui-input-inline">
+                <input type="text" class="layui-input  layui-btn-small" name="dateRange2" id="dateRange2"
+                       placeholder="日期范围" value="<{$dateRange2}>" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="layui-form-item layui-inline" style="margin-top: -8px;">
+            <button type="submit" class="layui-btn"><span
+                    class="glyphicon glyphicon-search"></span> 查询
+            </button>
+        </div>
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5 style="margin: 0">入金渠道子账户成功率统计</h5>
+            </div>
+            <div class="ibox-content">
+                <div id="main2" style="height:300px"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<include file="Public/footer"/>
+<script>
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'form'], function() {
+        var laydate = layui.laydate //日期
+            ,form = layui.form //表单
+        //日期
+        laydate.render({
+            elem: '#date'
+            , type: 'date'
+            ,theme: 'molv'
+        });
+        //客户成功率日期时间范围
+        laydate.render({
+            elem: '#dateRange'
+            , type: 'date'
+            ,theme: 'molv'
+            , range: '|'
+        });
+        //入金渠道成功率日期时间范围
+        laydate.render({
+            elem: '#dateRange1'
+            , type: 'date'
+            ,theme: 'molv'
+            , range: '|'
+        });
+        //入金渠道子账户成功率日期时间范围
+        laydate.render({
+            elem: '#dateRange2'
+            , type: 'date'
+            ,theme: 'molv'
+            , range: '|'
+        });
+    });
+</script>
+<script src="/Public/Front/js/echarts.common.min.js"></script>
+<!--所有客户的成功率 开始-->
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main'));
+    var option = {
+        grid:{
+            x:50,
+            x2:40,
+            y:70,
+            y2:40,
+            borderWidth:1
+        },
+        title : {
+            text: '成功率概况',
+            subtext: '按天统计'
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['成功率']
+        },
+        toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        calculable : true,
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : false,
+                data : <{$category}>
+
+            }
+        ],
+        yAxis : [
+            {
+                splitLine:{
+                    show: true,
+                    lineStyle:{
+                        type:"dashed",
+                        color:"#dfdfdf"
+                    }
+                },
+                axisLabel:{
+                    textStyle:{
+                        fontSize:14,
+                        color:'#5b6e89'
+                    }
+                },
+                type : 'value'
+            }
+        ],
+        series : [
+            {
+                name:'成功率',
+                type:'line',
+                smooth:true,
+                itemStyle: {
+                    normal: {
+                        areaStyle: {
+                            type: 'default',
+                            color: {
+                                type: 'linear',
+                                x: 0,
+                                y: 0,
+                                x2: 0,
+                                y2: 1,
+                                colorStops: [{
+                                    offset: 0, color: '#e7dde7'
+                                }, {
+                                    offset: 1, color: '#ffffff'
+                                }],
+                                globalCoord: false
+                            }
+                        }
+                        ,color:'#6e94ff'
+                    }
+                },
+                data:<{$chartData}>
+            }
+        ]
+    };
+
+    // 为echarts对象加载数据
+    myChart.setOption(option);
+</script>
+<!--所有客户的成功率 结束-->
+
+<!--入金渠道成功率成功率 开始-->
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main1'));
+    var option = {
+        grid:{
+            x:50,
+            x2:40,
+            y:70,
+            y2:40,
+            borderWidth:1
+        },
+        title : {
+            text: '成功率概况',
+            subtext: '按天统计'
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['成功率']
+        },
+        toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        calculable : true,
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : false,
+                data : <{$category1}>
+
+            }
+        ],
+        yAxis : [
+            {
+                splitLine:{
+                    show: true,
+                    lineStyle:{
+                        type:"dashed",
+                        color:"#dfdfdf"
+                    }
+                },
+                axisLabel:{
+                    textStyle:{
+                        fontSize:14,
+                        color:'#5b6e89'
+                    }
+                },
+                type : 'value'
+            }
+        ],
+        series : [
+        {
+            name:'成功率',
+            type:'line',
+            smooth:true,
+            itemStyle: {
+                normal: {
+                    areaStyle: {
+                        type: 'default',
+                        color: {
+                            type: 'linear',
+                            x: 0,
+                            y: 0,
+                            x2: 0,
+                            y2: 1,
+                            colorStops: [{
+                                offset: 0, color: '#e7dde7'
+                            }, {
+                                offset: 1, color: '#ffffff'
+                            }],
+                            globalCoord: false
+                        }
+                    }
+                    ,color:'#6e94ff'
+                }
+            },
+            data:<{$chartData1}>
+    }
+    ]
+    };
+
+    // 为echarts对象加载数据
+    myChart.setOption(option);
+</script>
+<!--入金渠道成功率成功率 结束-->
+
+<!--入金渠道子账户成功率成功率 开始-->
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main2'));
+    var option = {
+        grid:{
+            x:50,
+            x2:40,
+            y:70,
+            y2:40,
+            borderWidth:1
+        },
+        title : {
+            text: '成功率概况',
+            subtext: '按天统计'
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['成功率']
+        },
+        toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        calculable : true,
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : true,
+                data : <{$category2}>
+
+    }
+    ],
+    yAxis : [
+        {
+            splitLine:{
+                show: true,
+                lineStyle:{
+                    type:"dashed",
+                    color:"#dfdfdf"
+                }
+            },
+            axisLabel:{
+                textStyle:{
+                    fontSize:14,
+                    color:'#5b6e89'
+                }
+            },
+            type : 'value'
+        }
+    ],
+        series : [
+        {
+            name:'成功率',
+            type:'line',
+            smooth:true,
+            itemStyle: {
+                normal: {
+                    areaStyle: {
+                        type: 'default',
+                        color: {
+                            type: 'linear',
+                            x: 0,
+                            y: 0,
+                            x2: 0,
+                            y2: 1,
+                            colorStops: [{
+                                offset: 0, color: '#e7dde7'
+                            }, {
+                                offset: 1, color: '#ffffff'
+                            }],
+                            globalCoord: false
+                        }
+                    }
+                    ,color:'#6e94ff'
+                }
+            },
+            data:<{$chartData2}>
+    }
+    ]
+    };
+
+    // 为echarts对象加载数据
+    myChart.setOption(option);
+</script>
+<!--入金渠道子账户成功率成功率 结束-->
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>在线支付 - 支付宝 - 网上支付 安全快速！</title>
+    <script type="text/javascript" src="/Public/Alips/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/qrcode.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/qqapi.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/qrcode.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/zzspay.css">
+    <style>
+        #qrcode>canvas, #qrcode>img{
+            height: 15rem !important;
+            width: 15rem !important;
+            margin: 1rem auto;
+        }
+        #layui-layer-shade1{
+            z-index: 19891015!important;
+            width: 360px!important;
+            top: 300.5px!important;
+            left: 7.5px!important;
+            text-align: center!important;
+        }
+        .pay_head{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+            height: 3rem;
+        }
+    </style>
+
+</head>
+<body>
+<div style="width: 100%; text-align: center;font-family:微软雅黑;">
+    <div class="pay_head" >
+        <div>订单号：<{$orderid}></div>
+    </div>
+    <div style="display: flex;justify-content: center;align-items: center;">
+        <div id="panelWrap" class="panel-wrap" style="margin: 1.5rem 0 0 0;">
+            <div class="pay_center">
+                <div class="pay_wait" >请耐心等待</div>
+                <!--<div ><span class="pay_bold" >到账时间大约为</span><span class="pay_min" style="color: red;">3-5分钟</span></div>-->
+            </div>
+            <div class="qrcode-warp">
+                <div id="qrcode">
+                    <img id="qrcode_load" src="/Public/Alips/picture/loading.gif"  style="display: block;">
+                </div>
+                <!--<div style="font-size: 16px; line-height: 26px;  text-align: center; color:red;" id="showmsg"><font color="black"><b>推荐付款方式，成功率有保证</b></font><br>1,点击复制付款链接<br>2,打开支付宝发送给任意通讯录好友<br>3,打开发送给好友的链接进行付款</div>
+
+                <span id="tagcard4" style="display:inline-block; height:30px; width:100%; font-size:5px; color:#fff; overflow:hidden;">
+                订单金额:<{$money}>，<br>实付金额:<{$price}><br>付款链接：<{$url}></span>
+
+                <div id="cpbtn4" data-clipboard-action="copy" data-clipboard-target="#tagcard4"
+                     style="color:#FFF; background:#1399fb; cursor:pointer; font-size:20px; line-height:36px; dispay:block; width:80%; border:2px solid blue; font-weight:bold; margin:auto;">点击复制付款链接
+                </div>-->
+            </div>
+            <div class="pay_center">
+                <div id="payMoney">
+                    <span>充值金额</span><span style="color: #000;">￥</span><span style="font-size: 1.5em;color: red;"><{$money}></span><span>元</span>
+                </div>
+                <!--<div>
+                    <span>实付金额</span><span style="color: red;">￥</span><span style="font-size: 1.5em;color: red;"><{$price}></span><span>元</span>
+                </div>-->
+            </div>
+            <div class="pay_center" id="overTime" style="display: none;color: red;font-size: 25px;">
+                您的订单已过期，请重新下单！
+            </div>
+            <div class="pay_time">
+                <input type="text"  class="text" id="time" readonly disabled>
+            </div>
+            <!--<div class="pay_article" id="qrcodemsg" style="text-align:center;font-weight: bold;color: red;">
+                该二维码保存也只能使用一次，请勿重复支付，否则不能自动到账！
+            </div>
+            <div class="pay_article" style="text-align:center;font-weight: bold;color: red;">
+                请不要随意改动支付金额，否则不自动到账！
+            </div>-->
+
+        </div>
+
+    </div>
+    <div class="pay_bottom">
+        <div class="pay_article" style="text-align:center;">
+            <img src="/Public/Alips/picture/scan.png" width="30" height="30" alt="">
+            请打开支付宝“扫一扫”即可支付。
+        </div>
+    </div>
+</div>
+<script src="/Public/Alips/js/jquery-1.10.2.min.js"></script>
+<script src="/Public/Alips/js/clip.js"></script>
+<script type="text/javascript" src="/Public/Alips/js/jquery.qrcode.min.js"></script>
+<script type="text/javascript">
+    var intDiff = parseInt('300');//倒计时总秒数量
+    //控制显示面额及优惠
+    var money = "<{$money}>";//查订单是否支付
+    var price = "<{$price}>";//返回页面
+  var url="<{$url}>";
+   
+    function timer(intDiff){
+        window.setInterval(function(){
+            var day=0,
+                hour=0,
+                minute=0,
+                second=0;//时间默认值
+            if(intDiff > 0){
+                day = Math.floor(intDiff / (60 * 60 * 24));
+                hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+                minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+                second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+            }
+            if (minute <= 9) minute = '0' + minute;
+            if (second <= 9) second = '0' + second;
+            $('#time').val(minute + ':' + second);
+
+            var outtime = $('#time').val();
+
+            if(outtime=='00:00'){
+                $('#qrcode').hide();
+                $('#btnDL').hide();
+                //$('#time').val("您的订单已过期，请重新下单！");
+            }
+
+            intDiff--;
+
+        }, 1000);
+    }
+    $(function(){
+
+        //如果拿不到时间的值就执行页面内的时间进行倒计时 否则进行页面内规定的时间值进行倒计时
+        timer(intDiff);
+    });
+
+    var updateQrImg = 0;
+
+    //订单监控  {订单监控}
+    function order(){
+        $.get("<{$checkurl}>", function(result){
+            //成功
+            if(result.code == '200'){
+
+                //回调页面
+                window.clearInterval(orderlst);
+                setTimeout(function(){location.href="<{$callbackUrl}>";},1000);
+            }
+            //支付二维码
+            if(result.code == '100' && updateQrImg == 0){
+
+                //$('#qrcode_load').remove();
+                //设置参数方式
+                jQuery(function(){
+                    //jQuery('#qrcode').qrcode("<{$url}>");
+                   jQuery('#qrcode_load').attr('src',"http://gcny.haohan168.cn:8080/trade/getErWeiCode.html?url="+url);
+                })
+                updateQrImg = 1;
+            }
+            //订单已经超时
+            if(result.code == '-1'){
+                window.clearInterval(orderlst);
+                $('#qrcode').hide();
+                $('#overTime').show();
+                $('#time').val("二维码过期！");
+            }
+
+        });
+    }
+    //周期监听
+    var orderlst = setInterval("order()",1000);
+
+</script>
+<script>
+    $(document).ready(function(){
+
+        var clipboard4 = new Clipboard('#cpbtn4');
+        clipboard4.on('success', function(e) {
+            e.clearSelection();
+            console.log(e.clearSelection);
+            alert("复制成功,请前往支付宝发送链接给任何好友");
+        });
+    });
+</script>
+<div style="display:none">
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276520178'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1276520178%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+</html>

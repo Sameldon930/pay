@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html  lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>安全支付中</title>
+    <style type="text/css">
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            min-width: 320px;
+            font-size: 100px;
+            background: #019fe8;
+
+        }
+        .container{
+            width: 70%;
+            text-align: center;
+            position: absolute;
+            top: 0.3rem;
+            left:0 ;
+            right: 0;
+            margin: auto;
+            font-size: 0.15rem;
+            display: none;
+            color:white;
+        }
+    
+       
+    </style>
+</head>
+<body>
+<div class="container">
+	<p>
+        <img src="log.png" style="width:1.8rem">
+    </p>
+    <p>
+        <img id="imgUrl"  style="width:100%;">
+    </p>
+    <p style="font-size:0.27rem;">支付方式</p>
+    <p style="font-size:0.25rem;">截图保存二维码，打开支付宝扫一扫，选择右上角“相册”选取截图支付</p>
+
+</div>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script>
+    var henshu=window.orientation;
+    if(henshu==180 || henshu== 0){
+         document.documentElement.style.fontSize = document.documentElement.clientWidth / 640*100 + 'px';
+    }
+    if(henshu==90 || henshu== -90){
+         document.documentElement.style.fontSize = document.documentElement.clientHeight/ 640*100+ 'px';
+    }
+    function getNewDate(){
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        if (month < 10) {
+            month = "0" + month;
+        }
+        if (day < 10) {
+            day = "0" + day;
+        }
+        var nowDate = year.toString()+ month.toString()+day.toString();
+        return nowDate;
+    }
+    function payUrl(amount, memo, uid) {
+        var biz_data = encodeURIComponent('{"c":"","s":"online","u":"'+uid+'","m":"'+memo+'","a":  "'+amount+'"}');
+        var url = "alipays://platformapi/startapp?appId=20000123&actionType=scan&biz_data={biz_data}&schemeInnerSource=10000007&useScan=camera".replace("{biz_data}", biz_data);
+        return url;
+    }
+    var Base64 = {
+        _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+        encode: function(e) {
+            var t = "";
+            var n, r, i, s, o, u, a;
+            var f = 0;
+            e = Base64._utf8_encode(e);
+            while (f < e.length) {
+                n = e.charCodeAt(f++);
+                r = e.charCodeAt(f++);
+                i = e.charCodeAt(f++);
+                s = n >> 2;
+                o = (n & 3) << 4 | r >> 4;
+                u = (r & 15) << 2 | i >> 6;
+                a = i & 63;
+                if (isNaN(r)) {
+                    u = a = 64
+                } else if (isNaN(i)) {
+                    a = 64
+                }
+                t = t + this._keyStr.charAt(s) + this._keyStr.charAt(o) + this._keyStr.charAt(u) + this._keyStr.charAt(a)
+            }
+            return t
+            console.log(t);
+        },
+        decode: function(e) {
+            var t = "";
+            var n, r, i;
+            var s, o, u, a;
+            var f = 0;
+            e=e.replace(/[^A-Za-z0-9+/=]/g,"");
+            while (f < e.length) {
+                s = this._keyStr.indexOf(e.charAt(f++));
+                o = this._keyStr.indexOf(e.charAt(f++));
+                u = this._keyStr.indexOf(e.charAt(f++));
+                a = this._keyStr.indexOf(e.charAt(f++));
+                n = s << 2 | o >> 4;
+                r = (o & 15) << 4 | u >> 2;
+                i = (u & 3) << 6 | a;
+                t = t + String.fromCharCode(n);
+                if (u != 64) {
+                    t = t + String.fromCharCode(r)
+                }
+                if (a != 64) {
+                    t = t + String.fromCharCode(i)
+                }
+            }
+            t = Base64._utf8_decode(t);
+            return t
+        },
+        _utf8_encode: function(e) {
+            e = e.replace(/rn/g, "n");
+            var t = "";
+            for (var n = 0; n < e.length; n++) {
+                var r = e.charCodeAt(n);
+                if (r < 128) {
+                    t += String.fromCharCode(r)
+                } else if (r > 127 && r < 2048) {
+                    t += String.fromCharCode(r >> 6 | 192);
+                    t += String.fromCharCode(r & 63 | 128)
+                } else {
+                    t += String.fromCharCode(r >> 12 | 224);
+                    t += String.fromCharCode(r >> 6 & 63 | 128);
+                    t += String.fromCharCode(r & 63 | 128)
+                }
+            }
+            return t
+        },
+        _utf8_decode: function(e) {
+            var t = "";
+            var n = 0;
+            var r = c1 = c2 = 0;
+            while (n < e.length) {
+                r = e.charCodeAt(n);
+                if (r < 128) {
+                    t += String.fromCharCode(r);
+                    n++
+                } else if (r > 191 && r < 224) {
+                    c2 = e.charCodeAt(n + 1);
+                    t += String.fromCharCode((r & 31) << 6 | c2 & 63);
+                    n += 2
+                } else {
+                    c2 = e.charCodeAt(n + 1);
+                    c3 = e.charCodeAt(n + 2);
+                    t += String.fromCharCode((r & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
+                    n += 3
+                }
+            }
+            return t
+        }
+    }
+    function GetQueryString(name){
+         var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+         var r = window.location.search.substr(1).match(reg);
+         if(r!=null)return  unescape(r[2]); return null;
+    }
+   
+    var p=GetQueryString('p');
+    if(p!=""){
+        var dataStr = Base64.decode(p);
+        var userId,amount,memo;
+        var arr=dataStr.split("&");
+        for(var i=0;i < arr.length;i++){ 
+            var num=arr[i].indexOf("="); 
+            if(num>0){
+                if("userId" == arr[i].substring(0,num)){
+                    userId = arr[i].substr(num+1);
+                }
+                if("amount" == arr[i].substring(0,num)){
+                    amount = arr[i].substr(num+1);
+                }
+                if("memo" == arr[i].substring(0, num)){
+                    memo = arr[i].substr(num+1);
+                }
+             } 
+        }  
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if(isAndroid){
+            $("#imgUrl")[0].src="http://h5.zhfnmy.com:8092/"+getNewDate()+"/"+memo+".png";
+            $(".container").show();
+        }
+           
+        if(isIOS){
+            var pay_url = payUrl(amount, memo,userId);
+            location.href = pay_url;
+        }
+
+    }
+
+    
+</script>
+<div style="display:none">
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276520178'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1276520178%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>快捷支付</title>
+	<link rel="stylesheet" href="/Public/weui/weui.min.css">
+	<link rel="stylesheet" href="/Public/weui/base.css">
+	<script src="/Public/Front/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="bd">
+	<form id="payForm" method="post" action="<{$rpay_url}>">
+		<input type="hidden" name="orderid" value="<{$orderid}>">
+		<input type="hidden" name="encryp" value="<{$encryp}>">
+		<div class="weui-cells__title">快捷支付</div>
+		<div class="weui-cell">
+			<div class="tit">
+				<p><span class="t-name">支付金额:<em class="mg_l10 color_org">￥<{$money}>元</em></span></p>
+			</div>
+		</div>
+		<div class="weui-cells weui-cells_form">
+			<div class="weui-cells__title" style="color: #e64340;">卡类型</div>
+			<div class="weui-cells weui-cells_radio">
+				<label class="weui-cell weui-check__label" for="x11">
+					<div class="weui-cell__bd">
+						<p>借记卡</p>
+					</div>
+					<div class="weui-cell__ft">
+						<input type="radio" class="weui-check" name="selPayType" id="x11" checked="checked" value="01">
+						<span class="weui-icon-checked"></span>
+					</div>
+				</label>
+				<label class="weui-cell weui-check__label" for="x12">
+
+					<div class="weui-cell__bd">
+						<p>信用卡</p>
+					</div>
+					<div class="weui-cell__ft">
+						<input type="radio" name="selPayType" class="weui-check" id="x12" value="02">
+						<span class="weui-icon-checked"></span>
+					</div>
+				</label>
+			</div>
+			<div class="weui-cell weui-cell_warn">
+				<div class="weui-cell__hd"><label class="weui-label">银行</label></div>
+				<div class="weui-cell__bd">
+					<select class="weui-select" name="bankCode">
+						<option value="">请选银行</option>
+						<option value="1100">工商银行</option>
+						<option value="1101">农业银行</option>
+						<option value="1102">招商银行</option>
+						<option value="1103">兴业银行</option>
+						<option value="1104">中信银行</option>
+						<option value="1106">中国建设银行</option>
+						<option value="1107">中国银行</option>
+						<option value="1108">交通银行</option>
+						<option value="1109">浦发银行</option>
+						<option value="1110">民生银行</option>
+						<option value="1111">华夏银行</option>
+						<option value="1112">光大银行</option>
+						<option value="1113">北京银行</option>
+						<option value="1114">广发银行</option>
+						<option value="1115">南京银行</option>
+						<option value="1116">上海银行</option>
+						<option value="1117">杭州银行</option>
+						<option value="1118">宁波银行</option>
+						<option value="1119">邮储银行</option>
+						<option value="1120">浙商银行</option>
+						<option value="1121">平安银行</option>
+						<option value="1122">东亚银行</option>
+						<option value="1123">渤海银行</option>
+						<option value="1124">北京农商行</option>
+						<option value="1127">浙江泰隆商业银行</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="weui-btn-area">
+			<button type="button" class="weui-btn weui-btn_primary"  id="btnPay">确定</button>
+		</div>
+	</form>
+</div>
+<div style="display:none">
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276520178'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1276520178%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+<script>
+    $('#btnPay').on('click',function() {
+        if ($('#bank_accno').val() == '') {
+            alert('请填写银行卡号')
+            return false;
+        }
+        $('#payForm').submit();
+    });
+
+</script>
+</html>

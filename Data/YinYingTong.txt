@@ -1,0 +1,90 @@
+【2018-12-26 14:50:29】
+账户余额查询返回{"amount":8880,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1100,"merchantName":"匾诏商贸"}
+
+【2018-12-26 16:36:36】
+账户余额查询返回{"amount":8880,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1100,"merchantName":"匾诏商贸"}
+
+【2018-12-26 16:38:47】
+收款人信息：{"id":"9","userid":"4","bankname":"\u4e2d\u56fd\u5efa\u8bbe\u94f6\u884c","bankzhiname":"\u65b0\u95e8\u652f\u884c","banknumber":"6217001830015931911","bankfullname":"\u5f20\u79cb\u84c9","sheng":"\u798f\u5efa\u7701","shi":"\u6cc9\u5dde\u5e02","sqdatetime":"2018-12-26 16:37:59","cldatetime":null,"status":"0","tkmoney":"1.0000","sxfmoney":"0.0000","money":1,"t":"0","payapiid":"0","memo":null,"additional":null,"code":" ","df_id":"0","df_name":" ","orderid":"H1226134793982264","cost":"0.00","cost_rate":"0.0000","rate_type":"0","extends":"","out_trade_no":"","df_api_id":"0","auto_submit_try":"0","is_auto":"0","last_submit_time":"0","df_lock":"0","lock_time":"0","auto_query_num":"0","channel_mch_id":"","df_charge_type":"0","transaction_id":"","billno":""}
+
+【2018-12-26 16:39:24】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-26 16:41:30】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 09:32:08】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 09:32:10】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 09:32:27】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 10:06:51】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 10:22:06】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 10:25:15】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 10:43:55】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 10:43:57】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 10:45:26】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 10:54:37】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 10:56:45】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 10:56:47】
+账户余额查询返回{"amount":8580,"appId":"bianzhaoshangmao","collectedAmount":9980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 15:27:26】
+账户余额查询返回{"amount":5996580,"appId":"bianzhaoshangmao","collectedAmount":5997980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 21:32:11】
+账户余额查询返回{"amount":5996580,"appId":"bianzhaoshangmao","collectedAmount":5997980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 21:32:17】
+账户余额查询返回{"amount":5996580,"appId":"bianzhaoshangmao","collectedAmount":5997980,"fetchAmount":1400,"merchantName":"匾诏商贸"}
+
+【2018-12-27 21:32:27】
+收款人信息：{"id":"11","userid":"35","bankname":"\u4e2d\u56fd\u519c\u4e1a\u94f6\u884c","bankzhiname":"\u5fb7\u6c5f\u57ce\u5173\u652f\u884c","banknumber":"6230521190059653978","bankfullname":"\u7530\u6865\u6865","sheng":"\u8d35\u5dde\u7701","shi":"\u94dc\u4ec1\u5e02","sqdatetime":"2018-12-27 21:27:02","cldatetime":null,"status":"0","tkmoney":"30000.0000","sxfmoney":"60.0000","money":29940,"t":"0","payapiid":"0","memo":null,"additional":null,"code":" ","df_id":"0","df_name":" ","orderid":"H1227172229071032","cost":"0.00","cost_rate":"0.0000","rate_type":"0","extends":"","out_trade_no":"","df_api_id":"0","auto_submit_try":"0","is_auto":"0","last_submit_time":"0","df_lock":"0","lock_time":"0","auto_query_num":"0","channel_mch_id":"","df_charge_type":"0","transaction_id":"","billno":""}
+
+【2018-12-27 21:32:27】
+收款人信息：{"id":"12","userid":"35","bankname":"\u4e2d\u56fd\u519c\u4e1a\u94f6\u884c","bankzhiname":"\u9f99\u5ca9\u6c38\u5b9a\u652f\u884c","banknumber":"6230521550020438579","bankfullname":"\u718a\u6e05\u534e","sheng":"\u798f\u5efa\u7701","shi":"\u9f99\u5ca9\u5e02","sqdatetime":"2018-12-27 21:30:15","cldatetime":null,"status":"0","tkmoney":"30000.0000","sxfmoney":"60.0000","money":29940,"t":"0","payapiid":"0","memo":null,"additional":null,"code":" ","df_id":"0","df_name":" ","orderid":"H1227174158928353","cost":"0.00","cost_rate":"0.0000","rate_type":"0","extends":"","out_trade_no":"","df_api_id":"0","auto_submit_try":"0","is_auto":"0","last_submit_time":"0","df_lock":"0","lock_time":"0","auto_query_num":"0","channel_mch_id":"","df_charge_type":"0","transaction_id":"","billno":""}
+
+【2018-12-27 21:35:30】
+账户余额查询返回{"amount":3002380,"appId":"bianzhaoshangmao","collectedAmount":5997980,"fetchAmount":2995600,"merchantName":"匾诏商贸"}
+
+【2018-12-27 21:35:32】
+账户余额查询返回{"amount":3002380,"appId":"bianzhaoshangmao","collectedAmount":5997980,"fetchAmount":2995600,"merchantName":"匾诏商贸"}
+
+【2018-12-27 21:35:43】
+代付订单查询参数{"appId":"bianzhaoshangmao","nonceStr":1545917743,"orderId":"H1227174158928353","version":"1.0","sign":"C7A11E121E3592EDAFD6DA04B7125E4A"}
+
+【2018-12-27 21:35:44】
+代付订单查询返回{"code":40520,"msg":"order not exist!"}
+
+【2018-12-27 21:42:55】
+收款人信息：{"id":"12","userid":"35","bankname":"\u4e2d\u56fd\u519c\u4e1a\u94f6\u884c","bankzhiname":"\u9f99\u5ca9\u6c38\u5b9a\u652f\u884c","banknumber":"6230521550020438579","bankfullname":"\u718a\u6e05\u534e","sheng":"\u798f\u5efa\u7701","shi":"\u9f99\u5ca9\u5e02","sqdatetime":"2018-12-27 21:30:15","cldatetime":null,"status":"0","tkmoney":"30000.0000","sxfmoney":"60.0000","money":29940,"t":"0","payapiid":"0","memo":"","additional":null,"code":"YinYingTong","df_id":"3","df_name":"\u94f6\u76c8\u901a\u4ee3\u4ed8","orderid":"H1227174158928353","cost":"0.00","cost_rate":"0.0000","rate_type":"0","extends":"","out_trade_no":"","df_api_id":"0","auto_submit_try":"0","is_auto":"0","last_submit_time":"0","df_lock":"0","lock_time":"1545917547","auto_query_num":"0","channel_mch_id":"bianzhaoshangmao","df_charge_type":"0","transaction_id":"","billno":""}
+
+【2018-12-27 21:43:41】
+账户余额查询返回{"amount":8180,"appId":"bianzhaoshangmao","collectedAmount":5997980,"fetchAmount":5989800,"merchantName":"匾诏商贸"}
+
+【2018-12-27 21:46:08】
+账户余额查询返回{"amount":8180,"appId":"bianzhaoshangmao","collectedAmount":5997980,"fetchAmount":5989800,"merchantName":"匾诏商贸"}
+
+【2018-12-31 13:24:02】
+账户余额查询返回{"amount":8180,"appId":"bianzhaoshangmao","collectedAmount":5997980,"fetchAmount":5989800,"merchantName":"匾诏商贸"}
+

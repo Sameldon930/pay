@@ -1,0 +1,1392 @@
+[ 2019-03-20T09:23:21+08:00 ] 127.0.0.1 /manage_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+
+[ 2019-03-20T09:23:26+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=2eaa013d5d890a35cd68bdab3d733f36&rnd=0.17004781027912297
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-03-20T09:23:29+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002955s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000866s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'phpTec' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0046s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 10 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 10 [ RunTime:0.0002s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0044s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('10','2019-03-20 09:23:29','127.0.0.1','本机地址','1') [ RunTime:0.0003s ]
+SQL: UPDATE `pay_admin` SET `session_random`='Ic816rZkNqJoQnYbxPR6MPgxEnaimyrx' WHERE `username` = 'phpTec' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 10 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:24:57+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002508s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000584s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000644s ]
+
+[ 2019-03-20T09:24:57+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=2eaa013d5d890a35cd68bdab3d733f36&rnd=0.8004569162449362
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-03-20T09:25:02+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=2eaa013d5d890a35cd68bdab3d733f36&rnd=0.7952646226421762
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-03-20T09:25:34+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=2eaa013d5d890a35cd68bdab3d733f36&rnd=0.7282703803269202
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+
+[ 2019-03-20T09:25:38+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002217s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000502s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'phpTec' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0060s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 10 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 10 [ RunTime:0.0003s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0065s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('10','2019-03-20 09:25:38','127.0.0.1','本机地址','1') [ RunTime:0.0006s ]
+SQL: UPDATE `pay_admin` SET `session_random`='NpXUQsJ08WP0479isq5DxtoTEV8dIgYO' WHERE `username` = 'phpTec' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 10 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:26:14+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002269s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000477s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000534s ]
+
+[ 2019-03-20T09:26:14+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=2eaa013d5d890a35cd68bdab3d733f36&rnd=0.748794532514441
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+
+[ 2019-03-20T09:26:15+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=2eaa013d5d890a35cd68bdab3d733f36&rnd=0.12050987548477154
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-03-20T09:26:16+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=2eaa013d5d890a35cd68bdab3d733f36&rnd=0.8915530766057711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+
+[ 2019-03-20T09:26:19+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002252s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000465s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'XM' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0055s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 12 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 12 [ RunTime:0.0003s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0058s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('12','2019-03-20 09:26:19','127.0.0.1','本机地址','1') [ RunTime:0.0004s ]
+SQL: UPDATE `pay_admin` SET `session_random`='ahG2xTwycQ74Jz9GYpiMNGyEvhO6f4dz' WHERE `username` = 'XM' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 12 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0102s ]
+
+[ 2019-03-20T09:26:33+08:00 ] 127.0.0.1 /manage_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-03-20T09:26:41+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=2aa52e83a9f8b2ebd30bdbcb7bdac8fb&rnd=0.14603707803426702
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-03-20T09:26:45+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002244s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000468s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'XM' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0068s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 12 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 12 [ RunTime:0.0003s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0045s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('12','2019-03-20 09:26:45','127.0.0.1','本机地址','1') [ RunTime:0.0004s ]
+SQL: UPDATE `pay_admin` SET `session_random`='94HKacoTtyToSq2GMZ4rMZJxmEJPp4wL' WHERE `username` = 'XM' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 12 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0083s ]
+
+[ 2019-03-20T09:26:53+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002228s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000466s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000526s ]
+
+[ 2019-03-20T09:26:53+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=2aa52e83a9f8b2ebd30bdbcb7bdac8fb&rnd=0.9819826845424455
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+
+[ 2019-03-20T09:27:01+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002277s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000466s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'XM' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0043s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 12 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 12 [ RunTime:0.0002s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0044s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('12','2019-03-20 09:27:01','127.0.0.1','本机地址','1') [ RunTime:0.0003s ]
+SQL: UPDATE `pay_admin` SET `session_random`='znmo6zzdX4ehAPDmbNITvCpOl3NSTFyb' WHERE `username` = 'XM' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 12 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:27:27+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002272s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000472s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000531s ]
+
+[ 2019-03-20T09:27:27+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=2aa52e83a9f8b2ebd30bdbcb7bdac8fb&rnd=0.1281655473579305
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2019-03-20T09:27:32+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002254s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000470s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'XM' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0065s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 12 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 12 [ RunTime:0.0003s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0072s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('12','2019-03-20 09:27:32','127.0.0.1','本机地址','1') [ RunTime:0.0005s ]
+SQL: UPDATE `pay_admin` SET `session_random`='i7DZWqNzuLYQNIIWU1iQDU9TB4vBJqpr' WHERE `username` = 'XM' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 12 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0006s ]
+
+[ 2019-03-20T09:30:58+08:00 ] 127.0.0.1 /manage_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-03-20T09:31:10+08:00 ] 127.0.0.1 /manage_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-03-20T09:31:14+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=50b981b88694e6b1bec0db72184fa097&rnd=0.39745699835384807
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-03-20T09:31:17+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002212s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000466s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'adminroot' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0044s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 1 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `uid` = 1 AND `ctime` <= '1552989279' [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_auth_error_log` WHERE `uid` = 1 AND `auth_type` = 1 AND `ctime` >= 1553044877 LIMIT 1   [ RunTime:0.0015s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 1 [ RunTime:0.0003s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0044s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('1','2019-03-20 09:31:17','127.0.0.1','本机地址','1') [ RunTime:0.0004s ]
+SQL: UPDATE `pay_admin` SET `session_random`='OjKowcuENdRXHvrIJeAxUE7sXEZrKCdJ' WHERE `username` = 'adminroot' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 1 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0019s ]
+
+[ 2019-03-20T09:31:19+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002221s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000469s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000529s ]
+
+[ 2019-03-20T09:31:19+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=50b981b88694e6b1bec0db72184fa097&rnd=0.8167026159995812
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-03-20T09:31:21+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=50b981b88694e6b1bec0db72184fa097&rnd=0.8447727472222182
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+
+[ 2019-03-20T09:31:25+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002238s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000460s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'adminroot' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0067s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 1 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 1 [ RunTime:0.0002s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0045s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('1','2019-03-20 09:31:25','127.0.0.1','本机地址','1') [ RunTime:0.0004s ]
+SQL: UPDATE `pay_admin` SET `session_random`='YOxBKvSKlSgt91gfLxEfgtF0ceCIDQxr' WHERE `username` = 'adminroot' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 1 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0015s ]
+
+[ 2019-03-20T09:35:35+08:00 ] 127.0.0.1 /manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-03-20T09:35:35+08:00 ] 127.0.0.1 /manage_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-03-20T09:35:36+08:00 ] 127.0.0.1 /manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+
+[ 2019-03-20T09:35:40+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=4af900fc4cc5a35aff60b232c70eaee4&rnd=0.008328778256479596
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-03-20T09:35:43+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002444s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000490s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'adminroot' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0082s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 1 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 1 [ RunTime:0.0004s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0099s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('1','2019-03-20 09:35:43','127.0.0.1','本机地址','1') [ RunTime:0.0012s ]
+SQL: UPDATE `pay_admin` SET `session_random`='eojqxCFo2PWs3huBt28D2Hmjz2Ppgad5' WHERE `username` = 'adminroot' [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 1 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:37:27+08:00 ] 127.0.0.1 /manage_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-03-20T09:37:27+08:00 ] 127.0.0.1 /manage_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-03-20T09:37:33+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=0c50d738844ff5d0a9add8918d6fe1ef&rnd=0.0004849283792198733
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-03-20T09:37:36+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003019s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000658s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'adminroot' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0054s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 1 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 1 [ RunTime:0.0002s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0053s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('1','2019-03-20 09:37:36','127.0.0.1','本机地址','1') [ RunTime:0.0004s ]
+SQL: UPDATE `pay_admin` SET `session_random`='G17crMBMqY5mm8lF4E0sXO6SQzrtBAkk' WHERE `username` = 'adminroot' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 1 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:38:10+08:00 ] 127.0.0.1 /manage_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-03-20T09:38:24+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=cd2b49a4fafc46918450c96e987ba0e7&rnd=0.29892360644034044
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-03-20T09:38:28+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002460s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000507s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'adminroot' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0052s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 1 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 1 [ RunTime:0.0002s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0053s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('1','2019-03-20 09:38:28','127.0.0.1','本机地址','1') [ RunTime:0.0004s ]
+SQL: UPDATE `pay_admin` SET `session_random`='n8hN7SwWVokbLu28T1j9yVragR8GQmZo' WHERE `username` = 'adminroot' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 1 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:41:00+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=cd2b49a4fafc46918450c96e987ba0e7&rnd=0.3615952309094872
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+
+[ 2019-03-20T09:41:05+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002459s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000476s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'phpTec' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0054s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 10 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 10 [ RunTime:0.0003s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0054s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('10','2019-03-20 09:41:05','127.0.0.1','本机地址','1') [ RunTime:0.0004s ]
+SQL: UPDATE `pay_admin` SET `session_random`='LenVVMnulS59UJmZsrYOWFseS7rMwN20' WHERE `username` = 'phpTec' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 10 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0005s ]
+
+[ 2019-03-20T09:41:38+08:00 ] 127.0.0.1 /manage_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+
+[ 2019-03-20T09:41:44+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=c577af0b78dd6616f31c162057ce83d7&rnd=0.03628950338346493
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+
+[ 2019-03-20T09:41:51+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002121s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000464s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'phpTec' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0084s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 10 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 10 [ RunTime:0.0002s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0072s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('10','2019-03-20 09:41:51','127.0.0.1','本机地址','1') [ RunTime:0.0005s ]
+SQL: UPDATE `pay_admin` SET `session_random`='UljynbNEv1BhAFoLknoaifVYr6M8xDxe' WHERE `username` = 'phpTec' [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pay_loginrecord` WHERE `userid` = 10 AND `type` = 1 ORDER BY `id` desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_sms` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `pay_sms` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\phpProject\pay\Application\Admin\Controller\LoginController.class.php 第 131 行.
+NOTIC: [8] Undefined offset: 2 D:\phpProject\pay\Application\Admin\Controller\LoginController.class.php 第 131 行.
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:41:52+08:00 ] 127.0.0.1 /manage_Index_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+
+[ 2019-03-20T09:42:01+08:00 ] 127.0.0.1 /manage_Index_main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+
+[ 2019-03-20T09:42:02+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112432
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002059s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000457s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0084s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0075s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2019-03-20T09:42:12+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112433
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002084s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000449s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0087s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0051s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:42:22+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112434
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000463s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0101s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0091s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:42:32+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112435
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002084s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000454s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0099s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0088s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:42:42+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112436
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002030s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000450s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0100s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0051s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:42:52+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112437
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002096s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000450s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0103s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0054s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:43:02+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112438
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002072s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000449s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0083s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0079s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2019-03-20T09:43:12+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112439
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002052s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000449s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0058s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0049s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:43:22+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112440
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002072s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000449s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0101s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0092s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:43:32+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112441
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000456s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0100s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0055s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:43:42+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112442
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002654s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000614s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0055s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0051s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:43:52+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112443
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002041s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000454s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0106s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0092s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:44:02+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112444
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002053s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000446s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0101s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0057s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:44:12+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112445
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002219s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000452s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0079s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:44:22+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112446
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002067s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000454s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0083s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0067s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:44:32+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112447
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002039s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000446s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0055s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0051s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:44:42+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112448
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002044s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000452s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0101s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0051s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:44:52+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112449
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002076s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000450s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0106s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0093s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:45:02+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112450
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002307s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000454s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0056s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0053s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:45:12+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112451
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000450s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0076s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0062s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:45:22+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112452
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002066s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000452s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0104s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0056s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:45:32+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112453
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002147s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000455s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0110s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0058s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:45:42+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112454
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002033s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000453s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0058s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0051s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:45:53+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112455
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002678s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000622s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0065s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0077s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:46:02+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002053s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000477s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0086s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0053s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:46:12+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112457
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002118s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000455s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0062s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0056s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:46:22+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112458
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000457s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0061s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0056s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:46:32+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112459
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000442s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0056s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0049s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:46:42+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112460
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002046s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000448s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0097s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0051s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-03-20T09:46:52+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112461
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002040s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000445s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0056s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0052s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:47:02+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112462
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000453s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0094s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0051s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:47:12+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112463
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002170s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000459s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0097s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-03-20T09:47:22+08:00 ] 127.0.0.1 /manage_Withdrawal_checkNotice.html?_=1553046112464
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000455s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0057s ]
+SQL: SELECT `groupid` FROM `pay_admin` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_member_agent_cate` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `pay_member_agent_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_group_access` [ RunTime:0.0052s ]
+SQL: SELECT b.rules FROM pay_auth_group_access a LEFT JOIN pay_auth_group b ON b.id=a.group_id  WHERE a.uid = '10'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_auth_rule` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `pay_auth_rule` WHERE `id` IN ('1','2','3','51','4','57','5','55','56','58','59','6','44','52','53','48','70','54','126','7','8','60','61','62','9','63','64','65','66','10','67','68','69','11','131','12','79','80','81','82','83','84','85','86','87','88','89','90','91','93','94','95','96','97','98','99','100','101','120','13','14','15','92','16','73','76','77','78','121','46','17','132','18','19','71','75','20','72','74','22','127','24','25','26','130','125','155','27','28','108','129','29','102','30','103','106','107','119','21','104','105','109','110','111','128','31','32','33','34','35','36','37','38','133','116','122','42','23','114','115','158','159') AND `is_menu` = 1 AND `status` = 1 ORDER BY `sorts` DESC,`id` ASC  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pay_tklist` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_tklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `pay_wttklist` [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pay_wttklist` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+

@@ -1,0 +1,48 @@
+.dib, .docs-generated code.inline {
+    display: inline-block;
+	text-align:center
+}
+
+.dib i{font-size:30px;  color:#a3c2ff}
+.dib i:hover{text-shadow:0 0 15px rgba(74,134,255,0.9); color:#4886ff;}
+.pb3 {
+    padding-bottom: 2rem;
+}
+.ma0 {
+    margin: 0;
+}
+.w-grid-2 {
+    width: 18%;
+}
+
+.relative {
+    position: relative;
+}
+
+.justify-center {
+display: flex; 
+ -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.shadow-hover {
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+@media screen and (min-width: 960px){
+.w-grid-6-l {
+    width: 18.66667%;
+}
+}
+
+@media screen and (min-width: 1240px){
+	.w-grid-9-xl {
+    width: 9.11111%;
+	}}
+	
+	

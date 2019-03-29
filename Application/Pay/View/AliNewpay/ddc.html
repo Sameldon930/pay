@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title></title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+
+    <script src="/Public/Alips/js/jquery-1.10.2.min.js"></script>
+    <link href="/Public/alipayAI_files/hipay.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/Public/Alips/js/layer.js"></script>
+    <link href="/Public/alipayAI_files/style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: #c14443;
+            overflow: hidden;
+        }
+    </style>
+    <style>
+        .demo {
+            margin: 1em 0;
+            padding: 1em 1em 2em;
+            background: #fff;
+        }
+
+        .demo h1 {
+            padding-left: 8px;
+            font-size: 24px;
+            line-height: 1.2;
+            border-left: 3px solid #108EE9;
+        }
+
+        .demo h1,
+        .demo p {
+            margin: 1em 0;
+        }
+
+        .demo .am-button + .am-button,
+        .demo .btn + .btn,
+        .demo .btn:first-child {
+            margin-top: 10px;
+        }
+
+        .fn-hide {
+            display: none !important;
+        }
+
+        input {
+            display: block;
+            padding: 4px 10px;
+            margin: 10px 0;
+            line-height: 28px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body huaban_collector_injected="true">
+<div class="aui-free-head">
+    <div class="aui-flex b-line">
+        <div class="aui-user-img">
+            <img src="/Public/alipayAI_files/tx.jpeg" alt="">
+        </div>
+
+        <div class="aui-flex-box">
+            <h5>AI充值机器人</h5>
+            <p>请使用直接付款</p>
+            <p id="xxxx">付款成功后将自动充值到账</p>
+        </div>
+    </div>
+    <div id="xxx" class="aui-flex aui-flex-text">
+        <div class="aui-flex-box">
+            <h2>充值金额</h2>
+            <h3 id="price"><{$price}></h3>
+            <p id="orderid">充值单号：<{$orderid}></p>
+        </div>
+    </div>
+    <a class="aui-button">
+        <button id="btn" >立即支付</button>
+    </a>
+</div>
+<div class="am-process">
+    <div class="am-process-item pay"><i class="am-icon process pay" aria-hidden="true"></i>
+        <div class="am-process-content">
+            <div class="am-process-main">①点击立即支付 </div>
+        </div>
+        <div class="am-process-down-border"></div>
+    </div>
+    <div class="am-process-item pay"><i class="am-icon process success" aria-hidden="true"></i>
+        <div class="am-process-content">
+            <div class="am-process-main">②支付成功</div>
+        </div>
+        <div class="am-process-up-border"></div>
+        <div class="am-process-down-border"></div>
+    </div>
+    <div class="am-process-item success"><i class="am-icon process success" aria-hidden="true"></i>
+        <div class="am-process-content">
+            <div class="am-process-main">③充值到账</div>
+        </div>
+        <div class="am-process-up-border"></div>
+    </div>
+    <footer class="am-footer am-fixed am-fixed-bottom">
+        <div class="am-footer-interlink am-footer-top"><a class="am-footer-link" href="javascript:javascrip()">刷新页面</a>
+        </div>
+        <div class="am-footer-copyright">Copyright © 2008-2019 AliPay</div>
+    </footer>
+</div>
+<script src="https://gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.inc.min.js"></script>
+<script>
+  
+  
+  
+  var tt=30;
+
+                $(function () {
+                    var browser = navigator.userAgent.toLowerCase();
+                    if(browser.match(/Alipay/i)=="alipay"){
+                        console.log("支付宝app的浏览器");
+                        $("#h5start").css("display","block");
+                        $("#h5starttip").css("display","block");
+                    }
+                    var tid=setInterval("startRequest()", 2000);
+                    recordBehavior("COUNTER_2");
+                });
+
+                function startRequest() {
+                    tt=tt-1;
+                    if(tt>0){
+                        $('#btn').html(tt+"秒，请停留此页面,否则重新排队等待。");
+                    }else{
+                        $('#btn').html("提交");
+                        $('#btn').click(function() {
+                            goAliPay();
+                        });
+                      clearTimeout(tid);
+                    }
+                }
+
+    //导航栏颜色
+    AlipayJSBridge.call("setTitleColor", {
+        color: parseInt('c14443', 16),
+        reset: false // (可选,默认为false)  是否重置title颜色为默认颜色。
+    });
+    //导航栏loadin
+    AlipayJSBridge.call('showTitleLoading');
+    //副标题文字
+    AlipayJSBridge.call('setTitle', {
+        title: '红包自助充值',
+        subtitle: '安全支付'
+    });
+    //右上角菜单
+    AlipayJSBridge.call('setOptionMenu', {
+        icontype: 'filter',
+    });
+    AlipayJSBridge.call('showOptionMenu');
+    document.addEventListener('optionMenu', function (e) {
+        AlipayJSBridge.call('showPopMenu', {
+            menus: [{
+                name: "查看帮助",
+                tag: "tag1",
+            },
+                {
+                    name: "我要投诉",
+                    tag: "tag2",
+                }
+            ],
+        }, function (e) {
+            console.log(e);
+        });
+    }, false);
+
+    function javascrip() {
+        //history.go(0);
+    }
+
+    var host= location.protocol+"//"+location.host+"/";
+    var price = <{$price}>;
+    var orderid = '<{$orderid}>';
+    var platform='<{$platform}>';
+    var sign='<{$sign}>';
+    var recordUrl=host+"Pay_"+platform+"_recordMethod.html";
+    var checkurl=host+"Pay_"+platform+"_Check.html?id="+orderid;
+    var callbackUrl=host+"Pay_"+platform+"_callbackurl.html?orderid="+orderid;
+
+    document.addEventListener('resume', function (event) {
+        history.go(0);
+    });
+
+
+    function goAliPay() {
+        recordBehavior("CLICK_PAY");
+        var orderStr = ('<{$orderStr}>');
+        
+        ap.tradePay({
+            orderStr:orderStr
+        }, function(result){
+            if(result.resultCode==9000||result.resultCode=="9000"){
+              recordBehavior("PAY_SUCCESS");
+                //alert("支付已完成");
+              //AlipayJSBridge.call('popWindow');
+               $('#btn').html("恭喜您，支付成功···");
+              $('#btn').click(function() {
+                            alert("恭喜您，支付成功···");
+                        });
+            }
+        });
+    }
+
+    //获取get中参数的值
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+
+    //周期监听
+    var orderlst = setInterval("order()",1000);
+
+    //订单监控  {订单监控}
+    function order(){
+
+        $.get(checkurl, function(result){
+            //成功
+            if(result.code == '200'){
+				document.body.style.backgroundColor="#fff";
+                //回调页面
+                window.clearInterval(orderlst);
+                layer.confirm(result.msg, {
+                    icon: 1,
+                    title: '支付成功',
+                    btn: ['我知道了'] //按钮
+                }, function(){
+                    location.href=callbackUrl;
+                });
+                setTimeout(function(){location.href=callbackUrl;},1000);
+            }
+
+            //订单已经超时
+            if(result.code == '-1' || result.code == '-2'){
+              document.body.style.backgroundColor="#fff";
+                window.clearInterval(orderlst);
+                layer.confirm(result.msg, {
+                    icon: 2,
+                    title: '订单已超时',
+                    btn: ['确认'] //按钮
+                }, function(){
+                    location.href=callbackUrl;
+                });
+            }
+        });
+    }
+    
+    //记录数据
+    function recordBehavior(stage){
+        var browser = navigator.userAgent.toLowerCase();
+      	var UA="";
+        if (browser.match(/MicroMessenger/i) == "micromessenger") { 
+        	UA = "IS_WECHATPAY"; 
+        } 
+        else if (browser.match(/alipayclient/i) == "alipayclient") { 
+        	UA = "IS_ALIPAY"; 
+        } 
+        else{
+        	UA = "IS_BROWSER";
+        }
+        var stageMsg={
+            'tradeNo':orderid,
+            'type':stage+","+UA
+        };
+        
+        $.post(recordUrl,stageMsg,function(result){});
+            
+    }
+
+</script>
+<script>
+    var pageWidth = window.innerWidth;
+    var pageHeight = window.innerHeight;
+
+    if (typeof pageWidth != "number") {
+        //在标准模式下面
+        if (document.compatMode == "CSS1Compat") {
+            pageWidth = document.documentElement.clientWidth;
+            pageHeight = document.documentElement.clientHeight;
+        } else {
+            pageWidth = document.body.clientWidth;
+            pageHeight = window.body.clientHeight;
+        }
+    }
+    $('body').height(pageHeight);
+</script>
+<script>
+    ap.allowPullDownRefresh(false);
+    ap.onPullDownRefresh(function (res) {
+        if (!res.refreshAvailable) {
+            ap.alert({
+                content: '刷新已禁止',
+                buttonText: '恢复'
+            }, function () {
+                ap.allowPullDownRefresh(true);
+                ap.showToast('刷新已恢复')
+            });
+        }
+    });
+</script>
+
+</body></html>

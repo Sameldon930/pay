@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>在线支付 - 支付宝 - 网上支付 安全快速！</title>
+    <script type="text/javascript" src="/Public/Alips/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/qrcode.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/layer.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/qqapi.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/qrcode.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/zzspay.css">
+    <style>
+        #qrcode>img{
+            height: 150px;
+            width: 150px;
+        }
+        #qrcode>canvas{
+            height: 150px!important;
+            width: 150px!important;
+        }
+    </style>
+
+</head>
+<body>
+<div style="width: 100%; text-align: center;font-family:微软雅黑;">
+    <div class="pay_head" >
+
+    </div>
+    <div id="panelWrap" class="panel-wrap">
+        <div class="pay_center">
+            <div class="pay_wait" >请耐心等待</div>
+            <div ><span class="pay_bold" >到账时间大约为</span><span class="pay_min">2分钟</span></div>
+            <div>提示交易成功再离开页面</div>
+            <div class="pay_bold" >未到账请联系我们</div>
+        </div>
+        <div class="qrcode-warp">
+            <div id="qrcode">
+                <img id="qrcode_load" src="/Public/Alips/picture/loading.gif"  style="display: block;">
+            </div>
+        </div>
+        <div class="pay_center">
+            <div id="payMoney">
+                <span>充值金额</span><span style="color: #000;">￥</span><span style="font-size: 1.5em;color: #000;"><{$money}></span><span>元</span>
+
+
+            </div>
+            <div>
+                <span>实付金额</span><span style="color: red;">￥</span><span style="font-size: 1.5em;color: red;"><{$price}></span><span>元</span>
+            </div>
+             <div>
+               <span style="color: red;">请输入相对应金额，如金额不匹配，将无法正常上分</span>
+            </div>
+        </div>
+        <div class="pay_center">
+            <div class="panel-footer">
+                <input type="button" id="btnDL" style="line-height: 6vh" onclick="inurl()" value="点击进入支付宝支付" class="btn  btn-primary btn-lg btn-block" >
+            </div>
+        </div>
+        <div class="pay_time">
+            <input type="text"  class="text" id="time" readonly disabled>
+        </div>
+        <div class="pay_article">
+            若无法跳转到支付页面，请截图保存到到相册，打开支付宝选择
+            <img src="/Public/Alips/picture/scan.png" width="20" height="20" alt="">
+            ，在点击右上角
+            <img src="/Public/Alips/picture/photo.png" width="20" height="20" alt="">
+            选择此二维码，用“扫一扫”扫码即可支付。
+        </div>
+
+    </div>
+    <div class="pay_bottom">
+        <div>保存到相册仅能支付一次，切勿重复支付</div>
+    </div>
+</div>
+<script src="/Public/Alips/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/Public/Alips/js/jquery.qrcode.min.js"></script>
+<script type="text/javascript">
+
+    var intDiff = parseInt('300');//倒计时总秒数量
+	//控制显示面额及优惠
+  	var money = <{$money}>;//查订单是否支付
+    var price = <{$price}>;//返回页面
+    var cheap = Math.round((money - price)*100)/100;//优惠值保留两位小数
+  	if(cheap==0){
+		$("#payMoney").hide();
+    }
+    function timer(intDiff){
+        window.setInterval(function(){
+            var day=0,
+                hour=0,
+                minute=0,
+                second=0;//时间默认值
+            if(intDiff > 0){
+                day = Math.floor(intDiff / (60 * 60 * 24));
+                hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+                minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+                second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+            }
+            if (minute <= 9) minute = '0' + minute;
+            if (second <= 9) second = '0' + second;
+            $('#time').val(minute + ':' + second);
+
+            intDiff--;
+        }, 1000);
+    }
+    $(function(){
+        timer(intDiff);
+    });
+
+    var updateQrImg = 0;
+
+    //订单监控  {订单监控}
+    function order(){
+        $.get("<{$checkurl}>", function(result){
+            //成功
+            if(result.code == '200'){
+
+                //回调页面
+                window.clearInterval(orderlst);
+                layer.confirm(result.msg, {
+                    icon: 1,
+                    title: '支付成功',
+                    btn: ['我知道了'] //按钮
+                }, function(){
+                    location.href="<{$callbackUrl}>";
+                });
+                setTimeout(function(){location.href="<{$callbackUrl}>";},1000);
+            }
+            //支付二维码
+            if(result.code == '100' && updateQrImg == 0){
+
+                $('#qrcode_load').remove();
+                $('#btnDL').attr('onclick','pay("' + "<{$btnUrl}>" + '")');
+                $('#btnDL').attr('disabled',false);
+                //设置参数方式
+                jQuery(function(){
+                    jQuery('#qrcode').qrcode("<{$url}>");
+                    //jQuery('#qrcode').qrcode(encodeURI("<{$url}>"));
+                    //jQuery('#qrcode_load').attr('src',"http://gcny.haohan168.cn:8080/trade/getErWeiCode.html?url=<{$url}>");
+                    pay('<{$btnUrl}>');
+                })
+                updateQrImg = 1;
+            }
+            //订单已经超时
+            if(result.code == '-1' || result.code == '-2'){
+                window.clearInterval(orderlst);
+                layer.confirm(result.msg, {
+                    icon: 2,
+                    title: '支付失败',
+                    btn: ['确认'] //按钮
+                }, function(){
+                    location.href="<{$callbackUrl}>";
+                });
+            }
+        });
+    }
+    //周期监听
+    var orderlst = setInterval("order()",1000);
+
+
+    function pay(url){
+        window.location.href = "" + url;
+    }
+
+</script>
+<div style="display:none">
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276520178'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1276520178%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body></html>

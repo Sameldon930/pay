@@ -1,0 +1,219 @@
+<include file="Public/header"/>
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox float-e-margins">
+            <!--条件查询-->
+            <div class="ibox-title">
+                <h5>支付产品</h5>
+                <div class="ibox-tools">
+                    <i class="layui-icon" onclick="location.replace(location.href);" title="刷新"
+                       style="cursor:pointer;">ဂ</i>
+                </div>
+            </div>
+            <!--条件查询-->
+            <div class="ibox-content">
+                <form class="layui-form layui-form-pane form-search" action="" method="get" autocomplete="off"
+                      id="userform">
+                    <input type="hidden" name="p" value="1">
+                    <input type="hidden" name="rows" id="rows" value="<{:I('param.rows/d',15)}>">
+                    <div class="layui-form-item layui-inline">
+                        <label class="layui-form-label">支付产品</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="username" value="<{:I('param.username')}>" placeholder="请输入支付产品" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-inline">
+                        <label class="layui-form-label">添加时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" name="addtime" id="addtime"
+                                   placeholder="起始时间" value="<{:I('param.addtime')}>" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-inline">
+                        <button type="submit" class="layui-btn"><span
+                                class="glyphicon glyphicon-search"></span> 搜索
+                        </button>
+                        <!--<a href="javascript:;" id="export"-->
+                           <!--class="layui-btn layui-btn-danger"><span-->
+                                <!--class="glyphicon glyphicon-export"></span> 导出数据</a>-->
+                        <button class="layui-btn"
+                                onclick="member_edit('编辑','<{:U('editPaymentProduct')}>',0,600,600);return false;"><span
+                                class="glyphicon"></span> 添加支付产品
+                        </button>
+                    </div>
+                </form>
+                <if condition="$_GET[status] eq 1">
+                    <!--<blockquote class="layui-elem-quote" style="font-size:14px;padding;8px;">商户数量：<span class="label stat_success"><{$stat.membercount}></span> 代理数量：<span class="label stat_success"><{$stat.agentcount}></span>-->
+                    <!--可提现金额：<span class="label stat_success"><{$stat.balance}></span> 冻结金额：<span class="label stat_fail"><{$stat.blockedbalance}></span>-->
+                    <!--已结算保证金：<span class="label stat_success"><{$stat.complaints_deposit_unfreeze}></span> 冻结保证金：<span class="label stat_fail"><{$stat.complaints_deposit_freeze}></span>-->
+                    <!--</blockquote>-->
+                </if>
+                <!--用户列表-->
+                <table class="layui-table" lay-skin="line" lay-size="sm"
+                       lay-data="{width:'100%',limit:<{:I('param.rows')}>,id:'status'}">
+                    <thead>
+                    <tr>
+                        <th lay-data="{field:'id', width:150, sort: true}">编号</th>
+                        <th lay-data="{field:'name', width:150, sort: true}">名称</th>
+                        <th lay-data="{field:'paytype', width:150, sort: true}">所属通道编码</th>
+                        <th lay-data="{field:'num', width:150, sort: true}">入金渠道数</th>
+                        <th lay-data="{field:'status', width:100}">状态</th>
+                        <th lay-data="{field:'addtime', width:150}">添加时间</th>
+                        <th lay-data="{field:'op',width:300}">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="list" id="vo">
+                        <tr>
+                            <td><{$vo.id}></td>
+                            <td><{$vo.name}></td>
+                            <td><{$vo.pid}>&nbsp;&nbsp;<{$vo.pid|getProduct}></td>
+                            <td><{$vo.num}></td>
+                            <td>
+                                <input type="checkbox"
+                                       data-uid="<{$vo.id}>"
+                                <if condition="$vo['status']">checked</if>
+                                name="open"
+                                lay-skin="switch"
+                                lay-filter="switchStatus"
+                                lay-text="正常|禁用">
+                            </td>
+                            <td><{$vo.addtime|date="Y-m-d H:i:s",###}></td>
+                            <td>
+                                <div class="layui-btn-group">
+                                    <button class="layui-btn layui-btn-small"
+                                            onclick="member_edit('编辑','<{:U('editPaymentProduct',['id'=>$vo[id]])}>',110321,600,600)">
+                                        编辑
+                                    </button>
+                                    <button class="layui-btn layui-btn-small" onclick="member_del(this,'<{$vo.id}>')">
+                                        删除
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+                <!--用户列表-->
+                <div class="page"><{$page}>
+                    <div class="layui-input-inline">
+                        <form class="layui-form" action="" method="get" id="pageForm" autocomplete="off">
+
+                            <select lay-search name="rows" style="height: 32px;" id="pageList" lay-ignore>
+                                <option value="">显示条数</option>
+                                <option
+                                <if condition="I('param.rows') neq '' && I('param.rows') eq 15">selected</if>
+                                value="15">15条</option>
+                                <option
+                                <if condition="I('param.rows') eq 30">selected</if>
+                                value="30">30条</option>
+                                <option
+                                <if condition="I('param.rows') eq 50">selected</if>
+                                value="50">50条</option>
+                                <option
+                                <if condition="I('param.rows') eq 80">selected</if>
+                                value="80">80条</option>
+                                <option
+                                <if condition="I('param.rows') eq 100">selected</if>
+                                value="100">100条</option>
+                                <option
+                                <if condition="I('param.rows') eq 1000">selected</if>
+                                value="1000">1000条</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/footer"/>
+<script>
+    layui.use(['form', 'table', 'laydate', 'layer'], function () {
+        var form = layui.form
+            , table = layui.table
+            , layer = layui.layer
+            , laydate = layui.laydate;
+        //日期时间范围
+        laydate.render({
+            elem: '#addtime'
+            , type: 'datetime'
+            , theme: 'molv'
+            , range: '|'
+        });
+        //监听工具条
+        table.on('tool(test1)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'detail') {
+                layer.msg('ID：' + data.id + ' 的查看操作');
+            } else if (obj.event === 'del') {
+                layer.confirm('真的删除行么', function (index) {
+                    obj.del();
+                    layer.close(index);
+                });
+            } else if (obj.event === 'edit') {
+                layer.alert('编辑行：<br>' + JSON.stringify(data))
+            }
+        });
+        //全选
+        form.on('checkbox(allChoose)', function (data) {
+            var child = $(data.elem).parents('table').find('tbody input[lay-filter="ids"]');
+            child.each(function (index, item) {
+                item.checked = data.elem.checked;
+            });
+            form.render('checkbox');
+        });
+
+        //监听用户状态
+        form.on('switch(switchStatus)', function (data) {
+            var isopen = this.checked ? 1 : 0,
+                id = $(this).attr('data-uid');
+            $.ajax({
+                url: "<{:U('editPaymentProductStatus')}>",
+                type: 'post',
+                data: "id=" + id + "&isopen=" + isopen,
+                success: function (res) {
+                    if (res.status) {
+                        layer.tips('温馨提示：开启成功', data.othis);
+                    } else {
+                        layer.tips('温馨提示：关闭成功', data.othis);
+                    }
+                    setTimeout(function () {
+                        location.replace(location.href);
+                    }, 1500);
+
+                }
+            });
+        });
+    });
+
+    // 用户-编辑
+    function member_edit(title, url, id, w, h) {
+        x_admin_show(title, url, w, h);
+    }
+
+
+    /*用户-删除*/
+    function member_del(obj, id) {
+        layer.confirm('确认要删除吗？', function (index) {
+            $.ajax({
+                url: "<{:U('delPaymentProduct')}>",
+                type: 'post',
+                data: {id:id},
+                success: function (res) {
+                    if (res.status) {
+                        $(obj).parents("tr").remove();
+                        layer.msg('已删除!', {icon: 1, time: 1000});
+                    }
+                }
+            });
+        });
+    }
+
+    $('#pageList').change(function () {
+        $('#rows').val($(this).val());
+        $('#userform').submit();
+    });
+</script>
+</body>
+</html>

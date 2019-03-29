@@ -1,0 +1,68 @@
+html,body{height: 100%; width: 100%;}
+::-webkit-input-placeholder {
+	color:#bbb;
+}
+:-moz-placeholder {
+	color:#bbb;
+}
+::-moz-placeholder {
+	color:#bbb;
+}
+:-ms-input-placeholder {
+	color:#bbb;
+}
+body{
+	background: url(../image/bodybg.jpg) #738dda no-repeat center bottom;
+}
+.loginWrapper{width: 100%; min-width: 1200px; height: 100%; min-height: 500px;font-size: 14px; color: #909090;}
+
+.banWrapper{
+	background: url(../image/headerbg.jpg) no-repeat center; height: 400px; position: relative; z-index: 2;
+}
+
+
+.loginMain{
+	width: 580px; background: #fff; box-shadow: rgba(0,0,0,0.1) 0 0 60px; margin: 0 auto; height: 450px; margin-top: -200px;
+}
+.loginWidth{
+	margin: 0 30px; height: 530px; box-shadow: rgba(0,0,0,0.1) 0 0 60px; background: #fff; position: relative; z-index: 3;
+}
+.loginLogoDiv{
+	height: 100px; background: #262d40; color: #fff; line-height: 100px; 
+}
+.loginLogoDiv h2{
+	font-size: 20px; font-weight: normal; position: relative; display: inline-block; line-height: 1; padding-left: 20px;
+}
+.loginLogoDiv h2:after{
+	position: absolute; content: ""; width: 4px; height: 20px; background: #5874c8; left: 0; border-radius: 4px;
+}
+.loginLogo{display: block; width: 195px; height: 50px; background: url(../images/loginlogo.png?v=1.2) no-repeat;}
+
+.formLogin{ padding: 50px 80px 0 80px;}
+.loginList{
+	border: #e5e5e5 solid 1px; height: 50px; margin-bottom: 35px; position: relative; padding-left: 85px;
+}
+.loginList .loginText{height: 50px; line-height: 50px; width: 100%;color: #606060; border: 0 none; text-indent: 2em; font-size: 14px;}
+.loginList label{position: absolute;left: 0; top: 0; width: 85px; line-height: 25px; text-align: center; border-right: #e5e5e5 solid 1px; height: 25px; margin-top: 12.5px; font-size: 14px; color: #afb7c6;}
+.loginListUser label{background-position: -58px -4px;}
+.loginListPwd label{background-position: -28px -3px;}
+.loginListCode label{background-position: -3px -3px;}
+.loginListTel label{background: url(../images/telicon.png) 2px 0 no-repeat;}
+.loginListKey label{background: url(../images/keyicon.png) 0 0 no-repeat;}
+.errorTips{display: none; font-size: 12px; color: #fe514a; height: 20px; line-height: 20px; position: absolute; left: 310px; top: 10px; min-width: 100px;white-space:nowrap;}
+.errorTips i,.sysError i{padding: 0 9px; line-height: 20px; height: 20px; display: inline-block; vertical-align: middle; background: url(../../public/images/loginIcon.png) -32px -35px no-repeat;}
+.errorTips em,.sysError em{font-style: normal; line-height: 20px; height: 20px; display: inline-block; vertical-align: middle; white-space:nowrap; }
+p.loginList{text-align: right; width: 100%; padding: 0; font-size: 13px; margin-bottom:0; height: 16px; line-height: 16px; border: 0 none;}
+p.loginList a{color: #03c5ff;}
+.loginBtn{width: 100%; height: 60px; line-height: 60px; margin-top: 20px; background: #6986dc; border-radius: 2px; color: #fff; border: 0 none; letter-spacing:4px; font-size:16px; font-size: 20px; font-family: "黑体"; border-radius: 4px; font-weight: bold;}
+.loginBtn:hover{background: #4c6ad0;}
+.have{text-align: right; height: 20px; line-height: 20px; padding-top: 16px;}
+.have i{height: 20px; padding: 0 10px;background: url(../../public/images/loginIcon.png) -52px -37px no-repeat;}
+.have a{color: #03c5ff;}
+.loginListCode img{position: absolute; right: 5px; top:-1px; height: 42px; border: 0; background: #f7f7f7; border-top-right-radius: 2px; border-bottom-right-radius: 2px; color: #909090;}
+.loginListCode .getImg{position: absolute; right: 5px; top: 8px; width: 19px; height: 21px; background: url(../images/loginIcon.png) -2px -33px no-repeat;}
+
+.sysError{color:#fe514a;font-size: 12px;height: 20px; line-height: 20px; position: relative; top:-5px;}
+.sysError a{color: #03c5ff;}
+#secondeCodeBnt{width:100px;line-height: 32px;color: #fff;background: #03c5ff;cursor: pointer;border: none;border-radius: 2px; position: absolute; right: 0; top:0}
+

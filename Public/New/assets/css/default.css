@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/*-----------------
+[Master Stylesheet]
+Project:	Hyrax UX Admin Template
+-----------------*/	
+
+
+/*-----------------
+[Table of contents]
+
+1. Body
+2. Header / .navbar
+3. Navigation / .sidebar-menu, .navbar
+4. Sidebar left menu / .fixed-sidebar-left
+5. Sidebar right menu / .fixed-sidebar-right
+6. Content / .page-wrapper
+7. Footer / .footer
+
+-------------------------------------------------------------------
+
+[Color codes]
+Body-Font:  	#878787 {dark grey}
+Background:		#ffffff (white)
+Content:		#878787 (dark grey)
+Default:		#E9E9E9 (grey)
+Primary:		#2bb9c3	(Turquoise)
+Info:			#fd7397	(Pink)
+Success:		#128807	(Green)
+Warning:		#f0ad4e	(Yellow)
+Danger:			#f33923	(Red)
+
+a (standard):	#878787 (dark grey)
+a (visited):	#212121 (Light Black)
+a (active):	 	#212121 (Light Black)
+ 
+-------------------------------------------------------------------
+
+Body defaults:			14px 'Rubik', sans-serif;;
+Input, textarea:	14px 'Rubik', sans-serif;;
+Notes:	decreasing heading by 0.4em with every subsequent heading level
+
+-------------------------------------------------------------------*/
+
+
+/** Imports **/
+/*-----------------*/
+
+/** Fonts **/
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
+
+/** Core Bootstrap **/
+@import url('../../plugins/vendors/bootstrap/css/bootstrap.min.css');
+
+/** Template defaults **/
+@import url('basic.css');
+
+
+

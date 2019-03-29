@@ -1,0 +1,3360 @@
+【2018-12-22 19:23:01】
+订单号：20181222192158549752
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219215759944&transaction_id=20181222192158549752&amount=300.0000&datetime=20181222192301&returncode=00&sign=F25917244BCC4660A6ADB58FF9F8C518&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:24:02】
+订单号：20181222192158549752
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219215759944&transaction_id=20181222192158549752&amount=300.0000&datetime=20181222192402&returncode=00&sign=54FB306FF717E4DD0456B319DB3327B4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:25:02】
+订单号：20181222192158549752
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219215759944&transaction_id=20181222192158549752&amount=300.0000&datetime=20181222192502&returncode=00&sign=0C6B372FF7A0466B01C2A2C5E3CD143F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:26:03】
+订单号：20181222192158549752
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219215759944&transaction_id=20181222192158549752&amount=300.0000&datetime=20181222192603&returncode=00&sign=B71A5470877BF33A16DE9FCC85EFB8A6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:27:04】
+订单号：20181222192158549752
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219215759944&transaction_id=20181222192158549752&amount=300.0000&datetime=20181222192703&returncode=00&sign=E60E1FBAF852BC6D706610F910BF1142&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:27:54】
+订单号：20181222192721575110
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219272077510&transaction_id=20181222192721575110&amount=200.0000&datetime=20181222192753&returncode=00&sign=9795F9BDDC115C3A3C50B60FDCC9975A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:28:54】
+订单号：20181222192721575110
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219272077510&transaction_id=20181222192721575110&amount=200.0000&datetime=20181222192854&returncode=00&sign=EDC91AF0B6722C49B0BCA5E569E01D74&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:29:55】
+订单号：20181222192721575110
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219272077510&transaction_id=20181222192721575110&amount=200.0000&datetime=20181222192954&returncode=00&sign=B37F293D1A7F98CF3628C3797BE9ABA0&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:30:56】
+订单号：20181222192721575110
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219272077510&transaction_id=20181222192721575110&amount=200.0000&datetime=20181222193055&returncode=00&sign=42838453E04EFE36D7F9FBA974B3EF9E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:31:56】
+订单号：20181222192721575110
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219272077510&transaction_id=20181222192721575110&amount=200.0000&datetime=20181222193156&returncode=00&sign=F1AA6EDCE33F2A4BFE9FD3335EACF607&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:35:49】
+订单号：20181222191931519710
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219193038240&transaction_id=20181222191931519710&amount=300.0000&datetime=20181222193548&returncode=00&sign=F0C4E7B373B4D40681A9CBFFE26BF2A5&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:36:49】
+订单号：20181222191931519710
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219193038240&transaction_id=20181222191931519710&amount=300.0000&datetime=20181222193649&returncode=00&sign=476ADFCCAB53BAA3F1F1262981CD3D06&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:37:39】
+订单号：20181222193713574997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219371208729&transaction_id=20181222193713574997&amount=100.0000&datetime=20181222193739&returncode=00&sign=27DA38A672529FFDF0643C82007045B2&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:37:46】
+订单号：20181222192052525149
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219205100261&transaction_id=20181222192052525149&amount=100.0000&datetime=20181222193746&returncode=00&sign=04C02C972046B075E6E7BBEE03E3C2B4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:37:49】
+订单号：20181222191931519710
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219193038240&transaction_id=20181222191931519710&amount=300.0000&datetime=20181222193749&returncode=00&sign=099B9CE9F0B6AE7E2AEB6B6DF324DC87&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:38:40】
+订单号：20181222193713574997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219371208729&transaction_id=20181222193713574997&amount=100.0000&datetime=20181222193840&returncode=00&sign=A95BC568116E52767271FCCD8146B38E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:38:47】
+订单号：20181222192052525149
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219205100261&transaction_id=20181222192052525149&amount=100.0000&datetime=20181222193847&returncode=00&sign=F61E28DB2FE49F82B7B677D0B3F7BB54&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:38:50】
+订单号：20181222191931519710
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219193038240&transaction_id=20181222191931519710&amount=300.0000&datetime=20181222193850&returncode=00&sign=74DDE45321A333F2B94B0F8FA4EB0A2A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:39:40】
+订单号：20181222193713574997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219371208729&transaction_id=20181222193713574997&amount=100.0000&datetime=20181222193940&returncode=00&sign=4DDCDDE42DE905D9A653477E30698256&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:39:47】
+订单号：20181222192052525149
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219205100261&transaction_id=20181222192052525149&amount=100.0000&datetime=20181222193947&returncode=00&sign=4649496C6A9317B0418D48C23DCBECDF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:39:50】
+订单号：20181222191931519710
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219193038240&transaction_id=20181222191931519710&amount=300.0000&datetime=20181222193950&returncode=00&sign=8E90E0F94188477D9555F4DE0B4BBB93&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:40:41】
+订单号：20181222193713574997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219371208729&transaction_id=20181222193713574997&amount=100.0000&datetime=20181222194040&returncode=00&sign=CBC29C3B9B57843107F650ED2F4B3626&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:40:48】
+订单号：20181222192052525149
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219205100261&transaction_id=20181222192052525149&amount=100.0000&datetime=20181222194047&returncode=00&sign=821F81354429540ACD0B8904E052C159&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:41:41】
+订单号：20181222193713574997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219371208729&transaction_id=20181222193713574997&amount=100.0000&datetime=20181222194141&returncode=00&sign=A0F511D589402D94CE48883E3229BB8E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:41:48】
+订单号：20181222192052525149
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219205100261&transaction_id=20181222192052525149&amount=100.0000&datetime=20181222194148&returncode=00&sign=7E5000D1834B45CC4CDFC1461E841949&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:41:52】
+订单号：20181222194103102561
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219410097093&transaction_id=20181222194103102561&amount=200.0000&datetime=20181222194152&returncode=00&sign=F89D6B41E5EEF6A41706695388406864&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:42:52】
+订单号：20181222194103102561
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219410097093&transaction_id=20181222194103102561&amount=200.0000&datetime=20181222194252&returncode=00&sign=D91B3382DF91DDC81E56AF2ADF225956&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:43:21】
+订单号：20181222192610504910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219260913474&transaction_id=20181222192610504910&amount=300.0000&datetime=20181222194320&returncode=00&sign=68E425F7FE7466BEBF4FFCC5A25C86A9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:43:21】
+订单号：20181222194225495357
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219422483014&transaction_id=20181222194225495357&amount=30.0000&datetime=20181222194320&returncode=00&sign=6E6FF8DDC791CB4FC1C1B13258428A34&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:43:53】
+订单号：20181222194103102561
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219410097093&transaction_id=20181222194103102561&amount=200.0000&datetime=20181222194352&returncode=00&sign=337432A15EB827262942B737ABAD883F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:44:21】
+订单号：20181222192610504910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219260913474&transaction_id=20181222192610504910&amount=300.0000&datetime=20181222194421&returncode=00&sign=F98B8FD76DAEF0EB98161A079D49D8A9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:44:21】
+订单号：20181222194225495357
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219422483014&transaction_id=20181222194225495357&amount=30.0000&datetime=20181222194421&returncode=00&sign=258337E51CB45949281A783236500BBA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:44:53】
+订单号：20181222194103102561
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219410097093&transaction_id=20181222194103102561&amount=200.0000&datetime=20181222194453&returncode=00&sign=DD7E2F2762B0DEEBE985B55B08275591&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:45:21】
+订单号：20181222192610504910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219260913474&transaction_id=20181222192610504910&amount=300.0000&datetime=20181222194521&returncode=00&sign=D721DB59A6CBE120698CCB4BAACA3CDC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:45:21】
+订单号：20181222194225495357
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219422483014&transaction_id=20181222194225495357&amount=30.0000&datetime=20181222194521&returncode=00&sign=3233D066FDDDDCC645A86213BF57FAF9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:45:54】
+订单号：20181222194103102561
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219410097093&transaction_id=20181222194103102561&amount=200.0000&datetime=20181222194553&returncode=00&sign=DABBB368333209D0559C9BC5F2E4B184&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:46:22】
+订单号：20181222192610504910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219260913474&transaction_id=20181222192610504910&amount=300.0000&datetime=20181222194622&returncode=00&sign=1817E194CDE3D1774C3E1B40D7723FB9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:46:22】
+订单号：20181222194225495357
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219422483014&transaction_id=20181222194225495357&amount=30.0000&datetime=20181222194622&returncode=00&sign=046EDC76129C8DED63F6DCA1A1A9DF0F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:47:22】
+订单号：20181222192610504910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219260913474&transaction_id=20181222192610504910&amount=300.0000&datetime=20181222194722&returncode=00&sign=F8E7507482A20BFBCC985B8115EEEA8A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:47:22】
+订单号：20181222194225495357
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219422483014&transaction_id=20181222194225495357&amount=30.0000&datetime=20181222194722&returncode=00&sign=DE2B51132CAC6512F60F4A242638EF4D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:49:19】
+订单号：20181222194841574852
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219484033924&transaction_id=20181222194841574852&amount=2000.0000&datetime=20181222194919&returncode=00&sign=160890D75A814DF6A9E7E0660C0A25D4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:50:01】
+订单号：20181222194936484955
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219493469403&transaction_id=20181222194936484955&amount=1000.0000&datetime=20181222195001&returncode=00&sign=367FA99EE53ECE8EAE57D53A11C0641A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:50:20】
+订单号：20181222194841574852
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219484033924&transaction_id=20181222194841574852&amount=2000.0000&datetime=20181222195019&returncode=00&sign=AB9C4285AAA9697080DB815A7C175153&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:51:02】
+订单号：20181222194936484955
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219493469403&transaction_id=20181222194936484955&amount=1000.0000&datetime=20181222195101&returncode=00&sign=9FE6F28091614CE17CE385A765C6D5BD&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:51:20】
+订单号：20181222194841574852
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219484033924&transaction_id=20181222194841574852&amount=2000.0000&datetime=20181222195120&returncode=00&sign=1FEB4908F22995BF3A719D0E0786794A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:52:02】
+订单号：20181222194936484955
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219493469403&transaction_id=20181222194936484955&amount=1000.0000&datetime=20181222195202&returncode=00&sign=730CBFB27C96A072B7FF7DEAA80D9999&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:52:18】
+订单号：20181222195136564950
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219513401536&transaction_id=20181222195136564950&amount=300.0000&datetime=20181222195218&returncode=00&sign=DC71B7AC92C0A041CAF6051851980E02&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:52:21】
+订单号：20181222194841574852
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219484033924&transaction_id=20181222194841574852&amount=2000.0000&datetime=20181222195220&returncode=00&sign=91B949E0BD5F015E835932D6D033D629&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:53:02】
+订单号：20181222194936484955
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219493469403&transaction_id=20181222194936484955&amount=1000.0000&datetime=20181222195302&returncode=00&sign=D67AC8720299008FCC18FF47AC917FD6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:53:19】
+订单号：20181222195136564950
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219513401536&transaction_id=20181222195136564950&amount=300.0000&datetime=20181222195318&returncode=00&sign=96F8BECDCC38C57B93DC4E67B7B30FA2&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:53:22】
+订单号：20181222194841574852
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219484033924&transaction_id=20181222194841574852&amount=2000.0000&datetime=20181222195321&returncode=00&sign=A6111709C1059246FEC4029B9E3B22C7&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:54:03】
+订单号：20181222194936484955
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219493469403&transaction_id=20181222194936484955&amount=1000.0000&datetime=20181222195402&returncode=00&sign=2FAB746383CB0C7F21BFFC79EE3AFFA1&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:54:19】
+订单号：20181222195136564950
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219513401536&transaction_id=20181222195136564950&amount=300.0000&datetime=20181222195419&returncode=00&sign=24C8AEE8480346F9BF22BFE3FE0AFBAE&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:55:18】
+订单号：20181222195407102531
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219540626915&transaction_id=20181222195407102531&amount=200.0000&datetime=20181222195518&returncode=00&sign=C00429C1965B7EAF5352EA858A37393C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:55:20】
+订单号：20181222195136564950
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219513401536&transaction_id=20181222195136564950&amount=300.0000&datetime=20181222195519&returncode=00&sign=7945DA5CF87029724B8977B7AA883FDF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:56:18】
+订单号：20181222195407102531
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219540626915&transaction_id=20181222195407102531&amount=200.0000&datetime=20181222195618&returncode=00&sign=F5C0873B46B1FA966814EE6F2EC02A4F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:56:20】
+订单号：20181222195136564950
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219513401536&transaction_id=20181222195136564950&amount=300.0000&datetime=20181222195620&returncode=00&sign=A44D5D5BA1D371D0FE48EA517CEC3226&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:57:19】
+订单号：20181222195407102531
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219540626915&transaction_id=20181222195407102531&amount=200.0000&datetime=20181222195719&returncode=00&sign=CB26844271071D330729F8613E6F38F4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:58:20】
+订单号：20181222195407102531
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219540626915&transaction_id=20181222195407102531&amount=200.0000&datetime=20181222195819&returncode=00&sign=84DE66E2102661BB9517F9499EB2699A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 19:59:21】
+订单号：20181222195407102531
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219540626915&transaction_id=20181222195407102531&amount=200.0000&datetime=20181222195921&returncode=00&sign=26024EA82CB5296A01AB0322665D12C4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:01:21】
+订单号：20181222200055555199
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220005472336&transaction_id=20181222200055555199&amount=100.0000&datetime=20181222200120&returncode=00&sign=C71DAE6F495A49CA1A5BAB38977D73F3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:01:43】
+订单号：20181222195035989853
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219503513292&transaction_id=20181222195035989853&amount=100.0000&datetime=20181222200143&returncode=00&sign=A336A5EC8DF1108AFFE8BCC84DB05CA0&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:02:21】
+订单号：20181222200055555199
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220005472336&transaction_id=20181222200055555199&amount=100.0000&datetime=20181222200221&returncode=00&sign=C603DDCB67D92FBF0CA18737E123FE88&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:02:44】
+订单号：20181222195035989853
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219503513292&transaction_id=20181222195035989853&amount=100.0000&datetime=20181222200243&returncode=00&sign=F15C3B6BEA9971282E47E63D8201BE43&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:03:22】
+订单号：20181222200055555199
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220005472336&transaction_id=20181222200055555199&amount=100.0000&datetime=20181222200322&returncode=00&sign=CE28BA79C01DB488B30C4A77805F3E11&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:03:44】
+订单号：20181222195035989853
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219503513292&transaction_id=20181222195035989853&amount=100.0000&datetime=20181222200344&returncode=00&sign=E589BD687A145FF4A9AF775621146B0E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:04:22】
+订单号：20181222200055555199
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220005472336&transaction_id=20181222200055555199&amount=100.0000&datetime=20181222200422&returncode=00&sign=86CC86543BD00F8928BA5F2B10B34CAB&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:04:45】
+订单号：20181222195035989853
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219503513292&transaction_id=20181222195035989853&amount=100.0000&datetime=20181222200444&returncode=00&sign=D14B882C30B23040DEE84B69B75CD5ED&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:05:23】
+订单号：20181222200055555199
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220005472336&transaction_id=20181222200055555199&amount=100.0000&datetime=20181222200523&returncode=00&sign=5A2F8681B0B0B4F3C736016540CCCE95&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:05:45】
+订单号：20181222195035989853
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122219503513292&transaction_id=20181222195035989853&amount=100.0000&datetime=20181222200545&returncode=00&sign=ED7C55F8E0CF43F4056A20D19BE35472&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:10:47】
+订单号：20181222201013535257
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220101275015&transaction_id=20181222201013535257&amount=300.0000&datetime=20181222201046&returncode=00&sign=4DD09B45610C936625E0C027BB27FED2&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:11:48】
+订单号：20181222201013535257
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220101275015&transaction_id=20181222201013535257&amount=300.0000&datetime=20181222201147&returncode=00&sign=279C5C6E953BA4D8CE91F6CB4715BD60&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:12:48】
+订单号：20181222201013535257
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220101275015&transaction_id=20181222201013535257&amount=300.0000&datetime=20181222201248&returncode=00&sign=E146298ED21CF89ED08027B0091F987D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:12:48】
+订单号：20181222201116524956
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220111511761&transaction_id=20181222201116524956&amount=300.0000&datetime=20181222201248&returncode=00&sign=86ACA911BB2DD75F215EF60A59E402C1&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:13:49】
+订单号：20181222201013535257
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220101275015&transaction_id=20181222201013535257&amount=300.0000&datetime=20181222201348&returncode=00&sign=713C1CE9F65256FF4741442D990287E8&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:13:50】
+订单号：20181222201116524956
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220111511761&transaction_id=20181222201116524956&amount=300.0000&datetime=20181222201349&returncode=00&sign=BBD4E92D50CCB10AFEA6ACB6713A33DE&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:14:00】
+订单号：20181222201325539997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220132494109&transaction_id=20181222201325539997&amount=100.0000&datetime=20181222201400&returncode=00&sign=E05BCAE19100249D24E638544AD28019&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:14:39】
+订单号：20181222201415554810
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220141490869&transaction_id=20181222201415554810&amount=20.0000&datetime=20181222201439&returncode=00&sign=BD0054358FA917893260A6E10ADF7271&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:14:49】
+订单号：20181222201013535257
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220101275015&transaction_id=20181222201013535257&amount=300.0000&datetime=20181222201449&returncode=00&sign=C6BB5BC7AF445B53AA23CCD58E7A3157&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:14:50】
+订单号：20181222201116524956
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220111511761&transaction_id=20181222201116524956&amount=300.0000&datetime=20181222201450&returncode=00&sign=4CA945E47F8A1D4C71673785EDFDA219&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:15:00】
+订单号：20181222201325539997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220132494109&transaction_id=20181222201325539997&amount=100.0000&datetime=20181222201500&returncode=00&sign=3F5A1FE2661301B9C61484A2613D273A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:15:40】
+订单号：20181222201415554810
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220141490869&transaction_id=20181222201415554810&amount=20.0000&datetime=20181222201539&returncode=00&sign=FA525A7B64F129661695611730DBBE38&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:15:51】
+订单号：20181222201116524956
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220111511761&transaction_id=20181222201116524956&amount=300.0000&datetime=20181222201551&returncode=00&sign=4B7AFA59AF24FCBB1DBEB4E82A8078EF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:16:01】
+订单号：20181222201325539997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220132494109&transaction_id=20181222201325539997&amount=100.0000&datetime=20181222201601&returncode=00&sign=6761C0C536F69C408294CCD396902DB8&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:16:40】
+订单号：20181222201415554810
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220141490869&transaction_id=20181222201415554810&amount=20.0000&datetime=20181222201640&returncode=00&sign=EDBFDD1201F193AAF2F36BD8936FDDF6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:16:48】
+订单号：20181222201548525257
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220154740717&transaction_id=20181222201548525257&amount=500.0000&datetime=20181222201647&returncode=00&sign=E3E881913C2282A4EA8811D5D483612B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:16:51】
+订单号：20181222201116524956
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220111511761&transaction_id=20181222201116524956&amount=300.0000&datetime=20181222201651&returncode=00&sign=BBBF89CD2E301D6A66712EDD6CA5FAF5&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:17:01】
+订单号：20181222201325539997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220132494109&transaction_id=20181222201325539997&amount=100.0000&datetime=20181222201701&returncode=00&sign=B7313BA0CD0AF7D79DCF10B749CCB5E0&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:17:41】
+订单号：20181222201415554810
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220141490869&transaction_id=20181222201415554810&amount=20.0000&datetime=20181222201741&returncode=00&sign=5F8C63ED7D9EC76E831E54D1AC375C14&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:17:48】
+订单号：20181222201548525257
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220154740717&transaction_id=20181222201548525257&amount=500.0000&datetime=20181222201748&returncode=00&sign=550C4D11530C1F455415282670EA13EC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:18:02】
+订单号：20181222201325539997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220132494109&transaction_id=20181222201325539997&amount=100.0000&datetime=20181222201801&returncode=00&sign=6CA07E1D9B6ADC21D34A41CDE3F603F6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:18:41】
+订单号：20181222201415554810
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220141490869&transaction_id=20181222201415554810&amount=20.0000&datetime=20181222201841&returncode=00&sign=3536C471E1A5B9074128689F2B9D8A4F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:18:48】
+订单号：20181222201548525257
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220154740717&transaction_id=20181222201548525257&amount=500.0000&datetime=20181222201848&returncode=00&sign=79C35BF5C9825302150C6CCCE23DC9C4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:19:49】
+订单号：20181222201548525257
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220154740717&transaction_id=20181222201548525257&amount=500.0000&datetime=20181222201949&returncode=00&sign=6D6C072B9B21A49007406F3347EC4948&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:20:49】
+订单号：20181222201548525257
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220154740717&transaction_id=20181222201548525257&amount=500.0000&datetime=20181222202049&returncode=00&sign=2960030D0A9E7A598BB491A8C278BFB9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:22:25】
+订单号：20181222202134101505
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220213336375&transaction_id=20181222202134101505&amount=50.0000&datetime=20181222202225&returncode=00&sign=DFC9E7BC845E12796EE9960BCBF4D223&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:22:53】
+订单号：20181222202238101529
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220223757037&transaction_id=20181222202238101529&amount=1000.0000&datetime=20181222202253&returncode=00&sign=8487794103103121BD5820C78A66131E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:23:26】
+订单号：20181222202134101505
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220213336375&transaction_id=20181222202134101505&amount=50.0000&datetime=20181222202326&returncode=00&sign=AD4D544436B84619CE4551590C9FAC7B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:23:54】
+订单号：20181222202238101529
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220223757037&transaction_id=20181222202238101529&amount=1000.0000&datetime=20181222202353&returncode=00&sign=56452DD92D00B85FE17DDD8AC84B56B6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:24:26】
+订单号：20181222202134101505
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220213336375&transaction_id=20181222202134101505&amount=50.0000&datetime=20181222202426&returncode=00&sign=C14E5CB18739C40E4AE4B2817320A093&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:24:35】
+订单号：20181222202413100535
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220241266125&transaction_id=20181222202413100535&amount=2000.0000&datetime=20181222202435&returncode=00&sign=60F1B727B16E622B35CCDF8876B88A14&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:24:54】
+订单号：20181222202238101529
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220223757037&transaction_id=20181222202238101529&amount=1000.0000&datetime=20181222202454&returncode=00&sign=D0A28D9604F8B9DC0D58C6F662305687&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:25:27】
+订单号：20181222202134101505
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220213336375&transaction_id=20181222202134101505&amount=50.0000&datetime=20181222202526&returncode=00&sign=10A017A34DCF9DA04EAA34953DDB09B9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:25:35】
+订单号：20181222202413100535
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220241266125&transaction_id=20181222202413100535&amount=2000.0000&datetime=20181222202535&returncode=00&sign=12A9920FF419AA3CB48CBAE066E56641&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:25:55】
+订单号：20181222202238101529
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220223757037&transaction_id=20181222202238101529&amount=1000.0000&datetime=20181222202554&returncode=00&sign=58039651AF7021D6D48BDF19BC31AC56&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:26:27】
+订单号：20181222202134101505
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220213336375&transaction_id=20181222202134101505&amount=50.0000&datetime=20181222202627&returncode=00&sign=4FA52F1F0BBA10D32D0888AC0364C439&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:26:36】
+订单号：20181222202413100535
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220241266125&transaction_id=20181222202413100535&amount=2000.0000&datetime=20181222202635&returncode=00&sign=CD57BFE2D9215D5C3CBBD90DA234E957&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:26:55】
+订单号：20181222202238101529
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220223757037&transaction_id=20181222202238101529&amount=1000.0000&datetime=20181222202655&returncode=00&sign=0443D870019A496DC0800AFB6173C7AF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:27:36】
+订单号：20181222202413100535
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220241266125&transaction_id=20181222202413100535&amount=2000.0000&datetime=20181222202736&returncode=00&sign=D6AA50452340CC1687B7F97852A2D3A6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:28:36】
+订单号：20181222202413100535
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220241266125&transaction_id=20181222202413100535&amount=2000.0000&datetime=20181222202836&returncode=00&sign=7CA5407C7B87BC8811C1946E6A62901E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:29:57】
+订单号：20181222202938505010
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220293797049&transaction_id=20181222202938505010&amount=100.0000&datetime=20181222202956&returncode=00&sign=C11C321E6BB23AA98C065EBE24A99AF5&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:30:57】
+订单号：20181222202938505010
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220293797049&transaction_id=20181222202938505010&amount=100.0000&datetime=20181222203057&returncode=00&sign=543DDDA56166F4DB583EB18C0C92D7CB&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:31:57】
+订单号：20181222202938505010
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220293797049&transaction_id=20181222202938505010&amount=100.0000&datetime=20181222203157&returncode=00&sign=7836F23E0EE94A5F7DCC46AEC77297AF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:32:13】
+订单号：20181222203128485753
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220312774553&transaction_id=20181222203128485753&amount=200.0000&datetime=20181222203213&returncode=00&sign=4833075CD679CC6C6490463461DBCF1D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:32:47】
+订单号：20181222203224565154
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220322368923&transaction_id=20181222203224565154&amount=99.9900&datetime=20181222203246&returncode=00&sign=0DBE054C65BC5A901F237133439535CD&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:32:56】
+订单号：20181222203208565410
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220320898889&transaction_id=20181222203208565410&amount=2000.0000&datetime=20181222203256&returncode=00&sign=E988307C4180E21B21524412B21FC128&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:32:58】
+订单号：20181222202938505010
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220293797049&transaction_id=20181222202938505010&amount=100.0000&datetime=20181222203257&returncode=00&sign=81769E9D26C6B7D55CB06BC21B427BD4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:33:14】
+订单号：20181222203128485753
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220312774553&transaction_id=20181222203128485753&amount=200.0000&datetime=20181222203313&returncode=00&sign=EB7F9FA0C50C7FBACDF723DEF8510DCE&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:33:30】
+订单号：20181222203240561005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220324086779&transaction_id=20181222203240561005&amount=2000.0000&datetime=20181222203329&returncode=00&sign=CD931656CEBA5C101F52020D6B8DD63A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:33:47】
+订单号：20181222203224565154
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220322368923&transaction_id=20181222203224565154&amount=99.9900&datetime=20181222203347&returncode=00&sign=8B2E79A4831BE47E840DC88AFD85F03B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:33:56】
+订单号：20181222203208565410
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220320898889&transaction_id=20181222203208565410&amount=2000.0000&datetime=20181222203356&returncode=00&sign=5BB963C9FF8BA0DCABAB6492715CDACC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:33:58】
+订单号：20181222202938505010
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220293797049&transaction_id=20181222202938505010&amount=100.0000&datetime=20181222203358&returncode=00&sign=90FD4EBCD842C52D248AB519731138BE&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:34:14】
+订单号：20181222203128485753
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220312774553&transaction_id=20181222203128485753&amount=200.0000&datetime=20181222203414&returncode=00&sign=0457F670E64C5EA7F5F80BB506973FCD&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:34:22】
+订单号：20181222203356521001
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220335657932&transaction_id=20181222203356521001&amount=2000.0000&datetime=20181222203421&returncode=00&sign=FC1729738C10780A3EE6441A719119C9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:34:30】
+订单号：20181222203240561005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220324086779&transaction_id=20181222203240561005&amount=2000.0000&datetime=20181222203430&returncode=00&sign=1389C984EA78CAA2E8F4FEA161B0B4C3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:34:48】
+订单号：20181222203224565154
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220322368923&transaction_id=20181222203224565154&amount=99.9900&datetime=20181222203447&returncode=00&sign=390CD3447D149ABCBC5F239127E59EF3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:34:57】
+订单号：20181222203208565410
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220320898889&transaction_id=20181222203208565410&amount=2000.0000&datetime=20181222203456&returncode=00&sign=15D2C55764A832A2EFEECD2C739D630A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:35:14】
+订单号：20181222203128485753
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220312774553&transaction_id=20181222203128485753&amount=200.0000&datetime=20181222203514&returncode=00&sign=FC19E50080ACC66E5BFF5E784198ADAD&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:35:22】
+订单号：20181222203356521001
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220335657932&transaction_id=20181222203356521001&amount=2000.0000&datetime=20181222203522&returncode=00&sign=C6AE77FA3FF9AA88523761E997EEADA4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:35:30】
+订单号：20181222203240561005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220324086779&transaction_id=20181222203240561005&amount=2000.0000&datetime=20181222203530&returncode=00&sign=D22D4A8FB9CAC147D2308000E3876A04&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:35:48】
+订单号：20181222203224565154
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220322368923&transaction_id=20181222203224565154&amount=99.9900&datetime=20181222203548&returncode=00&sign=54535D1B432B031069759873D65CDAAE&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:35:57】
+订单号：20181222203208565410
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220320898889&transaction_id=20181222203208565410&amount=2000.0000&datetime=20181222203557&returncode=00&sign=5A4D88EAE8C5869F59F9C6BA24F55D61&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:36:15】
+订单号：20181222203128485753
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220312774553&transaction_id=20181222203128485753&amount=200.0000&datetime=20181222203614&returncode=00&sign=6C93C14177449AAD5371B5DD194086EA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:36:23】
+订单号：20181222203356521001
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220335657932&transaction_id=20181222203356521001&amount=2000.0000&datetime=20181222203623&returncode=00&sign=B2C81759CFE41CDACDA7F8A789098457&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:36:31】
+订单号：20181222203240561005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220324086779&transaction_id=20181222203240561005&amount=2000.0000&datetime=20181222203630&returncode=00&sign=9016EF3E9A0589DE06C51BED42D60499&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:36:48】
+订单号：20181222203224565154
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220322368923&transaction_id=20181222203224565154&amount=99.9900&datetime=20181222203648&returncode=00&sign=F59F58D330C137DB66345C354E496BFD&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:36:58】
+订单号：20181222203208565410
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220320898889&transaction_id=20181222203208565410&amount=2000.0000&datetime=20181222203657&returncode=00&sign=DAA33DB0F82494085C9349A893DAD8A0&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:37:23】
+订单号：20181222203356521001
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220335657932&transaction_id=20181222203356521001&amount=2000.0000&datetime=20181222203723&returncode=00&sign=091404FC8FFE8F5BF167E848154EF03E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:37:31】
+订单号：20181222203240561005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220324086779&transaction_id=20181222203240561005&amount=2000.0000&datetime=20181222203731&returncode=00&sign=004385AD5D46F6590508535D0AB5816B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:38:24】
+订单号：20181222203356521001
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220335657932&transaction_id=20181222203356521001&amount=2000.0000&datetime=20181222203823&returncode=00&sign=EBD2CB07E39C5AE9D9FFC95448263FD4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:44:53】
+订单号：20181222204431102489
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220443042986&transaction_id=20181222204431102489&amount=2000.0000&datetime=20181222204452&returncode=00&sign=C38B1A3472FC779E15E1BD506FF57F5A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:45:54】
+订单号：20181222204431102489
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220443042986&transaction_id=20181222204431102489&amount=2000.0000&datetime=20181222204553&returncode=00&sign=87960F8C1313E23B44C994B1F7A39EB3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:46:33】
+订单号：20181222204550101531
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220454707984&transaction_id=20181222204550101531&amount=300.0000&datetime=20181222204632&returncode=00&sign=27303E2C6A67FA92609F8C470112BDA2&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:46:54】
+订单号：20181222204431102489
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220443042986&transaction_id=20181222204431102489&amount=2000.0000&datetime=20181222204654&returncode=00&sign=FE82220CCD0F2D21341E4C6A44E1BA63&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:47:01】
+订单号：20181222204616561005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220461655354&transaction_id=20181222204616561005&amount=100.0000&datetime=20181222204701&returncode=00&sign=60047CB6185EBA381D87D79798500D1A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:47:33】
+订单号：20181222204550101531
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220454707984&transaction_id=20181222204550101531&amount=300.0000&datetime=20181222204733&returncode=00&sign=DC5F08A435FD05C58C5EF98FACAE33AA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:47:55】
+订单号：20181222204431102489
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220443042986&transaction_id=20181222204431102489&amount=2000.0000&datetime=20181222204754&returncode=00&sign=7AB59822CBEB6EF534B39BE93596640B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:48:02】
+订单号：20181222204616561005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220461655354&transaction_id=20181222204616561005&amount=100.0000&datetime=20181222204801&returncode=00&sign=1BDABE48AFCC53C9975AA64C3687B141&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:48:34】
+订单号：20181222204550101531
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220454707984&transaction_id=20181222204550101531&amount=300.0000&datetime=20181222204833&returncode=00&sign=AA1E55522863D1235A05934DE6F15B7D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:48:55】
+订单号：20181222204431102489
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220443042986&transaction_id=20181222204431102489&amount=2000.0000&datetime=20181222204855&returncode=00&sign=E26E61558A4B73564705F67DFE3983C4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:49:02】
+订单号：20181222204616561005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220461655354&transaction_id=20181222204616561005&amount=100.0000&datetime=20181222204902&returncode=00&sign=BFB69A0BE6A884CDB5E0ADD23151B038&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:49:34】
+订单号：20181222204550101531
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220454707984&transaction_id=20181222204550101531&amount=300.0000&datetime=20181222204934&returncode=00&sign=69AB542207F857E09E4B0F9CC0EEE32A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:50:03】
+订单号：20181222204616561005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220461655354&transaction_id=20181222204616561005&amount=100.0000&datetime=20181222205002&returncode=00&sign=68E742E1AF8D1068A7B3A5ECCE85BB44&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:50:35】
+订单号：20181222204550101531
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220454707984&transaction_id=20181222204550101531&amount=300.0000&datetime=20181222205034&returncode=00&sign=6AB4A49EEA20294473062F59BD2F9BF1&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:51:04】
+订单号：20181222204616561005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220461655354&transaction_id=20181222204616561005&amount=100.0000&datetime=20181222205103&returncode=00&sign=47D91518DB1833DF595422D3E46413D2&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:52:50】
+订单号：20181222205220521015
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220521957845&transaction_id=20181222205220521015&amount=1000.0000&datetime=20181222205250&returncode=00&sign=9FCBBEEF5869A56DE8E085B16C70772C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:53:50】
+订单号：20181222205220521015
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220521957845&transaction_id=20181222205220521015&amount=1000.0000&datetime=20181222205350&returncode=00&sign=D502DA92A652414FC357B5934B1B5EA7&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:54:51】
+订单号：20181222205220521015
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220521957845&transaction_id=20181222205220521015&amount=1000.0000&datetime=20181222205450&returncode=00&sign=292F41082FC58DA6A1E7BBB064A3EB7F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:55:51】
+订单号：20181222205220521015
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220521957845&transaction_id=20181222205220521015&amount=1000.0000&datetime=20181222205551&returncode=00&sign=A674C06165F1B90CCE0553DD725C68B3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:56:52】
+订单号：20181222205220521015
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220521957845&transaction_id=20181222205220521015&amount=1000.0000&datetime=20181222205652&returncode=00&sign=80C5C9E8ED267183BF167B4A85ABFD45&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:57:41】
+订单号：20181222205705491005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220570537133&transaction_id=20181222205705491005&amount=2000.0000&datetime=20181222205741&returncode=00&sign=A78EFFE495774387B8720A914648036E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:57:57】
+订单号：20181222205703102100
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220570368076&transaction_id=20181222205703102100&amount=100.0000&datetime=20181222205757&returncode=00&sign=550D734BF4A0681D6BF5D72E68067AA8&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:58:42】
+订单号：20181222205705491005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220570537133&transaction_id=20181222205705491005&amount=2000.0000&datetime=20181222205841&returncode=00&sign=FE2985385A0BCAFFD18C97817EAF8F20&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:58:42】
+订单号：20181222205807102555
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220580698337&transaction_id=20181222205807102555&amount=500.0000&datetime=20181222205842&returncode=00&sign=DEF143DAAD2F75EA4DFD017D61787413&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:58:57】
+订单号：20181222205703102100
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220570368076&transaction_id=20181222205703102100&amount=100.0000&datetime=20181222205857&returncode=00&sign=F8EEBBE8887941F19B8A8091FA9F3445&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:59:42】
+订单号：20181222205705491005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220570537133&transaction_id=20181222205705491005&amount=2000.0000&datetime=20181222205942&returncode=00&sign=13986EF181D44F2DEC9C95263D9C937D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:59:44】
+订单号：20181222205807102555
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220580698337&transaction_id=20181222205807102555&amount=500.0000&datetime=20181222205942&returncode=00&sign=9C33FFE522A6CC7EDE2228C5B5E04B67&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 20:59:58】
+订单号：20181222205703102100
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220570368076&transaction_id=20181222205703102100&amount=100.0000&datetime=20181222205957&returncode=00&sign=0C8292E978174F4D1EA8D28E3250B26D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:00:43】
+订单号：20181222205705491005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220570537133&transaction_id=20181222205705491005&amount=2000.0000&datetime=20181222210042&returncode=00&sign=B83F35361002E0089CE3D5E0D095CFCB&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:00:46】
+订单号：20181222205807102555
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220580698337&transaction_id=20181222205807102555&amount=500.0000&datetime=20181222210044&returncode=00&sign=EA81A060F9F471937C16213DAA49B5C5&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:00:54】
+订单号：20181222210029100565
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221002864141&transaction_id=20181222210029100565&amount=300.0000&datetime=20181222210054&returncode=00&sign=46E62590D7FC0D75049021786364901F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:00:59】
+订单号：20181222205703102100
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220570368076&transaction_id=20181222205703102100&amount=100.0000&datetime=20181222210058&returncode=00&sign=0802A8E2309D4ADDB69C2092543321F8&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:01:43】
+订单号：20181222205705491005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220570537133&transaction_id=20181222205705491005&amount=2000.0000&datetime=20181222210143&returncode=00&sign=2FB06266D9938306492B768C5F4F14B0&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:01:47】
+订单号：20181222205807102555
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220580698337&transaction_id=20181222205807102555&amount=500.0000&datetime=20181222210146&returncode=00&sign=12B1CBB1A067199D208D8068453F0A0B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:01:54】
+订单号：20181222210029100565
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221002864141&transaction_id=20181222210029100565&amount=300.0000&datetime=20181222210154&returncode=00&sign=48835E5B88E4B77963EB7641DBBCD3CB&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:01:59】
+订单号：20181222205703102100
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220570368076&transaction_id=20181222205703102100&amount=100.0000&datetime=20181222210159&returncode=00&sign=165739140FF7A4D4AE02F58B3C4565BA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:02:38】
+订单号：20181222210224489857
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221022421202&transaction_id=20181222210224489857&amount=500.0000&datetime=20181222210238&returncode=00&sign=527E55D2B874BCD18CFD6E345DA203A5&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:02:47】
+订单号：20181222205807102555
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122220580698337&transaction_id=20181222205807102555&amount=500.0000&datetime=20181222210247&returncode=00&sign=72EE18B43B7B12EFB8B1475859E15BDA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:02:55】
+订单号：20181222210029100565
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221002864141&transaction_id=20181222210029100565&amount=300.0000&datetime=20181222210255&returncode=00&sign=6B7E0628565AE32588BD6D5B4F78B3AF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:03:11】
+订单号：20181222210246544849
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221024565928&transaction_id=20181222210246544849&amount=100.0000&datetime=20181222210311&returncode=00&sign=DFA0DEE6CBD4F9C994EEB8E6AB129B48&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:03:39】
+订单号：20181222210224489857
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221022421202&transaction_id=20181222210224489857&amount=500.0000&datetime=20181222210338&returncode=00&sign=217DB2CF8FAEC04F2BF0A8C4A64205CA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:03:55】
+订单号：20181222210029100565
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221002864141&transaction_id=20181222210029100565&amount=300.0000&datetime=20181222210355&returncode=00&sign=B63B24F09E03C9C112A926BAC58F4230&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:04:13】
+订单号：20181222210246544849
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221024565928&transaction_id=20181222210246544849&amount=100.0000&datetime=20181222210411&returncode=00&sign=76BEF66439DFE3318242E01923AC1830&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:04:39】
+订单号：20181222210224489857
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221022421202&transaction_id=20181222210224489857&amount=500.0000&datetime=20181222210439&returncode=00&sign=47BFAFF822042E964C73AF45006F7C1E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:04:56】
+订单号：20181222210029100565
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221002864141&transaction_id=20181222210029100565&amount=300.0000&datetime=20181222210455&returncode=00&sign=4CB4A42ECAFF402A5DD49FE9C177B8E5&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:05:13】
+订单号：20181222210246544849
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221024565928&transaction_id=20181222210246544849&amount=100.0000&datetime=20181222210513&returncode=00&sign=A8EAFFB5AC83540A658044C86CE7A3E1&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:05:40】
+订单号：20181222210224489857
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221022421202&transaction_id=20181222210224489857&amount=500.0000&datetime=20181222210539&returncode=00&sign=BA6840ED5B5D3CA12E257AE3E94584D6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:06:14】
+订单号：20181222210246544849
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221024565928&transaction_id=20181222210246544849&amount=100.0000&datetime=20181222210613&returncode=00&sign=399059206E33D88FABD24547372B39B4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:06:40】
+订单号：20181222210224489857
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221022421202&transaction_id=20181222210224489857&amount=500.0000&datetime=20181222210640&returncode=00&sign=6E07B6770E3E6D2D60F9B06C72510068&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:07:14】
+订单号：20181222210246544849
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221024565928&transaction_id=20181222210246544849&amount=100.0000&datetime=20181222210714&returncode=00&sign=4D5C8BC6E82AA6C698F8D7AAA02A7356&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:12:08】
+订单号：20181222211152565053
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221115110337&transaction_id=20181222211152565053&amount=50.0000&datetime=20181222211207&returncode=00&sign=8FDDD7B44F091C382C5D85D350A609F3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:13:08】
+订单号：20181222211152565053
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221115110337&transaction_id=20181222211152565053&amount=50.0000&datetime=20181222211308&returncode=00&sign=33346751CEAA47C1C0A56EA4F25BD52C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:13:54】
+订单号：20181222211327555456
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221132666033&transaction_id=20181222211327555456&amount=10.0000&datetime=20181222211354&returncode=00&sign=C0C1365D4709B15649ACB593C3300F9C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:14:08】
+订单号：20181222211152565053
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221115110337&transaction_id=20181222211152565053&amount=50.0000&datetime=20181222211408&returncode=00&sign=C06F0DE1E2B25D1F1280E8A7B83E90DC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:14:55】
+订单号：20181222211327555456
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221132666033&transaction_id=20181222211327555456&amount=10.0000&datetime=20181222211454&returncode=00&sign=DE5380BC2E9EEC7211F840A01BDC1C9C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:15:10】
+订单号：20181222211152565053
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221115110337&transaction_id=20181222211152565053&amount=50.0000&datetime=20181222211509&returncode=00&sign=36BF12D2E98773CAA9F8DE0ED9844F55&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:15:55】
+订单号：20181222211327555456
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221132666033&transaction_id=20181222211327555456&amount=10.0000&datetime=20181222211555&returncode=00&sign=E3FE1978C258690A13D390B6355211F5&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:16:11】
+订单号：20181222211152565053
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221115110337&transaction_id=20181222211152565053&amount=50.0000&datetime=20181222211610&returncode=00&sign=FBD98F53FAA45A5B9269F60253237BAA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:16:43】
+订单号：20181222211605535510
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221160539270&transaction_id=20181222211605535510&amount=1000.0000&datetime=20181222211643&returncode=00&sign=80F0A2F80BB647063F138ABF3F9B20E3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:16:53】
+订单号：20181222211618505449
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221161655503&transaction_id=20181222211618505449&amount=2000.0000&datetime=20181222211652&returncode=00&sign=407F70774DBA3DEC50FF1DBB79DF1516&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:16:55】
+订单号：20181222211327555456
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221132666033&transaction_id=20181222211327555456&amount=10.0000&datetime=20181222211655&returncode=00&sign=FFE4F28F622047BA8456FC2B27642BA4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:17:44】
+订单号：20181222211605535510
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221160539270&transaction_id=20181222211605535510&amount=1000.0000&datetime=20181222211743&returncode=00&sign=BA286458B9746D47B646718CD5E16159&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:17:53】
+订单号：20181222211618505449
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221161655503&transaction_id=20181222211618505449&amount=2000.0000&datetime=20181222211753&returncode=00&sign=54D6C02C85ADF7E39B754396B6911B86&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:17:56】
+订单号：20181222211327555456
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221132666033&transaction_id=20181222211327555456&amount=10.0000&datetime=20181222211755&returncode=00&sign=3A63827228E75BCD4BFF817C3C6D3408&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:18:27】
+订单号：20181222211751102561
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221174877119&transaction_id=20181222211751102561&amount=100.0000&datetime=20181222211827&returncode=00&sign=009611F1598A427903933507C743CEBF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:18:43】
+订单号：20181222211813535310
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221181215257&transaction_id=20181222211813535310&amount=10.0000&datetime=20181222211843&returncode=00&sign=BED6D35E237911A42D78162CDF119850&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:18:44】
+订单号：20181222211605535510
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221160539270&transaction_id=20181222211605535510&amount=1000.0000&datetime=20181222211844&returncode=00&sign=D28EF4E9537AE99A639C7E56D817C352&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:18:48】
+订单号：20181222211827515348
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221182682307&transaction_id=20181222211827515348&amount=200.0000&datetime=20181222211848&returncode=00&sign=7ECE2C9BD207BFDEBD65265CCB382EB4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:18:52】
+订单号：20181222211814549754
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221181347663&transaction_id=20181222211814549754&amount=200.0000&datetime=20181222211851&returncode=00&sign=A4EBF214F952097CC57AAA319BB7AE91&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:18:53】
+订单号：20181222211618505449
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221161655503&transaction_id=20181222211618505449&amount=2000.0000&datetime=20181222211853&returncode=00&sign=7D99BE76499D12715BC578B16293848F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:19:28】
+订单号：20181222211751102561
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221174877119&transaction_id=20181222211751102561&amount=100.0000&datetime=20181222211927&returncode=00&sign=C6E8CFAEF7DE081DB99040F9E8F8F8F3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:19:42】
+订单号：20181222211839102529
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221183616785&transaction_id=20181222211839102529&amount=300.0000&datetime=20181222211942&returncode=00&sign=5BBE69B19B854F5F784D23FE3118E3C3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:19:43】
+订单号：20181222211813535310
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221181215257&transaction_id=20181222211813535310&amount=10.0000&datetime=20181222211943&returncode=00&sign=0A37DD08983BA7E83E7BDD87E9526462&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:19:44】
+订单号：20181222211605535510
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221160539270&transaction_id=20181222211605535510&amount=1000.0000&datetime=20181222211944&returncode=00&sign=6B777E697AAF00DA0B5496EA985BDE0A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:19:48】
+订单号：20181222211827515348
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221182682307&transaction_id=20181222211827515348&amount=200.0000&datetime=20181222211948&returncode=00&sign=4DB887E608E7B1F866199A6879F0E61C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:19:49】
+订单号：20181222211926101535
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221192487478&transaction_id=20181222211926101535&amount=2000.0000&datetime=20181222211948&returncode=00&sign=A92F381456323B28DCDF42E2368308B8&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:19:52】
+订单号：20181222211814549754
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221181347663&transaction_id=20181222211814549754&amount=200.0000&datetime=20181222211952&returncode=00&sign=3DDFF10D191A99E55CF13C998B05DC51&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:19:55】
+订单号：20181222211618505449
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221161655503&transaction_id=20181222211618505449&amount=2000.0000&datetime=20181222211953&returncode=00&sign=7ABBD88592556D44945A14BF11619031&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:20:28】
+订单号：20181222211751102561
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221174877119&transaction_id=20181222211751102561&amount=100.0000&datetime=20181222212028&returncode=00&sign=07881390FC18E59F3522C777324BB9F3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:20:43】
+订单号：20181222211839102529
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221183616785&transaction_id=20181222211839102529&amount=300.0000&datetime=20181222212042&returncode=00&sign=A68D83231DA7F011E8755AC949F3E799&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:20:44】
+订单号：20181222211813535310
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221181215257&transaction_id=20181222211813535310&amount=10.0000&datetime=20181222212043&returncode=00&sign=53D08D3D8F73562D8B8ADB0520FCCABB&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:20:45】
+订单号：20181222211605535510
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221160539270&transaction_id=20181222211605535510&amount=1000.0000&datetime=20181222212044&returncode=00&sign=8A1F30876B121F594918A928AF70D0D1&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:20:47】
+订单号：20181222211908999753
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221190788224&transaction_id=20181222211908999753&amount=200.0000&datetime=20181222212047&returncode=00&sign=CA8F5F196F4F9FBD011342DC0B115806&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:20:49】
+订单号：20181222211926101535
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221192487478&transaction_id=20181222211926101535&amount=2000.0000&datetime=20181222212049&returncode=00&sign=CE4BB3C92A81AFADA106C95B7832E1D3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:20:50】
+订单号：20181222211827515348
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221182682307&transaction_id=20181222211827515348&amount=200.0000&datetime=20181222212048&returncode=00&sign=313B129A439DF6A7C458C554A029F517&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:20:51】
+订单号：20181222212012999748
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221201179256&transaction_id=20181222212012999748&amount=99.9900&datetime=20181222212050&returncode=00&sign=338E80DFA5CBF44221F1EAF60769ADC7&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:20:52】
+订单号：20181222211814549754
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221181347663&transaction_id=20181222211814549754&amount=200.0000&datetime=20181222212052&returncode=00&sign=00969DA008EDBC69EED3C73E3D08E4FD&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:20:55】
+订单号：20181222211618505449
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221161655503&transaction_id=20181222211618505449&amount=2000.0000&datetime=20181222212055&returncode=00&sign=BD6600D579E399AB95119CB74DD827A3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:21:28】
+订单号：20181222211751102561
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221174877119&transaction_id=20181222211751102561&amount=100.0000&datetime=20181222212128&returncode=00&sign=FDAA8A76758614E4CD92A43FA7B36D0D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:21:43】
+订单号：20181222211839102529
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221183616785&transaction_id=20181222211839102529&amount=300.0000&datetime=20181222212143&returncode=00&sign=ED83323A87886AE9D71962459DC9033C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:21:44】
+订单号：20181222211813535310
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221181215257&transaction_id=20181222211813535310&amount=10.0000&datetime=20181222212144&returncode=00&sign=EB8A571BF7402ECD5BBB8013D8E9108D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:21:48】
+订单号：20181222211908999753
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221190788224&transaction_id=20181222211908999753&amount=200.0000&datetime=20181222212147&returncode=00&sign=BFB1A3160A9010569551B82B6061EBF4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:21:50】
+订单号：20181222211926101535
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221192487478&transaction_id=20181222211926101535&amount=2000.0000&datetime=20181222212149&returncode=00&sign=201DBB517E2761993A4C1988CD6465A3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:21:50】
+订单号：20181222211827515348
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221182682307&transaction_id=20181222211827515348&amount=200.0000&datetime=20181222212150&returncode=00&sign=BDB092179588C32D1BA083C990678A15&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:21:52】
+订单号：20181222212012999748
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221201179256&transaction_id=20181222212012999748&amount=99.9900&datetime=20181222212151&returncode=00&sign=BF5214303F640DEAB75BBEF3335CAC00&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:21:53】
+订单号：20181222211814549754
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221181347663&transaction_id=20181222211814549754&amount=200.0000&datetime=20181222212153&returncode=00&sign=69800358E59AB8F9922A17DE2F3C85EF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:22:30】
+订单号：20181222211751102561
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221174877119&transaction_id=20181222211751102561&amount=100.0000&datetime=20181222212228&returncode=00&sign=DA281741FE46CA15CE5753EA311AA3DC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:22:44】
+订单号：20181222211839102529
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221183616785&transaction_id=20181222211839102529&amount=300.0000&datetime=20181222212243&returncode=00&sign=027A57E73A63B93DE3AC9189210C1121&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:22:45】
+订单号：20181222211813535310
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221181215257&transaction_id=20181222211813535310&amount=10.0000&datetime=20181222212244&returncode=00&sign=1BC02555CBD829FEA73DFEF9239D40F0&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:22:48】
+订单号：20181222211908999753
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221190788224&transaction_id=20181222211908999753&amount=200.0000&datetime=20181222212248&returncode=00&sign=0007F14B68CBA2C0C15FE138E5595A2B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:22:50】
+订单号：20181222211926101535
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221192487478&transaction_id=20181222211926101535&amount=2000.0000&datetime=20181222212250&returncode=00&sign=8439CC9E117ECEAACA4EA81C1E958DF4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:22:51】
+订单号：20181222211827515348
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221182682307&transaction_id=20181222211827515348&amount=200.0000&datetime=20181222212250&returncode=00&sign=2A928CDC300FC386501FDD2568EDF241&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:22:52】
+订单号：20181222212012999748
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221201179256&transaction_id=20181222212012999748&amount=99.9900&datetime=20181222212252&returncode=00&sign=5F239F14742FA75437663C45893643BB&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:22:55】
+订单号：20181222211814549754
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221181347663&transaction_id=20181222211814549754&amount=200.0000&datetime=20181222212253&returncode=00&sign=8F40798078CD2E1EBDCAFE42916A37F2&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:22:56】
+订单号：20181222212233575349
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221223231233&transaction_id=20181222212233575349&amount=199.9900&datetime=20181222212255&returncode=00&sign=9FC53B38AA1AC3960171EE579EAB9B16&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:23:45】
+订单号：20181222211839102529
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221183616785&transaction_id=20181222211839102529&amount=300.0000&datetime=20181222212344&returncode=00&sign=6006202792580F08F77A33307F399FAB&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:23:48】
+订单号：20181222211908999753
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221190788224&transaction_id=20181222211908999753&amount=200.0000&datetime=20181222212348&returncode=00&sign=A3CB9A5021452C2A2A9EAD50C59D0294&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:23:50】
+订单号：20181222211926101535
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221192487478&transaction_id=20181222211926101535&amount=2000.0000&datetime=20181222212350&returncode=00&sign=74A40E55D6C236AB570BC422E7F4E181&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:23:53】
+订单号：20181222212012999748
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221201179256&transaction_id=20181222212012999748&amount=99.9900&datetime=20181222212352&returncode=00&sign=E69E45EECCBADAD1550E2374ECE1D293&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:23:57】
+订单号：20181222212233575349
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221223231233&transaction_id=20181222212233575349&amount=199.9900&datetime=20181222212356&returncode=00&sign=8FECF4AD388A053865C6F0B1D489ED46&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:24:49】
+订单号：20181222211908999753
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221190788224&transaction_id=20181222211908999753&amount=200.0000&datetime=20181222212448&returncode=00&sign=36CB37EB3C587C674C80871F1DD02DBF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:24:53】
+订单号：20181222212012999748
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221201179256&transaction_id=20181222212012999748&amount=99.9900&datetime=20181222212453&returncode=00&sign=54D03E4F6A74B4DD76169048FC6DC18E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:24:57】
+订单号：20181222212233575349
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221223231233&transaction_id=20181222212233575349&amount=199.9900&datetime=20181222212457&returncode=00&sign=853B84FF17CB28095267E0FCFABA80E4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:25:18】
+订单号：20181222212451515355
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221244970433&transaction_id=20181222212451515355&amount=3000.0000&datetime=20181222212518&returncode=00&sign=2582E187002B40844B4315FAC12F32B8&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:25:26】
+订单号：20181222212443985498
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221244249733&transaction_id=20181222212443985498&amount=500.0000&datetime=20181222212526&returncode=00&sign=DE5E4077A06D00A1065EFC32DED24857&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:25:58】
+订单号：20181222212233575349
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221223231233&transaction_id=20181222212233575349&amount=199.9900&datetime=20181222212557&returncode=00&sign=FC91AFC7204331BA1A1B4BCD8392DC0B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:26:19】
+订单号：20181222212451515355
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221244970433&transaction_id=20181222212451515355&amount=3000.0000&datetime=20181222212618&returncode=00&sign=18632A5A7C8A08B6A6035334A5818F02&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:26:27】
+订单号：20181222212443985498
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221244249733&transaction_id=20181222212443985498&amount=500.0000&datetime=20181222212626&returncode=00&sign=7AD6AEE6CA4A4F48067316A39A07665B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:26:52】
+订单号：20181222212623102981
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221262344166&transaction_id=20181222212623102981&amount=200.0000&datetime=20181222212652&returncode=00&sign=A74F70B273DC08830F2E6A65A848B906&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:26:58】
+订单号：20181222212233575349
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221223231233&transaction_id=20181222212233575349&amount=199.9900&datetime=20181222212658&returncode=00&sign=479FDB3BD50E6EA5188320A5C00C42DD&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:27:20】
+订单号：20181222212451515355
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221244970433&transaction_id=20181222212451515355&amount=3000.0000&datetime=20181222212719&returncode=00&sign=20BEC22E8D845B475B10D7B1802F2B6F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:27:27】
+订单号：20181222212443985498
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221244249733&transaction_id=20181222212443985498&amount=500.0000&datetime=20181222212727&returncode=00&sign=FFA2DF3815BA06B2868E0BE71226F962&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:27:41】
+订单号：20181222212719559754
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221271961766&transaction_id=20181222212719559754&amount=200.0000&datetime=20181222212741&returncode=00&sign=A6EDBB0423434E59B437EDCFCDA26AFA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:27:53】
+订单号：20181222212623102981
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221262344166&transaction_id=20181222212623102981&amount=200.0000&datetime=20181222212753&returncode=00&sign=ED76B6E1498371F1B808D2B1523C2E2D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:28:21】
+订单号：20181222212451515355
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221244970433&transaction_id=20181222212451515355&amount=3000.0000&datetime=20181222212820&returncode=00&sign=A197D7A887426526565451EE18233410&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:28:28】
+订单号：20181222212443985498
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221244249733&transaction_id=20181222212443985498&amount=500.0000&datetime=20181222212827&returncode=00&sign=A83B2D1082078DEC18C8B1A3A8B1F9E9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:28:41】
+订单号：20181222212719559754
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221271961766&transaction_id=20181222212719559754&amount=200.0000&datetime=20181222212841&returncode=00&sign=D9172C09F66A1787F1A692F9C93BBE36&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:28:53】
+订单号：20181222212623102981
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221262344166&transaction_id=20181222212623102981&amount=200.0000&datetime=20181222212853&returncode=00&sign=1E18A3FEAC7182563DC699B776E357B5&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:29:21】
+订单号：20181222212451515355
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221244970433&transaction_id=20181222212451515355&amount=3000.0000&datetime=20181222212921&returncode=00&sign=EF0D388B8C76306B3EC73107120AAB4B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:29:28】
+订单号：20181222212443985498
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221244249733&transaction_id=20181222212443985498&amount=500.0000&datetime=20181222212928&returncode=00&sign=9A4A7F5B3501295871CAC2010E9C765F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:29:42】
+订单号：20181222212719559754
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221271961766&transaction_id=20181222212719559754&amount=200.0000&datetime=20181222212941&returncode=00&sign=FFE7C620ABBC760999395E59E7B07A9E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:29:54】
+订单号：20181222212623102981
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221262344166&transaction_id=20181222212623102981&amount=200.0000&datetime=20181222212953&returncode=00&sign=53B5657310CF3966F88C4A6383408967&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:30:16】
+订单号：20181222212957535355
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221295683085&transaction_id=20181222212957535355&amount=20.0000&datetime=20181222213015&returncode=00&sign=994B26A8B87431B8053591C9ABA6D728&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:30:23】
+订单号：20181222212948995597
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221294757877&transaction_id=20181222212948995597&amount=500.0000&datetime=20181222213023&returncode=00&sign=AA4ADF5DACDE34BFA4AC66F601B02554&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:30:42】
+订单号：20181222212719559754
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221271961766&transaction_id=20181222212719559754&amount=200.0000&datetime=20181222213042&returncode=00&sign=7AA866F8582B0DE94417C084C649C3B3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:30:55】
+订单号：20181222212623102981
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221262344166&transaction_id=20181222212623102981&amount=200.0000&datetime=20181222213054&returncode=00&sign=D1D186750909331E259DA23D10B20BEF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:31:16】
+订单号：20181222212957535355
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221295683085&transaction_id=20181222212957535355&amount=20.0000&datetime=20181222213116&returncode=00&sign=0D2A151EC197AD3577ECC591C268062D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:31:24】
+订单号：20181222212948995597
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221294757877&transaction_id=20181222212948995597&amount=500.0000&datetime=20181222213124&returncode=00&sign=1F0C1A640881EADEE78ADB2E6CE60DC6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:31:42】
+订单号：20181222212719559754
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221271961766&transaction_id=20181222212719559754&amount=200.0000&datetime=20181222213142&returncode=00&sign=A55245FDA8D46AE177A4AAF335AD3C8B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:32:17】
+订单号：20181222212957535355
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221295683085&transaction_id=20181222212957535355&amount=20.0000&datetime=20181222213216&returncode=00&sign=55ED73EF893659BD2830553DBFC191C4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:32:25】
+订单号：20181222212948995597
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221294757877&transaction_id=20181222212948995597&amount=500.0000&datetime=20181222213224&returncode=00&sign=07AAB226594AABAB0A243A45E9675421&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:33:18】
+订单号：20181222212957535355
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221295683085&transaction_id=20181222212957535355&amount=20.0000&datetime=20181222213317&returncode=00&sign=5FC071AD3B24A7ABE786158546F1EC6A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:33:25】
+订单号：20181222212948995597
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221294757877&transaction_id=20181222212948995597&amount=500.0000&datetime=20181222213325&returncode=00&sign=35A5885D3B77B9E00D6FD9D08A0957EE&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:34:18】
+订单号：20181222212957535355
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221295683085&transaction_id=20181222212957535355&amount=20.0000&datetime=20181222213418&returncode=00&sign=92E5BEF133AE69F1D4A5AA6AF0063E0E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:34:27】
+订单号：20181222212948995597
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221294757877&transaction_id=20181222212948995597&amount=500.0000&datetime=20181222213425&returncode=00&sign=6DFE9A34B78DF14F63037A2D6B47A520&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:34:36】
+订单号：20181222213330975010
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221332933701&transaction_id=20181222213330975010&amount=3000.0000&datetime=20181222213436&returncode=00&sign=91ACE92E88672F0B822127F6F75C25F6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:35:01】
+订单号：20181222213423102519
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221342296173&transaction_id=20181222213423102519&amount=100.0000&datetime=20181222213500&returncode=00&sign=2FF909C0F515E52C0995959B688D6F56&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:35:36】
+订单号：20181222213330975010
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221332933701&transaction_id=20181222213330975010&amount=3000.0000&datetime=20181222213536&returncode=00&sign=FDF7C74752877DCB2A93A0BC4E5A51AB&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:36:01】
+订单号：20181222213423102519
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221342296173&transaction_id=20181222213423102519&amount=100.0000&datetime=20181222213601&returncode=00&sign=48EDDFBE401C05F533814ECC729006AA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:36:37】
+订单号：20181222213330975010
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221332933701&transaction_id=20181222213330975010&amount=3000.0000&datetime=20181222213636&returncode=00&sign=17600AB7A42FF7A7A8B213F15418174D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:37:03】
+订单号：20181222213423102519
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221342296173&transaction_id=20181222213423102519&amount=100.0000&datetime=20181222213701&returncode=00&sign=C21D02515C6E6421C92FA4D1A548B96A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:37:37】
+订单号：20181222213330975010
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221332933701&transaction_id=20181222213330975010&amount=3000.0000&datetime=20181222213737&returncode=00&sign=016316E24040B6A1CD40BE60EE929222&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:38:03】
+订单号：20181222213423102519
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221342296173&transaction_id=20181222213423102519&amount=100.0000&datetime=20181222213803&returncode=00&sign=A8F6C6802880A4D81D1DA06A3A9659B3&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:38:31】
+订单号：20181222213800565049
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221375975835&transaction_id=20181222213800565049&amount=99.9900&datetime=20181222213831&returncode=00&sign=04582001B8B7E0B9E13AD2C790942FC8&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:38:38】
+订单号：20181222213330975010
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221332933701&transaction_id=20181222213330975010&amount=3000.0000&datetime=20181222213837&returncode=00&sign=79265D16377BC2472648B84F5302448E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:39:03】
+订单号：20181222213423102519
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221342296173&transaction_id=20181222213423102519&amount=100.0000&datetime=20181222213903&returncode=00&sign=4D1E259AED71429063269C7B7E45B0BC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:39:33】
+订单号：20181222213800565049
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221375975835&transaction_id=20181222213800565049&amount=99.9900&datetime=20181222213931&returncode=00&sign=1D31941AF3D7C216F490D66EEF2F5662&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:40:33】
+订单号：20181222213800565049
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221375975835&transaction_id=20181222213800565049&amount=99.9900&datetime=20181222214033&returncode=00&sign=ECD58FFE3FB2E994C19E240E9BE59117&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:41:34】
+订单号：20181222213800565049
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221375975835&transaction_id=20181222213800565049&amount=99.9900&datetime=20181222214133&returncode=00&sign=93F2221A89500C0A20B51C79CDAAC733&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:42:34】
+订单号：20181222213800565049
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221375975835&transaction_id=20181222213800565049&amount=99.9900&datetime=20181222214234&returncode=00&sign=787AB2087EEEE1AB21F64CF23B50376C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:46:19】
+订单号：20181222214541535256
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221454052583&transaction_id=20181222214541535256&amount=1000.0000&datetime=20181222214618&returncode=00&sign=774346288C6EC17201264508A48D025D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:47:20】
+订单号：20181222214541535256
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221454052583&transaction_id=20181222214541535256&amount=1000.0000&datetime=20181222214719&returncode=00&sign=173AA4CC9A69C0126C409253E7EBB8CC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:47:28】
+订单号：20181222214707985253
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221470601823&transaction_id=20181222214707985253&amount=1000.0000&datetime=20181222214727&returncode=00&sign=C7CDB6FF63017860DB17DE5A53D3BBAA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:48:21】
+订单号：20181222214541535256
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221454052583&transaction_id=20181222214541535256&amount=1000.0000&datetime=20181222214820&returncode=00&sign=B15FAF5967242B26DB67905FA81900EE&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:48:28】
+订单号：20181222214707985253
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221470601823&transaction_id=20181222214707985253&amount=1000.0000&datetime=20181222214828&returncode=00&sign=CFFB2B3201BBEC33C978AE8841EE484B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:49:21】
+订单号：20181222214541535256
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221454052583&transaction_id=20181222214541535256&amount=1000.0000&datetime=20181222214921&returncode=00&sign=ED30C1CAB78F0EAE66AC991D2B57EF1A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:49:28】
+订单号：20181222214707985253
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221470601823&transaction_id=20181222214707985253&amount=1000.0000&datetime=20181222214928&returncode=00&sign=5268E4E31ECCFEF57817E75D3E01213B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:49:53】
+订单号：20181222214915981015
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221491522380&transaction_id=20181222214915981015&amount=500.0000&datetime=20181222214952&returncode=00&sign=669BDA063308B5E06785BD621E2DACF7&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:50:19】
+订单号：20181222214953494810
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221495297696&transaction_id=20181222214953494810&amount=200.0000&datetime=20181222215019&returncode=00&sign=80984616F697C1B6DC7170D7126B3E3D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:50:21】
+订单号：20181222214541535256
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221454052583&transaction_id=20181222214541535256&amount=1000.0000&datetime=20181222215021&returncode=00&sign=4F59BAD12324F37D870AEFF484DBA6AB&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:50:29】
+订单号：20181222214707985253
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221470601823&transaction_id=20181222214707985253&amount=1000.0000&datetime=20181222215029&returncode=00&sign=1969CE996134E5BC9ABF30F100CCBDF6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:50:53】
+订单号：20181222214915981015
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221491522380&transaction_id=20181222214915981015&amount=500.0000&datetime=20181222215053&returncode=00&sign=43A51D655C971AB5A7663909FAE1160B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:51:19】
+订单号：20181222214953494810
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221495297696&transaction_id=20181222214953494810&amount=200.0000&datetime=20181222215119&returncode=00&sign=90586EE59A065D1F98F09442902C674F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:51:29】
+订单号：20181222214707985253
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221470601823&transaction_id=20181222214707985253&amount=1000.0000&datetime=20181222215129&returncode=00&sign=BF666278D32D05C0B2134791B256B0D5&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:51:54】
+订单号：20181222214915981015
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221491522380&transaction_id=20181222214915981015&amount=500.0000&datetime=20181222215153&returncode=00&sign=211AE9B7774CD958D796EFB870ACFCCC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:52:20】
+订单号：20181222214953494810
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221495297696&transaction_id=20181222214953494810&amount=200.0000&datetime=20181222215219&returncode=00&sign=D9C895A0275E757619001326B5E2D924&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:52:47】
+订单号：20181222215154975798
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221515329427&transaction_id=20181222215154975798&amount=500.0000&datetime=20181222215246&returncode=00&sign=23300CD7BE9FEE1F08C1D077A82A8E36&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:52:54】
+订单号：20181222214915981015
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221491522380&transaction_id=20181222214915981015&amount=500.0000&datetime=20181222215254&returncode=00&sign=8E695B03D62AC7915AF15BC58727603D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:53:21】
+订单号：20181222214953494810
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221495297696&transaction_id=20181222214953494810&amount=200.0000&datetime=20181222215320&returncode=00&sign=859F245F91AD801C11543276B6E3EC60&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:53:47】
+订单号：20181222215154975798
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221515329427&transaction_id=20181222215154975798&amount=500.0000&datetime=20181222215347&returncode=00&sign=A8D0FC0425189528E9CE1800CFC5C33E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:53:55】
+订单号：20181222214915981015
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221491522380&transaction_id=20181222214915981015&amount=500.0000&datetime=20181222215354&returncode=00&sign=25726B82BB44451641209B37E718C5B7&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:53:58】
+订单号：20181222215324525255
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221532362863&transaction_id=20181222215324525255&amount=1000.0000&datetime=20181222215358&returncode=00&sign=7B8A6795008F465899ADF5EFCB770D66&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:54:21】
+订单号：20181222214953494810
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221495297696&transaction_id=20181222214953494810&amount=200.0000&datetime=20181222215421&returncode=00&sign=E47E157898F3F7A9336CDFFF19657ED1&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:54:29】
+订单号：20181222215355515397
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221535413530&transaction_id=20181222215355515397&amount=1000.0000&datetime=20181222215429&returncode=00&sign=1EF177FB29EE456A0D7194F055882E7B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:54:48】
+订单号：20181222215154975798
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221515329427&transaction_id=20181222215154975798&amount=500.0000&datetime=20181222215447&returncode=00&sign=65513394023AB0F350C0E07D7F3702D0&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:54:58】
+订单号：20181222215324525255
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221532362863&transaction_id=20181222215324525255&amount=1000.0000&datetime=20181222215458&returncode=00&sign=A8546202BBB505C7347709A01E93529C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:55:30】
+订单号：20181222215355515397
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221535413530&transaction_id=20181222215355515397&amount=1000.0000&datetime=20181222215529&returncode=00&sign=A0579B5CBD0744B95B562F2CB81E67B6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:55:48】
+订单号：20181222215154975798
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221515329427&transaction_id=20181222215154975798&amount=500.0000&datetime=20181222215548&returncode=00&sign=3FACDA86FBA97CFFF0D128904A0271B2&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:55:59】
+订单号：20181222215324525255
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221532362863&transaction_id=20181222215324525255&amount=1000.0000&datetime=20181222215558&returncode=00&sign=4156C9831C752A3C4B3C63BD1A12A845&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:56:30】
+订单号：20181222215355515397
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221535413530&transaction_id=20181222215355515397&amount=1000.0000&datetime=20181222215630&returncode=00&sign=9BCC630CD2B60125D5A5D3EFBDBDE86B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:56:49】
+订单号：20181222215154975798
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221515329427&transaction_id=20181222215154975798&amount=500.0000&datetime=20181222215648&returncode=00&sign=19A5D6FF7DA5835696DD77FE3ED827A0&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:56:59】
+订单号：20181222215324525255
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221532362863&transaction_id=20181222215324525255&amount=1000.0000&datetime=20181222215659&returncode=00&sign=091EA847A88EDAD05D84520A333837FC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:57:32】
+订单号：20181222215355515397
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221535413530&transaction_id=20181222215355515397&amount=1000.0000&datetime=20181222215730&returncode=00&sign=395526755D0C1B21E1EC1BF8589F0139&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:57:59】
+订单号：20181222215707519757
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221570654454&transaction_id=20181222215707519757&amount=200.0000&datetime=20181222215759&returncode=00&sign=BC424834948CF243117629565EE6994F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:58:00】
+订单号：20181222215324525255
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221532362863&transaction_id=20181222215324525255&amount=1000.0000&datetime=20181222215759&returncode=00&sign=501898DC4F320C45200EEA99E51E8CC4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:58:32】
+订单号：20181222215355515397
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221535413530&transaction_id=20181222215355515397&amount=1000.0000&datetime=20181222215832&returncode=00&sign=9062400B68C19B8A521FDBCAE66BA03D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:59:00】
+订单号：20181222215707519757
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221570654454&transaction_id=20181222215707519757&amount=200.0000&datetime=20181222215859&returncode=00&sign=9CC17C7210E5FACBC8134826627D9543&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 21:59:04】
+订单号：20181222215836991001
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221583545439&transaction_id=20181222215836991001&amount=200.0000&datetime=20181222215904&returncode=00&sign=22C5C2FEBB6A9FF133056C5B32698E50&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:00:00】
+订单号：20181222215707519757
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221570654454&transaction_id=20181222215707519757&amount=200.0000&datetime=20181222220000&returncode=00&sign=EE9F3A947C3E23F21FF4B8150FFFFF8A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:00:04】
+订单号：20181222215836991001
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221583545439&transaction_id=20181222215836991001&amount=200.0000&datetime=20181222220004&returncode=00&sign=961A17E89332326252E4F33EA7B3184E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:01:01】
+订单号：20181222215707519757
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221570654454&transaction_id=20181222215707519757&amount=200.0000&datetime=20181222220100&returncode=00&sign=DD7278FA52C1D192DC5BAE0E06EC00F4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:01:05】
+订单号：20181222215836991001
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221583545439&transaction_id=20181222215836991001&amount=200.0000&datetime=20181222220104&returncode=00&sign=228910D07EC351B97041AE24F18BCCEC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:01:18】
+订单号：20181222220035515198
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222003499228&transaction_id=20181222220035515198&amount=300.0000&datetime=20181222220118&returncode=00&sign=2AF424B059108457787AF3BEA52FC988&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:02:02】
+订单号：20181222215707519757
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221570654454&transaction_id=20181222215707519757&amount=200.0000&datetime=20181222220201&returncode=00&sign=CD1BDE4C008DD30BC373C3DD1B6000DE&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:02:05】
+订单号：20181222215836991001
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221583545439&transaction_id=20181222215836991001&amount=200.0000&datetime=20181222220205&returncode=00&sign=7F428506597DCBB5A1776A2C6C0ACA2D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:02:12】
+订单号：20181222220128565210
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222012755642&transaction_id=20181222220128565210&amount=2000.0000&datetime=20181222220212&returncode=00&sign=E0689753FC0FA3688E7B79C23E080A80&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:02:19】
+订单号：20181222220035515198
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222003499228&transaction_id=20181222220035515198&amount=300.0000&datetime=20181222220219&returncode=00&sign=339D8E18493308E8F29EACC81A023D4C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:02:19】
+订单号：20181222220204995454
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222020497172&transaction_id=20181222220204995454&amount=50.0000&datetime=20181222220219&returncode=00&sign=D29CCF74FED104561BA8148DCD2A0779&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:03:06】
+订单号：20181222215836991001
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122221583545439&transaction_id=20181222215836991001&amount=200.0000&datetime=20181222220305&returncode=00&sign=45D3B7405BD86E08E7457C177ED3F486&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:03:12】
+订单号：20181222220128565210
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222012755642&transaction_id=20181222220128565210&amount=2000.0000&datetime=20181222220312&returncode=00&sign=FAFFBBAD85AB752053D0F218996C9E8C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:03:20】
+订单号：20181222220204995454
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222020497172&transaction_id=20181222220204995454&amount=50.0000&datetime=20181222220320&returncode=00&sign=DB5DFFB05BA9BE3F7F9FBBA86B75C855&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:03:20】
+订单号：20181222220035515198
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222003499228&transaction_id=20181222220035515198&amount=300.0000&datetime=20181222220319&returncode=00&sign=DCCA3CE8DA1A7B9C9F3E5A219D6E13BF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:03:59】
+订单号：20181222220306979910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222030669481&transaction_id=20181222220306979910&amount=200.0000&datetime=20181222220359&returncode=00&sign=97EB3AC2B6BA57A8A1E5534BF01DEACE&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:04:13】
+订单号：20181222220128565210
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222012755642&transaction_id=20181222220128565210&amount=2000.0000&datetime=20181222220412&returncode=00&sign=A2DECBBA709F2F7F56B4A4D14C66BD74&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:04:20】
+订单号：20181222220204995454
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222020497172&transaction_id=20181222220204995454&amount=50.0000&datetime=20181222220420&returncode=00&sign=F969AC68E0DE35FE8B9B651BBC980F74&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:04:22】
+订单号：20181222220035515198
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222003499228&transaction_id=20181222220035515198&amount=300.0000&datetime=20181222220420&returncode=00&sign=84DF23EF690D88F7D51E19F5A80FE012&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:05:00】
+订单号：20181222220306979910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222030669481&transaction_id=20181222220306979910&amount=200.0000&datetime=20181222220459&returncode=00&sign=89D410A9F884EEA28E32CFDAD42C6645&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:05:13】
+订单号：20181222220128565210
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222012755642&transaction_id=20181222220128565210&amount=2000.0000&datetime=20181222220513&returncode=00&sign=5D4EE51CFEE6AA57B7D32E3181452D97&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:05:21】
+订单号：20181222220204995454
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222020497172&transaction_id=20181222220204995454&amount=50.0000&datetime=20181222220520&returncode=00&sign=425653BD24553655A0662E110FA4B210&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:05:22】
+订单号：20181222220035515198
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222003499228&transaction_id=20181222220035515198&amount=300.0000&datetime=20181222220522&returncode=00&sign=8C23BB2CA119D5B32D935D1AFCC2E9CC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:05:32】
+订单号：20181222220437534949
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222043608181&transaction_id=20181222220437534949&amount=49.9900&datetime=20181222220531&returncode=00&sign=2B88E2001DD602691A3895761B731D2B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:06:00】
+订单号：20181222220306979910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222030669481&transaction_id=20181222220306979910&amount=200.0000&datetime=20181222220600&returncode=00&sign=0F7CC47011A9F2F8F850FA5F35CF5C37&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:06:13】
+订单号：20181222220128565210
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222012755642&transaction_id=20181222220128565210&amount=2000.0000&datetime=20181222220613&returncode=00&sign=43D5F47B4DE518016CC769388E4C3ABA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:06:21】
+订单号：20181222220204995454
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222020497172&transaction_id=20181222220204995454&amount=50.0000&datetime=20181222220621&returncode=00&sign=721E2A07F41A2A29B285739A32856663&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:06:32】
+订单号：20181222220437534949
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222043608181&transaction_id=20181222220437534949&amount=49.9900&datetime=20181222220632&returncode=00&sign=5EDFD1EA6E3CC0B090304C6CF648393B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:07:01】
+订单号：20181222220306979910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222030669481&transaction_id=20181222220306979910&amount=200.0000&datetime=20181222220700&returncode=00&sign=32F630A03A4AA3ED59F44BD57F1B243F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:07:34】
+订单号：20181222220437534949
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222043608181&transaction_id=20181222220437534949&amount=49.9900&datetime=20181222220732&returncode=00&sign=EBAE62834434A5BE60108E06AD5FF085&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:08:02】
+订单号：20181222220306979910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222030669481&transaction_id=20181222220306979910&amount=200.0000&datetime=20181222220801&returncode=00&sign=252BF70B4A3FC3FEE58532C3D28A922E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:08:34】
+订单号：20181222220437534949
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222043608181&transaction_id=20181222220437534949&amount=49.9900&datetime=20181222220834&returncode=00&sign=D94866DD5F6D182E99EA2A6B34133F3B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:09:35】
+订单号：20181222220437534949
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222043608181&transaction_id=20181222220437534949&amount=49.9900&datetime=20181222220934&returncode=00&sign=7559FC045C30892914CFA8B1E9C46898&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:11:02】
+订单号：20181222221020994910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222101771623&transaction_id=20181222221020994910&amount=500.0000&datetime=20181222221102&returncode=00&sign=7661188A632C1DD1C66C8AD1261F089B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:11:44】
+订单号：20181222221124995398
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222112483792&transaction_id=20181222221124995398&amount=200.0000&datetime=20181222221143&returncode=00&sign=2DE288DBE80E52A0A1BE46FF9A778573&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:12:03】
+订单号：20181222221020994910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222101771623&transaction_id=20181222221020994910&amount=500.0000&datetime=20181222221202&returncode=00&sign=BD868B99C56FC8B550429DD885783345&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:12:44】
+订单号：20181222221124995398
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222112483792&transaction_id=20181222221124995398&amount=200.0000&datetime=20181222221244&returncode=00&sign=AF82A0E0AF2F1728618AA443288287FF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:13:04】
+订单号：20181222221020994910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222101771623&transaction_id=20181222221020994910&amount=500.0000&datetime=20181222221303&returncode=00&sign=45D5F928587554A9452CB61E56D60C56&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:13:45】
+订单号：20181222221124995398
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222112483792&transaction_id=20181222221124995398&amount=200.0000&datetime=20181222221344&returncode=00&sign=5DB7C581D70A670C626BB3A10A01FD6D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:14:05】
+订单号：20181222221020994910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222101771623&transaction_id=20181222221020994910&amount=500.0000&datetime=20181222221404&returncode=00&sign=C459C494048A6CBDE58B01B08F20EE04&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:14:45】
+订单号：20181222221124995398
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222112483792&transaction_id=20181222221124995398&amount=200.0000&datetime=20181222221445&returncode=00&sign=5B315AE017AF8C20F4E6B163DC8D9C4F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:15:05】
+订单号：20181222221020994910
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222101771623&transaction_id=20181222221020994910&amount=500.0000&datetime=20181222221505&returncode=00&sign=2670CA81DB6151D1320148F2095204F5&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:15:46】
+订单号：20181222221124995398
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222112483792&transaction_id=20181222221124995398&amount=200.0000&datetime=20181222221545&returncode=00&sign=3718281F9F909D2F4C1035A33E300DB2&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:16:19】
+订单号：20181222221548525557
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222154746096&transaction_id=20181222221548525557&amount=199.9900&datetime=20181222221619&returncode=00&sign=8D3D176AE6F64D4A5A2131941A65AA16&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:16:28】
+订单号：20181222221600481011
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222160004721&transaction_id=20181222221600481011&amount=99.9900&datetime=20181222221627&returncode=00&sign=EFA8B2FBEB63D6F5D1BE128BC0E1917A&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:17:20】
+订单号：20181222221548525557
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222154746096&transaction_id=20181222221548525557&amount=199.9900&datetime=20181222221719&returncode=00&sign=4AD3299655F18BA074E0FDB7761A3C41&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:17:28】
+订单号：20181222221600481011
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222160004721&transaction_id=20181222221600481011&amount=99.9900&datetime=20181222221728&returncode=00&sign=D08C9E80D5B82F5E371C028E97EABCF4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:17:34】
+订单号：20181222221716999756
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222171519402&transaction_id=20181222221716999756&amount=100.0000&datetime=20181222221734&returncode=00&sign=0AA141D5E0F4088E85FEB407FE0F1118&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:18:20】
+订单号：20181222221728565452
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222172730102&transaction_id=20181222221728565452&amount=1000.0000&datetime=20181222221819&returncode=00&sign=294EAE305D0FDC59460031259AA536EE&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:18:21】
+订单号：20181222221548525557
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222154746096&transaction_id=20181222221548525557&amount=199.9900&datetime=20181222221820&returncode=00&sign=2A512FA22F8C5CAE39F6823432B7C3B1&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:18:22】
+订单号：20181222221459515151
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222145803529&transaction_id=20181222221459515151&amount=100.0000&datetime=20181222221822&returncode=00&sign=FDB32C01DEEE572F039DAEBD99C06883&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:18:30】
+订单号：20181222221600481011
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222160004721&transaction_id=20181222221600481011&amount=99.9900&datetime=20181222221828&returncode=00&sign=F070C0D451A46485FC9C1CC5D023A718&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:18:35】
+订单号：20181222221716999756
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222171519402&transaction_id=20181222221716999756&amount=100.0000&datetime=20181222221834&returncode=00&sign=0B7528871C37BAC6E707AF266280CA77&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:19:20】
+订单号：20181222221728565452
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222172730102&transaction_id=20181222221728565452&amount=1000.0000&datetime=20181222221920&returncode=00&sign=859CB1E52A1FC4AEFE0D4601C7970527&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:19:22】
+订单号：20181222221548525557
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222154746096&transaction_id=20181222221548525557&amount=199.9900&datetime=20181222221922&returncode=00&sign=DD95AB69673E7EAF6C3FF86579FD17EB&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:19:23】
+订单号：20181222221459515151
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222145803529&transaction_id=20181222221459515151&amount=100.0000&datetime=20181222221922&returncode=00&sign=D3DD4033F7E04A8E5131BF452CB3E469&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:19:30】
+订单号：20181222221600481011
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222160004721&transaction_id=20181222221600481011&amount=99.9900&datetime=20181222221930&returncode=00&sign=7A70DA2EDCB5337878BAD14500C8E6E6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:19:35】
+订单号：20181222221716999756
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222171519402&transaction_id=20181222221716999756&amount=100.0000&datetime=20181222221935&returncode=00&sign=F394E68073E4140E27594CB2861E180F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:20:08】
+订单号：20181222221942101525
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222194185808&transaction_id=20181222221942101525&amount=300.0000&datetime=20181222222007&returncode=00&sign=C8465EE25C8B8C6950056A2929638317&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:20:20】
+订单号：20181222221728565452
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222172730102&transaction_id=20181222221728565452&amount=1000.0000&datetime=20181222222020&returncode=00&sign=94882567E5EF0AFF6075F4637A823EC1&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:20:22】
+订单号：20181222221548525557
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222154746096&transaction_id=20181222221548525557&amount=199.9900&datetime=20181222222022&returncode=00&sign=FBB6355180FECAB1A4E38A88C595DF21&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:20:23】
+订单号：20181222221459515151
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222145803529&transaction_id=20181222221459515151&amount=100.0000&datetime=20181222222023&returncode=00&sign=C2AB1F5A10F6D40ABA0F2F5042ABF2B9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:20:30】
+订单号：20181222221600481011
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222160004721&transaction_id=20181222221600481011&amount=99.9900&datetime=20181222222030&returncode=00&sign=346ECF7A49A29F9EEA2DDB60BB978DD9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:20:35】
+订单号：20181222221716999756
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222171519402&transaction_id=20181222221716999756&amount=100.0000&datetime=20181222222035&returncode=00&sign=54FDF9EB50EDC5BEC0DA20C414F6064E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:21:08】
+订单号：20181222221942101525
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222194185808&transaction_id=20181222221942101525&amount=300.0000&datetime=20181222222108&returncode=00&sign=B17BF9D47BDE58289AAB8D6199CEABF9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:21:21】
+订单号：20181222221728565452
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222172730102&transaction_id=20181222221728565452&amount=1000.0000&datetime=20181222222121&returncode=00&sign=5F2F67553C382B9A9835D210F34F281F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:21:24】
+订单号：20181222221459515151
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222145803529&transaction_id=20181222221459515151&amount=100.0000&datetime=20181222222123&returncode=00&sign=AA8EB11A33D25D70A7645544AC58BF89&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:21:36】
+订单号：20181222221716999756
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222171519402&transaction_id=20181222221716999756&amount=100.0000&datetime=20181222222135&returncode=00&sign=B038AB0A4C53AAA93BA1AB3CD67353B4&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:21:42】
+订单号：20181222222103102575
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222210203219&transaction_id=20181222222103102575&amount=200.0000&datetime=20181222222142&returncode=00&sign=F5E9BEFE1802482C52AB40B4164F12D0&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:22:09】
+订单号：20181222221942101525
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222194185808&transaction_id=20181222221942101525&amount=300.0000&datetime=20181222222208&returncode=00&sign=1E54489CDA4AE59B2306F94514960A09&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:22:21】
+订单号：20181222221728565452
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222172730102&transaction_id=20181222221728565452&amount=1000.0000&datetime=20181222222221&returncode=00&sign=53890B9CE6B2D431056FB9F8D75CED98&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:22:24】
+订单号：20181222221459515151
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222145803529&transaction_id=20181222221459515151&amount=100.0000&datetime=20181222222224&returncode=00&sign=8213F1FBBC86DE97E6889CE45F0F9A92&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:22:43】
+订单号：20181222222103102575
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222210203219&transaction_id=20181222222103102575&amount=200.0000&datetime=20181222222242&returncode=00&sign=3B55D5C63611F2A8327C820A3F82680E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:23:09】
+订单号：20181222221942101525
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222194185808&transaction_id=20181222221942101525&amount=300.0000&datetime=20181222222309&returncode=00&sign=1D3B0ABEFEA61C542A7D91D4BF439DB8&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:23:43】
+订单号：20181222222103102575
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222210203219&transaction_id=20181222222103102575&amount=200.0000&datetime=20181222222343&returncode=00&sign=2B913C2D600F0F4F4EFEC643B7F1738B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:24:10】
+订单号：20181222221942101525
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222194185808&transaction_id=20181222221942101525&amount=300.0000&datetime=20181222222410&returncode=00&sign=83ECF243CC01A6896141C2AC57E2D25C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:24:43】
+订单号：20181222222103102575
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222210203219&transaction_id=20181222222103102575&amount=200.0000&datetime=20181222222443&returncode=00&sign=5AB1C2A638AEF97CA668E41C8E6798DC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:24:45】
+订单号：20181222222411984949
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222241019309&transaction_id=20181222222411984949&amount=200.0000&datetime=20181222222445&returncode=00&sign=CBC40137F03D5BCC01EE9A5E21C61A41&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:25:44】
+订单号：20181222222103102575
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222210203219&transaction_id=20181222222103102575&amount=200.0000&datetime=20181222222544&returncode=00&sign=8CFC6CA87FB795123D866C56065FEBC7&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:25:45】
+订单号：20181222222411984949
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222241019309&transaction_id=20181222222411984949&amount=200.0000&datetime=20181222222545&returncode=00&sign=8C66497676B2FF29014B970B673821D0&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:26:46】
+订单号：20181222222411984949
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222241019309&transaction_id=20181222222411984949&amount=200.0000&datetime=20181222222646&returncode=00&sign=B38259C708410A4B5328D2A8EC10FAB8&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:27:26】
+订单号：20181222222649575148
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222264864447&transaction_id=20181222222649575148&amount=30.0000&datetime=20181222222726&returncode=00&sign=1C299F9D34E54D82D86C089090351E8D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:27:46】
+订单号：20181222222411984949
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222241019309&transaction_id=20181222222411984949&amount=200.0000&datetime=20181222222746&returncode=00&sign=AE7626C35C75780999CB34B0AE6BDDFD&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:28:27】
+订单号：20181222222649575148
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222264864447&transaction_id=20181222222649575148&amount=30.0000&datetime=20181222222826&returncode=00&sign=340920F594CCCAEF7BD24C96070E8837&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:28:35】
+订单号：20181222222812991005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222281213432&transaction_id=20181222222812991005&amount=2000.0000&datetime=20181222222835&returncode=00&sign=D483D7AF8E2732513F3DD438F361AB6F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:28:47】
+订单号：20181222222411984949
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222241019309&transaction_id=20181222222411984949&amount=200.0000&datetime=20181222222846&returncode=00&sign=FA8E210A305F467D40427216615948BA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:29:27】
+订单号：20181222222649575148
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222264864447&transaction_id=20181222222649575148&amount=30.0000&datetime=20181222222927&returncode=00&sign=46D5398D2D9DEEB17356B01073FF1963&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:29:36】
+订单号：20181222222812991005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222281213432&transaction_id=20181222222812991005&amount=2000.0000&datetime=20181222222935&returncode=00&sign=8B8F8E26C807956A5EB182513031C667&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:29:51】
+订单号：20181222222922509954
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222292206312&transaction_id=20181222222922509954&amount=100.0000&datetime=20181222222951&returncode=00&sign=B7C030AD2723B6A7A939B49751AC64E6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:30:27】
+订单号：20181222222649575148
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222264864447&transaction_id=20181222222649575148&amount=30.0000&datetime=20181222223027&returncode=00&sign=D3EC7CDBACB67C24370F472CBA19B460&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:30:34】
+订单号：20181222223009495310
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222300897620&transaction_id=20181222223009495310&amount=200.0000&datetime=20181222223034&returncode=00&sign=F8C186D74F67A276ADC66F1761464706&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:30:36】
+订单号：20181222222812991005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222281213432&transaction_id=20181222222812991005&amount=2000.0000&datetime=20181222223036&returncode=00&sign=A977730DF359F4714A89A6749C07E2D7&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:30:51】
+订单号：20181222222922509954
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222292206312&transaction_id=20181222222922509954&amount=100.0000&datetime=20181222223051&returncode=00&sign=07CC9012A1356FEA64B8AAE1FE1C5BFC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:30:55】
+订单号：20181222223038101525
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222303784146&transaction_id=20181222223038101525&amount=2000.0000&datetime=20181222223054&returncode=00&sign=597FED35AA077749E42418D7DAEDD6B0&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:31:28】
+订单号：20181222222649575148
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222264864447&transaction_id=20181222222649575148&amount=30.0000&datetime=20181222223128&returncode=00&sign=4479DACB8B99FD2E69421CEBBA7AC24D&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:31:34】
+订单号：20181222223009495310
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222300897620&transaction_id=20181222223009495310&amount=200.0000&datetime=20181222223134&returncode=00&sign=D599D4819CD7D5BC5C779404B2FD4791&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:31:36】
+订单号：20181222222812991005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222281213432&transaction_id=20181222222812991005&amount=2000.0000&datetime=20181222223136&returncode=00&sign=706B38BB482C5ED3F3E605FCEE615E23&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:31:49】
+订单号：20181222223123985448
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222312294910&transaction_id=20181222223123985448&amount=200.0000&datetime=20181222223148&returncode=00&sign=A2E853D91E97551FFE5BA53F97FDA959&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:31:52】
+订单号：20181222222922509954
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222292206312&transaction_id=20181222222922509954&amount=100.0000&datetime=20181222223151&returncode=00&sign=44E684583D21F1466150012834ED34AC&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:31:55】
+订单号：20181222223038101525
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222303784146&transaction_id=20181222223038101525&amount=2000.0000&datetime=20181222223155&returncode=00&sign=E2FD3F86A480D66BF5425E57AABB9A31&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:32:03】
+订单号：20181222223149531005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222314953871&transaction_id=20181222223149531005&amount=500.0000&datetime=20181222223203&returncode=00&sign=88971DC4B3F660A7CBCE807E09CEB198&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:32:35】
+订单号：20181222223009495310
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222300897620&transaction_id=20181222223009495310&amount=200.0000&datetime=20181222223235&returncode=00&sign=20EBFBD4C7EBC574B5A6167831B4A7F1&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:32:37】
+订单号：20181222222812991005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222281213432&transaction_id=20181222222812991005&amount=2000.0000&datetime=20181222223236&returncode=00&sign=9B32E1778DD866164249EFFC7B246208&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:32:49】
+订单号：20181222223123985448
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222312294910&transaction_id=20181222223123985448&amount=200.0000&datetime=20181222223249&returncode=00&sign=B15EC3E960BF759E5D33E7C15BE6A0F7&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:32:52】
+订单号：20181222222922509954
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222292206312&transaction_id=20181222222922509954&amount=100.0000&datetime=20181222223252&returncode=00&sign=0963067AAE482770C7FF99AAE2B8DCAF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:32:53】
+订单号：20181222223238545749
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222323818855&transaction_id=20181222223238545749&amount=2000.0000&datetime=20181222223252&returncode=00&sign=1D8F6978AE7D80A9BD4E25A3E69AEB64&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:32:56】
+订单号：20181222223038101525
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222303784146&transaction_id=20181222223038101525&amount=2000.0000&datetime=20181222223255&returncode=00&sign=C4358D9436060CB544987859C6A8AF76&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:33:03】
+订单号：20181222223149531005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222314953871&transaction_id=20181222223149531005&amount=500.0000&datetime=20181222223303&returncode=00&sign=718FB3081F555AB71F01AD8780219B5C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:33:37】
+订单号：20181222223009495310
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222300897620&transaction_id=20181222223009495310&amount=200.0000&datetime=20181222223335&returncode=00&sign=61744DA8C087206E1DDB9D6D23480772&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:33:50】
+订单号：20181222223123985448
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222312294910&transaction_id=20181222223123985448&amount=200.0000&datetime=20181222223349&returncode=00&sign=DD5A9FA7FCBE82539A674FA4DA98CEFD&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:33:53】
+订单号：20181222222922509954
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222292206312&transaction_id=20181222222922509954&amount=100.0000&datetime=20181222223352&returncode=00&sign=8F472C114F88BCFA65713C5514CC8687&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:33:54】
+订单号：20181222223238545749
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222323818855&transaction_id=20181222223238545749&amount=2000.0000&datetime=20181222223353&returncode=00&sign=40FFFB3120D62F3FFBC1C5F56F497C62&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:33:57】
+订单号：20181222223038101525
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222303784146&transaction_id=20181222223038101525&amount=2000.0000&datetime=20181222223356&returncode=00&sign=117DBDB8E562B6EF8861015A03D52960&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:34:04】
+订单号：20181222223149531005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222314953871&transaction_id=20181222223149531005&amount=500.0000&datetime=20181222223404&returncode=00&sign=C7CA351C418ED956049F57643E73AB3F&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:34:37】
+订单号：20181222223009495310
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222300897620&transaction_id=20181222223009495310&amount=200.0000&datetime=20181222223437&returncode=00&sign=35119B50A201F7F2A40A072E5D2AEC21&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:34:51】
+订单号：20181222223123985448
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222312294910&transaction_id=20181222223123985448&amount=200.0000&datetime=20181222223450&returncode=00&sign=162D8F8295F66A5D8CDFB873D368EBDA&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:34:54】
+订单号：20181222223238545749
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222323818855&transaction_id=20181222223238545749&amount=2000.0000&datetime=20181222223454&returncode=00&sign=121C1FF43B7CC2AA497A5E0787FB6288&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:34:57】
+订单号：20181222223038101525
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222303784146&transaction_id=20181222223038101525&amount=2000.0000&datetime=20181222223457&returncode=00&sign=47FCC89558B56DD497F8B5790031D36B&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:35:05】
+订单号：20181222223149531005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222314953871&transaction_id=20181222223149531005&amount=500.0000&datetime=20181222223504&returncode=00&sign=C9663D4E91F7BC3D5C42DA2B88E666D8&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:35:52】
+订单号：20181222223123985448
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222312294910&transaction_id=20181222223123985448&amount=200.0000&datetime=20181222223551&returncode=00&sign=DDFFEB40B6BE3ADA026038D05523DB3C&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:35:54】
+订单号：20181222223238545749
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222323818855&transaction_id=20181222223238545749&amount=2000.0000&datetime=20181222223554&returncode=00&sign=7982FFC7D21BC5E4BE395AF724EB2DC9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:36:05】
+订单号：20181222223149531005
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222314953871&transaction_id=20181222223149531005&amount=500.0000&datetime=20181222223605&returncode=00&sign=EFFAE00262539A8AC32AFCE38BCE6808&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:36:55】
+订单号：20181222223238545749
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222323818855&transaction_id=20181222223238545749&amount=2000.0000&datetime=20181222223654&returncode=00&sign=362CAD3CA4C983DE83DD0E02A866DE69&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:37:49】
+订单号：20181222223723514957
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222372252934&transaction_id=20181222223723514957&amount=300.0000&datetime=20181222223749&returncode=00&sign=C2788BEF54E96C65F63218784505BB30&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:37:56】
+订单号：20181222223715985699
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222371525738&transaction_id=20181222223715985699&amount=100.0000&datetime=20181222223755&returncode=00&sign=5051854E57EB675E9D5C9F484BA7AF16&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:38:50】
+订单号：20181222223723514957
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222372252934&transaction_id=20181222223723514957&amount=300.0000&datetime=20181222223849&returncode=00&sign=16093EA0C87B3F0418ABD58E8CBC4A98&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:38:56】
+订单号：20181222223715985699
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222371525738&transaction_id=20181222223715985699&amount=100.0000&datetime=20181222223856&returncode=00&sign=8951CF14A914D6B575A89F3A5173994E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:39:50】
+订单号：20181222223723514957
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222372252934&transaction_id=20181222223723514957&amount=300.0000&datetime=20181222223950&returncode=00&sign=6DBCB6D1F4344324C97BFB315133C208&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:39:57】
+订单号：20181222223715985699
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222371525738&transaction_id=20181222223715985699&amount=100.0000&datetime=20181222223956&returncode=00&sign=21362A4637B1713337DA49651977FBA9&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:40:51】
+订单号：20181222223723514957
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222372252934&transaction_id=20181222223723514957&amount=300.0000&datetime=20181222224050&returncode=00&sign=2C76021F11673FD8CD9DB65B3942D889&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:40:57】
+订单号：20181222223715985699
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222371525738&transaction_id=20181222223715985699&amount=100.0000&datetime=20181222224057&returncode=00&sign=71251BC928E0419D4EE00519C9BE03E6&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:41:51】
+订单号：20181222223723514957
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222372252934&transaction_id=20181222223723514957&amount=300.0000&datetime=20181222224151&returncode=00&sign=868FC245D4631DA17FA31660B6B291A1&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:41:57】
+订单号：20181222223715985699
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222371525738&transaction_id=20181222223715985699&amount=100.0000&datetime=20181222224157&returncode=00&sign=1A24457D8A9813FAEB7F87B096D39997&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:47:55】
+订单号：20181222224725100579
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222471799487&transaction_id=20181222224725100579&amount=100.0000&datetime=20181222224755&returncode=00&sign=52A9E8DA4361099279EA5BF8E50FAD88&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:48:56】
+订单号：20181222224725100579
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222471799487&transaction_id=20181222224725100579&amount=100.0000&datetime=20181222224856&returncode=00&sign=E602BAA26192CDAB718C6C90EBF2704E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:49:57】
+订单号：20181222224725100579
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222471799487&transaction_id=20181222224725100579&amount=100.0000&datetime=20181222224956&returncode=00&sign=C8B71640AE189B393B992B2C01D9C090&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:50:57】
+订单号：20181222224725100579
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222471799487&transaction_id=20181222224725100579&amount=100.0000&datetime=20181222225057&returncode=00&sign=F44FC3BFDF17D1975390814001051970&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:51:58】
+订单号：20181222224725100579
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222471799487&transaction_id=20181222224725100579&amount=100.0000&datetime=20181222225158&returncode=00&sign=900408E55EA5D92ABC58A2228B67C5EB&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:52:18】
+订单号：20181222225040489997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222504000938&transaction_id=20181222225040489997&amount=200.0000&datetime=20181222225218&returncode=00&sign=8C6809F0D09B9FF4182CA8335990B577&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:53:21】
+订单号：20181222225040489997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222504000938&transaction_id=20181222225040489997&amount=200.0000&datetime=20181222225318&returncode=00&sign=B0D66EE2924718EB80FFC17BCD673039&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:54:22】
+订单号：20181222225040489997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222504000938&transaction_id=20181222225040489997&amount=200.0000&datetime=20181222225421&returncode=00&sign=3932CBBDF4A7BD0B1D3475B4785E93A8&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:55:22】
+订单号：20181222225040489997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222504000938&transaction_id=20181222225040489997&amount=200.0000&datetime=20181222225522&returncode=00&sign=339A818CD624291C8C5F053812F8A6DF&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2018-12-22 22:56:23】
+订单号：20181222225040489997
+通知地址：http://bwcppay.com/notify_url/9
+通知报文：memberid=10046&orderid=2018122222504000938&transaction_id=20181222225040489997&amount=200.0000&datetime=20181222225622&returncode=00&sign=8B3F0DCCD6D03C8A6713C06AA3492EF9&attach=1234|456
+HTTP状态：200
+返回：ok
+

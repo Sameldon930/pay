@@ -1,0 +1,86 @@
+【2019-02-13 11:44:26】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u82cf\u8d85\u6d2a\",\"uid\":\"FT1U35JYT2TDCK5WCUF7AVMAEL340FVK\",\"systemID\":\"1550029466026ja\",\"bankMark\":\"CIB\",\"price\":\"20000\",\"outTradeNo\":\"20190213114426974850\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***0618 \",\"cardIndex\":\"1902131954104692960\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***0618 &bankAccount=\u82cf\u8d85\u6d2a&amount=200&money=200.00&bankMark=CIB\"}"}
+
+【2019-02-13 11:44:26】二维码URL：http://rain.haohan168.cn:8086/Pay_YanBankTransferPay_secondCheck.html?id=20190213114426974850&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131954104692960&cardNo=622908***0618 &bankAccount=%E8%8B%8F%E8%B6%85%E6%B4%AA&price=200&bankMark=CIB
+
+【2019-02-13 11:44:46】\进入二次查单等待支付订单!20190213114426974850
+
+【2019-02-13 11:44:46】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=苏超洪&cardNo=622908***0618 &money=200&amount=200&bankMark=CIB&bankName=兴业银行&cardIndex=1902131954104692960&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 11:44:57】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u82cf\u8d85\u6d2a\",\"uid\":\"FT1U35JYT2TDCK5WCUF7AVMAEL340FVK\",\"systemID\":\"155002949707534\",\"bankMark\":\"CIB\",\"price\":\"19999\",\"outTradeNo\":\"20190213114457574810\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***0618 \",\"cardIndex\":\"1902131954104692960\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***0618 &bankAccount=\u82cf\u8d85\u6d2a&amount=200&money=199.99&bankMark=CIB\"}"}
+
+【2019-02-13 11:44:57】二维码URL：http://rain.haohan168.cn:8086/Pay_YanBankTransferPay_secondCheck.html?id=20190213114457574810&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131954104692960&cardNo=622908***0618 &bankAccount=%E8%8B%8F%E8%B6%85%E6%B4%AA&price=199.99&bankMark=CIB
+
+【2019-02-13 11:45:22】\进入二次查单等待支付订单!20190213114457574810
+
+【2019-02-13 11:45:22】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=苏超洪&cardNo=622908***0618 &money=199.99&amount=199.99&bankMark=CIB&bankName=兴业银行&cardIndex=1902131954104692960&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 11:45:47】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u82cf\u8d85\u6d2a\",\"uid\":\"FT1U35JYT2TDCK5WCUF7AVMAEL340FVK\",\"systemID\":\"155002954788628\",\"bankMark\":\"CIB\",\"price\":\"100000\",\"outTradeNo\":\"20190213114547981005\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***0618 \",\"cardIndex\":\"1902131954104692960\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***0618 &bankAccount=\u82cf\u8d85\u6d2a&amount=1000&money=1000.00&bankMark=CIB\"}"}
+
+【2019-02-13 11:45:47】二维码URL：http://rain.haohan168.cn:8086/Pay_YanBankTransferPay_secondCheck.html?id=20190213114547981005&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131954104692960&cardNo=622908***0618 &bankAccount=%E8%8B%8F%E8%B6%85%E6%B4%AA&price=1000&bankMark=CIB
+
+【2019-02-13 11:46:21】\进入二次查单等待支付订单!20190213114547981005
+
+【2019-02-13 11:46:21】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=苏超洪&cardNo=622908***0618 &money=1000&amount=1000&bankMark=CIB&bankName=兴业银行&cardIndex=1902131954104692960&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 11:46:27】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u82cf\u8d85\u6d2a\",\"uid\":\"FT1U35JYT2TDCK5WCUF7AVMAEL340FVK\",\"systemID\":\"1550029587135yz\",\"bankMark\":\"CIB\",\"price\":\"19998\",\"outTradeNo\":\"20190213114627514910\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***0618 \",\"cardIndex\":\"1902131954104692960\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***0618 &bankAccount=\u82cf\u8d85\u6d2a&amount=200&money=199.98&bankMark=CIB\"}"}
+
+【2019-02-13 11:46:27】二维码URL：http://rain.haohan168.cn:8086/Pay_YanBankTransferPay_secondCheck.html?id=20190213114627514910&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131954104692960&cardNo=622908***0618 &bankAccount=%E8%8B%8F%E8%B6%85%E6%B4%AA&price=199.98&bankMark=CIB
+
+【2019-02-13 11:47:08】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u82cf\u8d85\u6d2a\",\"uid\":\"FT1U35JYT2TDCK5WCUF7AVMAEL340FVK\",\"systemID\":\"1550029628456q9\",\"bankMark\":\"CIB\",\"price\":\"50000\",\"outTradeNo\":\"20190213114708995498\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***0618 \",\"cardIndex\":\"1902131954104692960\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***0618 &bankAccount=\u82cf\u8d85\u6d2a&amount=500&money=500.00&bankMark=CIB\"}"}
+
+【2019-02-13 11:47:08】二维码URL：http://rain.haohan168.cn:8086/Pay_YanBankTransferPay_secondCheck.html?id=20190213114708995498&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131954104692960&cardNo=622908***0618 &bankAccount=%E8%8B%8F%E8%B6%85%E6%B4%AA&price=500&bankMark=CIB
+
+【2019-02-13 11:47:32】\进入二次查单等待支付订单!20190213114627514910
+
+【2019-02-13 11:47:32】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=苏超洪&cardNo=622908***0618 &money=199.98&amount=199.98&bankMark=CIB&bankName=兴业银行&cardIndex=1902131954104692960&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 11:47:35】\进入二次查单等待支付订单!20190213114708995498
+
+【2019-02-13 11:47:35】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=苏超洪&cardNo=622908***0618 &money=500&amount=500&bankMark=CIB&bankName=兴业银行&cardIndex=1902131954104692960&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 11:50:55】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u82cf\u8d85\u6d2a\",\"uid\":\"FT1U35JYT2TDCK5WCUF7AVMAEL340FVK\",\"systemID\":\"15500298552085v\",\"bankMark\":\"CIB\",\"price\":\"20000\",\"outTradeNo\":\"20190213115055102501\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***0618 \",\"cardIndex\":\"1902131954104692960\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***0618 &bankAccount=\u82cf\u8d85\u6d2a&amount=200&money=200.00&bankMark=CIB\"}"}
+
+【2019-02-13 11:50:55】二维码URL：http://rain.haohan168.cn:8086/Pay_YanBankTransferPay_secondCheck.html?id=20190213115055102501&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131954104692960&cardNo=622908***0618 &bankAccount=%E8%8B%8F%E8%B6%85%E6%B4%AA&price=200&bankMark=CIB
+
+【2019-02-13 11:51:13】\进入二次查单等待支付订单!20190213115055102501
+
+【2019-02-13 11:51:13】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=苏超洪&cardNo=622908***0618 &money=200&amount=200&bankMark=CIB&bankName=兴业银行&cardIndex=1902131954104692960&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 11:51:26】\进入二次查单等待支付订单!20190213115055102501
+
+【2019-02-13 11:51:26】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=苏超洪&cardNo=622908***0618 &money=200&amount=200&bankMark=CIB&bankName=兴业银行&cardIndex=1902131954104692960&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 11:51:37】\进入二次查单等待支付订单!20190213115055102501
+
+【2019-02-13 11:51:37】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=苏超洪&cardNo=622908***0618 &money=200&amount=200&bankMark=CIB&bankName=兴业银行&cardIndex=1902131954104692960&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 11:53:52】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u82cf\u8d85\u6d2a\",\"uid\":\"FT1U35JYT2TDCK5WCUF7AVMAEL340FVK\",\"systemID\":\"1550030032546z3\",\"bankMark\":\"CIB\",\"price\":\"19999\",\"outTradeNo\":\"20190213115352485649\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***0618 \",\"cardIndex\":\"1902131954104692960\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***0618 &bankAccount=\u82cf\u8d85\u6d2a&amount=200&money=199.99&bankMark=CIB\"}"}
+
+【2019-02-13 11:53:52】二维码URL：http://rain.haohan168.cn:8086/Pay_YanBankTransferPay_secondCheck.html?id=20190213115352485649&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131954104692960&cardNo=622908***0618 &bankAccount=%E8%8B%8F%E8%B6%85%E6%B4%AA&price=199.99&bankMark=CIB
+
+【2019-02-13 11:54:35】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u82cf\u8d85\u6d2a\",\"uid\":\"FT1U35JYT2TDCK5WCUF7AVMAEL340FVK\",\"systemID\":\"155003007552055\",\"bankMark\":\"CIB\",\"price\":\"30000\",\"outTradeNo\":\"20190213115435985598\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***0618 \",\"cardIndex\":\"1902131954104692960\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***0618 &bankAccount=\u82cf\u8d85\u6d2a&amount=300&money=300.00&bankMark=CIB\"}"}
+
+【2019-02-13 11:54:35】二维码URL：http://rain.haohan168.cn:8086/Pay_YanBankTransferPay_secondCheck.html?id=20190213115435985598&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131954104692960&cardNo=622908***0618 &bankAccount=%E8%8B%8F%E8%B6%85%E6%B4%AA&price=300&bankMark=CIB
+
+【2019-02-13 11:54:41】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u82cf\u8d85\u6d2a\",\"uid\":\"FT1U35JYT2TDCK5WCUF7AVMAEL340FVK\",\"systemID\":\"15500300815759y\",\"bankMark\":\"CIB\",\"price\":\"29999\",\"outTradeNo\":\"20190213115441495656\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***0618 \",\"cardIndex\":\"1902131954104692960\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***0618 &bankAccount=\u82cf\u8d85\u6d2a&amount=300&money=299.99&bankMark=CIB\"}"}
+
+【2019-02-13 11:54:41】二维码URL：http://rain.haohan168.cn:8086/Pay_YanBankTransferPay_secondCheck.html?id=20190213115441495656&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131954104692960&cardNo=622908***0618 &bankAccount=%E8%8B%8F%E8%B6%85%E6%B4%AA&price=299.99&bankMark=CIB
+
+【2019-02-13 11:55:00】\进入二次查单等待支付订单!20190213115435985598
+
+【2019-02-13 11:55:00】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=苏超洪&cardNo=622908***0618 &money=300&amount=300&bankMark=CIB&bankName=兴业银行&cardIndex=1902131954104692960&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 11:55:02】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u82cf\u8d85\u6d2a\",\"uid\":\"FT1U35JYT2TDCK5WCUF7AVMAEL340FVK\",\"systemID\":\"1550030102260v7\",\"bankMark\":\"CIB\",\"price\":\"50000\",\"outTradeNo\":\"20190213115502545198\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***0618 \",\"cardIndex\":\"1902131954104692960\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***0618 &bankAccount=\u82cf\u8d85\u6d2a&amount=500&money=500.00&bankMark=CIB\"}"}
+
+【2019-02-13 11:55:02】二维码URL：http://rain.haohan168.cn:8086/Pay_YanBankTransferPay_secondCheck.html?id=20190213115502545198&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131954104692960&cardNo=622908***0618 &bankAccount=%E8%8B%8F%E8%B6%85%E6%B4%AA&price=500&bankMark=CIB
+
+【2019-02-13 11:55:06】\进入二次查单等待支付订单!20190213115441495656
+
+【2019-02-13 11:55:06】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=苏超洪&cardNo=622908***0618 &money=299.99&amount=299.99&bankMark=CIB&bankName=兴业银行&cardIndex=1902131954104692960&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 11:56:49】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u82cf\u8d85\u6d2a\",\"uid\":\"FT1U35JYT2TDCK5WCUF7AVMAEL340FVK\",\"systemID\":\"1550030209647dn\",\"bankMark\":\"CIB\",\"price\":\"29998\",\"outTradeNo\":\"20190213115649495757\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***0618 \",\"cardIndex\":\"1902131954104692960\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***0618 &bankAccount=\u82cf\u8d85\u6d2a&amount=300&money=299.98&bankMark=CIB\"}"}
+
+【2019-02-13 11:56:49】二维码URL：http://rain.haohan168.cn:8086/Pay_YanBankTransferPay_secondCheck.html?id=20190213115649495757&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131954104692960&cardNo=622908***0618 &bankAccount=%E8%8B%8F%E8%B6%85%E6%B4%AA&price=299.98&bankMark=CIB
+
+-1550029855
+

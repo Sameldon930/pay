@@ -1,0 +1,255 @@
+<include file="Public/header"/>
+<div class="row">
+	<div class="col-sm-12">
+		<form class="layui-form" action="" id="form" autocomplete="off" >
+			<input type="hidden" name="orderid" value="<{$order.id}>">
+			<div class="layui-form-item">
+				<label class="layui-form-label">订单号：</label>
+				<div class="layui-input-inline">
+					<input type="text" class="layui-input" value="<{$order.pay_orderid}>" readonly>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">订单金额：</label>
+				<div class="layui-input-inline">
+					<input type="text" class="layui-input" name="pay_amount" value="<{$order.pay_amount}>" >
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">是否重复扫码</label>
+
+					<div class="layui-input-inline">
+						<select lay-search name="isReset" id = "sel">
+							<option value="">选择操作</option>
+							<option selected = "selected"  value="1">否</option>
+							<option  value="2">是</option>
+
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item ">
+				<label class="layui-form-label">补单银行</label>
+				<div class="layui-input-inline">
+					<select lay-search name="remark_bank"  lay-filter="product" data-child="remark_tube" lay-verify="required">
+						<option value="">全部银行</option>
+						<volist name="bank_list" id="vo">
+							<option <if condition="$order_info['pay_bankname'] eq $vo['name']">selected</if>
+							value="<{$vo.name}>" my_data="<{$vo.id}>"><{$vo.name}>
+							</option>
+						</volist>
+					</select>
+				</div>
+			</div>
+			<div class="layui-form-item ">
+				<label class="layui-form-label">补单通道</label>
+				<div class="layui-input-inline">
+					<select lay-search name="remark_tube" lay-filter="channel"  data-child="account" lay-verify="required">
+						<option value="">全部通道</option>
+						<volist name="tube_list" id="vo">
+							<option <if condition="$order_info['pay_zh_tongdao'] eq $vo['title']">selected</if>
+							value="<{$vo.title}>" my_data="<{$vo.id}>"><{$vo.title}></option>
+						</volist>
+					</select>
+				</div>
+			</div>
+
+			<div class="layui-form-item layui-inline">
+				<label class="layui-form-label">通道子账号</label>
+				<div class="layui-input-inline">
+					<select lay-search name="account" lay-filter="account" id="account" lay-verify="required">
+						<option value="">全部子账号</option>
+						<if condition="$accountlist">
+							<volist name="accountlist" id="vo">
+								<option <if condition="$order_info['account_id'] eq $vo['id']">selected</if>
+								value="<{$vo.title}>"><{$vo.title}></option>
+							</volist>
+						</if>
+					</select>
+				</div>
+			</div>
+
+			<div class="layui-form-item">
+				<label class="layui-form-label">补单备注：</label>
+				<div class="layui-input-inline">
+					<input type="text" name="remark" class="layui-input" value="<{$order.remark}>" >
+				</div>
+			</div>
+			<if condition="$verifyGoogle and $verifysms">
+				<div class="layui-form-item" id="df_auto_check">
+					<label class="layui-form-label">验证方式：</label>
+					<div class="layui-input-block">
+						<input type="radio" name="auth_type" lay-filter="auth_type" value="1" title="谷歌安全码" checked>
+						<input type="radio" name="auth_type" lay-filter="auth_type" value="0" title="短信验证码">
+					</div>
+				</div>
+				<else />
+				<input type="hidden" name="auth_type" value="<{$auth_type}>">
+			</if>
+			<eq name="verifyGoogle" value="1">
+				<div class="layui-form-item" id="auth_google">
+					<label class="layui-form-label">谷歌安全码：</label>
+					<div class="layui-input-inline">
+						<input type="text" name="google_code" autocomplete="off"
+							   placeholder="请输入谷歌安全码" class="layui-input" value="">
+					</div>
+				</div>
+			</eq>
+			<eq name="verifysms" value="1">
+				<div class="layui-form-item" id="auth_sms" <if condition="$verifyGoogle and $verifysms">style="display: none"</if>>
+				<label class="layui-form-label">手机验证码：</label>
+				<div class="layui-input-inline">
+					<input type="text" name="code"  autocomplete="off"
+						   placeholder="请输入短信验证码" class="layui-input" value="">
+				</div>
+				<div class="layui-input-inline">
+					<a href="javascript:;" id="sendBtn" data-mobile="<{$mobile}>" class="layui-btn">发送验证码</a>
+				</div>
+	</div>
+	</eq>
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit="submit" lay-filter="save">确定</button>
+		</div>
+	</div>
+	</form>
+</div>
+</div>
+<include file="Public/footer"/>
+<script src="/Public/Front/js/Util.js" charset="utf-8"></script>
+<script>
+	var issubmit=false;
+	layui.use(['layer', 'form','laydate'], function(){
+		var form = layui.form
+				,laydate = layui.laydate
+				,layer = layui.layer;
+
+		//常规用法
+		laydate.render({
+			elem: '#createtime',
+			type: 'datetime',
+			theme: 'molv',
+			range: '|'
+		});
+		//监听提交
+		form.on('submit(save)', function(data){
+			layer.confirm('确认要将订单【<{$order.pay_orderid}>】设置为已支付吗？该操作不可恢复，请谨慎操作！',{
+				btn: ['确定','取消'] //按钮
+			}, function(){
+				$.ajax({
+					url:"<{:U('Order/setOrderPaid')}>",
+					type:"post",
+					data:$('#form').serialize(),
+					success:function(res){
+						if(res.status){
+							layer.alert(res.msg? res.msg :"设置成功！", {icon: 6},function () {
+								parent.location.reload();
+								var index = parent.layer.getFrameIndex(window.name);
+								parent.layer.close(index);
+							});
+						}else{
+							layer.alert(res.msg, {icon: 5},function (index) {
+								layer.close(index)
+							});
+						}
+					}
+				});
+			}, function(){
+			});
+			return false;
+		});
+		form.on('radio(auth_type)',function(data){
+			if(data.value == 1) {
+				$('#auth_google').show();
+				$('#auth_sms').hide();
+			} else {
+				$('#auth_google').hide();
+				$('#auth_sms').show();
+			}
+		});
+
+		form.on('select(product)', function(data){
+			var  product_id = $(data.elem[data.elem.selectedIndex]).attr("my_data");
+			var name = data.elem.dataset.child;
+			console.log(name);
+			console.log("product_id:",product_id);
+			if(product_id) {
+				$.ajax({
+					type:'get',
+					data:{'product_id':product_id},
+					dataType:'json',
+					url:'<{:U("Order/getChannel")}>',
+					success:function(info){
+						if(info['status'] == 1){
+							//清空子账号选择框
+							var account = $('select[name="account"]');
+							account.html('<option value="">请选择</option>');
+							//重新渲染入金渠道选择框
+							var selectName = $('select[name="' + name + '"]');
+							selectName.empty();
+							selectName.html('<option value="">请选择</option>');
+							for(k in info['data']){
+								selectName.append('<option value="'+ info['data'][k]['title'] +'" my_data="'+info['data'][k]['id']+'" >' + info['data'][k]['title'] + '</option>');
+							}
+							form.render('select');
+						}else{
+							layer.msg('获取子账号列表失败',{time: 2000, icon:'error'});
+						}
+					},
+					error:function(){
+						layer.msg('通讯错误,请重新刷新页面',{time: 2000, icon:'error'});
+					},
+				});
+			}
+		});
+
+		form.on('select(channel)', function(data){
+			var  channel_id = $(data.elem[data.elem.selectedIndex]).attr("my_data");
+			var name = data.elem.dataset.child;
+			console.log(name);
+			console.log('channel_id:',channel_id);
+			if(channel_id) {
+				$.ajax({
+					type:'get',
+					data:{'channel_id':channel_id},
+					dataType:'json',
+					url:'<{:U("Order/getAccount")}>',
+					success:function(info){
+						if(info['status'] == 1){
+							var selectName = $('select[name="' + name + '"]');
+							selectName.html('<option value="">请选择</option>');
+							for(k in info['data']){
+								selectName.append('<option value="'+ info['data'][k]['title'] +'">' + info['data'][k]['title'] + '</option>');
+							}
+							form.render('select');
+						}else{
+							layer.msg('获取子账号列表失败',{time: 2000, icon:'error'});
+						}
+					},
+					error:function(){
+						layer.msg('通讯错误,请重新刷新页面',{time: 2000, icon:'error'});
+					},
+				});
+			}
+		});
+	});
+</script>
+<script>
+	$(function (){
+		var sendUrl = "<{:U('Order/setOrderPaidSend');}>";
+		// 手机验证码发送
+		$('#sendBtn').click(function(){
+			var mobile = $(this).data('mobile');
+			if(mobile == '') {
+				layer.alert('请先绑定手机号码',{icon: 5}, function() {
+					location.href = "<{:U('System/bindMobileShow')}>";
+				});
+				return;
+			}
+			sendSms(this, mobile, sendUrl);
+		});
+	})
+</script>
+</body>
+</html>

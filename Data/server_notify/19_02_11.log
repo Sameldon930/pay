@@ -1,0 +1,14 @@
+【2019-02-11 17:01:22】
+订单号：20190208150756995556
+通知地址：http://xycz555.com/notify_url/42
+通知报文：memberid=10035&orderid=2019020815075554233&transaction_id=20190208150756995556&amount=200.0000&datetime=20190211170120&returncode=00&sign=1B780B52C8F9400C5B6FB7E4D368958E&attach=1234|456
+HTTP状态：200
+返回：ok
+
+【2019-02-11 17:05:39】
+订单号：20190209093538975310
+通知地址：http://xycz555.com/notify_url/42
+通知报文：memberid=10035&orderid=2019020909353761200&transaction_id=20190209093538975310&amount=300.0000&datetime=20190211170538&returncode=00&sign=69E3DC6E090062F18AE3DC3F5D3F6FA1&attach=1234|456
+HTTP状态：200
+返回：ok
+

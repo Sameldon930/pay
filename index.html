@@ -1,0 +1,449 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>万码支付</title>
+        <meta name="keywords" content="万码支付,WMpay"/>
+        <meta name="description" content="万码支付" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+        <link href="web/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="web/css/index3.css" rel="stylesheet" />
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="web/js/html5shiv.min.js"></script>
+        <script src="web/js/respond.min.js"></script>
+        <![endif]-->
+        <script src="web/js/jquery.min.js"></script>
+        <script src="web/js/index.min.js"></script>
+  <script>
+$().ready(function(){
+    window.location.href = "./404.html";
+    $(".tab li").mouseover(function(){
+    //通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+        var _index = $(this).index();
+    //让内容框的第 _index 个显示出来，其他的被隐藏
+        $(".box2>.myshow").eq(_index).show().siblings().hide();
+    //改变选中时候的选项框的样式，移除其他几个选项的样式
+    $(this).addClass("on").siblings().removeClass("on");
+    });
+});
+</script>
+
+
+        <!-- <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script> -->
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+            <!-- 去掉logo -->
+                <img src="web/images/logo.png" alt="66支付" class="img-responsive" />
+            </div>
+            <!-- <strong class="words">开源研发架构</strong> -->
+            <nav class="menu">
+                <ul class="list-inline">
+                    <li class="active"><a>首页</a></li>
+                    <li><a>产品</a></li>
+                    <li><a>专业</a></li>
+                    <li><a>商户</a></li>
+                    <li><a>代付</a></li>
+                    <li><a>二维码</a></li>
+                    <li><a>申请流程</a></li>
+                    <li><a>联系我们</a></li>
+            <li><a href="/doc/introduce.html" target="_blank">开发者中心</a></li>
+          
+          <!--   <li ><a href="https://gitee.com/Bigotry/OneBase" target="_blank">登录</a></li> -->
+                </ul>
+            </nav>
+            <div class="hotline">
+                <a  href="login.php" target="_blank">登录</a>
+            </div>
+
+
+            <div class="menu-icon">
+                <a href="#" title="点击直拨咨询热线"><span class="glyphicon glyphicon-earphone"></span></a>
+                <span class="glyphicon glyphicon-th-large"></span>
+            </div>
+        </header>
+
+        <div class="welcome"><p><u>Loading . . .</u></p></div>
+
+        <section class="video">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide nth1">
+                        <div class="box">
+                     <!--        <div class="left"></div> -->
+                            <div class="right">
+                                <span>万码支付</span><i>告别繁琐的支付接入流程</i>
+                          
+                                <p>一个SDK即可接入任何平台和场景的支付功能,高速集成主流支付接口<br />
+                                满足你丰富的交易场景需求,为您提供专业、灵活、高效、便捷的收款服务</p>
+                            </div>
+                        </div>
+                    </div>
+        <!--             <div class="swiper-slide nth2">
+                        <div class="box">
+                            <span>专注设计</span><i></i>
+                            <p>关注点滴, 注重细节, 追求完美<br />OneBase，您值得信赖的好伙伴</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide nth3">
+                        <div class="box">
+                            <div class="top">技术实力</div>
+                            <div class="mid"></div>
+                            <div class="bottom">行业精英, 技术大佬, 资深技术专家<br />只有想不到, 没有做不到</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide nth4">
+                        <div class="box">
+                            <div class="top"><span>产品布局</span><i></i></div>
+                            <div class="bottom"><u>电商，金融，社交 等...</u><br/>OneBase为各行各业产品研发保驾护航</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="innerBox">
+                <div class="news">
+                    <!-- <span>源码下载：</span>
+                    <a href="http://document.onebase.org" title="http://document.onebase.org" class="more" target="_blank">研发文档</a> -->
+              <!--       <ul>
+                        <li><a href="https://gitee.com/Bigotry/OneBase" target="_blank" title="https://gitee.com/Bigotry/OneBase">https://gitee.com/Bigotry/OneBase</a></li>
+                    </ul> -->
+                </div>
+             <!--    <div class="guide"></div> -->
+                <a class="movedown"></a>
+            </div>
+        </section>
+        <section class="product" id="aaa" name="aaa">
+     <div class="box">
+                <div class="caption">
+          
+                  <span>产品中心</span>
+                    <br class="clear" />
+                </div>
+                  <div class="caption">
+                    <div class='box1'>
+                <ul class="items list-inline">
+                    <li class="pc">
+                        <i></i><strong>快捷支付</strong>
+                     <!--    <p>软件应用开发<br />一站式服务</p> -->
+                    </li>
+                    <li class="mobi">
+                        <i></i><strong>扫码支付</strong>
+                     
+                    </li>
+                    <li class="sys">
+                        <i></i><strong>公众号支付</strong>
+                  
+                    </li>
+                
+                </ul>
+
+                <ul class="items list-inline">
+                        <li class="app">
+                        <i></i><strong>APP支付</strong>
+                      
+                    </li>
+                    <li class="host">
+                        <i></i><strong>H5支付</strong>
+                
+                    </li>
+                        <li class="gateway">
+                        <i></i><strong>网关支付</strong>
+                   
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box2">
+                <ul>
+                    <li class=""><strong>聚合主流通道，为您提供全方位支付体验</strong></li>
+                    <li class="">支持微信、支付宝、银行卡多种账户类型，全方位满足您收款需求。</li>
+                    <li class="">66支付为每一个需要支付服务的商户提供服务和技术支持，帮助商户快速的搭建自己的支付系统。</li>
+                    <li class="">现在如今，支付是商业变现必不可少的环节。我们聚合所有主流支付渠道，给你更简单、快捷的接入体验，同时提供简单易用的管理平台，让你可以集中进行跨渠道的交易管理和财务管理。</li>
+                    <li class="">我们致力于帮助商户快速和高质量地建立支付模块，满足企业任何支付场景的需求！</li>
+                </ul>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="business">
+            <div class="box">
+                <div class="caption">
+                    <i></i>
+
+                    <p>专业的支付帮手</p>
+                  <span>方便的快捷支付接入，让支付和收款更简单</span>
+                    <br class="clear" />
+                </div>
+                <ul class="items list-inline">
+                    <li class="pc">
+                        <i></i><strong>简单易用</strong>
+                        <p>快速的让你的产品拥有支付功能。在一个平台完成所有渠道的交易和账务管理。</p>
+                    </li>
+                    <li class="mobi">
+                        <i></i><strong>快速高效</strong>
+                        <p>高速带宽，高效系统，高级别安全防护标准，支持高并发交易。</p>
+                    </li>
+                    <li class="sys">
+                        <i></i><strong> 安全稳定</strong>
+                        <p>阿里云服务器系统，7 * 24 实时全面的系统及业务监控，确保服务稳定。</p>
+                    </li>
+                    <li class="app">
+                        <i></i><strong>不介入资金流</strong>
+                        <p>只负责交易处理不参与资金清算，保障您的资金安全。</p>
+                    </li>
+                 
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="cases">
+            <div class="box">
+                <div class="caption">
+              <!--       <i></i> -->
+                    <span>商户中心</span>
+                    <br class="clear" />
+                </div>
+
+
+                <div class="swiper-container items">
+                    <div class="swiper-wrapper">
+                    
+                        <div class="box1">
+                           <ul class="tab">
+                            <li class="manage"> 
+                                <p>商户管理</p>
+
+
+                                 </li>
+                            <li class="paycheck"><p>交易查询</p> </li> 
+                            <li class="check"><p>财务对账</p> </li> 
+                            <li class="getmanage"></i><p>分润管理</p> </li> 
+                            <li class="safe"><p>资金安全</p></li>  
+                           </ul> 
+                        </div>
+
+                        <div class="box2">
+                            <div class="myshow on">
+                                <strong>子商户系统</strong>
+                                <p>提供完善的商户体系，易化商户结构梳理，灵活组建复杂场景下的商户关系，便捷的管理商户层级和基本信息。</p>
+                                <i class="showicon1"></i>
+                            </div>
+                           <div class="myshow">
+                                <strong>详细记录每一条交易信息</strong>
+                                <p>全方位、多方面的交易数据汇总统计。深度分析展示每单交易的收益和信息价值。</p>
+                                <i class="showicon2"></i>
+                            </div> 
+                            <div class="myshow">
+                                <strong>精细化的财务展示、高效的账务核对</strong>
+                                <p> 清晰的数据逻辑和准确的财务数据，轻松实现内部对账、商户对账和接口对账，降低财务成本。</p>
+                                <i class="showicon3"></i>
+                            </div>
+                            <div class="myshow">
+                                <strong>轻松实现不同场景下的高效分润</strong>
+                                <p> 无论是平台自营或是代理，均能进行层级管理，全局把控交易和财务，实现自由灵活的商户交易管理，并能与合作伙伴便捷分享利益。 接口资金直清：平台提供支付接口对接服务，资金由接口方进行清算，提供支付接口技术服务，安全，放心</p>
+                                <i class="showicon4"></i>
+                            </div>
+
+                               <div class="myshow">
+                                <strong>接口资金直清</strong>
+                                <p> 平台提供支付接口对接服务，资金由接口方进行清算，提供支付接口技术服务，安全，放心。</p>
+                                <i class="showicon5"></i>
+                            </div>
+                       
+
+                    </div>
+                </div>
+             
+            </div>
+        </section>
+
+
+        <section class="clients">
+            <div class="box">
+            
+        
+           
+                      
+             <div class="caption">
+                    <span>代付系统</span>
+                    <br class="clear" />
+            </div>
+
+      
+                
+                <div class="dfline">
+                    
+                    <div class="dflist">
+                        
+                        <p class="dficon1"></p>
+                        <p class="dficon2"></p>
+                        <p class="dficon3"></p>
+                        <p class="dficon4"></p>
+
+                    </div>
+                </div>
+                <div class="dftext">
+                    <p>
+                    付费单位在提供付款目标相关银行账户信息及对应款项后，通过代付系统，向目标账户划款的业务模式。支持对公银行账户和对私银行账户。无需开通网银，支持全国所有银行，银行范围覆盖广，支付方便快捷，用户体验好。7*24小时所有银行快速到账，对账方便节约成本。
+                    </p>
+                </div>
+
+
+            </div>
+        
+         
+    
+
+
+          
+        </section>
+
+
+       <section class="quality">
+            <div class="box">
+                <
+                <div class="swiper-container items">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide nth1">
+                            <ul class="list-inline">
+                                <li class="mobi"><p>二维码支付</p></li>
+
+                            </ul>
+                            <p>线下商户二维码卡台，收款方便，商户日常经营一目了然<br />从收款，查看流程，核对订单，等等<br />将商户与消费者紧密相连。<br />
+                        </div>
+                        <div class="swiper-slide nth2">
+                         
+          
+                        </div>
+                        <div class="swiper-slide nth3">
+                
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </section>
+    
+        <section class="marketing">
+            <div class="box">
+                <div class="caption">
+             <span>申请流程</span>
+                    <br class="clear" />
+                </div>
+            <div  class="mbox">
+                <ul class="items list-inline">
+                    <li class="se">
+                        <i></i><strong>注册商户号</strong>
+                       
+                    </li>
+                     <div class="line">
+                        <hr />
+                        
+                    </div> 
+            
+                    <li class="weixin">
+                   
+                        <i></i>
+
+                        <strong>联系客服</strong>
+
+                        <p></p>
+                    </li>
+
+
+                    <div class="line">
+                        <hr />
+                        
+                    </div> 
+
+
+                    <li class="weibo">
+                        <i></i><strong>下载DEMO</strong>
+                      
+                    </li>
+                 
+                </ul>
+
+
+                    <ul class="items list-inline">
+                   <li class="sms">
+                        <i></i><strong>对接测试</strong>
+                      
+                    </li>
+
+                    <div class="line">
+                        <hr />  
+                    </div> 
+
+                    <li class="pay">
+                        <i></i><strong>小额付款</strong>
+                       
+                    </li>
+
+                    <div class="line">
+                        <hr />    
+                    </div> 
+
+                    <li class="bbs">
+                        <i></i><strong>完成上线</strong>
+                       <!--  <p>无需技术<br />人人都会运营</p> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+        
+        
+        <section class="contact">
+            <div class="box">
+                <div class="above">        
+                    <br/><br/>
+                    <div class="right" style="float:left; margin-left:50px;">
+                        客服QQ：<br />网址：<br>
+                    </div>
+                    <div class="right">
+                        Email：<br />电话：<br />
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="aboutus" style="display:none;">
+            <ul class="menu"></ul>
+            <div class="swiper-container items">
+                <div class="swiper-wrapper">
+     
+                </div>
+            </div>
+
+        </section>
+        
+
+        <section class="aboutus" style="display:none;">
+            <ul class="menu"></ul>
+        </section>
+
+                 
+        <section class="aboutus" style="display:none;">
+            <ul class="menu"></ul>
+        </section>
+
+
+    </body>
+</html>
+        
+        

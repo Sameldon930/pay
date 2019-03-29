@@ -1,0 +1,160 @@
+<include file="Public/header"/>
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>申请E平台账号</h5>
+                <div class="ibox-content">
+                    <p class="text-danger">谨慎修改用户信息，胡乱填写一律禁封账号处理</p>
+                </div>
+            </div>
+
+            <if condition="$info['status'] eq 2">
+                <p class="bg-success" style="padding:10px 0px 10px 30px">您已成功认证！</p>
+            <elseif condition="$info['status'] eq 1"/>
+                <p class="bg-info" style="padding:10px 0px 10px 30px">已提交认证，等待审核！</p>
+                <button class="layui-btn" onclick="window.open('<{:U('ApplyEPlatform/apply')}>')">E平台设置密码</button>
+            <else/>
+                <div class="ibox-content">
+                    <!--用户信息-->
+                    <form class="layui-form" action="" autocomplete="off" id="profile">
+                        
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">用户类型：</label>
+                            <div class="layui-input-block">
+                                <select name="user_type" lay-verify="required"  lay-filter="myselect">
+                                    <option value="">全部类型</option>
+                                    <option value="1" <if condition="$info['user_type'] eq 1" >selected </if> >个人用户</option>
+                                    <option value="2" <if condition="$info['user_type'] eq 2" >selected </if> >企业用户</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="qy" style="display: none;">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">企业名称：</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="company_name"  placeholder="企业名称" autocomplete="off" class="layui-input" value="<{$info['company_name']}>">
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">企业营业执照：</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="biz_no" placeholder="企业营业执照" autocomplete="off" class="layui-input" value="<{$info['biz_no']}>">
+                                </div>
+                            </div>
+
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">企业组织机构号或统一社会信用号：</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="company_no"  placeholder="企业组织机构号或统一社会信用号" autocomplete="off" class="layui-input" value="<{$info['company_no']}>">
+                                </div>
+                            </div>
+            
+
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">身份证：</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="id_card" lay-verify="required" placeholder="身份证" autocomplete="off" class="layui-input" value="<{$info['id_card']}>">
+                            </div>
+                        </div>
+                        
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">银行卡号/企业账户：</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="bank_no" lay-verify="required" autocomplete="off"
+                                       placeholder="银行卡号/企业账户" class="layui-input" value="<{$info['bank_no']}>">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">真实姓名：</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="real_name" lay-verify="required" placeholder="真实姓名" autocomplete="off" class="layui-input" value="<{$info['real_name']}>">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">手机号：</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="mobile" lay-verify="required" placeholder="手机号" autocomplete="off" class="layui-input" value="<{$info['mobile']}>">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">Email：</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="email" lay-verify="required" placeholder="Email" autocomplete="off" class="layui-input" value="<{$info['email']}>">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit="" lay-filter="profile">立即提交</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!--用户信息-->
+                </div>
+            </if>
+        </div>
+    </div>
+</div>
+<include file="Public/footer"/>
+<script>
+layui.use(['laydate', 'laypage', 'layer', 'form', 'element'], function() {
+    var laydate = layui.laydate //日期
+        ,layer = layui.layer //弹层
+        ,form = layui.form //弹层
+        , element = layui.element; //元素操作
+    //日期
+    laydate.render({
+        elem: '#date'
+    });
+
+    form.on('select(myselect)', function(data){
+        if(data.value == 2){
+            $('#qy').show();
+        }else{
+            $('#qy').hide();
+        }
+    });
+
+    //监听提交
+    form.on('submit(profile)', function(data){
+        $.ajax({
+            url:"<{:U('ApplyEPlatform/add')}>",
+            type:"post",
+            data:$('#profile').serialize(),
+            success:function(res){
+
+                if(res.status){
+                    layer.alert("编辑成功", {icon: 6},function () {
+                        parent.location.reload();
+                        var index = parent.layer.getFrameIndex(window.name);
+                        parent.layer.close(index);
+                        window.open("<{:U('ApplyEPlatform/apply')}>");
+                    });
+                }else{
+                    layer.alert("操作失败", {icon: 5},function () {
+                        parent.location.reload();
+                        var index = parent.layer.getFrameIndex(window.name);
+                        parent.layer.close(index);
+                    });
+                }
+            }
+        });
+        return false;
+    });
+
+
+});
+
+
+</script>
+</body>
+</html>

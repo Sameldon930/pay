@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>处理中</title>
+</head>
+<body>                  
+    <script type="text/javascript">
+        var url=window.location.search.substr(1);
+        url=url.substr(2); 
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端  
+        if (isAndroid) {
+        	 var urls = "http://rain.haohan168.cn:8086/Application/Pay/View/WeiXin/wakeupAlipay.html?p=" + url;
+        } 
+        if(isIOS) {
+             var urls = "http://rain.haohan168.cn:8086/Application/Pay/View/WeiXin/AlipayTransfer_Ios.html?p=" + url;
+        }
+     	 //var urls = "http://rain.wmpayinc.com:8086/Application/Pay/View/WeiXin/wakeupAlipay.html?p=" + url;
+        var url1 = "alipays://platformapi/startapp?appId=20000067&backBehavior=pop&url=" + encodeURIComponent(urls);                
+        window.location.href = url1;                   
+    </script>
+    <div style="display:none">
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276520178'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1276520178%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<include file="Public/header"/>
+
+<form class="layui-form layui-form-pane" action="" method="get" autocomplete="off" id="orderform">
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">日期</label>
+        <div class="layui-input-inline">
+            <input type="text" class="layui-input" name="date" id="date"
+                   placeholder="日期" value="<{$date}>" autocomplete="off">
+        </div>
+    </div>
+    <div class="layui-form-item layui-inline" style="margin-top: -8px;">
+        <button type="submit" class="layui-btn"><span
+                class="glyphicon glyphicon-search"></span> 查询
+        </button>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                  <h5 style="color:red">订单金额</h5>
+                </div>
+                <div class="ibox-content">
+                    <p style="font-size: 16px;color:#008000b0;"><{$total_success_amount}>元</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5 style="color:red">订单笔数</h5>
+                </div>
+                <div class="ibox-content">
+                    <p style="font-size: 16px;color:#008000b0;"><{$total_success_count}>笔</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5 style="color:red">订单均价</h5>
+                </div>
+                <div class="ibox-content">
+                    <p readonly=""  style="font-size: 16px;color:#008000b0;"><{$average}>元</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5 style="color:red">成功率</h5>
+                </div>
+                <div class="ibox-content">
+                    <p style="font-size: 16px;color:#008000b0;"><{$success_rate}>％</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-sm-4">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5 style="color:red">商户订单金额TOP10</h5>
+            </div>
+            <div class="ibox-content">
+                <table class="layui-table" lay-data="{width:'100%'}">
+                    <thead>
+                    <tr>
+                        <th lay-data="{field:'id',fixed: true,width:60}">排名</th>
+                        <th lay-data="{field:'memberid', width:120, fixed: true}">商户号</th>
+                        <th lay-data="{field:'username', width:130}">用户名</th>
+                        <th lay-data="{field:'amount', width:150}">订单金额</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="amountRank" id="vo">
+                        <tr>
+                            <td><{$vo.rank}></td>
+                            <td><{$vo['userid']|shanghubianhao=###}></td>
+                            <td><{$vo.username}></td>
+                            <td><{$vo.total_charge}></td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5 style="color:red">商户订单笔数TOP10</h5>
+            </div>
+            <div class="ibox-content">
+                <table class="layui-table" lay-data="{width:'100%'}">
+                    <thead>
+                    <tr>
+                        <th lay-data="{field:'id',fixed: true,width:60}">排名</th>
+                        <th lay-data="{field:'memberid', width:120, fixed: true}">商户号</th>
+                        <th lay-data="{field:'username', width:130}">用户名</th>
+                        <th lay-data="{field:'amount', width:150}">订单笔数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="totalNumtRank" id="vo">
+                        <tr>
+                            <td><{$vo.rank}></td>
+                            <td><{$vo['userid']|shanghubianhao=###}></td>
+                            <td><{$vo.username}></td>
+                            <td><{$vo.total_num}></td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5 style="color:red">商户成功率TOP10</h5>
+            </div>
+            <div class="ibox-content">
+                <table class="layui-table" lay-data="{width:'100%'}">
+                    <thead>
+                    <tr>
+                        <th lay-data="{field:'id',fixed: true,width:60}">排名</th>
+                        <th lay-data="{field:'memberid', width:120, fixed: true}">商户号</th>
+                        <th lay-data="{field:'username', width:130}">用户名</th>
+                        <th lay-data="{field:'amount', width:150}">成功率(%)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="userList" id="vo">
+                        <tr>
+                            <td><{$vo.rank}></td>
+                            <td><{$vo['userid']|shanghubianhao=###}></td>
+                            <td><{$vo.username}></td>
+                            <td><{$vo.success_rate}></td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">日期范围</label>
+            <div class="layui-input-inline">
+                <input type="text" class="layui-input  layui-btn-small"" name="dateRange" id="dateRange"
+                       placeholder="日期范围" value="<{$dateRange}>" autocomplete="off">
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline" style="margin-top: -8px;">
+            <button type="submit" class="layui-btn"><span
+                    class="glyphicon glyphicon-search"></span> 查询
+            </button>
+        </div>
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5 style="margin: 0">30天交易统计</h5>
+            </div>
+            <div class="ibox-content">
+                <div id="main" style="height:300px"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<include file="Public/footer"/>
+<script>
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'form'], function() {
+        var laydate = layui.laydate //日期
+        //日期
+        laydate.render({
+            elem: '#date'
+            , type: 'date'
+            ,theme: 'molv'
+        });
+        //日期时间范围
+        laydate.render({
+            elem: '#dateRange'
+            , type: 'date'
+            ,theme: 'molv'
+            , range: '|'
+        });
+    });
+</script>
+<script src="/Public/Front/js/echarts.common.min.js"></script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main'));
+    var option = {
+        grid:{
+            x:50,
+            x2:20,
+            y:70,
+            y2:40,
+            borderWidth:1
+        },
+        title : {
+            text: '30天交易订单概况',
+            subtext: '按天统计'
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['金额']
+        },
+        toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        calculable : true,
+        xAxis : [
+            {
+                type : 'category',
+                boundaryGap : false,
+                data : <{$category}>
+    }
+    ],
+    yAxis : [
+        {
+            splitLine:{
+                show: true,
+                lineStyle:{
+                    type:"dashed",
+                    color:"#dfdfdf"
+                }
+            },
+            axisLabel:{
+                textStyle:{
+                    fontSize:14,
+                    color:'#5b6e89'
+                }
+            },
+            type : 'value'
+        }
+    ],
+        series : [
+    {
+        name:'金额',
+            type:'line',
+        smooth:true,
+        itemStyle: {
+        normal: {
+            areaStyle: {
+                type: 'default',
+                    color: {
+                    type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [{
+                        offset: 0, color: '#e7dde7'
+                    }, {
+                        offset: 1, color: '#ffffff'
+                    }],
+                        globalCoord: false
+                }
+            }
+        ,color:'#6e94ff'
+        }
+    },
+        data:<{$chartData}>
+    }
+    ]
+    };
+
+    // 为echarts对象加载数据
+    myChart.setOption(option);
+</script>
+</body>
+</html>

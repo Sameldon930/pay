@@ -1,0 +1,68 @@
+<include file="Public/header"/>
+
+<div class="container-fluid">
+    <div class="table-responsive m-t-10">
+        <form class="layui-form layui-form-pane" action="" method="get" autocomplete="off" id="orderform">
+            <div class="layui-form-item layui-inline">
+                <label class="layui-form-label">时间范围</label>
+                <div class="layui-input-inline">
+                    <input type="text" class="layui-input" name="createtime" id="createtime"
+                           placeholder="起始时间" value="<{$createtime}>" autocomplete="off">
+                </div>
+            </div>
+            <div class="layui-form-item layui-inline" style="margin-top: -8px;">
+                <button type="submit" class="layui-btn"><span
+                        class="glyphicon glyphicon-search"></span> 搜索
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+            <foreach name="list" item="v">
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title  pull-left text-uppercase m-b-20 mt-3">
+                            <{$v.name}>-<{$v.id}>
+                        </h4>
+                        <hr>
+                        <div class="clearfix"></div>
+                        <div class="tab-content br-n pn mt-4">
+                            <p>交易金额：<{$v.pay_amount}>元</p>
+                            <p>手续费  &nbsp;&nbsp;&nbsp;：<{$v.pay_poundage}>元</p>
+                            <p>入金总额：<{$v.pay_actualamount}>元</p>
+                        </div>
+                        <div class="tab-content br-n pn mt-4">
+                            <p>
+                                <span style="font-size: 16px;color:#0087ffbf;">交易笔数：<strong><{$v.count}></strong></span>
+                                <span style="margin-left: 80px;color:#008000b0;font-size: 16px;">成功率：<strong><{$v.success_rate}>%</strong></span>
+                            </p>
+                            <p>
+                            <p>
+                                <span style="font-size: 16px;color:#008000b0;">成功笔数：<strong><{$v.success_count}></strong></span>
+                                <span style="margin-left: 80px;font-size: 16px;color: #ff0000b3;">失败笔数：<strong><{$v.fail_count}></strong></span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            </foreach>
+    </div>
+</div>
+<include file="Public/footer"/>
+<script>
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'form'], function() {
+        var laydate = layui.laydate //日期
+        //日期时间范围
+        laydate.render({
+            elem: '#createtime'
+            , type: 'datetime'
+            ,theme: 'molv'
+            , range: '|'
+        });
+    });
+</script>
+</body>
+</html>

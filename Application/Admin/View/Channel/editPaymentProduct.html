@@ -1,0 +1,111 @@
+<include file="Public/header"/>
+<div class="row">
+    <div class="col-sm-12">
+        <form class="layui-form" action="" id="profile">
+            <input type="hidden" name="id" value="<{:I('id',0)}>">
+            <div class="layui-form-item">
+                <label class="layui-form-label">名称：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="name" lay-verify="" autocomplete="off" value="<{$info.name}>"
+                           placeholder="名称" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">类别：</label>
+                <div class="layui-input-inline">
+                    <select lay-search name="pid" lay-verify="required" lay-search="">
+                        <option value="">直接选择或搜索选择</option>
+                        <volist name="product" id="b">
+                            <option
+                            <if condition="$info['pid'] eq $b[id]">selected</if>
+                            value="<{$b.id}>"><{$b.id}> <{$b.name}></option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">状态：</label>
+                <div class="layui-input-block">
+                    <input type="radio" name="status"
+                    <if condition="$info['status'] eq 1">checked</if>
+                    value="1" title="开启">
+                    <input type="radio" name="status"
+                    <if condition="$info['status'] eq 0">checked</if>
+                    value="0" title="关闭">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit="submit" lay-filter="save">提交保存</button>
+                </div>
+            </div>
+        </form>
+        <div class="ibox-content" style= <if condition="!$channelList">display:none</if> >
+            <div class="table-responsive">
+                <table class="table table-hover" lay-data="{width:'100%'}">
+                    <thead>
+                    <tr>
+                        <th>编号</th>
+                        <th>接口名称</th>
+                        <th>接口代码</th>
+                        <th>所属通道编码</th>
+                        <!--<th>接口状态</th>-->
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="channelList" id="p">
+                        <tr>
+                            <td><{$p.id}></td>
+                            <td><{$p.title}></td>
+                            <td><{$p.code}></td>
+                            <td><{$p[product_id]}>  <{$p[product_id]|getProduct}></td>
+                            <!--<td>-->
+                                <!--<div class="layui-form">-->
+                                    <!--<input type="checkbox"-->
+                                    <!--<if condition="$p['status']">checked</if>-->
+                                    <!--name="status" value="1" data-id="<{$p.id}>" data-name="<{$p.title}>"-->
+                                    <!--lay-skin="switch"-->
+                                    <!--lay-filter="switchTest" lay-text="开启|关闭">-->
+                                <!--</div>-->
+                            <!--</td>-->
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/footer"/>
+<script>
+    layui.use(['layer', 'form', 'laydate'], function () {
+        var form = layui.form
+            , laydate = layui.laydate
+            , layer = layui.layer;
+        //监听提交
+        form.on('submit(save)', function (data) {
+            $.ajax({
+                url: "<{:U('editPaymentProduct')}>",
+                type: "post",
+                data: $('#profile').serialize(),
+                success: function (res) {
+                    if (res.status) {
+                        layer.alert("编辑成功", {icon: 6}, function () {
+                            parent.location.reload();
+                            var index = parent.layer.getFrameIndex(window.name);
+                            parent.layer.close(index);
+                        });
+                    } else {
+                        layer.alert("操作失败:" + res.msg, {icon: 5}, function (index) {
+                            layer.close(index)
+                        });
+                    }
+                }
+            });
+            return false;
+        });
+    });
+</script>
+<!--统计代码，可删除-->
+</body>
+</html>

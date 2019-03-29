@@ -1,0 +1,2 @@
+alter table `pay_pay_for_another` change column `public_key` `public_key` varchar(2000) NOT NULL DEFAULT '' COMMENT '加密的公钥';
+alter table `pay_pay_for_another` change column `private_key` `private_key` varchar(2000) NOT NULL DEFAULT ' ' COMMENT '加密的私钥';

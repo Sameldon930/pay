@@ -1,0 +1,10 @@
+【2019-02-22 15:04:21】\下单返回参数!{"errCode":100001,"errCodeDes":"\u7f3a\u5c11\u5fc5\u8981\u53c2\u6570","resultCode":false,"data":"null"}
+
+【2019-02-22 15:14:12】\下单返回参数!{"errCode":100001,"errCodeDes":"\u7f3a\u5c11\u5fc5\u8981\u53c2\u6570","resultCode":false,"data":"null"}
+
+【2019-02-22 15:34:32】\下单组织参数!"{\n            \"chain_add\" : \"0973KNMTRD1TX0V476CX3J2USSN24BBS\",\n            \"commdityName\" : \"\",\n            \"nonceStr\" : \"1550820872\",\n            \"price\" : \"1000\",\n            \"type\" : \"alipay\",\n            \"notifyUrl\" : \"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYwxpay_notifyurl.html\",\n            \"outTradeNo\" : \"20190222153432565148\",\n            \"state\" : \"3\",\n            \"sign\" : \"7187f1509e36ddf9bb456bd4baeeea2e\",\n        }"
+
+【2019-02-22 15:34:32】\下单返回参数!{"errCode":100001,"errCodeDes":"\u7f3a\u5c11\u5fc5\u8981\u53c2\u6570","resultCode":false,"data":"null"}
+
+【2019-02-22 15:45:35】\下单返回参数!{"errCode":100002,"errCodeDes":"\u7528\u6237\u4e0d\u5b58\u5728","resultCode":false,"data":"null"}
+

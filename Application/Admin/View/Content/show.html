@@ -1,0 +1,16 @@
+<include file="Public/header"/>
+<style type="text/css">
+.ibox-content p{line-height: 30px;text-indent: 2em;}
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox-content">
+            <h2 class="text-center" style="font-size: 16px;padding: 10px 0;"><{$a.title}></h2>
+            <hr class="layui-bg-blue">
+            <p class="text-center"><{$a[content]|htmlspecialchars_decode}></p>
+        </div>
+    </div>
+</div>
+<include file="Public/footer"/>
+</body>
+</html>

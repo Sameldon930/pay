@@ -1,0 +1,189 @@
+[ 2019-03-22T09:55:23+08:00 ] 127.0.0.1 /manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015733s ]
+
+[ 2019-03-22T09:55:23+08:00 ] 127.0.0.1 /manage_Login_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+
+[ 2019-03-22T09:55:27+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=3d1fcdf8e70d9d9851f42a57d36e0cf2&rnd=0.9744246322958814
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+
+[ 2019-03-22T09:55:29+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000305s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'phpTec' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0061s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 10 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 10 [ RunTime:0.0034s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0061s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('10','2019-03-22 09:55:29','127.0.0.1','本机地址','1') [ RunTime:0.0038s ]
+SQL: UPDATE `pay_admin` SET `session_random`='fmegRSwtj2JEeGc9K6DuVhd9khAMZBzh' WHERE `username` = 'phpTec' [ RunTime:0.0013s ]
+ERR: 1146:Table 'pay.pay_账户' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pay_账户`
+ERR: 1146:Table 'pay.pay_账户' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pay_账户`
+
+[ 2019-03-22T09:55:30+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000298s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000355s ]
+
+[ 2019-03-22T09:55:30+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=3d1fcdf8e70d9d9851f42a57d36e0cf2&rnd=0.028106062962827583
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+
+[ 2019-03-22T09:55:35+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000302s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'phpTec' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0042s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 10 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 10 [ RunTime:0.0002s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0043s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('10','2019-03-22 09:55:35','127.0.0.1','本机地址','1') [ RunTime:0.0003s ]
+SQL: UPDATE `pay_admin` SET `session_random`='Uiz1EVRmn7J0xrUztPRBH0PvPxzEj7GT' WHERE `username` = 'phpTec' [ RunTime:0.0005s ]
+ERR: 1146:Table 'pay.pay_账户' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pay_账户`
+ERR: 1146:Table 'pay.pay_账户' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pay_账户`
+
+[ 2019-03-22T09:55:46+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001927s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000397s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000464s ]
+
+[ 2019-03-22T09:55:46+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=3d1fcdf8e70d9d9851f42a57d36e0cf2&rnd=0.7706204927618261
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+
+[ 2019-03-22T09:55:52+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=3d1fcdf8e70d9d9851f42a57d36e0cf2&rnd=0.11414764789186704
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+
+[ 2019-03-22T09:55:55+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=3d1fcdf8e70d9d9851f42a57d36e0cf2&rnd=0.8209314394468512
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2019-03-22T09:56:00+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001600s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000301s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'phpTec' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0072s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 10 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 10 [ RunTime:0.0003s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0054s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('10','2019-03-22 09:56:00','127.0.0.1','本机地址','1') [ RunTime:0.0006s ]
+SQL: UPDATE `pay_admin` SET `session_random`='pewHEEDRl0Yxg84pyvCoV4HtuvvfMPVB' WHERE `username` = 'phpTec' [ RunTime:0.0006s ]
+ERR: 1146:Table 'pay.pay_账户' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pay_账户`
+ERR: 1146:Table 'pay.pay_账户' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pay_账户`
+
+[ 2019-03-22T09:56:17+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000307s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000364s ]
+
+[ 2019-03-22T09:56:17+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=3d1fcdf8e70d9d9851f42a57d36e0cf2&rnd=0.23677539245818435
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+
+[ 2019-03-22T09:56:21+08:00 ] 127.0.0.1 /manage_Login_verifycode.html?csrf_token=3d1fcdf8e70d9d9851f42a57d36e0cf2&rnd=0.5062569897557301
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2019-03-22T09:56:24+08:00 ] 127.0.0.1 /manage_Login_checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001641s ]
+INFO: [ action_begin ] --START--
+INFO: Run Behavior\CheckAuthBehavior [ RunTime:0.000304s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `pay_admin` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `pay_admin` WHERE `username` = 'adminroot' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_websiteconfig` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `pay_websiteconfig` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `pay_auth_error_log` [ RunTime:0.0045s ]
+SQL: SELECT `ctime` FROM `pay_auth_error_log` WHERE `uid` = 1 AND `auth_type` = 1 ORDER BY `id` desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: DELETE FROM `pay_auth_error_log` WHERE `auth_type` = 1 AND `uid` = 1 [ RunTime:0.0002s ]
+SQL: SELECT `login_ip` FROM `pay_websiteconfig` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `pay_loginrecord` [ RunTime:0.0044s ]
+SQL: INSERT INTO `pay_loginrecord` (`userid`,`logindatetime`,`loginip`,`loginaddress`,`type`) VALUES ('1','2019-03-22 09:56:24','127.0.0.1','本机地址','1') [ RunTime:0.0004s ]
+SQL: UPDATE `pay_admin` SET `session_random`='51ppFZyEaMQXJ6blQe4TCqRDqZs6eXUR' WHERE `username` = 'adminroot' [ RunTime:0.0005s ]
+ERR: 1146:Table 'pay.pay_账户' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pay_账户`
+ERR: 1146:Table 'pay.pay_账户' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pay_账户`
+

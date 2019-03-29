@@ -1,0 +1,304 @@
+<include file="Public/header"/>
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox float-e-margins">
+            <!--条件查询-->
+            <div class="ibox-title">
+                <h5>支付宝账号归集流水</h5>
+                <div class="ibox-tools">
+                    <i class="layui-icon" onclick="location.replace(location.href);" title="刷新"
+                       style="cursor:pointer;">ဂ</i>
+                </div>
+            </div>
+            <!--条件查询-->
+            <div class="ibox-content">
+                <form class="layui-form layui-form-pane form-search" action="" method="get" autocomplete="off"
+                      id="userform">
+                    <input type="hidden" name="p" value="1">
+                    <input type="hidden" name="rows" id="rows" value="<{:I('param.rows/d',15)}>">
+                    <div class="layui-form-item layui-inline">
+                        <label class="layui-form-label">支付宝归集账号</label>
+                        <div class="layui-input-inline">
+                            <select name="username" lay-filter="username" lay-search>
+                                <option value="">全部归集账号</option>
+                                <volist name="usernameList" id="vo">
+                                    <option <if condition="I('username') eq $vo['username']">selected</if>
+                                    value="<{$vo.username}>"><{$vo.username}><{$vo.realname}></option>
+                                </volist>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-inline">
+                        <label class="layui-form-label">归集时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" name="addtime" id="addtime"
+                                   placeholder="起始时间" value="<{:I('param.addtime')}>" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-inline">
+                        <label class="layui-form-label">归集状态</label>
+                        <div class="layui-input-inline">
+                            <select name="status">
+                                <option value="">全部状态</option>
+                                <option <if condition="I('status') neq '' && I('status') eq 0">selected</if> value="0">失败</option>
+                                <option <if condition="I('status') eq 1">selected</if> value="1">成功</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-inline">
+                        <label class="layui-form-label">通道(供应商)</label>
+                        <div class="layui-input-inline">
+                            <select name="channel" lay-filter="channel"  data-child="account" lay-search>
+                                <option value="">全部通道</option>
+                                <volist name="channelList" id="vo">
+                                    <option <if condition="I('channel',0) eq $vo['id']">selected</if>
+                                    value="<{$vo.id}>"><{$vo.title}></option>
+                                </volist>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-inline">
+                        <label class="layui-form-label">通道子账号</label>
+                        <div class="layui-input-inline">
+                            <select name="account" lay-filter="account" id="account" lay-search>
+                                <option value="">全部子账号</option>
+                                <if condition="$accountlist">
+                                    <volist name="accountlist" id="vo">
+                                        <option <if condition="I('param.account',0) eq $vo['id']">selected</if>
+                                        value="<{$vo.id}>"><{$vo.title}></option>
+                                    </volist>
+                                </if>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-inline">
+                        <button type="submit" class="layui-btn"><span
+                                class="glyphicon glyphicon-search"></span> 搜索
+                        </button>
+                        <a href="javascript:;" id="export" class="layui-btn layui-btn-warm"><span class="glyphicon glyphicon-export"></span> 导出数据</a>
+                    </div>
+                </form>
+
+                    <blockquote class="layui-elem-quote" style="font-size:14px;padding;8px;">
+                        归集总数：<span class="label stat_success"><{$count}></span>
+                        成功总数：<span class="label stat_success"><{$success_count}></span>
+                        失败总数：<span class="label stat_fail"><{$fail_count}></span>
+                        归集总金额：<span class="label stat_success"><{$amount}></span>
+                        成功总金额：<span class="label stat_success"><{$success_amount}></span>
+                        失败总金额：<span class="label stat_fail"><{$fail_amount}></span>
+                    </blockquote>
+                <!--用户列表-->
+                <table class="layui-table" lay-skin="line" lay-size="sm"
+                       lay-data="{width:'100%',limit:<{:I('param.rows')}>,id:'status'}">
+                    <thead>
+                    <tr>
+                        <th lay-data="{field:'sweep_account', width:250, sort: true}">支付宝归集账号</th>
+                        <th lay-data="{field:'channel', width:250}">入金渠道(供应商) - 编号</th>
+                        <th lay-data="{field:'channel_account', width:250}">入金渠道子账号</th>
+                        <!--<th lay-data="{field:'realname', width:150, sort: true}">归集账号真实名称</th>-->
+                        <th lay-data="{field:'amount', width:200,style:'background-color: #7e98e6; color: #fff;cursor: pointer;'}">
+                            归集金额
+                        </th>
+                        <th lay-data="{field:'status', width:110}">状态</th>
+                        <th lay-data="{field:'addtime', width:150}">归集时间</th>
+                        <th lay-data="{field:'remark', width:150}">备注</th>
+                        <!--<th lay-data="{field:'op',width:300}">操作</th>-->
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="list" id="vo">
+                        <tr>
+                            <td><{$vo.sweep_account}></td>
+                            <td><{$vo.title}> - <{$vo.channel_id}></td>
+                            <td><{$vo.account_name}></td>
+                            <!--<td><{$vo.realname}></td>-->
+                            <td><{$vo.amount}></td>
+                            <td>
+                                <if condition="$vo['status'] eq 1">
+                                    <span  class="label stat_success">成功</span>
+                                    <else/>
+                                    <span class="label stat_fail">失败</span>
+                                </if>
+                            </td>
+                            <td><{$vo.addtime|date="Y-m-d H:i:s",###}></td>
+                            <td><{$vo.remark}></td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+                <!--用户列表-->
+                <div class="page"><{$page}>
+                    <div class="layui-input-inline">
+                        <form class="layui-form" action="" method="get" id="pageForm" autocomplete="off">
+
+                            <select name="rows" style="height: 32px;" id="pageList" lay-ignore>
+                                <option value="">显示条数</option>
+                                <option
+                                <if condition="I('param.rows') neq '' && I('param.rows') eq 15">selected</if>
+                                value="15">15条</option>
+                                <option
+                                <if condition="I('param.rows') eq 30">selected</if>
+                                value="30">30条</option>
+                                <option
+                                <if condition="I('param.rows') eq 50">selected</if>
+                                value="50">50条</option>
+                                <option
+                                <if condition="I('param.rows') eq 80">selected</if>
+                                value="80">80条</option>
+                                <option
+                                <if condition="I('param.rows') eq 100">selected</if>
+                                value="100">100条</option>
+                                <option
+                                <if condition="I('param.rows') eq 1000">selected</if>
+                                value="1000">1000条</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/footer"/>
+<script>
+    layui.use(['form', 'table', 'laydate', 'layer'], function () {
+        var form = layui.form
+            , table = layui.table
+            , layer = layui.layer
+            , laydate = layui.laydate;
+        //日期时间范围
+        laydate.render({
+            elem: '#addtime'
+            , type: 'datetime'
+            , theme: 'molv'
+            , range: '|'
+        });
+        //监听工具条
+        table.on('tool(test1)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'detail') {
+                layer.msg('ID：' + data.id + ' 的查看操作');
+            } else if (obj.event === 'del') {
+                layer.confirm('真的删除行么', function (index) {
+                    obj.del();
+                    layer.close(index);
+                });
+            } else if (obj.event === 'edit') {
+                layer.alert('编辑行：<br>' + JSON.stringify(data))
+            }
+        });
+        //全选
+        form.on('checkbox(allChoose)', function (data) {
+            var child = $(data.elem).parents('table').find('tbody input[lay-filter="ids"]');
+            child.each(function (index, item) {
+                item.checked = data.elem.checked;
+            });
+            form.render('checkbox');
+        });
+
+        //监听用户状态
+        form.on('switch(switchStatus)', function (data) {
+            var isopen = this.checked ? 1 : 0,
+                id = $(this).attr('data-uid');
+            $.ajax({
+                url: "<{:U('Alipay/editStatus')}>",
+                type: 'post',
+                data: "id=" + id + "&isopen=" + isopen,
+                success: function (res) {
+                    if (res.status) {
+                        layer.tips('温馨提示：开启成功', data.othis);
+                    } else {
+                        layer.tips('温馨提示：关闭成功', data.othis);
+                    }
+                    setTimeout(function () {
+                        location.replace(location.href);
+                    }, 1500);
+
+                }
+            });
+        });
+        form.on('switch(switchCharge)', function (data) {
+            var isopen = this.checked ? 1 : 0,
+                uid = $(this).attr('data-uid');
+            $.ajax({
+                url: "<{:U('User/editCharge')}>",
+                type: 'post',
+                data: "uid=" + uid + "&isopen=" + isopen,
+                success: function (res) {
+                    if (res.status) {
+                        layer.tips('温馨提示：开启成功', data.othis);
+                    } else {
+                        layer.tips('温馨提示：关闭成功', data.othis);
+                    }
+                    setTimeout(function () {
+                        location.replace(location.href);
+                    }, 1500);
+
+                }
+            });
+        });
+
+        form.on('select(channel)', function(data){
+            var  channel_id = data.elem[data.elem.selectedIndex].value;
+            var name = data.elem.dataset.child;
+            console.log(name);
+            if(channel_id) {
+                $.ajax({
+                    type:'get',
+                    data:{'channel_id':channel_id},
+                    dataType:'json',
+                    url:'<{:U("Alipay/getAccount")}>',
+                    success:function(info){
+                        if(info['status'] == 1){
+                            var selectName = $('select[name="' + name + '"]');
+                            selectName.html('<option value="">请选择</option>');
+                            for(k in info['data']){
+                                selectName.append('<option value="'+ info['data'][k]['id'] +'">' + info['data'][k]['title'] + '</option>');
+                                form.render('select');
+                            }
+                        }else{
+                            layer.msg('获取子账号列表失败',{time: 2000, icon:'error'});
+                        }
+                    },
+                    error:function(){
+                        layer.msg('通讯错误,请重新刷新页面',{time: 2000, icon:'error'});
+                    },
+                });
+            }
+        });
+    });
+
+    // 用户-编辑
+    function member_edit(title, url, id, w, h) {
+        x_admin_show(title, url, w, h);
+    }
+
+
+    /*用户-删除*/
+    function member_del(obj, id) {
+        layer.confirm('确认要删除吗？', function (index) {
+            $.ajax({
+                url: "<{:U('Alipay/delAccount')}>",
+                type: 'post',
+                data: {id:id},
+                success: function (res) {
+                    if (res.status) {
+                        $(obj).parents("tr").remove();
+                        layer.msg('已删除!', {icon: 1, time: 1000});
+                    }
+                }
+            });
+        });
+    }
+
+    $('#export').on('click',function(){
+        window.location.href
+            ="<{:U('Admin/Alipay/sweepExportorder',array('username'=>I('username'),'addtime'=>I('addtime'),'channel'=>I('channel'),'account'=>I('account')))}>";
+    });
+    $('#pageList').change(function () {
+        $('#rows').val($(this).val());
+        $('#userform').submit();
+    });
+</script>
+</body>
+</html>

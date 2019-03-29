@@ -1,0 +1,34 @@
+【2019-01-30 13:22:22】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"7MAASDF5XO5ENR0XRHZUMASYRWP3XGWI\",\"systemID\":\"154882574293140\",\"price\":\"100\",\"outTradeNo\":\"20190130132222101100\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx06076lsqkltcnezd9164\"}"}
+
+【2019-01-30 13:22:22】二维码URL：http://rain.haohan168.cn:8086/Pay_HTGuMaPay_secondCheck.html?id=20190130132222101100&bankName=&cardIndex=&cardNo=&bankAccount=&price=1&bankMark=
+
+【2019-01-30 13:22:48】\进入二次查单等待支付订单!20190130132222101100
+
+【2019-01-30 13:22:48】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=&cardNo=&money=1&amount=1&bankMark=&bankName=&cardIndex=&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-01-30 13:26:34】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"7MAASDF5XO5ENR0XRHZUMASYRWP3XGWI\",\"systemID\":\"1548825994470k4\",\"price\":\"99\",\"outTradeNo\":\"20190130132634975410\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx05809k4vlxcwqxqrho62\"}"}
+
+【2019-01-30 13:26:34】二维码URL：http://rain.haohan168.cn:8086/Pay_HTGuMaPay_secondCheck.html?id=20190130132634975410&bankName=&cardIndex=&cardNo=&bankAccount=&price=0.99&bankMark=
+
+【2019-01-30 13:26:42】\进入二次查单等待支付订单!20190130132634975410
+
+【2019-01-30 13:26:42】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=&cardNo=&money=0.99&amount=0.99&bankMark=&bankName=&cardIndex=&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-01-30 13:28:44】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"7MAASDF5XO5ENR0XRHZUMASYRWP3XGWI\",\"systemID\":\"1548826124814hn\",\"price\":\"100\",\"outTradeNo\":\"20190130132844999949\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx06076lsqkltcnezd9164\"}"}
+
+【2019-01-30 13:28:44】二维码URL：http://rain.haohan168.cn:8086/Pay_HTGuMaPay_secondCheck.html?id=20190130132844999949&bankName=&cardIndex=&cardNo=&bankAccount=&price=1&bankMark=
+
+【2019-01-30 13:28:48】\进入二次查单等待支付订单!20190130132844999949
+
+【2019-01-30 13:28:48】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=&cardNo=&money=1&amount=1&bankMark=&bankName=&cardIndex=&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-01-30 13:28:52】\转账下单返回参数：{"errCode":100020,"errCodeDes":"\u65e0\u5bf9\u5e94\u5546\u54c1","resultCode":false,"data":"null"}
+
+【2019-01-30 13:30:59】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"7MAASDF5XO5ENR0XRHZUMASYRWP3XGWI\",\"systemID\":\"1548826259189bd\",\"price\":\"98\",\"outTradeNo\":\"20190130133059515056\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx00792zmbk6ja6fzpj3e4\"}"}
+
+【2019-01-30 13:30:59】二维码URL：http://rain.haohan168.cn:8086/Pay_HTGuMaPay_secondCheck.html?id=20190130133059515056&bankName=&cardIndex=&cardNo=&bankAccount=&price=0.98&bankMark=
+
+【2019-01-30 13:31:06】\进入二次查单等待支付订单!20190130133059515056
+
+【2019-01-30 13:31:06】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=&cardNo=&money=0.98&amount=0.98&bankMark=&bankName=&cardIndex=&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>支付宝AI智能支付系统</title>
+    <script type="text/javascript" src="/Public/Alips/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/qrcode.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/layer.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/qqapi.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/qrcode.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/zzspay.css">
+    <style>
+        #qrcode>img{
+            height: 250px;
+            width: 250px;
+        }
+        #qrcode>canvas{
+            height: 250px!important;
+            width: 250px!important;
+        }
+        .pay_head{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+            height: 3rem;
+        }
+    </style>
+
+</head>
+<body>
+<div style="width: 100%; text-align: center;font-family:微软雅黑;">
+    <div class="pay_head" >
+        <div id="orderDiv">订单号：<{$orderid}></div>
+    </div>
+    <div id="panelWrap" class="panel-wrap">
+        <div class="pay_center">
+
+
+        </div>
+        <div class="qrcode-warp" style="margin: 1rem 0;">
+            <div id="pay_output" style="display:none"></div>
+            <div id="qrcode">
+                <img id="qrcode_load" src="/Public/Alips/picture/loading.gif"  style="display: block;">
+            </div>
+        </div>
+        <div class="pay_center">
+            <!--<div id="payMoney">
+                <span>充值金额</span><span style="color: #000;">￥</span><span style="font-size: 1.5em;color: #000;"><{$money}></span><span>元</span>
+
+
+            </div> -->
+            <div>
+                <span>实付金额</span><span style="color: red;">￥</span><span style="font-size: 2em;color: red;" id="priceSpan"><{$price}></span><span>元</span>
+            </div>
+            <div>
+                <span style="font-size: 1.5em;color: red;">1.请发普通红包转入,切勿转账支付,否则无法到账！</span>
+            </div>
+            <div>
+                <span style="font-size: 1.5em;color: red;">2.请勿重复扫码和修改金额,否则无法到账！</span>
+            </div>
+            <div id="h5starttip" style="display:none">
+                <span style="font-size: 1.5em;color: red;">或点击“立即支付”</span>
+            </div>
+        </div>
+        <div class="pay_center" style="display:none" id="h5start">
+            <div class="panel-footer" id="btnDL">
+                <input type="button" style="line-height: 6vh"  value="立即支付" class="btn  btn-primary btn-lg btn-block" >
+            </div>
+        </div>
+        <div class="pay_time">
+            <input type="text"  class="text" id="time" readonly disabled>
+        </div>
+    </div>
+    <div class="pay_bottom">
+        <div>保存到相册仅能支付一次，切勿重复支付</div>
+    </div>
+</div>
+<script src="/Public/Alips/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/Public/Alips/js/jquery.qrcode.min.js"></script>
+<script type="text/javascript">
+
+    var host= location.protocol+"//"+location.host+"/";
+    var orderid=getQueryString("orderid");
+    var price=getQueryString("price");
+    var platform=getQueryString("platform");
+    var sign=getQueryString("sign");
+
+    var checkurl=host+"Pay_"+platform+"_Check.html?id="+orderid;
+    var callbackUrl=host+"Pay_"+platform+"_callbackurl.html?orderid="+orderid;
+    var url=host+"Pay_"+platform+"_secondCheck.html?id="+orderid+"&sign="+sign;
+    var btnurl="alipays://platformapi/startapp?appId=20000067&url="+encodeURIComponent(url);
+
+    //alert(orderid+"---"+price+"---"+platform+"---"+sign);
+    $("#priceSpan").text(price);
+    $("#orderDiv").text("订单号："+orderid);
+    var updateQrImg = 0;
+    var isLoadFinished = 0;
+    $(function(){
+        var browser = navigator.userAgent.toLowerCase();
+        if(browser.match(/Alipay/i)=="alipay"){
+            console.log("支付宝app的浏览器");
+            $("#h5start").css("display","block");
+            $("#h5starttip").css("display","block");
+        }
+    });
+
+    //订单监控  {订单监控}
+    function order(){
+
+        $.get(checkurl+"&isLoadFinished="+isLoadFinished, function(result){
+            //成功
+            if(result.code == '200'){
+
+                //回调页面
+                window.clearInterval(orderlst);
+                layer.confirm(result.msg, {
+                    icon: 1,
+                    title: '支付成功',
+                    btn: ['我知道了'] //按钮
+                }, function(){
+                    location.href=callbackUrl;
+                });
+                setTimeout(function(){location.href=callbackUrl;},1000);
+            }
+            //支付二维码
+            if(result.code == '100' && updateQrImg == 0){
+
+                $('#qrcode_load').remove();
+                $('#btnDL').attr('onclick','pay("' + btnurl+ '")');
+                $('#btnDL').attr('disabled',false);
+                //设置参数方式
+                jQuery(function(){
+                    jQuery('#pay_output').qrcode(url);
+                    var payCans = $('#pay_output').find('canvas')[0];
+                    var img = convertCanvasToImage(payCans);
+                    $('#qrcode').empty();
+                    $('#qrcode').append(img);
+                    isLoadFinished = 1;
+
+                })
+                updateQrImg = 1;
+            }
+            //订单已经超时
+            if(result.code == '-1' || result.code == '-2'){
+                window.clearInterval(orderlst);
+                layer.confirm(result.msg, {
+                    icon: 2,
+                    title: '订单已超时',
+                    btn: ['确认'] //按钮
+                }, function(){
+                    location.href=callbackUrl;
+                });
+            }
+        });
+    }
+    //周期监听
+    var orderlst = setInterval("order()",1000);
+
+
+    function pay(url){
+        window.location.href = "" + url;
+    }
+
+    function convertCanvasToImage(canvas) {
+        //新Image对象，可以理解为DOM
+        var image = new Image();
+        // canvas.toDataURL 返回的是一串Base64编码的URL
+        // 指定格式 PNG
+        image.src = canvas.toDataURL("image/png");
+        return image;
+    }
+
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+
+</script>
+</body></html>

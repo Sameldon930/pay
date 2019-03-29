@@ -1,0 +1,153 @@
+<include file="Public/header"/>
+<style type="text/css">
+    .layui-form-label {width: 100px;text-align: right!important;}
+</style>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ibox-content">
+                    <form class="layui-form" action="" autocomplete="off" id="bankform">
+                        <input type="hidden" name="id" value="<{$_GET['id']|htmlspecialchars}>">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">开户行：</label>
+                            <div class="layui-input-inline">
+                                <select name="b[bankname]" lay-filter="" lay-search="" lay-verify="required">
+                                    <option value="">选择开户行</option>
+                                    <volist name="banklist" id="vobank">
+                                        <option <if condition="$b['bankname'] eq $vobank['bankname']">selected</if>
+                                        value="<{$vobank.bankname}>"><{$vobank.bankname}></option>
+                                    </volist>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">支行名称：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="b[subbranch]" lay-verify="" autocomplete="off" placeholder=""
+                                       class="layui-input" value="<{$b.subbranch}>" lay-verify="required">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">开户名：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="b[accountname]" lay-verify="" autocomplete="off" placeholder=""
+                                       class="layui-input" value="<{$b.accountname}>" lay-verify="required">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">银行卡号：</label>
+                            <div class="layui-input-inline">
+                                <input type="input" name="b[cardnumber]" lay-verify="" autocomplete="off" placeholder=""
+                                       class="layui-input" value="<{$b.cardnumber}>" lay-verify="required">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">所属省：</label>
+                                <div class="layui-input-inline">
+                                    <select name="b[province_code]" lay-filter="location" lay-verify="required" data-child="b[city_code]">
+                                        <option value="">请选择</option>
+                                        <foreach name="provinceList" item="vo">
+                                            <option value="<{$vo.code}>" <if condition="$b[province_code] eq $vo[code]">selected="selected"</if>><{$vo.name}></option>
+                                        </foreach>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <label class="layui-form-label">所属城市：</label>
+                                <div class="layui-input-inline">
+                                    <select name="b[city_code]" lay-filter="location" lay-verify="required">
+                                        <if condition="$cityList">
+                                            <foreach name="cityList" item="vo">
+                                                <option value="<{$vo.code}>" <if condition="$b[city_code] eq $vo[code]">selected="selected"</if>><{$vo.name}></option>
+                                            </foreach>
+                                        </if>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">别名：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="b[alias]" lay-verify="" autocomplete="off" placeholder=""
+                                       class="layui-input" value="<{$b.alias}>">
+                            </div>
+                        </div>
+                        <include file="Public/send"/>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"></label>
+                            <div class="layui-input-inline">
+                                <button class="layui-btn" lay-submit="" lay-filter="save">立即提交</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/footer"/>
+<script>
+    layui.use(['laydate', 'form', 'layer', 'table', 'element'], function() {
+        var laydate = layui.laydate //日期
+            , form = layui.form //分页
+            , layer = layui.layer //弹层
+            , table = layui.table //表格
+            , element = layui.element; //元素操作
+        //监听提交
+        form.on('submit(save)', function(data){
+            $.ajax({
+                url:"<{:U('Account/addBankcard')}>",
+                type:"post",
+                data:$('#bankform').serialize(),
+                success:function(res){
+                    if(res.status){
+                        layer.alert("编辑成功", {icon: 6},function () {
+                            parent.location.reload();
+                            var index = parent.layer.getFrameIndex(window.name);
+                            parent.layer.close(index);
+                        });
+                    }else{
+                        layer.alert("操作失败", {icon: 5},function () {
+                            parent.location.reload();
+                            var index = parent.layer.getFrameIndex(window.name);
+                            parent.layer.close(index);
+                        });
+                    }
+                }
+            });
+            return false;
+        });
+        form.on('select(location)', function(data){
+            var  province_code = data.elem[data.elem.selectedIndex].value;
+            var name = data.elem.dataset.child;
+            if(province_code) {
+                $.ajax({
+                    type:'get',
+                    data:{'province_code':province_code},
+                    dataType:'json',
+                    url:'<{:U("Account/getCity")}>',
+                    success:function(info){
+                        if(info['status'] == 1){
+                            var selectName = $('select[name="' + name + '"]');
+                            selectName.html('<option value="">请选择</option>');
+                            for(k in info['data']){
+                                selectName.append('<option value="'+ info['data'][k]['code'] +'">' + info['data'][k]['name'] + '</option>');
+                                form.render('select');
+                            }
+                        }else{
+                            layer.msg('获取城市失败',{time: 2000, icon:'error'});
+                        }
+                    },
+                    error:function(){
+                        layer.msg('通讯错误,请重新刷新页面',{time: 2000, icon:'error'});
+                    },
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>

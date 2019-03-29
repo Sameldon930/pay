@@ -1,0 +1,107 @@
+<aside class="left-sidebar">
+    <ul class="nav-bar navbar-inverse hidden-xs-down">
+        <li class="nav-item"> <a class="nav-link navbar-toggler sidebartoggler  waves-effect waves-dark float-right" href="javascript:void(0)"><span class="navbar-toggler-icon"></span></a> </li>
+    </ul>
+    <!-- Sidebar scroll-->
+    <div class="scroll-sidebar">
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+                <li class="clearfix"></li>
+                <li class="active"> <a class="has-arrow waves-effect waves-dark" href="<{:U('Index/index')}>"><i class="flaticon-desktop-computer-screen-with-rising-graph"></i><span class="hide-menu">管理中心</span></a>
+                </li>
+                <if condition="$fans[groupid] eq 4 and $fans[open_charge] eq 1">
+				<!--
+                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fab fa-amazon-pay"></i><span class="hide-menu">充值</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a href="<{:U('Account/qrcode')}>" target="iframe0">充值二维码</a></li>
+                        <li><a href="<{:U('Account/link')}>" target="iframe0">充值链接</a></li>
+                        <if condition="$fans[agent_cate] gt 4">
+                            <li><a href="<{:U('Account/qrcode')}>" target="iframe0">台卡管理</a></li>
+                        </if>
+                    </ul>
+                </li>
+				-->
+                </if>
+                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="flaticon-speech"></i><span class="hide-menu">公告</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a href="<{:U("Index/gonggao")}>" target="iframe0">公告管理</a></li>
+                    </ul>
+                </li>
+                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="flaticon-user"></i><span class="hide-menu">账户管理</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a href="<{:U("Account/profile")}>" target="iframe0">基本信息</a></li>
+                        <li><a href="<{:U("Account/bankcard")}>" target="iframe0">银行卡管理</a></li>
+                        <li><a href="<{:U("Account/authorized")}>" target="iframe0">认证信息</a></li>
+                        <li><a href="<{:U("Account/editPassword")}>" target="iframe0">登录密码</a></li>
+                        <li><a href="<{:U("Account/editPaypassword")}>" target="iframe0">支付密码</a></li>
+                        <li><a href="<{:U("Account/loginrecord")}>" target="iframe0">登录记录</a></li>
+                        <li><a href="<{:U("Account/google")}>" target="iframe0">Google身份验证</a></li>
+                    </ul>
+                </li>
+                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="flaticon-check"></i><span class="hide-menu">财务管理</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a href="<{:U("Account/changeRecord")}>" target="iframe0">资金记录</a></li>
+                        <li><a href="<{:U("Account/channelFinance")}>" target="iframe0">通道分析</a></li>
+                        <li><a href="<{:U("Account/complaintsDeposit")}>" target="iframe0">保证金明细</a></li>
+                        <li><a href="<{:U("Account/frozenMoney")}>" target="iframe0">冻结资金明细</a></li>
+                        <eq name="fans[groupid]" value="4">
+                        <li><a href="<{:U("Account/reconciliation")}>" target="iframe0">对账单</a></li>
+                        </eq>
+                    </ul>
+                </li>
+                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="flaticon-badge"></i><span class="hide-menu">结算管理</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a href="<{:U("Withdrawal/clearing")}>" target="iframe0">结算申请</a></li>
+                        <if condition="$siteconfig['payingservice']">
+                        <li><a href="<{:U("Withdrawal/dfapply")}>" target="iframe0">代付申请</a></li>
+                        </if>
+                        <li><a href="<{:U("Withdrawal/index")}>" target="iframe0">结算记录</a></li>
+                        <li><a href="<{:U("Withdrawal/payment")}>" target="iframe0">代付记录</a></li>
+                        <if condition="$siteconfig['df_api'] and $fans[df_api]">
+                        <li><a href="<{:U("Withdrawal/check")}>" target="iframe0">商户代付管理</a></li>
+                        </if>
+                    </ul>
+                </li>
+                <neq name="fans[groupid]" value="4">
+                    <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="flaticon-forms"></i><span class="hide-menu">所有订单</span></a>
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a href="<{:U("Order/index")}>" target="iframe0">基本信息</a></li>
+                        </ul>
+                    </li>
+                </neq>
+                <eq name="fans[groupid]" value="4">
+                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="flaticon-forms"></i><span class="hide-menu">订单管理</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a href="<{:U("Order/index")}>" target="iframe0">所有订单</a></li>
+                        <li><a href="<{:U("Order/index",['status'=>2])}>" target="iframe0">成功订单</a></li>
+                        <li><a href="<{:U("Order/index",['status'=>1])}>" target="iframe0">手工补发</a></li>
+                        <li><a href="<{:U("Order/index",['status'=>0])}>" target="iframe0">未支付订单</a></li>
+                    </ul>
+                </li>
+                </eq>
+                <neq name="fans[groupid]" value="4">
+                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="flaticon-growth"></i><span class="hide-menu">代理管理</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <if condition="$siteconfig['invitecode']">
+                        <li><a href="<{:U("Agent/invitecode")}>" target="iframe0">注册邀请码</a></li>
+                        </if>
+                        <li><a href="<{:U("Agent/member")}>" target="iframe0">下级商户管理</a></li>
+                    </ul>
+                </li>
+                </neq>
+                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="flaticon-share"></i><span class="hide-menu">API管理</span></a>
+                <ul aria-expanded="false" class="collapse">
+                    <li><a href="<{:U("Channel/index")}>" target="iframe0">查看通道费率</a></li>
+                    <eq name="fans[groupid]" value="4">
+                    <li><a href="<{:U("Channel/apidocumnet")}>" target="iframe0">API密钥</a></li>
+                    <li><a href="/doc/index.html" target="iframe0">对接文档</a></li>
+                    </eq>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+    </div>
+    <!-- End Sidebar scroll-->
+</aside>

@@ -1,0 +1,222 @@
+<include file="Public/header"/>
+<style type="text/css">.font-30{font-size:32px;}</style>
+<!-- chartist CSS -->
+<link href="Public/New/plugins/vendors/morrisjs/morris.css" rel="stylesheet">
+<div class="container-fluid">
+  <!-- ============================================================== -->
+  <!-- Info box -->
+  <!-- ============================================================== -->
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <div class="card panel-main o-income panel-refresh">
+        <div class="refresh-container">
+          <div class="preloader" style="display: none;">
+            <div class="loader">
+              <div class="loader__figure"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body panel-wrapper">
+          <div class="d-flex m-b-10 no-block">
+            <h5 class="card-title m-b-0 align-self-center text-uppercase">上次登录</h5>
+            <div class="ml-auto">
+
+            </div>
+          </div>
+          <h6><i class="fa fa-square m-r-5 text-primary"></i>登录IP：<{$lastlogin.loginip}>，登录地址：<{$lastlogin.loginaddress}>，登录时间：<{$lastlogin.logindatetime}></h6>
+          <notempty name="ipItem">
+            <h6 style="margin-top:10px;">
+              <i class="fa fa-square m-r-5 text-pink"></i>登录IP白名单：
+            <foreach name="ipItem" item="v" key="k">
+              <span class="text-light"><{$v}> &nbsp;&nbsp;&nbsp;</span>
+            </foreach>
+            </h6>
+          </notempty>
+        </div>
+      </div>
+    </div>
+    <eq name="fans[groupid]" value="4">
+      <div class="col-lg-3 col-md-12">
+        <div class="card">
+          <div class="card-body p-30">
+            <div class="d-flex pt-3 pb-2 no-block">
+              <div class="align-self-center  mr-5 ml-4"><img src="Public/New/assets/imgs/icon/badge.svg" alt="" title="" width="55"> </div>
+              <div class="align-slef-center mr-auto">
+                <h2 class="align-slef-center font-medium lp-5 text-pink"><{$fans['balance']}></h2>
+                <h6 class="text-light m-b-0">可提现余额</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-12">
+        <div class="card">
+          <div class="card-body p-30">
+            <div class="d-flex pt-3 pb-2 no-block">
+              <div class="align-self-center  mr-5 ml-4"><img src="Public/New/assets/imgs/icon/badge.svg" alt="" title="" width="55"> </div>
+              <div class="align-slef-center mr-auto">
+                <h2 class="align-slef-center font-medium lp-5 text-primary"><{$fans['blockedbalance']}></h2>
+                <h6 class="text-light m-b-0">待解冻余额</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="card">
+        <div class="card-body p-30">
+          <div class="d-flex pt-3 pb-2 no-block">
+            <div class="align-self-center mr-5 ml-4"><img src="Public/New/assets/imgs/icon/note.svg" alt="" title="" width="55"></div>
+            <div class="align-slef-center mr-auto">
+              <h2 class="m-b-2 text-uppercase font-30 font-medium lp-5 text-pink"><{$stat.totalordercount}></h2>
+              <h6 class="text-light m-b-0">总成交订单数</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="card">
+        <div class="card-body p-30">
+          <div class="d-flex pt-3 pb-2 no-block">
+            <div class="align-self-center mr-5 ml-4"><img src="Public/New/assets/imgs/icon/note.svg" alt="" title="" width="55"></div>
+            <div class="align-slef-center mr-auto">
+              <h2 class="m-b-2 text-uppercase font-30 font-medium lp-5 text-primary"><{$stat.monthordercount}></h2>
+              <h6 class="text-light m-b-0">本月成交订单数</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-12">
+      <div class="card">
+        <div class="card-body p-30">
+          <div class="d-flex pt-3 pb-2 no-block">
+            <div class="align-self-center  mr-5 ml-4"><img src="Public/New/assets/imgs/icon/note.svg" alt="" title="" width="55"> </div>
+            <div class="align-slef-center mr-auto">
+              <h2 class="align-slef-center font-medium lp-5 text-pink"><{$stat.todayordercount}></h2>
+              <h6 class="text-light m-b-0">今日成交订单数 </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-12">
+        <div class="card">
+          <div class="card-body p-30">
+            <div class="d-flex pt-3 pb-2 no-block">
+              <div class="align-self-center mr-5 ml-4"><img src="Public/New/assets/imgs/icon/badge.svg" alt="" title="" width="55"> </div>
+              <div class="align-slef-center mr-auto">
+                <h2 class="align-slef-center font-medium lp-5 text-primary"><{$stat.totalordersum}></h2>
+                <h6 class="text-light m-b-0">总成交订单总额</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-12">
+        <div class="card">
+          <div class="card-body p-30">
+            <div class="d-flex pt-3 pb-2 no-block">
+              <div class="align-self-center  mr-5 ml-4"><img src="Public/New/assets/imgs/icon/badge.svg" alt="" title="" width="55"> </div>
+              <div class="align-slef-center mr-auto">
+                <h2 class="align-slef-center font-medium lp-5 text-pink"><{$stat.monthordersum}></h2>
+                <h6 class="text-light m-b-0">本月成交订单总额</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-12">
+        <div class="card">
+          <div class="card-body p-30">
+            <div class="d-flex pt-3 pb-2 no-block">
+              <div class="align-self-center  mr-5 ml-4"><img src="Public/New/assets/imgs/icon/badge.svg" alt="" title="" width="55"> </div>
+              <div class="align-slef-center mr-auto">
+                <h2 class="align-slef-center font-medium lp-5 text-pink"><{$stat.todayordersum}></h2>
+                <h6 class="text-light m-b-0">今日成交订单总额</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </eq>
+  </div>
+  <notempty name="chartCategory">
+  <div class="row">
+    <!-- Column -->
+    <div class="col-lg-12 col-md-12">
+      <div class="card panel-main o-income panel-refresh">
+        <div class="refresh-container">
+          <div class="preloader">
+            <div class="loader">
+              <div class="loader__figure"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body panel-wrapper">
+          <div class="m-b-10">
+            <div class="row">
+              <div class="col-md-4"><h5 class="card-title m-b-0 align-self-center text-uppercase">月度交易统计</h5></div>
+          </div>
+          <ul class="list-inline m-b-30 text-uppercase lp-5 font-medium font-12">
+            <li><i class="fa fa-square m-r-5 text-warning"></i> 金额</li>
+          </ul>
+          <div id="extra-area-chart-2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Column -->
+  </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End chart box one -->
+    <!-- chart box two -->
+    <!-- ============================================================== -->
+  </notempty>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<include file="Public/footer"/>
+<!--Morris JavaScript -->
+<script src="Public/New/plugins/vendors/raphael/raphael-min.js"></script>
+<script src="Public/New/plugins/vendors/morrisjs/morris.js"></script>
+<notempty name="chartCategory">
+<script>
+    /*
+  Template Name: Admin Mintone
+  Author: SRGIT
+  File: js
+  */
+    $(function () {
+        "use strict";
+        Morris.Area({
+            element: 'extra-area-chart-2',
+            data: [
+                <volist name="chartCategory" k="key" id="vo">
+                {
+                period: '<{$vo}>',
+                    amount: '<{$chartData2[$key]}>',
+            },
+            </volist>
+            ],
+            lineColors: ['#ff3c64'],
+            xkey: 'period',
+            ykeys: ['amount'],
+            labels: ['金额'],
+            pointSize: 0,
+            lineWidth: 0,
+            resize:true,
+            fillOpacity: 1,
+            behaveLikeLine: true,
+            gridLineColor: '#e0e0e0',
+            hideHover: 'auto',
+            parseTime:false
+        });
+
+    });
+</script>
+</notempty>
+</body>
+</html>

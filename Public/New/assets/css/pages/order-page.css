@@ -1,0 +1,54 @@
+/*
+Template Name: Admin Mintone
+Author: SRGIT
+
+File: scss
+*/
+/*
+Template Name: Admin Mintone
+Author: SRGIT
+
+File: scss
+*/
+
+
+.order-status ul {
+	margin: 0;
+	padding: 0
+}
+.order-status li {
+	margin: 5px 0;
+	padding: 0;
+	display: inline-block;
+	line-height: 36px;
+	color: #000;
+	width:20%;
+	font-size: 14px;
+	text-align: center;
+	position: relative
+}
+.order-status li:first-child{text-align:left;} 
+.order-status li:last-child{text-align:right;} 
+
+.circle-top {
+	width: 20px;
+	height: 20px;
+	padding:5px;
+	border-radius: 100%;
+	background: #fedde4;
+	margin: 0 auto
+}
+.circle-1 {
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: #f95476;
+	margin: 0 auto
+}
+.order-status li.non-active .circle-top{background:none;} 
+.order-status li.non-active {color:#b8b8b8;}
+.order-status li::before{content:''; height:1px; background:#e5e5e5;width:103%; left:0; position:absolute; top:10px;}
+.order-status .white-bg{background:#ffffff; position:relative; z-index:9; width:30px;  margin:0 auto; }
+
+.order-status li:first-child .white-bg{margin:0; position:relative; left:0;}
+.order-status li:last-child .white-bg{margin:0;  position:relative; left:85%;}

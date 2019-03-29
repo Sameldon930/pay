@@ -1,0 +1,29 @@
+<include file="Public/header"/>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex m-b-10 no-block">
+            <h5 class="card-title m-b-0 align-self-center">通知公告</h5>
+          </div>
+          <div class="table-responsive m-t-10">
+            <table class="table">
+              <tbody>
+              <volist name="list" key="k" id="vo">
+                <tr <if condition="$k%2 eq 0">class="bg-white-2"</if>>
+                <td class="text-dark font-weight-bold"> <a href="<{:U("Index/showcontent",["id"=>$vo["id"]])}>"><{$vo.title}></a></td>
+              </tr>
+              </volist>
+              </tbody>
+            </table>
+              <{$page}>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+  <include file="Public/footer"/>
+</body>
+</html>

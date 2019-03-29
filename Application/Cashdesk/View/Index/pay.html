@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>收银台</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <script type="text/javascript" src="/Public/cashdesk/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/cashdesk/js/amazeui.min.js"></script>
+    <script type="text/javascript" src="/Public/cashdesk/js/pay.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Public/cashdesk/css/amazeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/cashdesk/css/main.css" />
+    <script>var path="http://biu.haohan168.cn:80/zagame/";</script>
+</head>
+
+<body>
+<div class="pay">
+    <!--主内容开始编辑-->
+    <div class="tr_recharge">
+        <div class="tr_rechtext">
+            <p class="te_retit" style=" font-size: 35px;">
+                <span style="text-align: center;display:block;">订单状态</span>
+            </p>
+        </div>
+
+        <div class="tr_rechcho am-form-group" style="width: 100%">
+            <table border="2" width="100%">
+                <tr>
+                    <td style="width: 20%;height: 50px;text-align: center;">订单号：</td>
+                    <td style="width: 80%;text-align: center;"><{$info.transaction_id}></td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;height: 50px;text-align: center;">订单状态：</td>
+                    <td style="width: 80%;text-align: center;">
+                        <if condition = "$info.returncode eq 00">支付成功！</if>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="tr_rechnum">
+            <span style="font-weight: 600;margin-left: 15px;">支付金额：</span>
+            <p class="rechnum"><{$info.amount}>元</p></div>
+        <div class="tr_paybox">
+            <input type="button" id="back" onclick="callBack()" value="返回收银台" class="tr_pay am-btn am-btn-primary" style="width: 100%;" />
+        </div>
+    </div>
+</div>
+
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="my-popup">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">
+            <span data-am-modal-close class="am-close">&times;</span></div>
+        <div class="am-modal-bd">
+            <span style="color: red"></span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/Public/cashdesk/js/ui-choose.js"></script>
+</body>
+
+</html>

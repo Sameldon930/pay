@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+        function ready(callback) {
+            if (window.AlipayJSBridge) {
+                callback && callback();
+            } else {
+                document.addEventListener('AlipayJSBridgeReady', callback, false);
+            }
+        }
+        ready(function() {
+            // 隐藏菜单
+            AlipayJSBridge.call('hideOptionMenu');
+            //导航栏loadin
+            AlipayJSBridge.call('showTitleLoading');
+            //副标题文字
+            AlipayJSBridge.call('setTitle', {title: '自助充值', subtitle: '安全支付'});
+        })
+    </script>
+    <title>网上支付 安全快速！</title>
+    <link rel="stylesheet" type="text/css" href="/Public/alipayAI_files/overdue.css">
+    </head>
+<body>
+<div class="m-phone-preview">
+    <div class="voucher-preview-content">
+            <div class="m-phone-front">
+            <p class="voucher-preview-name">温馨提示</p>
+            <div class="pay-msg-content warning">
+                <span class="tips">二维码已过期。</span>
+            </div>
+        </div>
+        </div>
+</div>
+<script>
+    function javascript() {
+        window.location.href = '';
+    }
+</script>
+
+</body></html>

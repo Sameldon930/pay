@@ -1,0 +1,272 @@
+【2019-02-12 21:12:23】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"C09BJV3KVMP1YZZ0CLNR16D1ES9O64U3\",\"systemID\":\"1549977143344i9\",\"bankMark\":\"FJRC\",\"price\":\"20000\",\"outTradeNo\":\"20190212211223555348\",\"bankName\":\"\u798f\u5efa\u519c\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"623036***2302\",\"cardIndex\":\"1902121952101555767\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=623036***2302&bankAccount=\u5f20\u51ef\u950b&amount=200&money=200.00&bankMark=FJRC\"}"}
+
+【2019-02-12 21:12:23】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190212211223555348&bankName=%E7%A6%8F%E5%BB%BA%E5%86%9C%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1902121952101555767&cardNo=623036***2302&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=200&bankMark=FJRC
+
+【2019-02-12 21:12:36】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"C09BJV3KVMP1YZZ0CLNR16D1ES9O64U3\",\"systemID\":\"1549977156102mu\",\"bankMark\":\"FJRC\",\"price\":\"10000\",\"outTradeNo\":\"20190212211236524952\",\"bankName\":\"\u798f\u5efa\u519c\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"623036***2302\",\"cardIndex\":\"1902121952101555767\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=623036***2302&bankAccount=\u5f20\u51ef\u950b&amount=100&money=100.00&bankMark=FJRC\"}"}
+
+【2019-02-12 21:12:36】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190212211236524952&bankName=%E7%A6%8F%E5%BB%BA%E5%86%9C%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1902121952101555767&cardNo=623036***2302&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=100&bankMark=FJRC
+
+【2019-02-12 21:21:58】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"C09BJV3KVMP1YZZ0CLNR16D1ES9O64U3\",\"systemID\":\"15499777183991q\",\"bankMark\":\"FJRC\",\"price\":\"9999\",\"outTradeNo\":\"20190212212158545310\",\"bankName\":\"\u798f\u5efa\u519c\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"623036***2302\",\"cardIndex\":\"1902121952101555767\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=623036***2302&bankAccount=\u5f20\u51ef\u950b&amount=100&money=99.99&bankMark=FJRC\"}"}
+
+【2019-02-12 21:21:58】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190212212158545310&bankName=%E7%A6%8F%E5%BB%BA%E5%86%9C%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1902121952101555767&cardNo=623036***2302&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=99.99&bankMark=FJRC
+
+【2019-02-12 21:22:16】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"C09BJV3KVMP1YZZ0CLNR16D1ES9O64U3\",\"systemID\":\"1549977736274o2\",\"bankMark\":\"FJRC\",\"price\":\"19999\",\"outTradeNo\":\"20190212212216565248\",\"bankName\":\"\u798f\u5efa\u519c\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"623036***2302\",\"cardIndex\":\"1902121952101555767\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=623036***2302&bankAccount=\u5f20\u51ef\u950b&amount=200&money=199.99&bankMark=FJRC\"}"}
+
+【2019-02-12 21:22:16】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190212212216565248&bankName=%E7%A6%8F%E5%BB%BA%E5%86%9C%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1902121952101555767&cardNo=623036***2302&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=199.99&bankMark=FJRC
+
+【2019-02-12 21:27:14】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"C09BJV3KVMP1YZZ0CLNR16D1ES9O64U3\",\"systemID\":\"1549978034482vt\",\"bankMark\":\"FJRC\",\"price\":\"20000\",\"outTradeNo\":\"20190212212714505550\",\"bankName\":\"\u798f\u5efa\u519c\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"623036***2302\",\"cardIndex\":\"1902121952101555767\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=623036***2302&bankAccount=\u5f20\u51ef\u950b&amount=200&money=200.00&bankMark=FJRC\"}"}
+
+【2019-02-12 21:27:14】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190212212714505550&bankName=%E7%A6%8F%E5%BB%BA%E5%86%9C%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1902121952101555767&cardNo=623036***2302&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=200&bankMark=FJRC
+
+【2019-02-12 21:27:27】\进入二次查单等待支付订单!20190212212714505550
+
+【2019-02-12 21:27:27】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=623036***2302&money=200&amount=200&bankMark=FJRC&bankName=福建农商银行&cardIndex=1902121952101555767&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 21:27:30】\进入二次查单等待支付订单!20190212212714505550
+
+【2019-02-12 21:27:30】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=623036***2302&money=200&amount=200&bankMark=FJRC&bankName=福建农商银行&cardIndex=1902121952101555767&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 21:27:34】\进入二次查单等待支付订单!20190212212714505550
+
+【2019-02-12 21:27:34】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=623036***2302&money=200&amount=200&bankMark=FJRC&bankName=福建农商银行&cardIndex=1902121952101555767&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 21:28:15】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"C09BJV3KVMP1YZZ0CLNR16D1ES9O64U3\",\"systemID\":\"15499780953502u\",\"bankMark\":\"FJRC\",\"price\":\"30000\",\"outTradeNo\":\"20190212212815102535\",\"bankName\":\"\u798f\u5efa\u519c\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"623036***2302\",\"cardIndex\":\"1902121952101555767\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=623036***2302&bankAccount=\u5f20\u51ef\u950b&amount=300&money=300.00&bankMark=FJRC\"}"}
+
+【2019-02-12 21:28:15】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190212212815102535&bankName=%E7%A6%8F%E5%BB%BA%E5%86%9C%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1902121952101555767&cardNo=623036***2302&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=300&bankMark=FJRC
+
+【2019-02-12 21:28:21】\进入二次查单等待支付订单!20190212212815102535
+
+【2019-02-12 21:28:21】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=623036***2302&money=300&amount=300&bankMark=FJRC&bankName=福建农商银行&cardIndex=1902121952101555767&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 21:28:25】\进入二次查单等待支付订单!20190212212815102535
+
+【2019-02-12 21:28:25】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=623036***2302&money=300&amount=300&bankMark=FJRC&bankName=福建农商银行&cardIndex=1902121952101555767&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 21:40:28】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"V1K9YPT1TP3FRLVROJGSFY7M8WKHTRMI\",\"systemID\":\"1549978828912zv\",\"bankMark\":\"ICBC\",\"price\":\"20000\",\"outTradeNo\":\"20190212214028991009\",\"bankName\":\"\u4e2d\u56fd\u5de5\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"621226***6320\",\"cardIndex\":\"1703061468418347875\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=621226***6320&bankAccount=\u5f20\u51ef\u950b&amount=200&money=200.00&bankMark=ICBC\"}"}
+
+【2019-02-12 21:40:28】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190212214028991009&bankName=%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1703061468418347875&cardNo=621226***6320&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=200&bankMark=ICBC
+
+【2019-02-12 21:40:47】\进入二次查单等待支付订单!20190212214028991009
+
+【2019-02-12 21:40:47】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=621226***6320&money=200&amount=200&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 21:40:52】\进入二次查单等待支付订单!20190212214028991009
+
+【2019-02-12 21:40:52】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=621226***6320&money=200&amount=200&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+-1549978828
+
+-1549978095
+
+【2019-02-12 21:58:05】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"V1K9YPT1TP3FRLVROJGSFY7M8WKHTRMI\",\"systemID\":\"1549979885022yv\",\"bankMark\":\"ICBC\",\"price\":\"30000\",\"outTradeNo\":\"20190212215805100485\",\"bankName\":\"\u4e2d\u56fd\u5de5\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"621226***6320\",\"cardIndex\":\"1703061468418347875\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=621226***6320&bankAccount=\u5f20\u51ef\u950b&amount=300&money=300.00&bankMark=ICBC\"}"}
+
+【2019-02-12 21:58:05】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190212215805100485&bankName=%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1703061468418347875&cardNo=621226***6320&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=300&bankMark=ICBC
+
+【2019-02-12 21:58:11】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"V1K9YPT1TP3FRLVROJGSFY7M8WKHTRMI\",\"systemID\":\"1549979891187ha\",\"bankMark\":\"ICBC\",\"price\":\"29999\",\"outTradeNo\":\"20190212215811515097\",\"bankName\":\"\u4e2d\u56fd\u5de5\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"621226***6320\",\"cardIndex\":\"1703061468418347875\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=621226***6320&bankAccount=\u5f20\u51ef\u950b&amount=300&money=299.99&bankMark=ICBC\"}"}
+
+【2019-02-12 21:58:11】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190212215811515097&bankName=%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1703061468418347875&cardNo=621226***6320&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=299.99&bankMark=ICBC
+
+【2019-02-12 21:58:19】\进入二次查单等待支付订单!20190212215811515097
+
+【2019-02-12 21:58:19】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=621226***6320&money=299.99&amount=299.99&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 21:58:20】\进入二次查单等待支付订单!20190212215811515097
+
+【2019-02-12 21:58:20】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=621226***6320&money=299.99&amount=299.99&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 21:58:35】\进入二次查单等待支付订单!20190212215811515097
+
+【2019-02-12 21:58:35】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=621226***6320&money=299.99&amount=299.99&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 22:07:55】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"V1K9YPT1TP3FRLVROJGSFY7M8WKHTRMI\",\"systemID\":\"15499804757104l\",\"bankMark\":\"ICBC\",\"price\":\"20000\",\"outTradeNo\":\"20190212220755989797\",\"bankName\":\"\u4e2d\u56fd\u5de5\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"621226***6320\",\"cardIndex\":\"1703061468418347875\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=621226***6320&bankAccount=\u5f20\u51ef\u950b&amount=200&money=200.00&bankMark=ICBC\"}"}
+
+【2019-02-12 22:07:55】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190212220755989797&bankName=%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1703061468418347875&cardNo=621226***6320&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=200&bankMark=ICBC
+
+【2019-02-12 22:08:06】\进入二次查单等待支付订单!20190212220755989797
+
+【2019-02-12 22:08:06】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=621226***6320&money=200&amount=200&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 22:08:15】\进入二次查单等待支付订单!20190212220755989797
+
+【2019-02-12 22:08:15】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=621226***6320&money=200&amount=200&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 22:16:41】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"V1K9YPT1TP3FRLVROJGSFY7M8WKHTRMI\",\"systemID\":\"1549981001955bn\",\"bankMark\":\"ICBC\",\"price\":\"10000\",\"outTradeNo\":\"20190212221641571015\",\"bankName\":\"\u4e2d\u56fd\u5de5\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"6212261408017396320\",\"cardIndex\":\"1703061468418347875\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=6212261408017396320&bankAccount=\u5f20\u51ef\u950b&amount=100&money=100.00&bankMark=ICBC\"}"}
+
+【2019-02-12 22:16:41】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190212221641571015&bankName=%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1703061468418347875&cardNo=6212261408017396320&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=100&bankMark=ICBC
+
+【2019-02-12 22:16:50】\进入二次查单等待支付订单!20190212221641571015
+
+【2019-02-12 22:16:50】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=6212261408017396320&money=100&amount=100&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-12 22:16:55】\进入二次查单等待支付订单!20190212221641571015
+
+【2019-02-12 22:16:55】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=6212261408017396320&money=100&amount=100&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+-1549979891
+
+-1549980475
+
+-1549981001
+
+【2019-02-13 09:58:24】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"V1K9YPT1TP3FRLVROJGSFY7M8WKHTRMI\",\"systemID\":\"1550023103976us\",\"bankMark\":\"ICBC\",\"price\":\"100\",\"outTradeNo\":\"20190213095823102101\",\"bankName\":\"\u4e2d\u56fd\u5de5\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"6212261408017396320\",\"cardIndex\":\"1703061468418347875\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=6212261408017396320&bankAccount=\u5f20\u51ef\u950b&amount=1&money=1.00&bankMark=ICBC\"}"}
+
+【2019-02-13 09:58:24】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190213095823102101&bankName=%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1703061468418347875&cardNo=6212261408017396320&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=1&bankMark=ICBC
+
+【2019-02-13 09:58:54】\进入二次查单等待支付订单!20190213095823102101
+
+【2019-02-13 09:58:54】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=6212261408017396320&money=1&amount=1&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+-1550023103
+
+-1550023103
+
+【2019-02-13 10:04:55】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"V1K9YPT1TP3FRLVROJGSFY7M8WKHTRMI\",\"systemID\":\"1550023495878ns\",\"bankMark\":\"ICBC\",\"price\":\"10000\",\"outTradeNo\":\"20190213100455559910\",\"bankName\":\"\u4e2d\u56fd\u5de5\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"6212261408017396320\",\"cardIndex\":\"1703061468418347875\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=6212261408017396320&bankAccount=\u5f20\u51ef\u950b&amount=100&money=100.00&bankMark=ICBC\"}"}
+
+【2019-02-13 10:04:55】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190213100455559910&bankName=%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1703061468418347875&cardNo=6212261408017396320&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=100&bankMark=ICBC
+
+【2019-02-13 10:05:03】\进入二次查单等待支付订单!20190213100455559910
+
+【2019-02-13 10:05:03】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=6212261408017396320&money=100&amount=100&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 10:05:09】\进入二次查单等待支付订单!20190213100455559910
+
+【2019-02-13 10:05:09】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=6212261408017396320&money=100&amount=100&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 10:06:44】\进入二次查单等待支付订单!20190213100455559910
+
+【2019-02-13 10:06:44】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=6212261408017396320&money=100&amount=100&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-13 10:43:52】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"V1K9YPT1TP3FRLVROJGSFY7M8WKHTRMI\",\"systemID\":\"155002583243044\",\"bankMark\":\"ICBC\",\"price\":\"100\",\"outTradeNo\":\"20190213104352565452\",\"bankName\":\"\u4e2d\u56fd\u5de5\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"6212261408017396320\",\"cardIndex\":\"1703061468418347875\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=6212261408017396320&bankAccount=\u5f20\u51ef\u950b&amount=1&money=1.00&bankMark=ICBC\"}"}
+
+【2019-02-13 10:43:52】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190213104352565452&bankName=%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1703061468418347875&cardNo=6212261408017396320&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=1&bankMark=ICBC
+
+-1550023495
+
+-1550023495
+
+【2019-02-23 13:25:35】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u9648\u5fd7\u7965\",\"uid\":\"U1NUKRG20FK2LHUXKPMU39CI5J2O9S1L\",\"systemID\":\"1550899535072d2\",\"bankMark\":\"CIB\",\"price\":\"100\",\"outTradeNo\":\"20190223132535102485\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"622908***4910\",\"cardIndex\":\"1902131955166715380\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***4910&bankAccount=\u9648\u5fd7\u7965&amount=1&money=1.00&bankMark=CIB\"}"}
+
+【2019-02-23 13:25:35】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223132535102485&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131955166715380&cardNo=622908***4910&bankAccount=%E9%99%88%E5%BF%97%E7%A5%A5&price=1&bankMark=CIB
+
+【2019-02-23 13:25:38】\进入二次查单等待支付订单!20190223132535102485
+
+【2019-02-23 13:25:38】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=陈志祥&cardNo=622908***4910&money=1&amount=1&bankMark=CIB&bankName=兴业银行&cardIndex=1902131955166715380&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-23 13:35:20】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u9648\u5fd7\u7965\",\"uid\":\"U1NUKRG20FK2LHUXKPMU39CI5J2O9S1L\",\"systemID\":\"1550900120735k1\",\"bankMark\":\"CIB\",\"price\":\"20000\",\"outTradeNo\":\"20190223133520569754\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"622908***4910\",\"cardIndex\":\"1902131955166715380\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***4910&bankAccount=\u9648\u5fd7\u7965&amount=200&money=200.00&bankMark=CIB\"}"}
+
+【2019-02-23 13:35:20】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223133520569754&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131955166715380&cardNo=622908***4910&bankAccount=%E9%99%88%E5%BF%97%E7%A5%A5&price=200&bankMark=CIB
+
+【2019-02-23 13:36:10】\进入二次查单等待支付订单!20190223133520569754
+
+【2019-02-23 13:36:10】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=陈志祥&cardNo=622908***4910&money=200&amount=200&bankMark=CIB&bankName=兴业银行&cardIndex=1902131955166715380&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-23 13:40:12】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u9648\u5fd7\u7965\",\"uid\":\"U1NUKRG20FK2LHUXKPMU39CI5J2O9S1L\",\"systemID\":\"1550900412330er\",\"bankMark\":\"CIB\",\"price\":\"19999\",\"outTradeNo\":\"20190223134012995257\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"622908***4910\",\"cardIndex\":\"1902131955166715380\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***4910&bankAccount=\u9648\u5fd7\u7965&amount=200&money=199.99&bankMark=CIB\"}"}
+
+【2019-02-23 13:40:12】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223134012995257&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1902131955166715380&cardNo=622908***4910&bankAccount=%E9%99%88%E5%BF%97%E7%A5%A5&price=199.99&bankMark=CIB
+
+【2019-02-23 13:40:34】\进入二次查单等待支付订单!20190223134012995257
+
+【2019-02-23 13:40:34】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=陈志祥&cardNo=622908***4910&money=199.99&amount=199.99&bankMark=CIB&bankName=兴业银行&cardIndex=1902131955166715380&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-23 13:51:50】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u66fe\u5fd7\u7fa4\",\"uid\":\"PBLH9AX4X0OC70SXP1PCEOW3CVUM0AVA\",\"systemID\":\"1550901110497xi\",\"bankMark\":\"CIB\",\"price\":\"20000\",\"outTradeNo\":\"20190223135150545498\",\"bankName\":\"\u5174\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622908***1910 \",\"cardIndex\":\"1901251993180817729\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908***1910 &bankAccount=\u66fe\u5fd7\u7fa4&amount=200&money=200.00&bankMark=CIB\"}"}
+
+【2019-02-23 13:51:50】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223135150545498&bankName=%E5%85%B4%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1901251993180817729&cardNo=622908***1910 &bankAccount=%E6%9B%BE%E5%BF%97%E7%BE%A4&price=200&bankMark=CIB
+
+【2019-02-23 13:52:10】\进入二次查单等待支付订单!20190223135150545498
+
+【2019-02-23 13:52:10】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=曾志群&cardNo=622908***1910 &money=200&amount=200&bankMark=CIB&bankName=兴业银行&cardIndex=1901251993180817729&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-23 13:53:12】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u66fe\u5fd7\u7fa4\",\"uid\":\"PBLH9AX4X0OC70SXP1PCEOW3CVUM0AVA\",\"systemID\":\"15509011929583m\",\"bankMark\":\"CMB\",\"price\":\"20000\",\"outTradeNo\":\"20190223135312561001\",\"bankName\":\"\u62db\u5546\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"621483***9847\",\"cardIndex\":\"1902201932285450043\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=621483***9847&bankAccount=\u66fe\u5fd7\u7fa4&amount=200&money=200.00&bankMark=CMB\"}"}
+
+【2019-02-23 13:53:12】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223135312561001&bankName=%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1902201932285450043&cardNo=621483***9847&bankAccount=%E6%9B%BE%E5%BF%97%E7%BE%A4&price=200&bankMark=CMB
+
+【2019-02-23 13:53:17】\进入二次查单等待支付订单!20190223135312561001
+
+【2019-02-23 13:53:17】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=曾志群&cardNo=621483***9847&money=200&amount=200&bankMark=CMB&bankName=招商银行&cardIndex=1902201932285450043&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-23 14:13:16】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"V1K9YPT1TP3FRLVROJGSFY7M8WKHTRMI\",\"systemID\":\"1550902396063k9\",\"bankMark\":\"ICBC\",\"price\":\"20000\",\"outTradeNo\":\"20190223141315981019\",\"bankName\":\"\u4e2d\u56fd\u5de5\u5546\u94f6\u884c\",\"overdueTime\":\"600\",\"cardNo\":\"6212261408017396320\",\"cardIndex\":\"1703061468418347875\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=6212261408017396320&bankAccount=\u5f20\u51ef\u950b&amount=200&money=200.00&bankMark=ICBC\"}"}
+
+【2019-02-23 14:13:16】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223141315981019&bankName=%E4%B8%AD%E5%9B%BD%E5%B7%A5%E5%95%86%E9%93%B6%E8%A1%8C&cardIndex=1703061468418347875&cardNo=6212261408017396320&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=200&bankMark=ICBC
+
+【2019-02-23 14:13:20】\进入二次查单等待支付订单!20190223141315981019
+
+【2019-02-23 14:13:20】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=6212261408017396320&money=200&amount=200&bankMark=ICBC&bankName=中国工商银行&cardIndex=1703061468418347875&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-23 14:24:17】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"SV14CB8GBMWG4M4WY69PKN0AUU27TTQ1\",\"systemID\":\"1550903057361eu\",\"bankMark\":\"ABC\",\"price\":\"20000\",\"outTradeNo\":\"20190223142417495298\",\"bankName\":\"\u4e2d\u56fd\u519c\u4e1a\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"623052***8174\",\"cardIndex\":\"1901091868084401035\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=623052***8174&bankAccount=\u5f20\u51ef\u950b&amount=200&money=200.00&bankMark=ABC\"}"}
+
+【2019-02-23 14:24:17】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223142417495298&bankName=%E4%B8%AD%E5%9B%BD%E5%86%9C%E4%B8%9A%E9%93%B6%E8%A1%8C&cardIndex=1901091868084401035&cardNo=623052***8174&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=200&bankMark=ABC
+
+【2019-02-23 14:24:20】\进入二次查单等待支付订单!20190223142417495298
+
+【2019-02-23 14:24:20】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=623052***8174&money=200&amount=200&bankMark=ABC&bankName=中国农业银行&cardIndex=1901091868084401035&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-23 14:35:13】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"1550903713651y9\",\"bankMark\":\"CMBC\",\"price\":\"20000\",\"outTradeNo\":\"20190223143513495654\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=200&money=200.00&bankMark=CMBC\"}"}
+
+【2019-02-23 14:35:13】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223143513495654&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=200&bankMark=CMBC
+
+【2019-02-23 14:35:40】\进入二次查单等待支付订单!20190223143513495654
+
+【2019-02-23 14:35:40】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=622620***2932&money=200&amount=200&bankMark=CMBC&bankName=中国民生银行&cardIndex=1902191072879533928&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-23 14:41:39】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"15509040998221v\",\"bankMark\":\"CMBC\",\"price\":\"20000\",\"outTradeNo\":\"20190223144139519810\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=200&money=200.00&bankMark=CMBC\"}"}
+
+【2019-02-23 14:41:39】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223144139519810&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=200&bankMark=CMBC
+
+【2019-02-23 14:41:54】\进入二次查单等待支付订单!20190223144139519810
+
+【2019-02-23 14:41:54】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=622620***2932&money=200&amount=200&bankMark=CMBC&bankName=中国民生银行&cardIndex=1902191072879533928&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-23 16:10:39】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"1550909439331p1\",\"bankMark\":\"CMBC\",\"price\":\"10\",\"outTradeNo\":\"20190223161039102525\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=0&money=0.10&bankMark=CMBC\"}"}
+
+【2019-02-23 16:10:39】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223161039102525&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=0.1&bankMark=CMBC
+
+【2019-02-23 16:57:02】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"1550912222396rp\",\"bankMark\":\"CMBC\",\"price\":\"10\",\"outTradeNo\":\"20190223165702101525\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=0&money=0.10&bankMark=CMBC\"}"}
+
+【2019-02-23 16:57:02】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223165702101525&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=0.1&bankMark=CMBC
+
+【2019-02-23 16:57:10】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"1550912230531uz\",\"bankMark\":\"CMBC\",\"price\":\"9\",\"outTradeNo\":\"20190223165710545553\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=0&money=0.09&bankMark=CMBC\"}"}
+
+【2019-02-23 16:57:10】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223165710545553&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=0.09&bankMark=CMBC
+
+【2019-02-23 17:02:41】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"1550912561352ho\",\"bankMark\":\"CMBC\",\"price\":\"100\",\"outTradeNo\":\"20190223170241495298\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=1&money=1.00&bankMark=CMBC\"}"}
+
+【2019-02-23 17:02:41】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223170241495298&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=1&bankMark=CMBC
+
+【2019-02-23 17:02:46】\进入二次查单等待支付订单!20190223170241495298
+
+【2019-02-23 17:02:46】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=622620***2932&money=1&amount=1&bankMark=CMBC&bankName=中国民生银行&cardIndex=1902191072879533928&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-23 17:03:05】\进入二次查单等待支付订单!20190223170241495298
+
+【2019-02-23 17:03:05】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=622620***2932&money=1&amount=1&bankMark=CMBC&bankName=中国民生银行&cardIndex=1902191072879533928&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+【2019-02-23 17:03:40】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"15509126202461a\",\"bankMark\":\"CMBC\",\"price\":\"99\",\"outTradeNo\":\"20190223170340995149\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=1&money=0.99&bankMark=CMBC\"}"}
+
+【2019-02-23 17:03:40】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223170340995149&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=0.99&bankMark=CMBC
+
+【2019-02-23 17:27:19】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"1550914039733ya\",\"bankMark\":\"CMBC\",\"price\":\"100\",\"outTradeNo\":\"20190223172719555710\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=1&money=1.00&bankMark=CMBC\"}"}
+
+【2019-02-23 17:27:19】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223172719555710&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=1&bankMark=CMBC
+
+【2019-02-23 17:27:31】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"1550914051114fe\",\"bankMark\":\"CMBC\",\"price\":\"99\",\"outTradeNo\":\"20190223172731514853\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=1&money=0.99&bankMark=CMBC\"}"}
+
+【2019-02-23 17:27:31】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223172731514853&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=0.99&bankMark=CMBC
+
+【2019-02-23 22:46:01】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"15509331611398y\",\"bankMark\":\"CMBC\",\"price\":\"100\",\"outTradeNo\":\"20190223224601574955\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=1&money=1.00&bankMark=CMBC\"}"}
+
+【2019-02-23 22:46:01】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223224601574955&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=1&bankMark=CMBC
+
+【2019-02-23 22:46:47】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"1550933207405o3\",\"bankMark\":\"CMBC\",\"price\":\"99\",\"outTradeNo\":\"20190223224647555299\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=1&money=0.99&bankMark=CMBC\"}"}
+
+【2019-02-23 22:46:47】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190223224647555299&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=0.99&bankMark=CMBC
+
+【2019-02-23 22:46:59】\进入二次查单等待支付订单!20190223224647555299
+
+【2019-02-23 22:46:59】\进入二次查单订单超时!https://www.alipay.com/?appId=09999988&actionType=toCard&sourceId=bill&cardNo=cardno&bankAccount=张凯锋&cardNo=622620***2932&money=0.99&amount=0.99&bankMark=CMBC&bankName=中国民生银行&cardIndex=1902191072879533928&cardNoHidden=true&cardChannel=HISTORY_CARD&orderSource=from
+
+-1550933207
+
+【2019-02-24 00:03:54】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"bankAccount\":\"\u5f20\u51ef\u950b\",\"uid\":\"JXAWJSZS3PA2NOE3DTQLGI1596N9CP2S\",\"systemID\":\"1550937834851um\",\"bankMark\":\"CMBC\",\"price\":\"30000\",\"outTradeNo\":\"20190224000354979857\",\"bankName\":\"\u4e2d\u56fd\u6c11\u751f\u94f6\u884c\",\"overdueTime\":\"300\",\"cardNo\":\"622620***2932\",\"cardIndex\":\"1902191072879533928\",\"qrcodeUrl\":\"alipays:\/\/platformapi\/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622620***2932&bankAccount=\u5f20\u51ef\u950b&amount=300&money=300.00&bankMark=CMBC\"}"}
+
+【2019-02-24 00:03:54】二维码URL：http://rain.haohan168.cn:8086/Pay_KaiBankTransferPay_secondCheck.html?id=20190224000354979857&bankName=%E4%B8%AD%E5%9B%BD%E6%B0%91%E7%94%9F%E9%93%B6%E8%A1%8C&cardIndex=1902191072879533928&cardNo=622620***2932&bankAccount=%E5%BC%A0%E5%87%AF%E9%94%8B&price=300&bankMark=CMBC
+

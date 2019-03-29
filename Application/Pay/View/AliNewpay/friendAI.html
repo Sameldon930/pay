@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.inc.min.js"></script>
+</head>
+
+<script>
+    var userAgent = navigator.userAgent.toLowerCase();
+    var tradeMemo='<{$tradeMemo}>';
+    var price=<{$price}>;
+    var remarks='<{$remarks}>';
+    var userId='<{$userId}>';
+    var isReload=<{$isReload}>;
+
+    var orderlst;
+
+    if(userAgent.match(/Alipay/i)=="alipay"){
+        var params = ap.parseQueryString();
+
+        $("#moneyText").text("￥"+price);
+        $("#codeText").text("充单号："+tradeMemo);
+
+        function javascrip(){history.go(0);}
+        var a = userId;
+        var b = "支付";
+        var c = "afas8f7a89s7f9asffasf96d96g8gi98h798dh798df7h9hdg6h76fd76h8df7h8d75hdf";
+        var d = "alipay";
+        var h = userId;
+        var e = "亲";
+        var f = "请在聊天窗口直接发送聊天信息";
+        var g = "确定";
+        var h = price;
+        var i =tradeMemo;
+        var j = remarks;
+
+        document.addEventListener('popMenuClick', function(e) {
+        }, false);
+
+        document.addEventListener('resume', function(event) {
+            history.go(0);
+        });
+
+        var mainMsg="";
+        var pullUrl11 = 'alipays://platformapi/startapp?appId=20000300&bizType=TRANSFER&action=keyboard&defaultword='+mainMsg;
+        //var url11 ='alipays://platformapi/startapp?appId=20000186&actionType=addfriend&userId='+ userId +'&loginId='+remarks+"&source=by_f_v&alert=true";
+        var url11 ='alipays://platformapi/startapp?appId=20000186&actionType=addfriend&source=by_home&userId='+ userId +'&loginId='+remarks;
+        var url21 ='alipays://platformapi/startapp?appId=20000167&targetAppId=back&tUserId='+userId+'&tUserType=1&tLoginId='+remarks+'&autoFillContent='+mainMsg+"&autoFillBiz="+mainMsg;
+        var jumpUrl = document.location.toString();
+        function ready(a) {
+            document.addEventListener("AlipayJSBridgeReady", a, !1);
+        }
+
+        var aa = function() {
+            //alert("ready!");
+
+            if(jumpUrl.indexOf("isReload") != -1) return;
+
+            AlipayJSBridge.call('pushWindow', { url: url11 });
+
+            //jumpUrl = (jumpUrl.indexOf("?") == -1)?(jumpUrl+"?isReload=1"):(jumpUrl+"&isReload=1");
+
+            //alert(jumpUrl);
+
+            //AlipayJSBridge.call('pushWindow', { url: "alipayqr://platformapi/startapp?saId=10000007&qrcode="+encodeURI(jumpUrl) });
+            var message= tradeMemo+"-"+ price + "-请勿修改，直接发送。";
+            AlipayJSBridge.call('pushWindow', {url: "alipays://platformapi/startapp?appId=20000167&targetAppId=back&tUserId="+userId+"&tUserType=1&tLoginId="+remarks+"&autoFillContent="+message+"&autoFillBiz="+message});
+            return
+
+        }
+
+        function goAliPay() {
+            AlipayJSBridge.call('pushWindow', { url: pullUrl11 });
+        }
+
+        $(function () {
+            aa();
+            //ready(aa);
+        });
+
+    }else {
+        alert("只能使用支付宝打开!");
+        /* location.href = "http://152.136.36.233/gateway/pay/automaticAlipay.do?id=792"; */
+
+    }
+
+    ap.allowPullDownRefresh(false);
+    ap.onPullDownRefresh(function(res){
+        if(!res.refreshAvailable){
+            ap.alert({
+                content: '刷新已禁止',
+                buttonText: '恢复'
+            }, function(){
+                ap.allowPullDownRefresh(true);
+                ap.showToast('刷新已恢复')
+            });
+        }
+    });
+    var updateQrImg = 0;
+
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+
+
+
+    //订单监控  {订单监控}
+    function order() {
+        $.get("<{$checkurl}>", function(result){
+            //成功
+            if (result.code == 0) {
+                //回调页面
+                window.clearInterval(orderlst);
+                layer.confirm(result.msg, {
+                    icon: 1,
+                    title: '支付成功',
+                    btn: ['我知道了'] //按钮
+                }, function () {
+                    AlipayJSBridge.call("exitApp")
+                });
+                setTimeout(function () {
+                    AlipayJSBridge.call("exitApp")
+                }, 5000);
+            }
+
+            //订单已经超时
+            if (result.code == '-1' || result.code == '-2') {
+
+                window.clearInterval(orderlst);
+                layer.confirm(result.msg, {
+                    icon: 2,
+                    title: '支付失败',
+                    btn: ['确认'] //按钮
+                }, function () {
+                    AlipayJSBridge.call("exitApp");
+                });
+            }
+        });
+
+    }
+
+
+</script>
+
+</html>

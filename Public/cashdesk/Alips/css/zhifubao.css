@@ -1,0 +1,223 @@
+body{
+	padding-bottom: 0.51rem;
+	padding-top: 0;
+}
+.main{
+	padding: 0 0.12rem;
+}
+.main .m-top{
+	width: 100%;
+	height: 0.4rem;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0px 0.025rem 0.12rem 0px 
+		rgba(204, 204, 204, 0.7);
+	        box-shadow: 0px 0.025rem 0.12rem 0px 
+		rgba(204, 204, 204, 0.7);
+}
+.main .m-top .top-img1{
+	width: 0.22rem;
+	height: 0.22rem;
+    display: block;
+    float: left;
+    margin-top: 0.09rem;
+    margin-left: 0.12rem;
+}
+.main .m-top .top-tip{
+	float: left;
+	margin-left: 0.09rem;
+	line-height: 0.4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 1.3rem;
+}
+.main .m-top .top-help{
+	float: right;
+	font-family: PingFang-SC-Regular;
+	text-decoration: underline;
+	font-size: 0.11rem;
+	color: #ff9e04;
+	margin-right: 0.09rem;
+	line-height: 0.4rem;
+}
+.main .m-top .top-help .help-img{
+	width: 0.16rem;
+	height: 0.16rem;
+	float: left;
+	margin-top: 0.12rem;
+	margin-right: 0.05rem;
+}
+.main .m-tip{
+	font-family: PingFang-SC-Medium;
+	font-size: 0.12rem;
+	line-height: 0.2rem;
+	color: #ffab00;
+	margin:0.13rem 0.12rem 0.1rem;
+}
+.main .m-con{
+	width: 100%;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0px 0.025rem 0.15rem 0px 
+		rgba(204, 204, 204, 0.76);
+	        box-shadow: 0px 0.025rem 0.15rem 0px 
+		rgba(204, 204, 204, 0.76);
+	border-radius: 0.04rem;
+	margin-bottom: 0.2rem;
+}
+.main .m-con .con-tip{
+	padding: 0 0.12rem;
+	font-family: PingFang-SC-Regular;
+	font-size: 0.13rem;
+	color: #333333;
+}
+.main .m-con .con-tip p{
+	width: 100%;
+	border-bottom: 1px solid #f5f5f5;
+	padding: 0.14rem 0.04rem;
+	box-sizing: border-box;
+	font-size: 0.13rem;
+	font-family: PingFang-SC-Regular;
+}
+.main .m-con .con-money{
+	padding: 0.18rem 0.16rem;
+	line-height: 0.2rem;
+	font-family: PingFang-SC-Medium;
+}
+
+.main .m-con .con-money .money-acc{
+	font-family: PingFang-SC-Regular;
+	font-size: 0.13rem;
+	color: #333333;
+	line-height: 0.26rem;
+	color: #1b8cf4;
+}
+.main .m-con .con-money .money-acc .acc-num{
+	word-break: break-all;
+}
+.main .m-con .con-money .money-tip{
+	font-family: PingFang-SC-Regular;
+	font-size: 0.11rem;
+	color: #999999;
+}
+.main .m-con .con-money .money-tip span{
+	text-decoration: underline;
+	font-size: 0.11rem;
+	color: #ff9e04;
+}
+.main .m-con .con-txt{
+	padding: 0.12rem 0.15rem 0.2rem;
+}
+.main .m-con .con-txt p{
+	padding: 0.05rem 0;
+	font-size: 0.13rem;
+	font-family: PingFang-SC-Regular;
+}
+.footer-btn{
+	position: fixed;
+	bottom: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: flex;
+    height: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+	background-color: #b1becc;
+    z-index: 999;
+	color: #ffffff;
+	line-height: 0.5rem;
+	font-family: PingFang-SC-Regular;
+	font-size: 0.16rem;
+}
+.footer-btn>div{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	   -moz-box-flex: 1;
+	        flex: 1;
+}
+.footer-btn img{
+	width: 0.16rem;
+	height: 0.16rem;
+    display: block;
+    float: left;
+    margin-top: 0.17rem;
+    margin-left: 0.4rem;
+}
+.footer-btn .btn-send{
+	background-color: #8aa2d5;
+}
+
+.footer-btn span{
+	    display: block;
+    float: left;
+    margin-left: 0.05rem;
+}
+
+
+/*-弹窗 轮播图 start*/
+
+.pop-up-p2 .layui-m-layercont {
+    padding: 0;
+}
+.pop-up-p2 .comDetail{
+    position: relative;
+}
+.pop-up-p2 .com-close{
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    display: inline-block;
+    z-index: 999;
+
+}
+.pop-up-p2 .swiper-container{
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+}
+.pop-up-p2 .com-close .close {
+    float: right;
+    width: 0.12rem;
+    height: 0.12rem;
+    margin: 0.14rem;
+}
+
+.div-swiper {
+    width: 100%;
+}
+
+.div-swiper img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 0.2rem;
+}
+
+.pop-up-p2 .swiper-wrapper > div {
+    line-height: 2rem;
+}
+
+.pop-up-p2 .swiper-pagination-bullets {
+    bottom: 0 !important;
+}
+
+.pop-up-p2 .swiper-pagination-bullet {
+    height: 0.05rem !important;
+    width: 0.05rem !important;
+    background: #d1d1d1 !important;
+}
+
+.pop-up-p2 .swiper-pagination-bullet-active {
+    width: 0.2rem !important;
+    background: #7640ee !important;
+    opacity: 1;
+    border-radius: 0.03rem !important;
+}
+
+.pop-up-p2 .com-con {
+    margin: 0.2rem 0.1rem;
+    max-height: 1rem;
+    overflow: scroll;
+}
+
+/*-弹窗 轮播图 end*/

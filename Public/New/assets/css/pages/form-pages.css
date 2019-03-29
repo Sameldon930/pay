@@ -1,0 +1,312 @@
+/*
+Template Name: Admin Mintone
+Author: SRGIT
+
+File: scss
+*/
+/*
+Template Name: Admin Mintone
+Author: SRGIT
+
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*******************
+Custom-select
+******************/
+.custom-select {
+  background: url(../../assets/imgs/custom-select.png) right 0.75rem center no-repeat; }
+
+/*******************
+textarea
+******************/
+textarea {
+  resize: none; }
+
+/*******************
+Form-control
+******************/
+.form-control {
+  color: #67757c;
+  min-height: 38px;
+  display: initial; }
+
+.form-control-sm {
+  min-height: 20px; }
+
+.form-control:disabled,
+.form-control[readonly] {
+  opacity: 0.7; }
+
+.custom-control-input:focus ~ .custom-control-indicator {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.custom-control-input:checked ~ .custom-control-indicator {
+  background-color: #24d2b5; }
+
+form label {
+  font-weight: 400; }
+
+.form-group {
+  margin-bottom: 25px; }
+
+.form-horizontal label {
+  margin-bottom: 0px; }
+
+.form-control-static {
+  padding-top: 0px; }
+
+.form-bordered .form-group {
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+  padding-bottom: 20px; }
+
+/*******************
+Form Dropzone
+******************/
+.dropzone {
+  border: 1px dashed #b1b8bb; }
+  .dropzone .dz-message {
+    padding: 5% 0;
+    margin: 0px; }
+
+/*******************
+Form Pickers
+******************/
+.asColorPicker-dropdown {
+  max-width: 260px; }
+
+.asColorPicker-trigger {
+  position: absolute;
+  top: 0;
+  right: -35px;
+  height: 38px;
+  width: 37px;
+  border: 0; }
+
+.asColorPicker-clear {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  text-decoration: none; }
+
+table th {
+  font-weight: 400; }
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: #20aee3; }
+
+.datepicker table tr td.today,
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.today:hover {
+  background: #20aee3;
+  color: #ffffff; }
+
+.datepicker td,
+.datepicker th {
+  padding: 5px 10px; }
+
+/*******************
+Form summernote
+******************/
+.note-popover,
+.note-icon-caret {
+  display: none; }
+
+.note-editor.note-frame {
+  border: 1px solid #b1b8bb; }
+  .note-editor.note-frame .panel-heading {
+    padding: 6px 10px 10px;
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13); }
+
+.label {
+  display: inline-block; }
+
+/*============================================================== 
+Form addons page
+============================================================== */
+/*Bootstrap select*/
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%; }
+
+.bootstrap-select .dropdown-menu li a {
+  display: block;
+  padding: 7px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #67757c;
+  white-space: nowrap; }
+  .bootstrap-select .dropdown-menu li a:hover, .bootstrap-select .dropdown-menu li a:focus {
+    color: #20aee3;
+    background: #e9edf2; }
+
+.bootstrap-select .show > .dropdown-menu {
+  display: block; }
+
+.bootstrap-touchspin .input-group-btn-vertical > .btn {
+  padding: 9px 10px; }
+
+.select2-container--default .select2-selection--single {
+  border-color: #b1b8bb;
+  height: 38px; }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 38px; }
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 33px; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  float: right;
+  color: #ffffff;
+  margin-right: 0px;
+  margin-left: 4px; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background: #20aee3;
+  color: #ffffff;
+  border-color: #20aee3; }
+
+.input-form .btn {
+  padding: 8px 12px; }
+
+/*============================================================== 
+Form Material page
+ ============================================================== */
+/*Material inputs*/
+.form-material .form-group {
+  overflow: hidden; }
+
+.form-material .form-control {
+  background-color: transparent;
+  background-position: center bottom, center calc(100% - 1px);
+  background-repeat: no-repeat;
+  background-size: 0 2px, 100% 1px;
+  padding: 0;
+  -webkit-transition: background 0s ease-out 0s;
+  -o-transition: background 0s ease-out 0s;
+  transition: background 0s ease-out 0s; }
+
+.form-material .form-control,
+.form-material .form-control.focus,
+.form-material .form-control:focus {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#20aee3), to(#20aee3)), -webkit-gradient(linear, left top, left bottom, from(#e9edf2), to(#e9edf2));
+  background-image: -webkit-linear-gradient(#20aee3, #20aee3), -webkit-linear-gradient(#e9edf2, #e9edf2);
+  background-image: -o-linear-gradient(#20aee3, #20aee3), -o-linear-gradient(#e9edf2, #e9edf2);
+  background-image: linear-gradient(#20aee3, #20aee3), linear-gradient(#e9edf2, #e9edf2);
+  border: 0 none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  float: none; }
+
+.form-material .form-control.focus,
+.form-material .form-control:focus {
+  background-size: 100% 2px, 100% 1px;
+  outline: 0 none;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+.form-control-line .form-group {
+  overflow: hidden; }
+
+.form-control-line .form-control {
+  border: 0px;
+  border-radius: 0px;
+  padding-left: 0px;
+  border-bottom: 1px solid #f6f9ff; }
+  .form-control-line .form-control:focus {
+    border-bottom: 1px solid #20aee3; }
+
+/*******************
+Form validation error 
+******************/
+.error .help-block {
+  color: #fb3a3a; }
+
+/*******************
+File Upload 
+******************/
+.fileupload {
+  overflow: hidden;
+  position: relative; }
+  .fileupload input.upload {
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    font-size: 20px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+.scale-up {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  display: inline-block;
+  -webkit-transform-origin: right 0px;
+  -ms-transform-origin: right 0px;
+  transform-origin: right 0px; }
+
+.scale-up-left {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  display: inline-block;
+  -webkit-transform-origin: left 0px;
+  -ms-transform-origin: left 0px;
+  transform-origin: left 0px; }
+
+.show > .scale-up {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: right 0px;
+  -ms-transform-origin: right 0px;
+  transform-origin: right 0px; }
+
+.show > .scale-up-left {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: left 0px;
+  -ms-transform-origin: left 0px;
+  transform-origin: left 0px; }
+
+.page-titles .justify-content-end:last-child .d-flex {
+  margin-right: 10px; }
+
+.btn-circle.right-side-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 25px;
+  z-index: 10; }
+
+/*Form Validation*/
+.help-block ul {
+  padding: 0px;
+  margin: 0px; }
+  .help-block ul li {
+    list-style: none; }
+
+.error .form-control {
+  border-color: #ff5c6c; }
+
+.validate .form-control {
+  border-color: #24d2b5; }

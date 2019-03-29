@@ -1,0 +1,153 @@
+<include file="Public/header"/>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="ibox float-e-margins">
+                <!--条件查询-->
+                <div class="ibox-title">
+                    <h5>环迅E平台交易账户支付</h5>
+                    <div class="ibox-tools">
+                        <i class="layui-icon" onclick="location.replace(location.href);" title="刷新"
+                           style="cursor:pointer;">ဂ</i>
+                    </div>
+                </div>
+                <!--条件查询-->
+                <div class="ibox-content">
+                    <form class="layui-form" action="" method="get" autocomplete="off">
+                        <input type="hidden" name="m" value="<{$model}>">
+                        <input type="hidden" name="c" value="EPlatformAccPay">
+                        <input type="hidden" name="a" value="index">
+                        <input type="hidden" name="p" value="1">
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <div class="layui-input-inline">
+                                    <input type="text" name="username" autocomplete="off" placeholder="商户号" class="layui-input" value="<{$user_name}>">
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <div class="layui-input-inline">
+                                    <input type="text" name="realname" autocomplete="off" placeholder="真实姓名" class="layui-input" value="<{$real_name}>">
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <div class="layui-input-inline">
+                                    <input type="text" name="mobile" autocomplete="off" placeholder="手机号码" class="layui-input" value="<{$mobile}>">
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <div class="layui-input-inline">
+                                    <input type="text" name="bankno" autocomplete="off" placeholder="银行账户号" class="layui-input" value="<{$bank_no}>">
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" name="applytime" id="applytime" placeholder="申请时间" value="<{$apply_time}>">
+                                </div>
+                            </div>
+                            <div class="layui-inline">
+                                <button type="submit" class="layui-btn"><span
+                                        class="glyphicon glyphicon-search"></span> 搜索
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <!--用户列表-->
+                    <table class="layui-table" lay-data="{width:'100%',limit:<{$rows}>,id:'userData'}">
+                        <thead>
+                        <tr>
+                            <th lay-data="{field:'user_id', width:80, sort: true, fixed: true}">用户ID</th>
+                            <th lay-data="{field:'user_name', width:120, sort: true, fixed: true}">商户号</th>
+                            <th lay-data="{field:'real_name', width:120}">真实姓名</th>
+                            <th lay-data="{field:'acc_name', width:110}">账户昵称</th>
+                            <th lay-data="{field:'mobile', width:120}">手机号</th>
+                            <th lay-data="{field:'email', width:120}">邮箱</th>
+                            <th lay-data="{field:'apply_time', width:160}">申请时间</th>
+                            <th lay-data="{field:'op',width:700}">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <volist name="list" id="vo">
+                            <tr>
+                                <td><{$vo['user_id']}></td>
+                                <td><{$vo.user_name}></td>
+                                <td><{$vo.groupname}></td>
+                                <td><{$vo.real_name}></td>
+                                <td><{$vo.acc_name}></td>
+                                <td><{$vo.mobile}></td>
+                                <td><{$vo.email}></td>
+                                <td><{$vo.email}></td>
+                                <td><{$vo.apply_time|date="Y-m-d H:i:s",###}></td>
+                                <td>
+                                    <div class="layui-btn-group">
+                                        <button class="layui-btn layui-btn-small" onclick="go_pay('支付','<{:U('EPlatformAccPay/pay',['uid'=>$vo[user_id]])}>',800,600)"
+                                        >支付</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                    <!--用户列表-->
+                    <div class="page"><{$page}> 
+                        <div class="layui-input-inline">
+                        <form class="layui-form" action="" method="get" id="pageForm" autocomplete="off">                                
+                            
+                            <select name="rows" style="height: 32px;" id="pageList" lay-ignore >
+                                <option value="">显示条数</option>
+                                <option <if condition="$rows neq '' && $rows eq 15">selected</if> value="15">15条</option>
+                                <option <if condition="$rows eq 30">selected</if> value="30">30条</option>
+                                <option <if condition="$rows eq 50">selected</if> value="50">50条</option>
+                                <option <if condition="$rows eq 80">selected</if> value="80">80条</option>
+                                <option <if condition="$rows eq 100">selected</if> value="100">100条</option>
+                                <option <if condition="$rows eq 1000">selected</if> value="1000">1000条</option>
+                            </select>
+                           
+
+                        </form>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file="Public/footer"/>
+<script>
+
+    layui.use(['form','table',  'laydate', 'layer'], function () {
+        var form = layui.form
+            ,table = layui.table
+            , layer = layui.layer
+            , laydate = layui.laydate;
+
+        //日期时间范围
+        laydate.render({
+            elem: '#applytime'
+            , type: 'datetime'
+            ,theme: 'molv'
+            , range: '|'
+        });
+        //监听表格复选框选择
+        table.on('checkbox(userData)', function(obj){
+            var child = $(data.elem).parents('table').find('tbody input[lay-filter="ids"]');
+            child.each(function(index, item){
+                item.checked = data.elem.checked;
+            });
+            form.render('checkbox');
+        });
+        //全选
+        form.on('checkbox(allChoose)', function (data) {
+            var child = $(data.elem).parents('table').find('tbody input[lay-filter="ids"]');
+            child.each(function (index, item) {
+                item.checked = data.elem.checked;
+            });
+            form.render('checkbox');
+        });
+    });
+    function go_pay(title, url, w, h) {
+        x_admin_show(title, url, w, h);
+    }
+    $('#pageList').change(function(){
+        $('#pageForm').submit();
+    });
+</script>
+</body>
+</html>

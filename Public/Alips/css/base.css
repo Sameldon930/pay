@@ -1,0 +1,295 @@
+html {
+    font-size: 100px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    html {
+        font-size: 110px
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 414px) {
+    html {
+        font-size: 120px
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 639px) {
+    html {
+        font-size: 140px
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 719px) {
+    html {
+        font-size: 200px
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 749px) {
+    html {
+        font-size: 225px
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 799px) {
+    html {
+        font-size: 235px
+    }
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 250px
+    }
+}
+
+html,body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body {
+    padding-top: 0.44rem;
+    font-family: "microsoft yahei";
+    font-size: 0.13rem ;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+* {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+input {
+    font-family: "microsoft yahei";
+    font-size: 0.13rem;
+    color: #333;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999;
+}
+input:-ms-input-placeholder{
+    color: #999;
+}
+input::-webkit-input-placeholder{
+    color: #999;
+}
+
+a:link {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:active {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+}
+
+.clearfix:before{
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* 头部 */
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 0.44rem;
+    width: 100%;
+    max-width: 100%;
+    background: #ffffff;
+    text-align: center;
+    z-index: 999;
+}
+
+.header span {
+    display: inline-block;
+    height: 0.44rem;
+    line-height: 0.44rem;
+}
+
+.header .header-left {
+    margin-left: 0.14rem;
+    min-width: 0.12rem;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.header .header-left img{
+    height: 0.18rem;
+}
+
+.header .header-center {
+    position: relative;
+    flex: 1;
+    padding: 0 0.14rem;
+}
+
+.header .header-center input {
+    margin: 0.1rem 0;
+    width: 100%;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    font-size: 0.11rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0.125rem;
+    border-width: 0;
+}
+
+.header .header-center div {
+    height: 0.22rem;
+    line-height: 0.22rem;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 0.11rem;
+    color: #999;
+}
+
+.header .header-center img {
+    margin-bottom: 0.01rem;
+    margin-right: 0.04rem;
+}
+
+.header .header-center span {
+    font-size: 0.16rem;
+    color: #333333;
+    line-height: 0.44rem;
+}
+
+.header .header-right {
+    margin-right: 0.14rem;
+    min-width: 0.12rem;
+    line-height: 0.44rem;
+    position: absolute;
+    right: 0;
+}
+
+.header .header-right span{
+    color: #ff9800;
+}
+
+.header .header-right img{
+    width:0.17rem;
+}
+
+/* 底部 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    height: 0.49rem;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    background: #ffffff;
+    z-index: 999;
+    border-top: 1px solid #dedede;
+}
+
+.footer .footer-normal {
+    flex: 1;
+    margin: auto;
+    font-size: 0.1rem;
+}
+
+.footer .footer-normal a {
+    display: inline-block;
+    color: #a0acc0;
+}
+
+.footer .footer-normal img {
+    height: 0.24rem;
+}
+
+.footer .active a {
+    color: #3574fa;
+}
+
+.footer img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*layer弹窗的询问框样式*/
+.pop-up-tip .layui-m-layerbtn{
+    background-color:#fff !important;
+    height:0.5rem;
+}
+.pop-up-tip .layui-m-layerbtn span[yes]{
+    background-color: #1b8cf4 !important;
+    color: #fff !important;
+    border-bottom-left-radius: 0;
+    line-height:0.5rem!important;
+    font-size: 0.15rem;
+}
+.pop-up-tip .layui-m-layerbtn span[no]{
+    line-height:0.5rem!important;
+    font-size: 0.15rem;
+}
+.pop-up-tip .layui-m-layerbtn span,.pop-up-tip .layui-m-layercont{
+    font-family: "microsoft yahei";
+    font-size: 0.13rem;
+}
+.pop-up-tip .layui-m-layercont{
+    font-family: "microsoft yahei";
+    font-size: 0.15rem;
+    padding:0.5rem 0.3rem!important;
+    line-height: 0.2rem;
+}
+/*layer弹窗的询问框样式 end*/
+
+
+/*layer弹窗的msg样式*/
+.pop-up-msg .layui-m-layercont{
+    font-size:0.13rem;
+    height:0.2rem;
+    line-height:0.2rem;
+    font-family: "microsoft yahei";
+}
+/*layer弹窗的msg样式 end*/
+
+
+/*layer弹窗的footer样式*/
+.pop-up-footer .layui-m-layercont{
+    font-size:0.13rem;
+    padding:0.1rem!important;
+    font-family: "microsoft yahei";
+}
+/*layer弹窗的footer样式 end*/

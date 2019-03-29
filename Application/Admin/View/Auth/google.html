@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title><{$sitename}> 后台管理系统 - <eq name="google_token" value="">绑定谷歌动态令牌<else />谷歌身份验证</eq></title>
+    <link rel="stylesheet" type="text/css" href="/Public/Login/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Login/css/login.css">
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/layer/layer.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js" type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+    <style type="text/css">
+        .google_tips{color:#262d40;padding:10px 0;line-height: 30px;}
+    </style>
+</head>
+<body>
+
+<div class="loginWrapper clearfix">
+    <div class="banWrapper">
+
+    </div>
+    <div class="loginMain">
+        <div class="loginWidth">
+            <div class="loginLogoDiv" style="text-align:center;">
+                <h2><eq name="google_token" value="">绑定谷歌动态令牌<else />谷歌身份验证</eq></h2>
+            </div>
+            <form method="post" class="formLogin" id="form_google" action="<{:U('Admin/Auth/google')}>">
+                <input name="action_type" type="hidden" value="<{$action_type}>">
+                <eq name="google_token" value="">
+                    <style type="text/css">
+                        .loginWidth{height:580px;}
+                        .formLogin{padding-top:25px;}
+                        .loginList{margin-bottom: 15px;}
+                        .loginBtn{margin-top:10px;}
+                    </style>
+                    <h3 class="google_tips">手机打开Google Authenticator(谷歌身份验证器)，扫码二维码开启登录两步验证</h3>
+                    <div class="form-group" style="text-align: center">
+                        <img src="<{$qrCodeUrl}>" width="150px">
+                        <h3 class="google_tips"> 不能扫码？点击 <a href="javascript:layer.alert('<{$secret}>')" style="color:#ef4300;text-decoration:none;">查看密钥</a> 手动添加</h3>
+                    </div>
+                    <div class="loginList loginListUser">
+                        <label>谷歌验证码</label>
+                        <input type="text" class="loginText" name="code" id="code" class="input-code" autocomplete="off" type="text" required lay-verify="required" pattern="[\S]{6}[\S]*" title="请输入6位验证码"/>
+                        <span class="errorTips"><i></i><em></em></span>
+                    </div>
+                    <input class="loginBtn" type="button" value="绑定"/>
+                    <else />
+                    <h3 class="google_tips" style="padding-bottom: 30px">手机打开Google Authenticator(谷歌身份验证器)，查看验证码</h3>
+                    <div class="loginList loginListUser">
+                        <label>谷歌验证码</label>
+                        <input type="text" class="loginText" name="code" id="code" class="input-code" autocomplete="off" type="text" required lay-verify="required" pattern="[\S]{6}[\S]*" title="请输入6位验证码"/>
+                        <span class="errorTips"><i></i><em></em></span>
+                    </div>
+                    <input class="loginBtn" type="button" value="验证"/>
+                    <div class="form-group">
+                        <h3 class="google_tips" style="color:#afb7c6;font-size: 14px;text-align: right">找不到谷歌安全码？ <a href="<{:U('Auth/unbindGoogle')}>" style="color:#4395ff;text-decoration:none;">解绑</a></h3>
+                    </div>
+                </eq>
+        </div>
+    </div>
+</div>
+
+<div class="loginFooter clearfix">
+    <!--Welcome to the background management center-->
+</div>
+<script src="/Public/Front/js/plugins/layui/layui.js"></script>
+<script>
+    $('.loginBtn').click(function(data){
+            $.ajax({
+                url: $("#form_google").attr("action"),
+                type: $("#form_google").attr("method"),
+                data:$("#form_google").serialize(),
+                success: function (info) {
+                    if(info.status){
+                        setTimeout(function () {
+                            location.href = info.url;
+                        }, 1000);
+                        layer.msg(info.info);
+                    }else{
+                        layer.msg(info.info,{icon:5});
+                        setTimeout(function () {
+                            //window.location.reload();
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+    });
+    // 回车提交表单
+    $('#form_google').keydown(function(event){
+        if (event.keyCode == 13) {
+            $('.loginBtn').click();
+        }
+    });
+</script>
+
+</body>
+</html>

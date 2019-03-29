@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>在线支付 - 支付宝 - 网上支付 安全快速！</title>
+    <script type="text/javascript" src="/Public/Alips/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/qrcode.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/layer.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/qqapi.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/qrcode.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/zzspay.css">
+    <style>
+        #qrcode>img{
+            height: 250px;
+            width: 250px;
+        }
+        #qrcode>canvas{
+            height: 250px!important;
+            width: 250px!important;
+        }
+        .pay_head{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+            height: 3rem;
+        }
+        .logo_list{
+            display: flex;
+            justify-content: center;
+            margin: auto 10px;
+        }
+        .logo_item{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto 10px;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .pay_left{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                font-size: 17px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div style="width: 100%; text-align: center;font-family:微软雅黑;">
+    <div class="pay_head" >
+        <div>订单号：<{$params.out_trade_id}></div>
+    </div>
+    <div style="margin: 10px ;">
+    <div class="pay_left">
+        <div><strong><span style="float: left;">订单金额：</span><span class="text-danger " ><{$money}>元</span>&nbsp;&nbsp;</strong></div>
+        <div><strong><span style="float: left;">商品名称：</span><span class="text-danger "><{$params.subject}></span></strong></div>
+        <div><strong><span style="float: left;">订单编号：</span><span class="text-danger "><{$params.out_trade_id}></span></strong></div>
+        <div><strong><span style="float: left;">交易时间：</span><span class="text-danger "><{$params['datetime']}></span></strong></div>
+    </div>
+    </div>
+    <div id="panelWrap" class="panel-wrap">
+
+        <!--收款方名称  end-->
+        <div class="logo_list" >
+
+
+                <div class="logo_item">
+                    <img src="/Public/Alips/picture/wechat_ok.jpg" width="50" height="50"alt="">
+                    <span style="color: #296fca; ">微信支付</span>
+                </div>
+                <div class="logo_item" style="display:none">
+                    <img src="/Public/Alips/picture/ali_logo.jpg" width="70" height="45" alt="">
+                    <span style="color: #296fca; ">支付宝</span>
+                </div>
+        </div>
+        <div class="qrcode-warp" style="margin: 1rem 0;">
+            <div id="qrcode">
+                <img id="qrcode_load" src="<{$imgurl}>"  style="display: block;">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pay_bottom">
+    <div>保存到相册仅能支付一次，切勿重复支付</div>
+</div>
+</div>
+<script src="/Public/Alips/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/Public/Alips/js/jquery.qrcode.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var r = window.setInterval(function () {
+            $.ajax({
+                type: 'POST',
+                url: '<{:U("Pay/checkstatus")}>',
+                data: "orderid=<{$orderid}>",
+                dataType: 'json',
+                success: function (str) {
+                    if (str.status == "ok") {
+                        $("#ewm").attr("src", "Uploads/successpay.png");
+                        window.clearInterval(r);
+                        window.location.href = str.callback;
+                    }
+                }
+            });
+        }, 2000);
+    });
+</script>
+<div style="display:none">
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276520178'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1276520178%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+</html>

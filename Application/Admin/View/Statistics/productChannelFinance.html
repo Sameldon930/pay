@@ -1,0 +1,64 @@
+<include file="Public/header"/>
+<div class="ibox-title">
+    <button style="float:left;margin-right: 10px;margin-top: -3px;" class="layui-btn layui-btn-normal layui-btn-mini" type="button" onclick="window.history.back(-1);" title="返回" ><i class="layui-icon"></i></button>
+    <h5>支付通道【<{$data.name}>】交易统计</h5>
+    <div class="ibox-tools">
+        <i class="layui-icon" onclick="location.replace(location.href);" title="刷新"
+           style="cursor:pointer;">ဂ</i>
+    </div>
+</div>
+<form class="layui-form layui-form-pane" action="" method="get" autocomplete="off" id="orderform">
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">时间范围</label>
+        <div class="layui-input-inline" style="width: 300px;">
+            <input type="text" class="layui-input" name="createtime" id="createtime"
+                   placeholder="起始时间" value="<{$createtime}>" autocomplete="off">
+        </div>
+    </div>
+    <div class="layui-form-item layui-inline" style="margin-top: -8px;">
+        <button type="submit" class="layui-btn"><span
+                class="glyphicon glyphicon-search"></span> 搜索
+        </button>
+
+        <a href="javascript:;" id="export" class="layui-btn layui-btn-warm"><span class="glyphicon glyphicon-export"></span> 导出数据</a>
+    </div>
+
+</form>
+    <div class="row">
+        <foreach name="list" item="v">
+        <div class="col-sm-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                  <h5 style="width: 100%;"><{$v.title}>-<{$v.code}>   <a href="<{:U('Admin/Statistics/channelAccountFinance',['id'=>$v[id],'createtime'=>urlencode($createtime)])}>" style="float:right;color:red;">子账号统计</a></h5>
+                </div>
+                <div class="ibox-content">
+                    <p>交易金额：<{$v.pay_amount}>元</p>
+                    <p>手续费  &nbsp;&nbsp;&nbsp;：<{$v.pay_poundage}>元</p>
+                    <p>入金总额：<{$v.pay_actualamount}>元</p>
+                </div>
+                <div class="ibox-content">
+                    <p>
+                        <span style="font-size: 16px;color:#0087ffbf;">交易笔数：<strong><{$v.count}></strong></span>
+                        <span style="margin-left: 80px;color:#008000b0;font-size: 16px;">成功率：<strong><{$v.success_rate}>%</strong></span>
+                    </p>
+                    <p>
+                    <p>
+                        <span style="font-size: 16px;color:#008000b0;">成功笔数：<strong><{$v.success_count}></strong></span>
+                        <span style="margin-left: 80px;font-size: 16px;color: #ff0000b3;">失败笔数：<strong><{$v.fail_count}></strong></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </foreach>
+    </div>
+    </div>
+
+<include file="Public/footer"/>
+<script>
+    $('#export').on('click',function(){
+        window.location.href
+            ="<{:U('Admin/Statistics/exportProductChannelFinance',array('id'=>I('id')))}>";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>收银台</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <script type="text/javascript" src="/Public/cashdesk/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/cashdesk/js/amazeui.min.js"></script>
+    <script type="text/javascript" src="/Public/cashdesk/js/pay.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Public/cashdesk/css/amazeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/cashdesk/css/main.css" />
+    <script>var path="http://biu.haohan168.cn:80/zagame/";</script>
+</head>
+<body>
+<div class="pay">
+    <!--主内容开始编辑-->
+    <div class="tr_recharge">
+        <div class="tr_rechtext">
+            <p class="te_retit" style=" font-size: 35px;"><span style="text-align: center;display:block;">收银台演示</span></p>
+        </div>
+
+        <form action="<{:U('Index/pay')}>" class="am-form" id="doc-vld-msg" method="post">
+            <div style="display:none;">
+                <input type="text" name="pay_memberid" value="10004">
+            </div>
+            <div class="tr_rechli am-form-group">
+                <h3 style="margin-left:15px;margin-top: 15px;" >快速选择金额</h3>
+                <ul class="ui-choose am-form-group" id="uc_01">
+                    <li data-toggle="money" data-money="0.1">
+                        <label class="am-radio-inline">
+                            <input type="radio"  value="0.1" name="pay_amount"  data-validation-message="请选择一项充值额度"> 0.1元套餐
+                        </label>
+                    </li>
+                    <li data-toggle="money" data-money="1">
+                        <label class="am-radio-inline">
+                            <input type="radio"  value="1" name="pay_amount"  data-validation-message="请选择一项充值额度"> 1元套餐
+                        </label>
+                    </li>
+                    <li data-toggle="money" data-money="10">
+                        <label class="am-radio-inline">
+                            <input type="radio"  value="10" name="pay_amount"  data-validation-message="请选择一项充值额度"> 10元套餐
+                        </label>
+                    </li>
+                    <li data-toggle="money" data-money="20">
+                        <label class="am-radio-inline">
+                            <input type="radio"  value="20" name="pay_amount"  data-validation-message="请选择一项充值额度"> 20元套餐
+                        </label>
+                    </li>
+                    <li data-toggle="money" data-money="100">
+                        <label class="am-radio-inline">
+                            <input type="radio"  value="100" name="pay_amount"  data-validation-message="请选择一项充值额度"> 100元套餐
+                        </label>
+                    </li>
+                    <li data-toggle="money" data-money="200">
+                        <label class="am-radio-inline">
+                            <input type="radio"  value="200" name="pay_amount"  data-validation-message="请选择一项充值额度"> 200元套餐
+                        </label>
+                    </li>
+                    <li data-toggle="money" data-money="300">
+                        <label class="am-radio-inline">
+                            <input type="radio"  value="300" name="pay_amount"  data-validation-message="请选择一项充值额度"> 300元套餐
+                        </label>
+                    </li>
+                    <li data-toggle="money" data-money="0">
+                        <label class="am-radio-inline">
+                            <input type="radio" name="docVlGender" data-validation-message="请选择一项充值额度"> 其他
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="tr_rechoth am-form-group">
+                <span>其他金额：</span>
+                <input type="number" step="0.01" min="0.01" max="99999999999" value="50.00元" class="othbox"   data-validation-message="充值金额范围：最小0.01元" />
+
+            </div>
+
+            <div class="tr_rechcho am-form-group" id="payment">
+                <h3 style="margin-left: 15px;">充值方式：
+                    <span style="color: red"></span>
+                    <span id="pay_way_tip" style="font-size: 8px;display:none; color: #ec5a5b;">充值提示：</span>
+                </h3>
+                <volist name = "product" id="p">
+                    <ul>
+                        <if condition = "($p.status eq 1) and ($p.id eq 901)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 901">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+                        <if condition = "($p.status eq 1) and ($p.id eq 902)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 902">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+
+                        <if condition = "($p.status eq 1) and ($p.id eq 903)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 903">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+
+                        <if condition = "($p.status eq 1) and ($p.id eq 904)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 904">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+
+                        <if condition = "($p.status eq 1) and ($p.id eq 905)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 905">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+
+                        <if condition = "($p.status eq 1) and ($p.id eq 907)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 907">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+
+                        <if condition = "($p.status eq 1) and ($p.id eq 908)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 908">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+
+                        <if condition = "($p.status eq 1) and ($p.id eq 909)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 909">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+
+                        <if condition = "($p.status eq 1) and ($p.id eq 910)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 910">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+
+                        <if condition = "($p.status eq 1) and ($p.id eq 911)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 911">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+
+                        <if condition = "($p.status eq 1) and ($p.id eq 912)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 912">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+
+                        <if condition = "($p.status eq 1) and ($p.id eq 913)">
+                            <div class="tr_rechcho am-form-group" >
+                                <h4 style="margin-left: 15px;"><{$p.name}>：
+                                    <span style="color: red"></span>
+                                </h4>
+                                <volist name="info" id="v">
+                                    <if condition = "$v.pid eq 913">
+                                        <label class="am-radio-inline" style="padding-left:px;padding-top: 8px;padding-bottom: 8px;">
+                                            <input  type="radio" name="pay_bankcode"  data-min="100.00" data-max="5000.00" placeholder="" value="<{$v.pid}>" data-am-ucheck  required  data-validation-message="请选择一种充值方式"><{$v.name}>
+                                        </label>
+                                    </if>
+                                </volist>
+                            </div>
+                        </if>
+
+                    </ul>
+                </volist>
+            </div>
+            <div class="tr_rechnum">
+                <span style="font-weight: 600;margin-left: 15px;">应付金额：</span>
+                <p class="rechnum">0.00元</p>
+            </div>
+            <div class="tr_paybox">
+                <!--<a href="javascript:pay();" class="btn-ok" id="btnOK">确认</a>-->
+                <input type="submit" id="submitBtn" value="确认支付" class="tr_pay am-btn am-btn-primary" style="width: 100%;"/>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">请修改金额</div>
+        <div class="am-modal-bd"></div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">确定</span>
+        </div>
+    </div>
+</div>
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="my-popup">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd"> <span data-am-modal-close class="am-close">&times;</span></div>
+        <div class="am-modal-bd">
+            <span style="color: red"></span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/Public/cashdesk/js/ui-choose.js"></script>
+<script type="text/javascript">
+    // 将所有.ui-choose实例化
+    $('.ui-choose').ui_choose();
+    // uc_01 ul 单选
+    var uc_01 = $('#uc_01').data('ui-choose'); // 取回已实例化的对象
+    uc_01.click = function (index, item) {
+    }
+    uc_01.change = function (index, item) {
+    }
+    $(function () {
+        $('[name=goods-pt]:checked').prop("checked",false);
+        $(document).on('click','[data-toggle=money]',function(){
+            var $this=$(this);
+            var value=parseInt($this.data('money'));
+            var rechnum=value;//+(Math.floor(Math.random()*9)/10);
+            if(value<=0){
+                $('.tr_rechoth').show();
+                $('.othbox').val('');
+                $('input[name=money]').val(rechnum);
+                $('.tr_rechoth').find("input").attr('required', 'true')
+                $('.tr_rechoth').find("input").attr('name', 'pay_amount')
+                $('.rechnum').text(rechnum+'元');
+            }else{
+                $('.tr_rechoth').hide();
+                $('input[name=money]').val(rechnum);
+                $('.rechnum').text(rechnum+'元');
+                $('.othbox').val('');
+            }
+        });
+        $(document).ready(function () {
+            $('.othbox').on('input propertychange', function () {
+                var num = parseInt($(this).val());
+                var rechnum=num;//+(Math.floor(Math.random()*9)/10);
+                $('input[name=money]').val(rechnum);
+                $('.rechnum').html(rechnum+ "元");
+            });
+        });
+    })
+    $(function () {
+        $('#doc-vld-msg').validator({
+            submit: function() {
+                var formValidity = this.isFormValid();
+                if (!formValidity) {
+                    return false;
+                }else{
+                    var min =$('[name=r-pt]:checked').attr("data-min");
+                    var max =$('[name=r-pt]:checked').attr("data-max");
+                    var money=parseInt($('input[name=money]').val());
+                    if(min<=money&&money<=max){
+                        $("#submitBtn").attr("disabled","disabled");
+                        return true;
+                    }else{
+                        // $("#my-alert").find('.am-modal-bd').html('正确金额'+min+'-'+max);
+                        // $('#my-alert').modal('open');
+                        // return false;
+                    }
+                }
+            },
+            onValid: function (validity) {
+                $(validity.field).closest('.am-form-group').find('.am-alert').hide();
+                //$("#submitBtn").attr("disabled","disabled");
+            },
+            onInValid: function (validity) {
+                var $field = $(validity.field);
+                var $group = $field.closest('.am-form-group');
+                var $alert = $group.find('.am-alert');
+                // 使用自定义的提示信息 或 插件内置的提示信息
+                var msg = $field.data('validationMessage') || this.getValidationMessage(validity);
+                if (!$alert.length) {
+                    $alert = $('<div class="am-alert am-alert-danger"></div>').hide().
+                    appendTo($group);
+                }
+                $alert.html(msg).show();
+            }
+        });
+    });
+</script>
+</body>
+</html>

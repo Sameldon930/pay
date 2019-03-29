@@ -1,0 +1,22 @@
+* * * * * sh 根目录路径/shell/posturl.sh
+* * * * * sleep 10; sh 根目录路径/shell/posturl.sh
+* * * * * sleep 20; sh 根目录路径/shell/posturl.sh
+* * * * * sleep 30; sh 根目录路径/shell/posturl.sh
+* * * * * sleep 40; sh 根目录路径/shell/posturl.sh
+* * * * * sleep 50; sh 根目录路径/shell/posturl.sh
+
+
+
+* * * * * sh /home/wwwroot/pay/shell/posturl.sh
+* * * * * sleep 10; sh /home/wwwroot/pay/shell/posturl.sh
+* * * * * sleep 20; sh /home/wwwroot/pay/shell/posturl.sh
+* * * * * sleep 30; sh /home/wwwroot/pay/shell/posturl.sh
+* * * * * sleep 40; sh /home/wwwroot/pay/shell/posturl.sh
+* * * * * sleep 50; sh /home/wwwroot/pay/shell/posturl.sh
+
+*/3 1-5 * * * sh /home/wwwroot/pay/shell/toorder.sh
+*/3 1-5 * * * sh /home/wwwroot/pay/shell/offline.sh
+* * * * * cd /home/wwwroot/pay; php cli.php unfreeze >> Runtime/Logs/Cli/cli_unfreeze.log
+* * * * * cd /home/wwwroot/pay; php cli.php unfreezeMoney >> Runtime/Logs/Cli/cli_unfreezeMoney.log
+* * * * * cd /home/wwwroot/pay; php cli.php autodf >> Runtime/Logs/Cli/cli_autosubmitdf.log
+* * * * * cd /home/wwwroot/pay; php cli.php autodf_dfquery >> Runtime/Logs/Cli/cli_autoquerydf.log

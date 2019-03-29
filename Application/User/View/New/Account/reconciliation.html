@@ -1,0 +1,84 @@
+<include file="Public/header"/>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex m-b-10 no-block">
+                        <h5 class="card-title m-b-0 align-self-center">对账单</h5>
+                    </div>
+                    <div class="table-responsive m-t-10">
+                        <form class="layui-form layui-form-pane" action="" method="get" autocomplete="off" id="orderform">
+                            <input type="hidden" name="m" value="User">
+                            <input type="hidden" name="c" value="Account">
+                            <input type="hidden" name="a" value="reconciliation">
+                            <input type="hidden" name="p" value="1">
+                            <div class="layui-form-item layui-inline">
+                                <label class="layui-form-label">日期</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="date" id="date" value="<{$date}>" placeholder="" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item layui-inline" style="margin-top: -3px;">
+                                <div class="layui-inline">
+                                    <button type="submit" class="layui-btn"><span
+                                            class="glyphicon glyphicon-search"></span> 搜索
+                                    </button>
+                                </div>
+                            </div>
+                            <table class="layui-table" lay-data="{width:'100%',id:'userData'}"  class="layui-table table table-orders color-table table-bordered table-hover dataTable no-footer" role="grid" aria-describedby="myTable_info" style="width: 1011px;">
+                                <thead>
+                                <tr>
+                                    <th lay-data="{field:'date',width:120}">日期</th>
+                                    <th lay-data="{field:'order_total_count', width:200,style:'color:#060;'}">总订单数</th>
+                                    <th lay-data="{field:'order_success_count', width:200,style:'color:#060;'}">成功订单数</th>
+                                    <th lay-data="{field:'order_fail_count', width:200}">未支付订单数</th>
+                                    <th lay-data="{field:'order_total_amount', width:200}">订单总额</th>
+                                    <th lay-data="{field:'order_success_amount', width:200}">订单实付总额</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="list" id="vo">
+                                    <tr>
+                                        <td><{$vo.date}></td>
+                                        <td style="text-align:center; color:#090;"><{$vo.order_total_count}></td>
+                                        <td style="text-align:center;"><{$vo.order_success_count}></td>
+                                        <td style="text-align:center;"><{$vo.order_fail_count}></td>
+                                        <td style="text-align:center;"><{$vo.order_total_amount}></td>
+                                        <td style="text-align:center;"><{$vo.order_success_amount}></td>
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                            <{$page}>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/footer"/>
+<script>
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'form'], function() {
+        var laydate = layui.laydate //日期
+            , laypage = layui.laypage //分页
+            ,layer = layui.layer //弹层
+            ,form = layui.form //表单
+            , table = layui.table; //表格
+        //日期时间范围
+        laydate.render({
+            elem: '#date'
+            , type: 'date'
+            ,theme: 'molv'
+            , min:"<{$time}>"
+            , max: "{:date('Y-m-d')}",
+
+        });
+    });
+    $('#pageList').change(function(){
+        $('#pageForm').submit();
+    });
+</script>
+</body>
+</html>

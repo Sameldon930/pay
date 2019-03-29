@@ -1,0 +1,16 @@
+【2019-01-31 14:22:00】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"IL0RHO8HG57OF71CNKJ73N7PB6JLX6UX\",\"systemID\":\"15489157205794z\",\"price\":\"10000\",\"outTradeNo\":\"20190131142200565697\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx00232eknlxaqbqcys19d\"}"}
+
+【2019-01-31 14:22:12】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"NU732B9V1VA5J9JA1VT809G5J2VAA4ZJ\",\"systemID\":\"1548915732001b0\",\"price\":\"10000\",\"outTradeNo\":\"20190131142211511024\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx03648e9c0dytrmnf8o91\"}"}
+
+【2019-01-31 14:22:24】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"O08POMP7O4SOQAQIKS4PZ6QOSPOZORS2\",\"systemID\":\"154891574443495\",\"price\":\"10000\",\"outTradeNo\":\"20190131142224485455\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx07593ufmh7t0jvpiwpf9\"}"}
+
+【2019-01-31 14:22:33】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"O08POMP7O4SOQAQIKS4PZ6QOSPOZORS2\",\"systemID\":\"1548915753408es\",\"price\":\"9997\",\"outTradeNo\":\"20190131142233575449\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx02441vocuvsgtmiw9y5d\"}"}
+
+【2019-01-31 14:22:40】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"O08POMP7O4SOQAQIKS4PZ6QOSPOZORS2\",\"systemID\":\"15489157605932f\",\"price\":\"9994\",\"outTradeNo\":\"20190131142240485610\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx09123cjwuodu0dkxp8d5\"}"}
+
+【2019-01-31 14:36:29】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"WRC32DGI0NCFGWQ4FJMLAI4P8SJ64WE7\",\"systemID\":\"1548916589981t3\",\"price\":\"10000\",\"outTradeNo\":\"20190131143629100101\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx086009ggglzqbjsk7r9d\"}"}
+
+【2019-01-31 15:06:35】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"IL0RHO8HG57OF71CNKJ73N7PB6JLX6UX\",\"systemID\":\"1548918395609x8\",\"price\":\"10000\",\"outTradeNo\":\"20190131150635985750\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx00232eknlxaqbqcys19d\"}"}
+
+【2019-01-31 15:08:18】\转账下单返回参数：{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"NU732B9V1VA5J9JA1VT809G5J2VAA4ZJ\",\"systemID\":\"1548918498184if\",\"price\":\"10000\",\"outTradeNo\":\"20190131150818505097\",\"overdueTime\":\"300\",\"qrcodeUrl\":\"https:\/\/qr.alipay.com\/fkx03648e9c0dytrmnf8o91\"}"}
+

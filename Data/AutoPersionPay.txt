@@ -1,0 +1,18 @@
+【2019-02-23 02:31:56】\转账下单返回参数1!{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"62Y6E7XCPF2RZN7C5O69W1M5IQSDZ25Q\",\"systemID\":\"1550860316422im\",\"price\":\"0\",\"outTradeNo\":\"20190223023155981015\",\"overdueTime\":\"300\",\"mark\":\"648249\",\"qrcodeUrl\":\"HTTPS:\/\/QR.ALIPAY.COM\/FKX0525628GSRSOMCKTO2C\"}"}
+
+【2019-02-23 02:32:09】\进入等待支付页面!20190223023155981015
+
+【2019-02-23 02:33:00】\转账下单返回参数1!{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"62Y6E7XCPF2RZN7C5O69W1M5IQSDZ25Q\",\"systemID\":\"1550860380028rl\",\"price\":\"0\",\"outTradeNo\":\"20190223023259985510\",\"overdueTime\":\"300\",\"mark\":\"533380\",\"qrcodeUrl\":\"HTTPS:\/\/QR.ALIPAY.COM\/FKX0525628GSRSOMCKTO2C\"}"}
+
+【2019-02-23 02:33:06】\进入等待支付页面!20190223023259985510
+
+【2019-02-23 02:33:47】\进入等待支付页面!20190223023259985510
+
+【2019-02-23 02:33:56】\转账下单返回参数1!{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"62Y6E7XCPF2RZN7C5O69W1M5IQSDZ25Q\",\"systemID\":\"1550860436555g8\",\"price\":\"0\",\"outTradeNo\":\"20190223023355511019\",\"overdueTime\":\"300\",\"mark\":\"296313\",\"qrcodeUrl\":\"HTTPS:\/\/QR.ALIPAY.COM\/FKX0525628GSRSOMCKTO2C\"}"}
+
+【2019-02-23 12:21:49】\转账下单返回参数1!{"errCode":0,"errCodeDes":null,"resultCode":true,"data":"{\"uid\":\"62Y6E7XCPF2RZN7C5O69W1M5IQSDZ25Q\",\"systemID\":\"1550895709148kb\",\"price\":\"0\",\"outTradeNo\":\"20190223122148995655\",\"overdueTime\":\"300\",\"mark\":\"961403\",\"qrcodeUrl\":\"HTTPS:\/\/QR.ALIPAY.COM\/FKX0525628GSRSOMCKTO2C\"}"}
+
+【2019-02-23 12:22:00】\进入等待支付页面!20190223122148995655
+
+【2019-02-23 12:23:15】\进入等待支付页面!20190223122148995655
+

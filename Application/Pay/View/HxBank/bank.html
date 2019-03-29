@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>网银支付</title>
+	<link rel="stylesheet" type="text/css" href="/Public/css/hxbank.css">
+</head>
+<body>
+<div class="header">
+	<div class="nav_bg"></div>
+</div>
+<form method="post" action="<{$rpay_url}>">
+	<input type="hidden" name="encryp" value="<{$encryp}>">
+	<div class="warp main1"></div>
+	<div class="pay-demo">
+		<span style="font-size: 22px; font-weight: bold;">网银支付</span>
+		<div class="demo">
+			<div class="demo-text">
+				<table>
+					<tr>
+						<td style="text-align: right;"><span>支付方式:</span></td>
+						<td style="text-align: left;"><select id="selPayType"
+															  name="selPayType">
+							<option value="01">借记卡</option>
+							<option value="02">信用卡</option>
+						</select></td>
+					</tr>
+
+					<tr>
+						<td style="text-align: right;"><span>银行:</span></td>
+						<td style="text-align: left;">
+							<select name="bankCode">
+								<option value="1100">工商银行</option>
+								<option value="1101">农业银行</option>
+								<option value="1102">招商银行</option>
+								<option value="1103">兴业银行</option>
+								<option value="1104">中信银行</option>
+								<option value="1106">中国建设银行</option>
+								<option value="1107">中国银行</option>
+								<option value="1108">交通银行</option>
+								<option value="1109">浦发银行</option>
+								<option value="1110">民生银行</option>
+								<option value="1111">华夏银行</option>
+								<option value="1112">光大银行</option>
+								<option value="1113">北京银行</option>
+								<option value="1114">广发银行</option>
+								<option value="1115">南京银行</option>
+								<option value="1116">上海银行</option>
+								<option value="1117">杭州银行</option>
+								<option value="1118">宁波银行</option>
+								<option value="1119">邮储银行</option>
+								<option value="1120">浙商银行</option>
+								<option value="1121">平安银行</option>
+								<option value="1122">东亚银行</option>
+								<option value="1123">渤海银行</option>
+								<option value="1124">北京农商行</option>
+								<option value="1127">浙江泰隆商业银行</option>
+							</select>
+
+					</tr>
+				</table>
+			</div>
+			<p>
+				<input type="submit" class="botton" value="支付">
+			</p>
+		</div>
+	</div>
+</form>
+<div style="display:none">
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276520178'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1276520178%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+</html>

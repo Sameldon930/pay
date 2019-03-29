@@ -1,0 +1,33 @@
+.email-page .checkbox label{position:absolute;}
+
+.list-group-item{padding:0;border:0 none}
+.mail-list a.list-group-item, .list-group-item a{color:#5e5e5e;padding:0; display:block; margin:3px 0 3px 0} 
+.list-group-item.active{ background:none; border:0 none}
+.list-group-item.active a,
+.mail-list a.list-group-item{color:#000000;}
+.check-drop.btn-secondary, .check-drop.btn-secondary.disabled{background:none;}
+.btn-secondary.check-drop:hover, .btn-secondary.check-drop:focus,
+.btn-secondary.check-drop:not(:disabled):not(.disabled).active, .btn-secondary.check-drop:not(:disabled):not(.disabled):active, .show>.btn-secondary.check-drop.dropdown-toggle
+{background:none; box-shadow:0 0 0 0.2rem rgba(108, 117, 125, 0);}
+
+.check-drop.dropdown-toggle::after{color:#6498fe;}
+
+.top-section-left{float:left; padding:0 15px 0 30px;}
+.check-drop,
+.top-section-left .checkbox{
+top: -20px;
+position: relative;}
+.inbox-center .table td{padding:1rem 0.2rem; font-weight:400;}
+.inbox-center td:nth-child(2){text-align:center;padding:1rem 0.5rem;}
+.inbox-center .text-muted{color:#d3e0fc!important;}
+
+.inbox-center td a{color:#5e5e5e;font-weight:500} 
+.inbox-center td:hover a{color:#000;} 
+.scrollbox{position:relative;}
+.faded-background{position:absolute;bottom:0; height:170px; z-index:999; width:100%;
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */;}
+
+ 

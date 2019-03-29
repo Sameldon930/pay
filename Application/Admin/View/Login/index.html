@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title><{$sitename}> 后台管理系统 - 您需要登录后才可以使用本功能</title>
+  <link rel="stylesheet" type="text/css" href="/Public/Login/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/Public/Login/css/login.css">
+  <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/layer/layer.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js" type="text/javascript" charset="utf-8"></script>
+  <![endif]-->
+  <script type="text/javascript">
+      if (top.location !== self.location) {
+          top.location = self.location;
+      }
+  </script>
+</head>
+<body>
+
+<div class="loginWrapper clearfix">
+  <div class="banWrapper">
+
+  </div>
+  <div class="loginMain">
+    <div class="loginWidth">
+      <div class="loginLogoDiv" style="text-align:center;">
+        <h2> 欢迎登录【<{$sitename}>】管理平台</h2>
+      </div>
+      <form class="formLogin"  data-animate-effect="fadeInRight" id="formlogin" name="formlogin"
+            method="post" role="form" action="<{:U('Admin/Login/checkLogin')}>">
+        <div class="loginList loginListUser">
+          <label>账号</label>
+          <input type="text" class="loginText" name="username" id="username" value=""
+                 placeholder="请输入用户名"/>
+          <span class="errorTips"><i></i><em></em></span>
+        </div>
+        <div class="loginList loginListPwd">
+          <label>密码</label>
+          <input type="password" class="loginText" name="password" id="password" value="" placeholder="请输入密码"/>
+          <span class="errorTips"><i></i><em></em></span>
+        </div>
+        <div class="loginList loginListCode" style="">
+          <label>验证码</label>
+          <input type="text" class="loginText" name="captcha" id="captcha" value="" placeholder="验证码" autocomplete="off" onfocus="if(this.value=='')reimg()"/>
+          <img src="Public/New/assets/imgs/blank.png" style="cursor:pointer;top:4px;background:#fff;" id="vercodeImg" alt="" onclick="reimg()" title="点击刷新验证码"/>
+
+        </div>
+
+        <div class="sysError" style="display:none"><label></label><span><i></i><em></em></span></div>
+
+
+        <input class="loginBtn" type="button" id="loginBtn" value="立即登录"/>
+
+
+       </form>
+    </div>
+  </div>
+</div>
+
+<div class="loginFooter clearfix">
+  <!--Welcome to the background management center-->
+</div>
+
+<script>
+  var csrf_token = "<{$csrf_token}>";
+  $("#loginBtn").click(function () {
+
+    var username = $("#username").val();
+    var password = $("#password").val();
+    var verification = $("#captcha").val();
+
+
+    username = $.trim(username);
+    password = $.trim(password);
+    verification = $.trim(verification);
+
+    if (username.length < 1) {
+
+      layer.msg('请输入正确格式的用户名');
+      return false;
+
+    }
+    else if (password.length < 6) {
+      layer.msg('请输入正确格式的密码');
+      return false;
+
+    }
+    else if (verification == '') {
+      layer.msg('请输入正确格式的验证码');
+      return false;
+
+    }
+
+    $.ajax({
+      type:'post',
+      url:'<{:U('Admin/Login/checkLogin')}>',
+      data: { username: username, password: password, verify:verification},
+      dataType:'json',
+
+      success:function(info) {
+      if (!info.errorno) {
+        setTimeout(function () {
+          location.href = info.url;
+        }, 1000);
+        layer.msg(info.msg);
+      } else {
+        layer.msg(info.msg, {icon: 5});
+        if(info.msg == '验证码输入错误！') {
+            $('#captcha').val('');
+            $('#captcha').focus();
+        }
+        return false;
+      }
+    }
+    });
+
+  });
+  document.onkeydown = function () {
+    if (event.keyCode == 13) { //enter
+      $("#loginBtn").click();
+    }
+  };
+  function reimg() {
+      var img = document.getElementById("vercodeImg");
+      img.src = "<{:U('Admin/Login/verifycode')}>?csrf_token="+csrf_token+"&rnd=" + Math.random();
+  }
+</script>
+
+</body>
+</html>

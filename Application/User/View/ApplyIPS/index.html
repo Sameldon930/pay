@@ -1,0 +1,154 @@
+<include file="Public/header"/>
+<div class="row">
+    <div class="col-md-12">
+        <if condition="$applyIpsInfo">
+            <p class="bg-success" style="padding:10px 0px 10px 30px">您已成功认证！</p>
+        <else/>
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>申请IPS提现账号</h5>
+                    <div class="ibox-content">
+                        <p class="text-danger">谨慎修改用户信息，胡乱填写一律禁封账号处理</p>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <!--用户信息-->
+                    <form class="layui-form" action="" autocomplete="off" id="profile">
+                        <input type="hidden" name="id" value="">
+        
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">身份证号码：</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="id_no" lay-verify="required" placeholder="身份证号码" autocomplete="off" class="layui-input" value="<{$p.sfznumber}>">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+      
+                            <div class="layui-inline">
+                                <label class="layui-form-label">邮箱：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="email" lay-verify="required" autocomplete="off"
+                                           class="layui-input" value="<{$p.qq}>">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label">提现人姓名：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="bank_fullname" lay-verify="required" class="layui-input" >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">银行：</label>
+                            <div class="layui-input-block">
+                                <select name="bank_code" lay-verify="required">
+                                    <option value="">全部类型</option>
+                                    <option value="1100">中国工商银行</option>
+                                    <option value="1101">中国农业银行</option>
+                                    <option value="1102">招商银行</option>
+                                    <option value="1103">兴业银行</option>
+                                    <option value="1104">中信银行</option>
+                                    <option value="1106">中国建设银行</option>
+                                    <option value="1107">中国银行</option>
+                                    <option value="1108">交通银行</option>
+                                    <option value="1110">中国民生银行</option>
+                                    <option value="1111">华夏银行</option>
+                                    <option value="1112">中国光大银行</option>
+                                    <option value="1119">中国邮政储蓄银行</option>
+                                    <option value="1113">北京银行</option>
+                                    <option value="1114">广发银行</option>
+                                    <option value="1116">上海银行</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">银行帐号：</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="bank_account" lay-verify="required" autocomplete="off"
+                                       placeholder="银行帐号" class="layui-input" value="<{$p.address}>">
+                            </div>
+                        </div>
+
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">开户支行：</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="bank_address" lay-verify="required" autocomplete="off"
+                                       placeholder="开户支行：如中国银行成都武侯支行" class="layui-input" value="<{$p.address}>">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">银行预留手机号：</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="mobile" lay-verify="required" autocomplete="off"
+                                       placeholder="银行预留手机号" class="layui-input" value="<{$p.address}>">
+                            </div>
+                        </div>
+
+
+
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit="" lay-filter="profile">立即提交</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!--用户信息-->
+                </div>
+            </div>
+        </if>
+    </div>
+</div>
+<include file="Public/footer"/>
+<script>
+layui.use(['laydate', 'laypage', 'layer', 'form', 'element'], function() {
+    var laydate = layui.laydate //日期
+        ,layer = layui.layer //弹层
+        ,form = layui.form //弹层
+        , element = layui.element; //元素操作
+    //日期
+    laydate.render({
+        elem: '#date'
+    });
+    //监听提交
+    form.on('submit(profile)', function(data){
+        $.ajax({
+            url:"<{:U('ApplyIPS/add')}>",
+            type:"post",
+            data:$('#profile').serialize(),
+            success:function(res){
+
+                if(res.status){
+                    layer.alert("编辑成功", {icon: 6},function () {
+                        parent.location.reload();
+                        var index = parent.layer.getFrameIndex(window.name);
+                        parent.layer.close(index);
+                    });
+                }else{
+                    layer.alert("操作失败", {icon: 5},function () {
+                        parent.location.reload();
+                        var index = parent.layer.getFrameIndex(window.name);
+                        parent.layer.close(index);
+                    });
+                }
+            }
+        });
+        return false;
+    });
+
+
+});
+
+
+</script>
+</body>
+</html>

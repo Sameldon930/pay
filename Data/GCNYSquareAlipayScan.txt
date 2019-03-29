@@ -1,0 +1,336 @@
+【2019-02-22 16:53:18】\银行编号:
+
+【2019-02-22 16:53:18】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 16:53:18&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222165318101975&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 16:53:18】\下单密文:C0827E3736274685DE6171E46C1520F7
+
+【2019-02-22 16:53:18】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 16:53:18","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222165318101975","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"C0827E3736274685DE6171E46C1520F7"}
+
+【2019-02-22 16:53:18】
+GCNY四方返回：null
+
+【2019-02-22 16:53:56】\银行编号:
+
+【2019-02-22 16:53:57】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 16:53:57&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222165356521019&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 16:53:57】\下单密文:B2C581A80BC2491EA3880FB9E394B250
+
+【2019-02-22 16:53:57】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 16:53:57","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222165356521019","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"B2C581A80BC2491EA3880FB9E394B250"}
+
+【2019-02-22 16:53:57】
+GCNY四方返回：null
+
+【2019-02-22 16:55:01】\银行编号:
+
+【2019-02-22 16:55:01】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 16:55:01&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222165501535510&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 16:55:01】\下单密文:701CBB0BE9B060457AD6F68BF1E560A0
+
+【2019-02-22 16:55:01】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 16:55:01","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222165501535510","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"701CBB0BE9B060457AD6F68BF1E560A0"}
+
+【2019-02-22 16:55:01】
+GCNY四方返回：null
+
+【2019-02-22 16:55:09】\银行编号:
+
+【2019-02-22 16:55:09】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 16:55:09&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222165509100485&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 16:55:09】\下单密文:D085D1455DAA69F05210C4C68B3D07D4
+
+【2019-02-22 16:55:09】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 16:55:09","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222165509100485","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"D085D1455DAA69F05210C4C68B3D07D4"}
+
+【2019-02-22 16:55:09】
+GCNY四方返回：null
+
+【2019-02-22 16:56:29】\银行编号:
+
+【2019-02-22 16:56:29】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 16:56:29&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222165629100525&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 16:56:29】\下单密文:BB014F8255822B6B501D961993F54411
+
+【2019-02-22 16:56:29】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 16:56:29","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222165629100525","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"BB014F8255822B6B501D961993F54411"}
+
+【2019-02-22 16:56:29】
+GCNY四方返回：null
+
+【2019-02-22 16:59:44】\银行编号:
+
+【2019-02-22 16:59:44】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 16:59:44&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222165944489710&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 16:59:44】\下单密文:C43AFB74AE0F904EE1A0B24DE9CFF4A5
+
+【2019-02-22 16:59:44】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 16:59:44","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222165944489710","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"C43AFB74AE0F904EE1A0B24DE9CFF4A5"}
+
+【2019-02-22 16:59:44】
+GCNY四方返回：null
+
+【2019-02-22 17:00:36】\银行编号:
+
+【2019-02-22 17:00:36】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 17:00:36&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222170036529899&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 17:00:36】\下单密文:EDCEBD58A90C3903B2E77EFFC3B51363
+
+【2019-02-22 17:00:36】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 17:00:36","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222170036529899","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"EDCEBD58A90C3903B2E77EFFC3B51363"}
+
+【2019-02-22 17:00:36】
+GCNY四方返回：null
+
+【2019-02-22 17:01:12】
+GCNY四方异步通知订单号：20190222170036529899
+
+【2019-02-22 17:01:12】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:01:13】
+GCNY四方异步通知订单号：20190222170036529899
+
+【2019-02-22 17:01:13】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:02:14】
+GCNY四方异步通知订单号：20190222170036529899
+
+【2019-02-22 17:02:14】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:03:14】
+GCNY四方异步通知订单号：20190222170036529899
+
+【2019-02-22 17:03:14】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:04:14】
+GCNY四方异步通知订单号：20190222170036529899
+
+【2019-02-22 17:04:14】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:05:14】
+GCNY四方异步通知订单号：20190222170036529899
+
+【2019-02-22 17:05:14】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:07:28】\银行编号:
+
+【2019-02-22 17:07:28】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 17:07:28&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222170728481019&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 17:07:28】\下单密文:6F176E64AA893A7D725E99DA2A8B2C0C
+
+【2019-02-22 17:07:28】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 17:07:28","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222170728481019","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"6F176E64AA893A7D725E99DA2A8B2C0C"}
+
+【2019-02-22 17:07:28】
+GCNY四方返回：null
+
+【2019-02-22 17:08:44】\银行编号:
+
+【2019-02-22 17:08:44】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 17:08:44&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222170844995098&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 17:08:44】\下单密文:E18BA136463397EA7BF8726F8E450EFF
+
+【2019-02-22 17:08:44】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 17:08:44","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222170844995098","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"E18BA136463397EA7BF8726F8E450EFF"}
+
+【2019-02-22 17:08:44】
+GCNY四方返回：null
+
+【2019-02-22 17:13:26】\银行编号:
+
+【2019-02-22 17:13:26】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 17:13:26&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222171326545298&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 17:13:26】\下单密文:A8458DDDE94179A3D9E2D5D3E96632FB
+
+【2019-02-22 17:13:26】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 17:13:26","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222171326545298","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"A8458DDDE94179A3D9E2D5D3E96632FB"}
+
+【2019-02-22 17:13:26】
+GCNY四方返回：null
+
+【2019-02-22 17:20:53】\银行编号:
+
+【2019-02-22 17:20:53】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 17:20:53&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222172053535352&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 17:20:53】\下单密文:E5128333816F35099F1F3B1DF6D7FED9
+
+【2019-02-22 17:20:53】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 17:20:53","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222172053535352","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"E5128333816F35099F1F3B1DF6D7FED9"}
+
+【2019-02-22 17:20:53】
+GCNY四方返回：null
+
+【2019-02-22 17:22:50】\银行编号:
+
+【2019-02-22 17:22:50】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 17:22:50&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222172250979710&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 17:22:50】\下单密文:4254648FE951C724B9880D46F287FC1B
+
+【2019-02-22 17:22:50】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 17:22:50","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222172250979710","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"4254648FE951C724B9880D46F287FC1B"}
+
+【2019-02-22 17:22:50】
+GCNY四方返回：null
+
+【2019-02-22 17:24:00】\银行编号:
+
+【2019-02-22 17:24:00】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 17:24:00&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222172400489954&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 17:24:00】\下单密文:55C1F36CD3B84F2D943EF30515CD9193
+
+【2019-02-22 17:24:00】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 17:24:00","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222172400489954","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"55C1F36CD3B84F2D943EF30515CD9193"}
+
+【2019-02-22 17:24:00】
+GCNY四方返回：null
+
+【2019-02-22 17:24:35】
+GCNY四方异步通知订单号：20190222172400489954
+
+【2019-02-22 17:24:35】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:24:36】
+GCNY四方异步通知订单号：20190222172400489954
+
+【2019-02-22 17:24:36】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:25:35】
+GCNY四方异步通知订单号：20190222172400489954
+
+【2019-02-22 17:25:35】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:26:35】
+GCNY四方异步通知订单号：20190222172400489954
+
+【2019-02-22 17:26:35】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:27:32】\银行编号:
+
+【2019-02-22 17:27:32】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 17:27:32&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222172732525356&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 17:27:32】\下单密文:4DA0B5F786037AAA1E51C91360A8D130
+
+【2019-02-22 17:27:32】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 17:27:32","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222172732525356","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"4DA0B5F786037AAA1E51C91360A8D130"}
+
+【2019-02-22 17:27:32】
+GCNY四方返回：null
+
+【2019-02-22 17:27:35】
+GCNY四方异步通知订单号：20190222172400489954
+
+【2019-02-22 17:27:35】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:28:10】
+GCNY四方异步通知订单号：20190222172732525356
+
+【2019-02-22 17:28:10】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:28:11】
+GCNY四方异步通知订单号：20190222172732525356
+
+【2019-02-22 17:28:11】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:28:35】
+GCNY四方异步通知订单号：20190222172400489954
+
+【2019-02-22 17:28:35】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:29:10】
+GCNY四方异步通知订单号：20190222172732525356
+
+【2019-02-22 17:29:10】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:30:11】
+GCNY四方异步通知订单号：20190222172732525356
+
+【2019-02-22 17:30:11】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:31:11】
+GCNY四方异步通知订单号：20190222172732525356
+
+【2019-02-22 17:31:11】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:32:11】
+GCNY四方异步通知订单号：20190222172732525356
+
+【2019-02-22 17:32:11】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:35:25】\银行编号:
+
+【2019-02-22 17:35:25】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 17:35:25&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222173525100555&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 17:35:25】\下单密文:844F5822DB3E64C7DE2E3F9D6D98521D
+
+【2019-02-22 17:35:25】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 17:35:25","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222173525100555","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"844F5822DB3E64C7DE2E3F9D6D98521D"}
+
+【2019-02-22 17:35:25】
+GCNY四方返回：null
+
+【2019-02-22 17:36:57】\银行编号:
+
+【2019-02-22 17:36:57】\下单报文:pay_amount=10.00&pay_applydate=2019-02-22 17:36:57&pay_bankcode=903&pay_callbackurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_memberid=10008&pay_notifyurl=http://rain.haohan168.cn:8086/Pay_GCNYSquareAlipayScan_notifyurl.html&pay_orderid=20190222173657571009&key=gko54w45kplpqdwvxfmw572hivqhaezl
+
+【2019-02-22 17:36:57】\下单密文:3456B16775BC309CD0615349E30EECC6
+
+【2019-02-22 17:36:57】
+GCNY四方下单参数：{"pay_amount":"10.00","pay_applydate":"2019-02-22 17:36:57","pay_bankcode":"903","pay_callbackurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_memberid":"10008","pay_notifyurl":"http:\/\/rain.haohan168.cn:8086\/Pay_GCNYSquareAlipayScan_notifyurl.html","pay_orderid":"20190222173657571009","pay_productname":"10\u5143\u5957\u9910","pay_md5sign":"3456B16775BC309CD0615349E30EECC6"}
+
+【2019-02-22 17:36:57】
+GCNY四方返回：null
+
+【2019-02-22 17:37:23】
+GCNY四方异步通知订单号：20190222173657571009
+
+【2019-02-22 17:37:23】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:37:24】
+GCNY四方异步通知订单号：20190222173657571009
+
+【2019-02-22 17:37:24】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:38:24】
+GCNY四方异步通知订单号：20190222173657571009
+
+【2019-02-22 17:38:24】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:39:24】
+GCNY四方异步通知订单号：20190222173657571009
+
+【2019-02-22 17:39:24】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:40:24】
+GCNY四方异步通知订单号：20190222173657571009
+
+【2019-02-22 17:40:24】
+GCNY四方异步通知成功：
+
+【2019-02-22 17:41:24】
+GCNY四方异步通知订单号：20190222173657571009
+
+【2019-02-22 17:41:24】
+GCNY四方异步通知成功：
+

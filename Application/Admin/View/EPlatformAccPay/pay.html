@@ -1,0 +1,49 @@
+<include file="Public/header"/>
+<div class="row">
+	<div class="col-md-12">
+		<div class="ibox float-e-margins">
+			<div class="ibox-content">
+				<form class="layui-form" action="" autocomplete="off" method="_blank">
+					<input type="hidden" name="userid" value="<{$info.user_id}>">
+					<div class="layui-form-item">
+						<div class="layui-form-item">
+							<label class="layui-form-label">商户号：</label>
+							<div class="layui-input-inline">
+								{$info.user_name}
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">真实姓名：</label>
+							<div class="layui-input-inline">
+								{$info.real_name}
+							</div>
+						</div>
+						<label class="layui-form-label">金额：</label>
+						<div class="layui-input-inline">
+							<input type="text" name="amount" autocomplete="off" value="" placeholder="金额" class="layui-input">
+						</div>
+					</div>
+						<div class="layui-inline">
+							<div class="layui-input-inline">
+								<button class="layui-btn">立即提交</button>
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Public/footer"/>
+<script>
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'form'], function () {
+        var laydate = layui.laydate //日期
+            , laypage = layui.laypage //分页
+            , layer = layui.layer //弹层
+            , form = layui.form //表单
+            , table = layui.table; //表格
+    });
+</script>
+</body>
+</html>

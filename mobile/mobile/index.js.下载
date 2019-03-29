@@ -1,0 +1,567 @@
+
+
+$(document).ready(function(){
+
+  readyLoad();
+  allHover();
+  allClick();
+
+  setInterval(mchFloatWindow,100);
+
+  IEbrowser();
+})
+//更改 id 内的html
+function resetHtmlById(btnId,secons,content){
+  var a = setTimeout("$('#"+btnId+"').html('"+content+"')" ,secons * 1000);
+}
+
+function IEbrowser(){
+
+  if(isIE()){
+    $(".first-footerImgBack").css({
+      'margin': '17px 0 0 17px'
+    })
+    $(".speedImg").css({
+      'margin': '9px 0 0 15px'
+    })
+    $(".speedImgHover").css({
+      'margin': '9px 0 0 15px'
+    })
+    $(".stabilityImg").css({
+      'margin': '17px 0 0 5px'
+    })
+    $(".stabilityImgHover").css({
+      'margin': '17px 0 0 5px'
+    })
+    $(".saveImg").css({
+      'margin': '9px 0 0 11px'
+    })
+    $(".saveImgHover").css({
+      'margin': '9px 0 0 11px'
+    })
+
+    $("#second-block_1").hover(function(){
+      // $("#second-block-img_1").removeClass().addClass("second-block-img second-block-img_1Show");
+      $("#second-block-img_1").attr("class","second-block-img_1");
+      $("#second-block-a_1").attr("class","second-block-a_1Show");
+    })
+    $("#second-block_1").mouseleave(function(){
+      // $("#second-block-img_1").removeClass().addClass("second-block-img second-block-img_1");
+      $("#second-block-img_1").attr("class","second-block-img_1");
+      $("#second-block-a_1").attr("class","second-block-a_1");
+    });
+    $("#second-block_2").hover(function(){
+      $("#second-block-img_2").attr("class","second-block-img_2");
+      $("#second-block-a_2").attr("class","second-block-a_2Show");
+    })
+    $("#second-block_2").mouseleave(function(){
+      $("#second-block-img_2").attr("class","second-block-img_2");
+      $("#second-block-a_2").attr("class","second-block-a_2");
+    });
+
+    $("#second-block_3").hover(function(){
+      $("#second-block-img_3").attr("class","second-block-img_3");
+      $("#second-block-a_3").attr("class","second-block-a_3Show");
+    })
+    $("#second-block_3").mouseleave(function(){
+      // 鼠标移出
+      $("#second-block-img_3").attr("class","second-block-img_3");
+      $("#second-block-a_3").attr("class","second-block-a_3");
+    });
+
+
+
+  }else if (isFireFox()) {
+
+    $(".mchMoreDiv").css({
+      'margin-top':'40%'
+    })
+    $("#pagination1").css({
+      'margin-top':'40%'
+    })
+
+  } else {
+    $("#second-block_1").hover(function(){
+      $("#second-block-img_1").attr("class","second-block-img_1Show");
+      $("#second-block-a_1").attr("class","second-block-a_1Show");
+    })
+    $("#second-block_1").mouseleave(function(){
+      $("#second-block-img_1").attr("class","second-block-img_1");
+      $("#second-block-a_1").attr("class","second-block-a_1");
+    });
+    $("#second-block_2").hover(function(){
+      $("#second-block-img_2").attr("class","second-block-img_2Show");
+      $("#second-block-a_2").attr("class","second-block-a_2Show");
+    })
+    $("#second-block_2").mouseleave(function(){
+      $("#second-block-img_2").attr("class","second-block-img_2");
+      $("#second-block-a_2").attr("class","second-block-a_2");
+    });
+
+    $("#second-block_3").hover(function(){
+      $("#second-block-img_3").attr("class","second-block-img_3Show");
+      $("#second-block-a_3").attr("class","second-block-a_3Show");
+    })
+    $("#second-block_3").mouseleave(function(){
+      // 鼠标移出
+      $("#second-block-img_3").attr("class","second-block-img_3");
+      $("#second-block-a_3").attr("class","second-block-a_3");
+    });
+  }
+}
+
+function isIE() { //ie?
+  if (!!window.ActiveXObject || "ActiveXObject" in window)
+  return true;
+  else
+  return false;
+}
+function isFireFox(){
+  if(navigator.userAgent.indexOf('Firefox') >= 0)
+  return true;
+  else
+  return false;
+}
+
+
+
+function readyLoad(){
+  window.onscroll = function (e) {
+    if(window.scrollY > 800){
+      $("#to-top").removeClass().addClass("to-top-show");
+    }else{
+      $("#to-top").removeClass().addClass("to-top-hidd");
+    }
+
+    if(window.scrollY > 100){
+      $(".header-menu").css({
+        'display':'none'
+      });
+    }else{
+      $(".header-menu").css({
+        'display':'flex'
+      });
+    }
+  }
+}
+
+
+var mouseScroll = function(fn){
+  var roll = function(){
+    var delta = 0,
+    e = arguments[0] || window.event;
+    delta = (e.wheelDelta) ? e.wheelDelta / 120 : -(e.detail || 0) / 3;
+    fn(delta);//回调函数中的回调函数
+  }
+  if(window.netscape){
+    document.addEventListener('DOMMouseScroll', roll, false);
+  }else{
+    document.onmousewheel = roll;
+  }
+}
+
+function allClick(){
+  $("#to-top").click(function(){
+    $('html,body').animate({scrollTop:'0'},400,'swing');
+  })
+  $(".mchMore").click(function(){
+    window.location.href = "html/coop/coopCompApp.html";
+  })
+  $(".fifth-title-left-experience").click(function(){
+    window.open("https://mch.ipaynow.cn/register")
+  })
+
+  $(".wapPay").hover(function(){
+    $(".wapPay").children("span").html("点击查看详情");
+
+    $("#gridShowTitle").html('PC网页支付');
+    $("#gridShowContent").html('如同电商们的支付页面，接入后即可使用支付宝、微信的网页支付以及扫码支付、银联网页支付等。');
+    $(".first-contet-right-inner").addClass("DivefadeIn changeOther");
+    $(".first-contet-right-inner").removeClass("DivefadeIn");
+    $(".first-contet-btn-div").css({
+      'display':'none'
+    })
+  });
+  $(".wapPay").mouseleave(function(){
+    $(".wapPay").children("span").html('网页支付');
+  });
+
+  $(".mbWapPay").hover(function(){
+    $(".mbWapPay").children("span").html("点击查看详情");
+
+    $("#gridShowTitle").html('手机网页支付');
+    $("#gridShowContent").html('不依赖App等媒介，手机网页也可以拥有多种支付方式，H5网页、微商都可以使用。');
+    $(".first-contet-right-inner").addClass("DivefadeIn changeOther");
+    $(".first-contet-right-inner").removeClass("changeOther");
+    $(".first-contet-btn-div").css({
+      'display':'none'
+    })
+  });
+  $(".mbWapPay").mouseleave(function(){
+    $(".mbWapPay").children("span").html('手机网页支付');
+  });
+
+  $(".posPay").hover(function(){
+    $(".posPay").children("span").html("点击查看详情");
+
+    $("#gridShowTitle").html('智能POS支付');
+    $("#gridShowContent").html('强大的智能终端，智能POS可以满足扫码、刷卡等所有支付方式，同时可以结合我们的收银App，实现更加丰富的支付功能。');
+    $(".first-contet-right-inner").addClass("DivefadeIn changeOther");
+    $(".first-contet-right-inner").removeClass("DivefadeIn");
+    $(".first-contet-btn-div").css({
+      'display':'none'
+    })
+  });
+  $(".posPay").mouseleave(function(){
+    $(".posPay").children("span").html('智能POS支付');
+  });
+
+
+
+  $(".cNitiative").hover(function(){
+    $(".cNitiative").children("span").html("点击查看详情");
+
+    $("#gridShowTitle").html('用户扫码支付');
+    $("#gridShowContent").html('用户通过选择自己喜欢的支付方式扫码完成支付，支付方式的定向选择，用户的方便就是你的方便。');
+    $(".first-contet-right-inner").addClass("DivefadeIn changeOther");
+    $(".first-contet-right-inner").removeClass("changeOther");
+    $(".first-contet-btn-div").css({
+      'display':'none'
+    })
+  });
+  $(".cNitiative").mouseleave(function(){
+    $(".cNitiative").children("span").html('用户扫码支付');
+  });
+
+
+  $(".more").hover(function(){
+
+    $("#gridShowTitle").html('即将上线产品');
+    $("#gridShowContent").html('我们对技术的探索从未停止，敬请期待');
+    $(".first-contet-right-inner").addClass("DivefadeIn changeOther");
+    $(".first-contet-right-inner").removeClass("DivefadeIn");
+    $(".first-contet-btn-div").css({
+      'display':'none'
+    })
+  });
+
+
+  $(".bPassivity").hover(function(){
+    $(".bPassivity").children("span").html("点击查看详情");
+
+    $("#gridShowTitle").html('商户扫码支付');
+    $("#gridShowContent").html('使用扫码枪或POS设备扫描用户展示的二维码，完成收款，移动时代，扫一下，用收银最习惯的方式。');
+    $(".first-contet-right-inner").addClass("DivefadeIn changeOther");
+    $(".first-contet-right-inner").removeClass("changeOther");
+    $(".first-contet-btn-div").css({
+      'display':'none'
+    })
+  });
+  $(".bPassivity").mouseleave(function(){
+    $(".bPassivity").children("span").html('商户扫码支付');
+  });
+
+  $(".mbApp").hover(function(){
+    $(".mbApp").children("span").html("点击查看详情");
+
+    $("#gridShowTitle").html('手机App支付');
+    $("#gridShowContent").html('手机App内，只需简单的几行代码，即可接入多个主流支付方式，用户可方便的使用自己喜欢的支付方式。');
+    $(".first-contet-right-inner").addClass("DivefadeIn changeOther");
+    $(".first-contet-right-inner").removeClass("DivefadeIn");
+    $(".first-contet-btn-div").css({
+      'display':'none'
+    })
+  });
+  $(".mbApp").mouseleave(function(){
+    $(".mbApp").children("span").html('手机App支付');
+  });
+
+  $(".wx").hover(function(){
+    $(".wx").children("span").html("点击查看详情");
+
+    $("#gridShowTitle").html('公众号支付');
+    $("#gridShowContent").html('基于新媒体时代的支付选择，支付宝、微信、QQ，公众号内支付选它就对了。');
+    $(".first-contet-right-inner").addClass("DivefadeIn changeOther");
+    $(".first-contet-right-inner").removeClass("changeOther");
+    $(".first-contet-btn-div").css({
+      'display':'none'
+    })
+  });
+  $(".wx").mouseleave(function(){
+    $(".wx").children("span").html('公众号支付');
+  });
+
+  $(".cardPay").hover(function(){
+    $(".cardPay").children("span").html("点击查看详情");
+
+    $("#gridShowTitle").html('卡牌支付');
+    $("#gridShowContent").html('一码多付，一个二维码即可支持多种主流支付渠道，也许这才是当前收银最省心的方式。');
+    $(".first-contet-right-inner").addClass("DivefadeIn changeOther");
+    $(".first-contet-right-inner").removeClass("DivefadeIn");
+    $(".first-contet-btn-div").css({
+      'display':'none'
+    })
+  });
+  $(".cardPay").mouseleave(function(){
+    $(".cardPay").children("span").html('卡牌支付');
+  });
+
+
+
+  $("#channelPanel").mouseleave(function(){
+    $("#gridShowTitle").html('你需要的支付<br>都在这里<br>');
+    $("#gridShowContent").html('好啊支付聚合平台，全渠道支付方式、高效对接、简洁而强大的交易账务管理，专业为你服务。')
+    $(".first-contet-btn-div").css({
+      'display':'block'
+    })
+    $(".first-contet-right-inner").removeClass("DivefadeIn changeOther");
+  })
+
+
+  
+
+
+function mchFloatWindow(){
+
+  $(".melissa").css({
+    'display': 'block'
+  })
+
+  var tag = 'swiper-pagination-bullet-active';
+  var i = 0;
+  var mchGlass = document.getElementById("mchGlass");
+
+  $.each($("#pagination1").children(), function () {
+
+    if ( ($(this).attr("class").toString()).indexOf(tag) > 0 ) {
+
+      if($(this).index() != 5){
+        $(".mchGlass-logo").css({
+          'background': 'url(images/mch-img/mchlogo'+$(this).index()+'-cg.png) no-repeat center',
+          'background-size': 'cover'
+        });
+      }
+
+      if($(this).index() != 5){
+        $(this).css({
+          'filter': 'grayscale(0%)',
+          'opacity': '1',
+          'box-shadow': '0 0 32px 0 #D7D7D7'
+        });
+      }
+
+
+      if($(this).index() == 0){
+        $(this).css({
+          'background':'url(images/mch-img/mch-index/mchlogo'+$(this).index()+'-cg.png) no-repeat center, linear-gradient(134deg, #61D0FF 0%, #0055FF 100%)',
+        });
+      }else if($(this).index() == 1){
+        $(this).css({
+          'background':'url(images/mch-img/mch-index/mchlogo'+$(this).index()+'-cg.png) no-repeat center, linear-gradient(134deg, #7DDFFF 0%, #00BEFF 100%)',
+        });
+      }else if($(this).index() == 2){
+        $(this).css({
+          'background':'url(images/mch-img/mch-index/mchlogo'+$(this).index()+'-cg.png) no-repeat center, linear-gradient(134deg, #1FC891 0%, #1BFD6C 100%)',
+        });
+      }else if($(this).index() == 3){
+        $(this).css({
+          'background':'url(images/mch-img/mch-index/mchlogo'+$(this).index()+'-cg.png) no-repeat center, linear-gradient(134deg, #FF7D8C 0%, #FF1033 100%)',
+        });
+      }else if($(this).index() == 4){
+        $(this).css({
+          'background':'url(images/mch-img/mch-index/mchlogo'+$(this).index()+'-cg.png) no-repeat center, linear-gradient(134deg, #6DD1FF 0%, #0032FF 100%)',
+        });
+      }else{
+        return;
+      }
+
+    }else{
+      $(this).css({
+        'filter': 'grayscale(100%)',
+        'opacity': '0.4',
+        'box-shadow': '0 0 2px 0 #666'
+      })
+
+      if($(this).index() != 5){
+        $(this).css({
+          'background':'url(images/mch-img/mch-index/mchlogo'+$(this).index()+'.png) no-repeat center',
+        })
+      }
+    }
+
+  })
+
+  $.each($("#pagination2").children(), function () {
+    if ( ($(this).attr("class").toString()).indexOf(tag) > 0 ) {
+      $(this).css({
+        'background':'#000'
+      })
+    }else{
+      $(this).css({
+        'background':'#fff',
+        'border': '1px solid #000'
+      })
+    }
+  })
+
+  $.each($("#pagination3").children(), function () {
+    if ( ($(this).attr("class").toString()).indexOf(tag) > 0 ) {
+      $(this).css({
+        'background':'#000'
+      })
+    }else{
+      $(this).css({
+        'background':'#fff',
+        'border': '1px solid #000'
+      })
+    }
+  })
+}
+
+function allHover(){
+
+  // var winWidth = $(window).width(),
+  // winHeight = $(window).height(),
+  // winWHalf = winWidth / 2,
+  // winHHalf = winHeight / 2,
+  // maxDeg = 10,
+  // xPoint = parseFloat(winWHalf / maxDeg),
+  // yPoint = parseFloat(winHHalf / maxDeg),
+  // xDeg = 0,
+  // yDeg = 0,
+  // $plat = $('.3dRotateEle');
+
+  $(document).mousemove(function(e){
+
+    if( e.pageY<950){ //e.pageX < 1900 &&
+
+      // var x = parseFloat((e.pageX - winWHalf) / xPoint);
+      // var y = parseFloat((e.pageY - winHHalf) / yPoint);
+      // $plat.css('transform', 'rotateX(' + (0 - y) + 'deg) rotateY(' + x + 'deg) rotateZ(0)');
+
+
+      HEIGHT = window.innerHeight;
+      WIDTH = window.innerWidth;
+      windowHalfX = WIDTH / 2;
+      windowHalfY = HEIGHT / 2;
+
+      var rotateX = (e.pageY - (window.screen.height / 2));
+      var rotateY = 0-(e.pageX - (window.screen.width / 2));
+
+
+      $(".3dRotateEle").css({
+        'transform':'  rotateX('+rotateX/200+'deg) rotateY('+rotateY/200+'deg) translateZ(15px)',
+        // 'overflow':'hidden',
+        '-webkit-perspective': '500',
+        'perspective': '500',
+      });
+
+    }else{
+      $(".3dRotateEle").css({
+        'transform':'  rotateX('+0+'deg) rotateY('+0+'deg)'
+      });
+    }
+  });
+
+  // $("#channelPanel")
+
+
+  $(".point-btn").hover(function(){
+    $(".point-btn-back").attr("class","first-contet-btn point-btn-back point-btn-back-show")
+  })
+  $(".point-btn").mouseleave(function(){
+    $(".point-btn-back-show").attr("class","first-contet-btn point-btn-back")
+  })
+
+  $(".sixth-help-btn").hover(function(){
+    $(".sixth-contet-btn-back").attr("class","sixth-contet-btn-back point-btn-back-show")
+  })
+  $(".sixth-help-btn").mouseleave(function(){
+    $(".sixth-contet-btn-back").attr("class","sixth-contet-btn-back")
+  })
+
+  $(".fifth-right-btn").hover(function(){
+    $(".fifth-contet-btn").attr("class","fifth-contet-btn point-btn-back-show")
+  })
+  $(".fifth-right-btn").mouseleave(function(){
+    $(".fifth-contet-btn").attr("class","fifth-contet-btn")
+  })
+
+
+
+
+
+
+  //  快速  ----------------------
+  $("#speedDiv").hover(function(){
+    $(".speedImg").attr("class","speedImgHover");
+  })
+  $("#speedDiv").mouseleave(function(){
+    $(".speedImgHover").attr("class","speedImg");
+  });
+  //
+  //  稳定  ----------------------
+  $("#stabilityDiv").hover(function(){
+    $(".stabilityImg").attr("class","stabilityImgHover");
+  })
+  $("#stabilityDiv").mouseleave(function(){
+    $(".stabilityImgHover").attr("class","stabilityImg");
+  });
+  //  安全  ----------------------
+  $("#saveDiv").hover(function(){
+    $(".saveImg").attr("class","saveImgHover");
+  })
+  $("#saveDiv").mouseleave(function(){
+    $(".saveImgHover").attr("class","saveImg");
+  })
+
+  $(".forth-content-left").hover(function(){
+    $(".black-line-med-left").css({
+      'background':'#fff',
+    });
+    // $(".jyImg").attr("class","jyImgUp");
+    $(".jyImg").css({
+      'transform':'translateZ(1rem)',
+      'box-shadow':'0 0 40px 0px rgba(150, 150, 150, 0.1)'
+    })
+  })
+  $(".forth-content-left").mouseleave(function(){
+    $(".black-line-med-left").css({
+      'background':'#000',
+    })
+    // $(".jyImgUp").attr("class","jyImg");
+    $(".jyImg").css({
+      'transform':'translateZ(0rem)',
+      'box-shadow':'0 0px 20px -8px #979797'
+    })
+  })
+
+  $(".forth-content-right").hover(function(){
+    // $(".forth-content-right-net").css({
+    //   'background':'linear-gradient(to right, #3D9DEC, #8AD9FD)',
+    //   'transform':'translateZ(1rem)',
+    //   'color':'#fff',
+    // })
+    $(".black-line-med-right").css({
+      'background':'#fff',
+    })
+    $(".wbImg").css({
+      'transform':'translateZ(1rem)',
+      'box-shadow':'0 0 40px 0px rgba(150, 150, 150, 0.1)'
+    })
+  })
+  $(".forth-content-right").mouseleave(function(){
+    // $(".forth-content-right-net").css({
+    //   'color':'#000',
+    //   'background':'#fff',
+    //   'transform':'translateZ(0rem)'
+    // })
+    $(".black-line-med-right").css({
+      'background':'#000',
+    })
+    $(".wbImg").css({
+      'transform':'translateZ(0rem)',
+      'box-shadow':'0 0px 20px -8px #979797'
+    })
+  })
+}

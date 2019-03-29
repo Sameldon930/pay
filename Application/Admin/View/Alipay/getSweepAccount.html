@@ -1,0 +1,82 @@
+<include file="Public/header"/>
+<style>
+  .layui-form-label{width: 150px;}
+  .layui-input-block{margin-left:160px}
+</style>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="ibox-content">
+    <form class="layui-form"  id="profile">
+      <input type="hidden" name="pid" value="<{:I('param.pid')}>">
+      <input type="hidden" name="aid" value="<{:I('param.aid')}>">
+        <volist name="list" id="cs" key="key">
+            <div class="layui-input-block">
+                <input type="checkbox" name="account[<{$cs.id}>]" title="<{$cs.username}> - <{$cs.realname}>" <if condition="$cs['checked']">checked</if> value="<{$cs.id}>">
+                <div class="layui-unselect layui-form-checkbox">
+                    <span><{$cs.username}> - <{$cs.realname}>(<{$cs.id}>)</span>
+                    <i class="layui-icon layui-icon-ok"></i>
+                </div>
+            </div>
+        </volist>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否开启指定：</label>
+            <div class="layui-input-block">
+                <input type="radio" name="status" lay-filter="changeRule" <if condition="$status eq 1">checked</if> value="1" title="是" checked="">
+                <input type="radio" name="status" lay-filter="changeRule" <if condition="!$status">checked</if> value="0" title="否">
+            </div>
+        </div>
+      <div class="layui-form-item">
+        <div class="layui-input-block">
+          <input type="button" class="layui-btn" id="save" value="确定">
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+<include file="Public/footer"/>
+<script>
+    layui.use(['layer', 'form','laydate'], function(){
+        var form = layui.form
+            ,laydate = layui.laydate
+            ,layer = layui.layer;
+
+
+        $('#save').click(function(){
+            $.ajax({
+              'url':"<{:U('Admin/Alipay/saveSweepAccount')}>",
+              'data':$('#profile').serialize(),
+              'type':'post',
+              'success':function(res){
+                  if(res.status){
+                    layer.msg('设置成功');
+                  }else{
+                    layer.msg(res.msg ? res.msg : '设置失败');
+                  }
+              }
+            });
+            return false;
+           
+        });
+        //监听radio
+        form.on('radio(changeRule)', function(data){
+            if(data.value==1){
+                if(false == $("#profile").find('input[type="checkbox"]').is(':checked'))
+                {
+                    var child = $("#profile").find('input[type="checkbox"]');
+                    child.each(function(index, item){
+                        item.checked = data.elem.checked;
+                    });
+                    form.render('checkbox');
+                }
+            }
+        });
+    });
+
+
+
+
+</script>
+<!--统计代码，可删除-->
+</body>
+</html>

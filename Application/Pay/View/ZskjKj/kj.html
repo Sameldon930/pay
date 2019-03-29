@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>快捷支付</title>
+    <link rel="stylesheet" href="/Public/weui/weui.min.css">
+    <link rel="stylesheet" href="/Public/weui/base.css">
+    <script src="/Public/Front/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="bd">
+    <form id="payForm" method="post" action="<{$rpay_url}>">
+        <input type="hidden" name="orderid" value="<{$orderid}>">
+        <input type="hidden" name="gateway" value="<{$gateway}>">
+        <div class="weui-cells__title">快捷支付</div>
+        <div class="weui-cell">
+            <div class="tit">
+                <p><span class="t-name">支付金额:<em class="mg_l10 color_org">￥<{$money}>元</em></span></p>
+            </div>
+        </div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell weui-cell_warn">
+                <div class="weui-cell__hd"><label for="accountNo" class="weui-label">卡号</label></div>
+                <div class="weui-cell__bd">
+                    <input name="accountNo" id="accountNo" class="weui-input" type="number" pattern="[0-9]*" value=""
+                           placeholder="请输入银行卡号">
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_warn">
+                <div class="weui-cell__hd"><label for="accountName" class="weui-label">持卡人姓名</label></div>
+                <div class="weui-cell__bd">
+                    <input name="accountName" id="accountName" class="weui-input" type="text" value=""
+                           placeholder="请输入持卡人姓名">
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_warn">
+                <div class="weui-cell__hd"><label for="idCardNo" class="weui-label">身份证号</label></div>
+                <div class="weui-cell__bd">
+                    <input name="idCardNo" id="idCardNo" class="weui-input" type="text" value=""
+                           placeholder="请输入身份证号">
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_warn">
+                <div class="weui-cell__hd"><label for="phone" class="weui-label">手机号</label></div>
+                <div class="weui-cell__bd">
+                    <input name="phone" id="phone" class="weui-input" type="number"  pattern="[0-9]*" value=""
+                           placeholder="请输入手机号">
+                </div>
+            </div>
+        </div>
+        <div class="weui-btn-area">
+            <button type="button" class="weui-btn weui-btn_primary" id="btnPay">确定</button>
+        </div>
+    </form>
+</div>
+<div style="display:none">
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276520178'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1276520178%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+<script>
+    $('#btnPay').on('click', function () {
+        if ($('#accountNo').val() == '') {
+            alert('请填写银行卡号')
+            return false;
+        }
+        if ($('#accountName').val() == '') {
+            alert('请填写持卡人姓名')
+            return false;
+        }
+        if ($('#idCardNo').val() == '') {
+            alert('请填写身份证号')
+            return false;
+        }
+        if ($('#phone').val() == '') {
+            alert('请填写手机号')
+            return false;
+        }
+
+        $.post(
+            $('#payForm').attr('action'),
+            $('#payForm').serialize(),
+            function (data) {
+                console.log(data)
+                if (data.status == 'error') {
+                    alert(data.msg);
+                } else if (data.status == 'success') {
+                    location.href = data.url;
+                }
+            }
+        );
+        return false;
+        // $('#payForm').submit();
+    });
+
+</script>
+</html>

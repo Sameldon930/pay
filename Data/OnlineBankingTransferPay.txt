@@ -1,0 +1,232 @@
+【2019-01-08 19:17:59】下单报文:amount=1&merchant_no=gateway0107&merchants=testing&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108191759559752&pay_code=GATEWAY_PAY_PC&product_name=0.01元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 19:17:59】下单密文:ea3f6421f5ea13f97f0fc5e6554bf71a
+
+【2019-01-08 19:17:59】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"testing","type":"2","merchant_no":"gateway0107","order_no":"20190108191759559752","amount":1,"product_name":"0.01\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"ea3f6421f5ea13f97f0fc5e6554bf71a"}
+
+【2019-01-08 19:17:59】网银转账下单返回参数!{"data":null,"code":-1,"msg":"transferpay\u8f6c\u8d26\u6e20\u9053Parameter\u914d\u7f6e\u6709\u8bef\uff01"}
+
+【2019-01-08 19:23:03】下单报文:amount=10000&merchant_no=gateway0107&merchants=testing&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108192303555254&pay_code=GATEWAY_PAY_PC&product_name=100元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 19:23:03】下单密文:daef7341588f5cf4b7958c6c99bf3152
+
+【2019-01-08 19:23:03】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"testing","type":"2","merchant_no":"gateway0107","order_no":"20190108192303555254","amount":10000,"product_name":"100\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"daef7341588f5cf4b7958c6c99bf3152"}
+
+【2019-01-08 19:23:03】网银转账下单返回参数!{"data":null,"code":-1,"msg":"transferpay\u8f6c\u8d26\u6e20\u9053Parameter\u914d\u7f6e\u6709\u8bef\uff01"}
+
+【2019-01-08 19:45:54】下单报文:amount=10000&merchant_no=gateway0107&merchants=mch_id&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108194554505152&pay_code=GATEWAY_PAY_PC&product_name=100元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 19:45:54】下单密文:a1d8932f1ee2bd70396b6ebd79ca3bdf
+
+【2019-01-08 19:45:54】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"mch_id","type":"2","merchant_no":"gateway0107","order_no":"20190108194554505152","amount":10000,"product_name":"100\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"a1d8932f1ee2bd70396b6ebd79ca3bdf"}
+
+【2019-01-08 19:45:54】网银转账下单返回参数!{"data":null,"code":-1,"msg":"transferpay\u8f6c\u8d26\u6e20\u9053Parameter\u914d\u7f6e\u6709\u8bef\uff01"}
+
+【2019-01-08 19:46:31】下单报文:amount=10000&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108194631559848&pay_code=GATEWAY_PAY_PC&product_name=100元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 19:46:31】下单密文:cd1f602f4dae3fa2a04c1cc8e9395e78
+
+【2019-01-08 19:46:31】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190108194631559848","amount":10000,"product_name":"100\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"cd1f602f4dae3fa2a04c1cc8e9395e78"}
+
+【2019-01-08 19:46:31】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108194631559848"},"code":0,"msg":""}
+
+【2019-01-08 19:46:31】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108194631559848"}
+
+【2019-01-08 19:46:54】下单报文:amount=1&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108194654101979&pay_code=GATEWAY_PAY_PC&product_name=0.01元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 19:46:54】下单密文:a1bc464b40559970c4aa03ce45c41ecf
+
+【2019-01-08 19:46:54】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190108194654101979","amount":1,"product_name":"0.01\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"a1bc464b40559970c4aa03ce45c41ecf"}
+
+【2019-01-08 19:46:54】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108194654101979"},"code":0,"msg":""}
+
+【2019-01-08 19:46:54】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108194654101979"}
+
+【2019-01-08 19:50:08】下单报文:amount=1000&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108195008485755&pay_code=GATEWAY_PAY_PC&product_name=10元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 19:50:08】下单密文:3f6890c9e6fbbe908254984cf250cf11
+
+【2019-01-08 19:50:08】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190108195008485755","amount":1000,"product_name":"10\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"3f6890c9e6fbbe908254984cf250cf11"}
+
+【2019-01-08 19:50:08】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108195008485755"},"code":0,"msg":""}
+
+【2019-01-08 19:50:08】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108195008485755"}
+
+【2019-01-08 19:52:04】下单报文:amount=100&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108195204529848&pay_code=GATEWAY_PAY_PC&product_name=1元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 19:52:04】下单密文:ee22a36e8d65e9a6a788a1200f252466
+
+【2019-01-08 19:52:04】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190108195204529848","amount":100,"product_name":"1\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"ee22a36e8d65e9a6a788a1200f252466"}
+
+【2019-01-08 19:52:04】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108195204529848"},"code":0,"msg":""}
+
+【2019-01-08 19:52:04】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108195204529848"}
+
+【2019-01-08 19:53:34】下单报文:amount=100&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108195334101994&pay_code=GATEWAY_PAY_PC&product_name=1元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 19:53:34】下单密文:939bf9987f45a702de3630a6781bc269
+
+【2019-01-08 19:53:34】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190108195334101994","amount":100,"product_name":"1\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"939bf9987f45a702de3630a6781bc269"}
+
+【2019-01-08 19:53:34】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108195334101994"},"code":0,"msg":""}
+
+【2019-01-08 19:53:34】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108195334101994"}
+
+【2019-01-08 19:59:50】下单报文:amount=5000&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108195950549949&pay_code=GATEWAY_PAY_PC&product_name=50元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 19:59:50】下单密文:8ce093a275aaa5958c8914c90a09f08e
+
+【2019-01-08 19:59:50】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190108195950549949","amount":5000,"product_name":"50\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"8ce093a275aaa5958c8914c90a09f08e"}
+
+【2019-01-08 19:59:50】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108195950549949"},"code":0,"msg":""}
+
+【2019-01-08 19:59:50】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108195950549949"}
+
+【2019-01-08 20:01:59】下单报文:amount=20000&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108200159559754&pay_code=GATEWAY_PAY_PC&product_name=200元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 20:01:59】下单密文:6e97cefa5af5c2073fef455c4d118b70
+
+【2019-01-08 20:01:59】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190108200159559754","amount":20000,"product_name":"200\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"6e97cefa5af5c2073fef455c4d118b70"}
+
+【2019-01-08 20:01:59】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108200159559754"},"code":0,"msg":""}
+
+【2019-01-08 20:01:59】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108200159559754"}
+
+【2019-01-08 20:25:10】下单报文:amount=100&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108202510549851&pay_code=GATEWAY_PAY_PC&product_name=1元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 20:25:10】下单密文:8e29bfd015385715b9d4f404240e47fb
+
+【2019-01-08 20:25:10】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190108202510549851","amount":100,"product_name":"1\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"8e29bfd015385715b9d4f404240e47fb"}
+
+【2019-01-08 20:25:10】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108202510549851"},"code":0,"msg":""}
+
+【2019-01-08 20:25:10】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108202510549851"}
+
+【2019-01-08 20:32:56】下单报文:amount=100&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108203256561015&pay_code=GATEWAY_PAY_PC&product_name=1元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 20:32:56】下单密文:3f946719f19009c4f9a1ce735c2dd0ab
+
+【2019-01-08 20:32:56】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190108203256561015","amount":100,"product_name":"1\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"3f946719f19009c4f9a1ce735c2dd0ab"}
+
+【2019-01-08 20:32:57】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108203256561015"},"code":0,"msg":""}
+
+【2019-01-08 20:32:57】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108203256561015"}
+
+【2019-01-08 20:47:35】下单报文:amount=100&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108204735559750&pay_code=GATEWAY_PAY_PC&product_name=1元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 20:47:35】下单密文:729cb438dc40e2d4c3df2ec95eb22ccc
+
+【2019-01-08 20:47:35】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190108204735559750","amount":100,"product_name":"1\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"729cb438dc40e2d4c3df2ec95eb22ccc"}
+
+【2019-01-08 20:47:35】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108204735559750"},"code":0,"msg":""}
+
+【2019-01-08 20:47:35】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108204735559750"}
+
+【2019-01-08 20:50:34】下单报文:amount=100&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190108205034975310&pay_code=GATEWAY_PAY_PC&product_name=1元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-08 20:50:34】下单密文:b9b7bf1d1a0821b2bf63e8440977064e
+
+【2019-01-08 20:50:34】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190108205034975310","amount":100,"product_name":"1\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"b9b7bf1d1a0821b2bf63e8440977064e"}
+
+【2019-01-08 20:50:34】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108205034975310"},"code":0,"msg":""}
+
+【2019-01-08 20:50:34】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190108205034975310"}
+
+【2019-01-09 20:27:28】下单报文:amount=1000&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190109202728484848&pay_code=GATEWAY_PAY_PC&product_name=10元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-09 20:27:28】下单密文:16bed4c5d19bcfe12c89168c471cdd39
+
+【2019-01-09 20:27:28】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190109202728484848","amount":1000,"product_name":"10\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"16bed4c5d19bcfe12c89168c471cdd39"}
+
+【2019-01-09 20:27:28】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190109202728484848"},"code":0,"msg":""}
+
+【2019-01-09 20:27:28】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190109202728484848"}
+
+【2019-01-09 20:27:28】网银转账url!http://118.24.63.21:8085/pay/transfer?order_no=20190109202728484848
+
+【2019-01-16 16:57:08】下单报文:amount=1000&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190116165708524910&pay_code=GATEWAY_PAY_PC&product_name=10元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-16 16:57:08】下单密文:163c02baeebc6625d06a6648370c3f4a
+
+【2019-01-16 16:57:08】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190116165708524910","amount":1000,"product_name":"10\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"163c02baeebc6625d06a6648370c3f4a"}
+
+【2019-01-16 16:57:08】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190116165708524910"},"code":0,"msg":""}
+
+【2019-01-16 16:57:08】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190116165708524910"}
+
+【2019-01-16 16:57:08】网银转账url!http://118.24.63.21:8085/pay/transfer?order_no=20190116165708524910
+
+【2019-01-16 16:57:39】下单报文:amount=1000&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190116165739519949&pay_code=GATEWAY_PAY_PC&product_name=10元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-16 16:57:39】下单密文:45eafb05f6fed86c57d4ef7c74324a86
+
+【2019-01-16 16:57:39】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190116165739519949","amount":1000,"product_name":"10\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"45eafb05f6fed86c57d4ef7c74324a86"}
+
+【2019-01-16 16:57:40】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190116165739519949"},"code":0,"msg":""}
+
+【2019-01-16 16:57:40】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190116165739519949"}
+
+【2019-01-16 16:57:40】网银转账url!http://118.24.63.21:8085/pay/transfer?order_no=20190116165739519949
+
+【2019-01-16 18:51:22】下单报文:amount=1000&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190116185122975055&pay_code=GATEWAY_PAY_PC&product_name=10元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-16 18:51:22】下单密文:a52c3a3b6cd15bc162ea1aab0570a0a1
+
+【2019-01-16 18:51:22】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190116185122975055","amount":1000,"product_name":"10\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"a52c3a3b6cd15bc162ea1aab0570a0a1"}
+
+【2019-01-16 18:51:22】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190116185122975055"},"code":0,"msg":""}
+
+【2019-01-16 18:51:22】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190116185122975055"}
+
+【2019-01-16 18:51:22】网银转账url!http://118.24.63.21:8085/pay/transfer?order_no=20190116185122975055
+
+【2019-01-16 18:51:22】网银转账IMG!20190116185122975055jpg
+
+【2019-01-16 18:51:52】下单报文:amount=50000&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190116185152565699&pay_code=GATEWAY_PAY_PC&product_name=500元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-16 18:51:52】下单密文:de3133a6367c3969a6168ee3ded77661
+
+【2019-01-16 18:51:52】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190116185152565699","amount":50000,"product_name":"500\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"de3133a6367c3969a6168ee3ded77661"}
+
+【2019-01-16 18:51:52】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190116185152565699"},"code":0,"msg":""}
+
+【2019-01-16 18:51:52】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190116185152565699"}
+
+【2019-01-16 18:51:52】网银转账url!http://118.24.63.21:8085/pay/transfer?order_no=20190116185152565699
+
+【2019-01-16 18:51:52】网银转账IMG!20190116185152565699.jpg
+
+【2019-01-18 09:51:52】下单报文:amount=5000&merchant_no=gateway0107&merchants=gateway0107&notify_url=http://rain.haohan168.cn:8086/Pay_OnlineBankingTransfer_notifyurl.html&order_no=20190118095152561015&pay_code=GATEWAY_PAY_PC&product_name=50元套餐&service=unifiedorder&type=2&key=gateway0107
+
+【2019-01-18 09:51:52】下单密文:36cb653cc05a2803159cfe1166d2fc8f
+
+【2019-01-18 09:51:52】
+网银转账下单参数json_encode：{"service":"unifiedorder","pay_code":"GATEWAY_PAY_PC","merchants":"gateway0107","type":"2","merchant_no":"gateway0107","order_no":"20190118095152561015","amount":5000,"product_name":"50\u5143\u5957\u9910","notify_url":"http:\/\/rain.haohan168.cn:8086\/Pay_OnlineBankingTransfer_notifyurl.html","sign":"36cb653cc05a2803159cfe1166d2fc8f"}
+
+【2019-01-18 09:51:53】网银转账下单返回参数!{"data":{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190118095152561015"},"code":0,"msg":""}
+
+【2019-01-18 09:51:53】网银转账data!{"url":"http:\/\/118.24.63.21:8085\/pay\/transfer?order_no=20190118095152561015"}
+
+【2019-01-18 09:51:53】网银转账url!http://118.24.63.21:8085/pay/transfer?order_no=20190118095152561015
+
+【2019-01-18 09:51:53】网银转账IMG!20190118095152561015.jpg
+

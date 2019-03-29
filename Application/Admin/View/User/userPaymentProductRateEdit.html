@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title><{:C("WEB_TITLE")}></title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/Public/Front/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/Front/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/Public/Front/css/animate.css" rel="stylesheet">
+    <link href="/Public/Front/css/style.css" rel="stylesheet">
+    <link href="/Public/Front/js/plugins/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Public/Front/js/plugins/layui/css/layui.css">
+    <style>
+        .layui-form-label {width:110px;padding:4px}
+    </style>
+<body>
+<div class="wrapper wrapper-content animated">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox-content">
+                <form class="layui-form layui-form-pane form-search" action="" method="get" autocomplete="off" id="userform">
+                    <div class="layui-form-item layui-inline">
+                        <label class="layui-form-label">通道编码</label>
+                        <div class="layui-input-inline">
+                            <select name="product" lay-filter="product" data-child="payment_product">
+                                <option value="">全部通道编码</option>
+                                <volist name="banklist" id="vo">
+                                    <option <if condition="I('product') eq $vo['id']">selected</if>
+                                    value="<{$vo.id}>"><{$vo.id}>   <{$vo.name}></option>
+                                </volist>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-inline">
+                        <label class="layui-form-label">支付产品</label>
+                        <div class="layui-input-inline">
+                            <select name="payment_product">
+                                <option value="">全部支付产</option>
+                                <volist name="payment_product_list" id="vo">
+                                    <option <if condition="I('payment_product') eq $vo['id']">selected</if>
+                                    value="<{$vo.id}>"><{$vo.name}></option>
+                                </volist>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-inline">
+                        <button type="submit" class="layui-btn"><span
+                                class="glyphicon glyphicon-search"></span> 搜索
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <p class="text-danger" style="padding: 15px;">注：费率为千分位，例如：千分之三则填0.003</p>
+            <form class="layui-form" action="" id="userProduct">
+                <input type="hidden" name="userid" value="<{:I('uid',0)}>">
+                <!--产品列表-->
+                <table class="layui-table" lay-even="" lay-skin="line">
+                    <thead>
+                    <tr>
+                        <th>通道编码</th>
+                        <th>支付产品及费率</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="products" id="p">
+                        <tr>
+                            <td><{$p[0]['pid']}>&nbsp;&nbsp;<{$p[0]['pid']|getProduct}></td>
+                            <td>
+                                <table class="layui-table" lay-skin="line" id="pdtable901" style="">
+                                    <tbody>
+                                    <volist name="p" id="subp" >
+                                        <tr>
+                                            <td> <{$subp.name}></td>
+                                            <td><input type="number" min="0" max="9" name="payment_product_rate[<{$subp.pid}>][<{$subp.id}>][rate]"
+                                                       class="layui-input" value="<{$user_rate[$subp[id]]}>"></td>
+                                        </tr>
+                                    </volist>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+                <!--产品列表-->
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit="submit" lay-filter="save">提交保存</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/Public/Front/js/jquery.min.js"></script>
+<script src="/Public/Front/js/bootstrap.min.js"></script>
+<script src="/Public/Front/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="/Public/Front/js/content.js"></script>
+<script src="/Public/Front/js/plugins/layui/layui.js" charset="utf-8"></script>
+
+<script>
+    layui.use(['layer', 'form','laydate'], function(){
+        var form = layui.form
+            ,laydate = layui.laydate
+            ,layer = layui.layer;
+
+        //监听提交
+        form.on('submit(save)', function(data){
+            $.ajax({
+                url:"<{:U('User/savePaymentProductRate')}>",
+                type:"post",
+                data:$('#userProduct').serialize(),
+                success:function(res){
+                    if(res.status){
+                        layer.alert("编辑成功", {icon: 6},function () {
+                            parent.location.reload();
+                            var index = parent.layer.getFrameIndex(window.name);
+                            parent.layer.close(index);
+                        });
+                    }else {
+                        layer.alert(res.msg ? res.msg : "操作失败", {icon: 5},function () {
+                            parent.location.reload();
+                            var index = parent.layer.getFrameIndex(window.name);
+                            parent.layer.close(index);
+                        });
+                    }
+                }
+            });
+            return false;
+        });
+        form.on('select(product)', function(data){
+            var  product_id = data.elem[data.elem.selectedIndex].value;
+            var name = data.elem.dataset.child;
+            console.log(name);
+            if(product_id) {
+                $.ajax({
+                    type:'get',
+                    data:{'product_id':product_id},
+                    dataType:'json',
+                    url:'<{:U("User/getPaymentproduct")}>',
+                    success:function(info){
+                        if(info['status'] == 1){
+                            var selectName = $('select[name="' + name + '"]');
+                            selectName.html('<option value="">请选择</option>');
+                            for(k in info['data']){
+                                selectName.append('<option value="'+ info['data'][k]['id'] +'">' + info['data'][k]['name'] + '</option>');
+                                form.render('select');
+                            }
+                        }else{
+                            layer.msg('获取子账号列表失败',{time: 2000, icon:'error'});
+                        }
+                    },
+                    error:function(){
+                        layer.msg('通讯错误,请重新刷新页面',{time: 2000, icon:'error'});
+                    },
+                });
+            }
+        });
+    });
+</script>
+<!--统计代码，可删除-->
+</body>
+</html>

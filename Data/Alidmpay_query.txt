@@ -1,0 +1,57 @@
+【2019-02-25 16:03:04】
+我查询过：
+
+【2019-02-25 16:03:04】
+支付宝查询成功：
+
+【2019-02-25 16:03:04】
+我归集过：
+
+【2019-02-25 16:03:04】
+我归集sql：SELECT * FROM `pay_channel_account_cash_sweep` WHERE `status` = 1 AND `channel_id` = 276 AND `channel_account_id` = 942 ORDER BY `id` desc LIMIT 1  
+
+【2019-02-25 16:06:03】
+我查询过：
+
+【2019-02-25 16:06:04】
+支付宝查询成功：
+
+【2019-02-25 16:06:04】
+我归集过：
+
+【2019-02-25 16:06:04】
+我归集sql：SELECT * FROM `pay_channel_account_cash_sweep` WHERE `status` = 1 AND `channel_id` = 276 AND `channel_account_id` = 943 ORDER BY `id` desc LIMIT 1  
+
+【2019-02-25 16:06:04】
+我归集sql2：SELECT `username` FROM `pay_cash_sweep` WHERE `status` = 1 AND `id` IN ('8') AND ( day_sweep <= toplimit ) ORDER BY `day_sweep` asc LIMIT 1  
+
+【2019-02-25 16:06:04】
+我归集sql2：SELECT * FROM `pay_order` WHERE `pay_orderid` = '20190225160548999755' AND `sweep_status` = 1 LIMIT 1  
+
+【2019-02-25 16:06:04】
+支付宝归集成功：
+
+【2019-02-25 17:39:47】
+支付宝归集失败：
+
+【2019-02-25 17:41:49】
+支付宝归集失败：
+
+【2019-02-25 17:43:33】
+支付宝归集失败：
+
+【2019-02-25 17:45:04】
+支付宝归集失败：
+
+【2019-03-02 17:27:52】
+支付宝查询失败：
+
+【2019-03-03 10:58:10】
+支付宝归集失败：
+
+【2019-03-03 11:18:17】
+支付宝归集失败：
+
+【2019-03-03 17:41:32】
+支付宝归集失败：
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html  lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>支付跳转</title>
+</head>
+<body>
+<script>
+    var old_stringify = JSON.stringify;
+    JSON.stringify = function(s) {
+        var sss= old_stringify(s);
+        if (sss.indexOf('startApp') != -1) {
+            sss = sss.replace('alipay_super_method', '20000123');
+        } else if (sss.indexOf('remoteLog') != -1) {
+            sss = "{}";
+        }
+        return sss;
+    }
+    var Base64 = {
+        _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+        encode: function(e) {
+            var t = "";
+            var n, r, i, s, o, u, a;
+            var f = 0;
+            e = Base64._utf8_encode(e);
+            while (f < e.length) {
+                n = e.charCodeAt(f++);
+                r = e.charCodeAt(f++);
+                i = e.charCodeAt(f++);
+                s = n >> 2;
+                o = (n & 3) << 4 | r >> 4;
+                u = (r & 15) << 2 | i >> 6;
+                a = i & 63;
+                if (isNaN(r)) {
+                    u = a = 64
+                } else if (isNaN(i)) {
+                    a = 64
+                }
+                t = t + this._keyStr.charAt(s) + this._keyStr.charAt(o) + this._keyStr.charAt(u) + this._keyStr.charAt(a)
+            }
+            return t
+            console.log(t);
+        },
+        decode: function(e) {
+            var t = "";
+            var n, r, i;
+            var s, o, u, a;
+            var f = 0;
+            e=e.replace(/[^A-Za-z0-9+/=]/g,"");
+            while (f < e.length) {
+                s = this._keyStr.indexOf(e.charAt(f++));
+                o = this._keyStr.indexOf(e.charAt(f++));
+                u = this._keyStr.indexOf(e.charAt(f++));
+                a = this._keyStr.indexOf(e.charAt(f++));
+                n = s << 2 | o >> 4;
+                r = (o & 15) << 4 | u >> 2;
+                i = (u & 3) << 6 | a;
+                t = t + String.fromCharCode(n);
+                if (u != 64) {
+                    t = t + String.fromCharCode(r)
+                }
+                if (a != 64) {
+                    t = t + String.fromCharCode(i)
+                }
+            }
+            t = Base64._utf8_decode(t);
+            return t
+        },
+        _utf8_encode: function(e) {
+            e = e.replace(/rn/g, "n");
+            var t = "";
+            for (var n = 0; n < e.length; n++) {
+                var r = e.charCodeAt(n);
+                if (r < 128) {
+                    t += String.fromCharCode(r)
+                } else if (r > 127 && r < 2048) {
+                    t += String.fromCharCode(r >> 6 | 192);
+                    t += String.fromCharCode(r & 63 | 128)
+                } else {
+                    t += String.fromCharCode(r >> 12 | 224);
+                    t += String.fromCharCode(r >> 6 & 63 | 128);
+                    t += String.fromCharCode(r & 63 | 128)
+                }
+            }
+            return t
+        },
+        _utf8_decode: function(e) {
+            var t = "";
+            var n = 0;
+            var r = c1 = c2 = 0;
+            while (n < e.length) {
+                r = e.charCodeAt(n);
+                if (r < 128) {
+                    t += String.fromCharCode(r);
+                    n++
+                } else if (r > 191 && r < 224) {
+                    c2 = e.charCodeAt(n + 1);
+                    t += String.fromCharCode((r & 31) << 6 | c2 & 63);
+                    n += 2
+                } else {
+                    c2 = e.charCodeAt(n + 1);
+                    c3 = e.charCodeAt(n + 2);
+                    t += String.fromCharCode((r & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
+                    n += 3
+                }
+            }
+            return t
+        }
+    }
+    function GetQueryString(name){
+         var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+         var r = window.location.search.substr(1).match(reg);
+         if(r!=null)return  unescape(r[2]); return null;
+    }
+    function returnApp() {
+       AlipayJSBridge.call("exitApp")
+    }
+    function ready(a) {
+        window.AlipayJSBridge ? a && a() : document.addEventListener("AlipayJSBridgeReady", a, !1)
+    }
+    var p=GetQueryString('p');
+  
+    if(p!=""){
+        var userId,amount,memo;
+        var dataStr = Base64.decode(p);
+        var arr=dataStr.split("&");
+        for(var i=0;i < arr.length;i++){ 
+            var num=arr[i].indexOf("="); 
+            if(num>0){
+                if("userId" == arr[i].substring(0,num)){
+                    userId = arr[i].substr(num+1);
+                }
+                if("amount" == arr[i].substring(0,num)){
+                    amount = arr[i].substr(num+1);
+                }
+                if("memo" == arr[i].substring(0, num)){
+                    memo = arr[i].substr(num+1);
+                }
+             } 
+        }
+        ready(function () {
+            try {
+                var a = {
+                    actionType: "scan",
+                    u: userId,
+                    a: amount,
+                    m: memo,
+                    biz_data: {"a":amount,"c":"","s":"online","u":userId,"m":memo}
+              }
+            } catch (b) {
+                returnApp()
+            }
+            AlipayJSBridge.call("startApp", {
+                appId: "alipay_super_method",
+                param: a
+            }, function (a) {
+            })
+        });
+        document.addEventListener("resume", function (a) {
+            returnApp()
+        });
+
+
+    }
+
+        
+       
+   
+</script>
+<div style="display:none">
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276520178'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1276520178%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+</html>

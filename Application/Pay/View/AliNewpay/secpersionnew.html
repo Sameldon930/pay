@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>支付宝AI智能支付系统</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/plugins/swiper/swiper-3.4.1.min.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/zhifubao.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/layui.css">
+
+    <style>
+        #qrcode>img{
+            text-align: center;
+            height: 250px;
+            width: 250px;
+        }
+        #qrcode>canvas{
+            text-align: center!important;
+            height: 250px!important;
+            width: 250px!important;
+        }
+        .layui-m-layer0 .layui-m-layerchild {
+            width: 80%!important;
+            text-align: center;
+        }
+        input.text{
+            text-align:center!important;
+            border: none!important;
+        }
+        .layui-input1{
+            width: auto!important;
+            border: none!important;
+        }
+        .layui-btn {
+            background-color: #8aa2d5!important;
+        }
+        .im{
+            color: red;
+            font-weight: bold;
+        }
+        .im-murasaki{
+            color: #8aa2d5;
+            font-weight: bold;
+        }
+        .font-16b{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .font-12b{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .qrcode-warp{
+            text-align: center;
+        }
+        .special-btn{
+            height: 30px;
+            line-height: 30px;
+            padding: 0 40px;
+            font-size: 14px;
+        }
+
+        .pay-btn{
+            text-align: center;
+            display: block;
+            width: 100%;
+            /* padding: 0.1rem 0rem; */
+            background-color: #1b8cf4;
+            line-height: 0.45rem;
+            font-size: 18px;
+            color: #fff!important;
+            font-weight: bold;
+        }
+
+        #alert-window{
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            height: 100%;
+        }
+        #alert-window>.main{
+            position: fixed;
+            top: 1rem;
+        }
+        #alert-window>.shadow{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            z-index: -10;
+            opacity: 0.8;
+        }
+    </style>
+
+
+</head>
+<body>
+<!-- 主要内容开始 -->
+<div class="main">
+    <!--<div class="m-top clearfix">-->
+    <!--<img class="top-img1" src="/Public/Alips/picture/ic_zhifubao.png" alt="">-->
+    <!--<div>-->
+    <!--<p class="top-tip">支付宝AI智能支付系统</p>-->
+    <!--<p class="top-help clearfix"><img class="help-img" src="/Public/Alips/picture/help.png" alt=""></p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<p class="m-tip">您正在使用AI智能支付系统</p>-->
+    <div class="m-con">
+        <div class="con-money">
+            <p class="money-acc">
+                <span class="acc-tip">充值码：
+                    <input type="text" name="number" value="<{$mark}>" id="copycode" readonly   lay-verify="required" autocomplete="off" class=" main-code layui-input1">
+
+                </span>
+
+            </p>
+            <p class="money-tip">
+                请点击  <button class=" main-btn  layui-btn layui-btn-xs special-btn" data-clipboard-target="#copycode" data-clipboard-action="copy">立即付款</button><span style="font-weight: bold;color: red;display: none;text-decoration: none;" id="suc" >复制成功!</span>
+            </p>
+            <span class="acc-tip font-16b">
+                支付时必须在<span class="acc-tip im">【备注栏】</span>粘贴您的充值码，才能实时到账哦！
+            </span><br>
+            <span class="acc-tip font-12b">此链接为支付宝官方链接，由于支付宝系统问题，若点击“立即付款”后，提示<span class="acc-tip im">此链接存在安全风险</span>，无需担心，按以下方式操作。</span>
+            <p class="acc-tip">1、<span class="acc-tip im-murasaki">截图</span>保存下方二维码</p>
+            <p class="acc-tip">2、打开支付宝<span class="acc-tip im-murasaki">“扫一扫”</span></p>
+            <p class="acc-tip">3、在<span class="acc-tip im-murasaki">“相册”</span>中选取该二维码</p>
+            <p class="acc-tip">4、在付款界面<span class="acc-tip im">“备注栏”</span>中，<span class="acc-tip im">长按粘贴</span>充值单号</p>
+        </div>
+
+    </div>
+    <div class="qrcode-warp" >
+        <div id="qrcode">
+            <img id="qrcode_load" src="/Public/Alips/picture/loading.gif"  >
+        </div>
+    </div>
+    <div class="m-con">
+        <div class="con-tip"><p>请按图示进行下一步操作</p></div>
+        <div class="con-txt" style="padding: 0px;">
+            <img src="/Public/images/next_tip.png" style="width: 100%"></img>
+        </div>
+    </div>
+</div>
+
+<!--弹窗Html内容-->
+<div id="alert-window"  style="display: none">
+    <div class="main">
+        <div class="m-con">
+            <div class="con-tip">
+                <p style="font-weight: bold;">
+                    充值单号：<span class="im"><{$mark}>复制成功</span>，记得<span class="im">粘贴</span>到<span class="im">“备注栏”</span>中哦！
+                </p>
+            </div>
+            <div class="con-txt" style="padding: 0px;">
+                <img src="/Public/images/next_tip.png" style="width: 100%"></img>
+            </div>
+            <div class="con-foot">
+                <a href="javascript:void(0)" class="pay-btn" id="btnYes">我已清楚，立即付款</a>
+            </div>
+            <div class="con-foot" style="margin-top: 5px;">
+                <a href="javascript:closeAlertWindow('#alert-window')" class="pay-btn" style="background-color: #999">再看一遍付款说明</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shadow"></div>
+</div>
+<!--弹窗Hteml内容 结束-->
+
+<!-- 主要内容 结束 -->
+
+<!-- 导航底部开始 -->
+<div class="footer-btn" style="display: none">
+    <div class="btn-copy " >
+        <img src="/Public/Alips/picture/btn_fuzhi.png" alt="">
+        <span onClick="copyUrl()">复制充值码</span>
+    </div>
+    <div class="btn-send">
+        <img src="/Public/Alips/picture/btn_zhifu.png" alt="">
+        <span>立即充值</span>
+    </div>
+</div>
+<!-- 底部 结束 -->
+
+
+<!--弹窗 轮播图 start-->
+<!--<div id="showPop2" style="display: none;">
+    <div class="comDetail">
+        <div class="com-close clearfix">
+            <img src="/Public/Alips/picture/xq_btn_close.png" alt="" class="close">
+        </div>-->
+<!-- 轮播图 开始 -->
+<!--<div class="div-swiper" style="width: 277.5px;">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img  src="/Public/Alips/picture/text.gif"  style="width:350px;height:200px;display: block;">
+
+        </div>
+    </div>
+</div>-->
+<!-- 轮播图 结束 -->
+<!--</div>
+
+</div>-->
+<!--弹窗 轮播图 end-->
+<script src="/Public/Alips/js/jquery-1.10.2.min.js"></script>
+<!--<script type="text/javascript" src="/Public/Alips/js/jquery.qrcode.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Public/Alips/js/plugins/JQuery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Public/Alips/js/plugins/layer/layer_mobile.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Public/Alips/js/plugins/swiper/swiper-3.4.1.jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Public/Alips/js/zhifubao.js"></script>
+<script type="text/javascript" src="/Public/Alips/js/jquery.qrcode.min.js"></script>
+
+<script type="text/javascript">
+
+    function copyUrl()
+    {
+        var Url2=document.getElementById("copycode");
+        Url2.select(); // 选择对象
+        document.execCommand("Copy"); // 执行浏览器复制命令
+        alert("复制成功！");
+    }
+</script>
+<script type="text/javascript">
+
+    var url = "<{$url}>";//第二个页面
+    var mark = "<{$mark}>";//返回页面
+    var btnUrl = "<{$btnUrl}>";//点击按钮跳转页面
+    var checkurl = "<{$checkurl}>";//查订单是否支付
+    var callbackUrl = "<{$callbackUrl}>";//返回页面
+
+    var intDiff = parseInt('300');//倒计时总秒数量
+    function timer(intDiff){
+        window.setInterval(function(){
+            var day=0,
+                hour=0,
+                minute=0,
+                second=0;//时间默认值
+            if(intDiff > 0){
+                day = Math.floor(intDiff / (60 * 60 * 24));
+                hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+                minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+                second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+            }
+            if (minute <= 9) minute = '0' + minute;
+            if (second <= 9) second = '0' + second;
+
+            $('#time').val(minute + ':' + second);
+            var outtime = $('#time').val();
+
+            if(outtime=='00:00'){
+                $('#qrcode').hide();
+                $('#btnDL').hide();
+                $('#time').val("二维码过期！");
+            }
+
+            intDiff--;
+        }, 1000);
+    }
+    $(function(){
+        //如果拿不到时间的值就执行页面内的时间进行倒计时 否则进行页面内规定的时间值进行倒计时
+        timer(intDiff);
+        /*if(time == 0){
+           timer(intDiff);
+        }else{
+           timer(time);
+        }*/
+    });
+    /**************复制输入框内容 start************/
+    var copyBtn = new ClipboardJS('.main-btn');
+
+    copyBtn.on("success",function(element){
+        // 复制成功
+        $("#suc").show();
+        element.clearSelection();
+
+        openAlertWindow("#alert-window");
+    });
+    copyBtn.on("error",function(element){
+        //复制失败；
+        alert( "复制失败，请长按充值码进行复制" )
+    });
+    /*************复制输入框内容 end*************/
+
+    var updateQrImg = 0;
+
+    //订单监控  {订单监控}
+    function order(){
+        $.get(checkurl, function(result){
+            //成功
+            if(result.code == '200'){
+                //回调页面
+                window.clearInterval(orderlst);
+                alert('支付成功,请勿重复支付!');
+                window.clearInterval(orderlst);
+                setTimeout(function(){location.href="<{$callbackUrl}>";},1000);
+
+            }
+            //支付二维码
+            if(result.code == '100' && updateQrImg == 0){
+
+//                $('#qrcode_load').remove();
+                $('#btnDL').attr('onclick',"pay('"+btnUrl+"')");
+                $('#btnYes').attr('onclick',"pay('"+btnUrl+"')");
+                // $('#btnDL').attr('onclick',"pay('alipays://platformapi/startapp?appId=09999988&actionType=toCard&sourceId=bill&cardNo=622908153059195215&bankAccount=吕明双&amount=500.00&money=500.00&bankMark=CIB')");
+                //$('#btnDL').attr('disabled',false);
+                //设置参数方式
+                jQuery(function(){
+                    //jQuery('#qrcode_load').qrcode("http://gcny.haohan168.cn:8080/trade/getErWeiCode.html?url="+url);
+                    jQuery('#qrcode_load').attr('src',"http://gcny.haohan168.cn:8080/trade/getErWeiCode.html?url="+url);
+                })
+                updateQrImg = 1;
+            }
+            //订单已经超时
+            if(result.code == '-1'){
+                window.clearInterval(orderlst);
+                $('#qrcode').hide();
+                $('#btnDL').hide();
+                $('#btnYes').hide();
+                $('#time').val("二维码过期！");
+
+            }
+        });
+    }
+    //周期监听
+    var orderlst = setInterval("order()",1000);
+
+
+
+    function pay(url){
+
+        // layer.closeAll();
+        closeAlertWindow("#alert-window");
+        window.location.href = "" + url;
+        //setTimeout('alert("由于手机支付宝组件更新，按Home键返回手机桌面后重新打开支付宝即可正常支付。谢谢~")',2000);
+    }
+    //获取get中参数的值
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+</script>
+<div style="display:none">
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276520178'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1276520178%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+</html>
+
+

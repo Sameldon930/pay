@@ -1,0 +1,79 @@
+<include file="Public/header"/>
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body  card2 pt-3">
+            <div class="row">
+                <div class="col-lg-6 col-md-9 font-18 font-weight-bold text-uppercase">API密钥</div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="font-25 font-medium">API对接参数</h2>
+                    <div class="row mb-2">
+                        <div class="col-3 font-weight-bold text-dark"></div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-3 font-weight-bold text-dark">商户号</div>
+                        <div class="col"><{$fans['uid']+10000}></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-3 font-weight-bold text-dark">网关地址</div>
+                        <div class="col"><{$siteurl}>Pay_Index.html</div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-3 font-weight-bold text-dark">APIKEY</div>
+                        <div class="col"><button id="apikey-query" onclick="apikey(this)" data-mobile="<{$mobile}>" class="layui-btn layui-btn-small layui-btn-normal">查看密钥</button><span id='apikey' class="hide"></span></div>
+                    </div
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public/footer"/>
+</body>
+<script>
+    var apikey;
+    var index;
+    layui.use('layer', function(layer){
+        apikey = function (obj) {
+            index = layer.prompt({
+                        formType: 1,
+                        title: '请输入支付密码',
+                        close: false,
+                        btn: ['确定','取消']
+                    }, function (value){
+                        if(!value){
+                            layer.msg('请输入支付密码', {icon: 5});
+                            return false;
+                        }
+                        show(value)
+                    });
+        };
+    });
+
+
+    function show(code){
+        var data = {};
+        if(code){
+            data = {code:code};
+        }
+        $.ajax({
+            url:"<{:U('User/Channel/Apikey')}>",
+            type:"post",
+            data: data,
+            success:function(res){
+                if(res.status){
+                    $('#apikey-query').hide();
+                    $('#apikey').text(res.apikey).removeClass('hide')
+                    layer.close(index);
+                }else {
+                    layer.msg(res.msg, {icon: 5});
+                    return false;
+                }
+            }
+        });
+    }
+</script>
+</html>

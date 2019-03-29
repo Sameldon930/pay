@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+ 
+<html class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=yes"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>API聚合支付 - 专业的支付服务提供商</title>
+    <link rel="stylesheet" type="text/css" href="mobile/bootstrap2.min.css">
+  <link rel="stylesheet" type="text/css" href="mobile/bootstrap.css">
+
+
+  <link rel="stylesheet" type="text/css" href="mobile/style.css">
+  <link rel="stylesheet" type="text/css" href="mobile/font.css">
+  <link rel="stylesheet" type="text/css" href="mobile/plugins.css">
+  <link rel="stylesheet" type="text/css" href="mobile/media.css">
+  <link rel="stylesheet" type="text/css" href="mobile/swiper-3.4.2.min.css">
+  <script type="text/javascript" media="" src="mobile/jquery.min.js.下载"></script>
+  <script type="text/javascript" media="" src="mobile/swiper-3.4.2.min.js.下载"></script>
+  <script type="text/javascript" media="" src="mobile/bootstrap.min.js.下载"></script>
+  <script type="text/javascript" media="" src="mobile/index.js.下载"></script>
+  <script type="text/javascript" media="" src="mobile/plugins.js.下载"></script>
+
+  <!-- <script type="text/javascript"  src='js\particles.js'></script> -->
+  <!-- <script type="text/javascript" media="" src="js\line.js?version=20170524-1"></script> -->
+
+  <link rel="stylesheet" href="mobile/material.min.css">
+  <script src="mobile/material.min.js.下载"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="mobile/reset.css">
+  <style media="screen"> 
+  .modalFade{
+    min-width: 30px;
+  }
+  .modal-btn{
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    padding: 8px 0 0 0;
+  }
+  .modal-btn:hover{
+    color: #fff;
+  }
+  .first-contet>div{
+    padding: 0;
+  }
+  .mch-swiper{
+    position: relative;
+    height: 370px;
+    width: 36%;
+    padding: 0;
+    border: none;
+    z-index: 60;
+    margin-top: 80px;
+
+    box-shadow: 0 0 40px 0 #D7D7D7;
+    border-radius: 5px;
+  }
+
+  #pagination1>span:hover{
+    opacity: 1;
+  }
+
+  .doc-section
+  {
+    margin-top: 20px !important; 
+  }
+  .doc-section>.doc-aside
+  {
+    margin-top: 30px;
+  }
+  .describe
+  {
+    line-height: 30px;
+  }
+  .process-line .caption {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+.home .ps-list .data-query-service.active {
+    -webkit-box-shadow: 0 0 30px #96cd9a;
+    box-shadow: 0 0 30px #96cd9a;
+}
+  </style>
+<script>
+if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+     
+} else {
+    //window.location.href = "/index.html";
+  }
+  </script>
+
+<script>
+
+
+ function change (id){  
+ 
+    $(".ps-list-item").removeClass("active");
+     $('#'+id).addClass("active");
+ }  
+ 
+
+ 
+</script>
+
+
+  <script type="text/javascript">
+
+
+
+
+
+ 
+  </script>
+
+  <style type="text/css">
+.doc-section,.wrapper
+{
+width:90%;margin:0 auto;
+  }
+  </style>
+ 
+
+</head>
+
+<body class="home ">
+  <div id="to-top" class="to-top-hidd">
+  </div>
+  <div class="header base col-lg-12 row">
+    <div class="header-menu col-lg-8 col-md-12 col-lg-offset-2" style="display: none;">
+      <p class="header-menu-logo">
+        <img src="mobile/logoBlack.png" alt="">
+      </p>
+      <div class="header-menu-links">
+      
+        
+
+        <div class="menu-mch">
+          <span class="h5">
+     <a target="_blank" class="h5" href="index.html">
+ 首页</span></a>
+
+          <p class="header-menu-borderP">
+          </p>
+        </div>
+
+        
+        <div class="menu-login-btn h4">
+          <a target="_blank" class="h5" href="/user">商户登录</a>
+          / <a target="_blank" class="h5" href="/agent">代理登录</a>
+          <p class="header-menu-borderP">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="firstBack backScroll base">
+  </div>
+  <!-- <script type="text/javascript" src="js/particle.js"></script>
+  <canvas id="c_n21" width="702" height="950" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 1;"></canvas> -->
+
+  <div class="navbar navbar-default  navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="color:#000" href="index.html">
+       <!--  <img src="mobile/logoWt.png" alt=""> -->
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+      <ul class="nav navbar-nav">
+      
+    
+
+        <li><a href="index.html">首页</a></li>
+        <li><a target="_blank" class="h5" href="/user">商户登录</a></li>
+        <li><a target="_blank" class="h5" href="/agent">代理登录</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="first-contet base">
+  <div class="col-xs-12 col-sm-8 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="first-contet-left col-md-6 col-sm-8 col-xs-10">
+      <div class="channelPanel 3dRotateEle" id="channelPanel" style="transform: rotateX(1.03deg) rotateY(1.975deg) translateZ(15px); perspective: 500px;">
+
+        <div class="wapPay">
+          <p></p>
+          <span>网页支付</span>
+        </div>
+
+        <div class="mbWapPay">
+          <p></p>
+          <span>手机网页支付</span>
+        </div>
+
+        <div class="posPay">
+          <p></p>
+          <span>智能POS支付</span>
+        </div>
+
+
+        <div class="cNitiative">
+          <p></p>
+          <span>用户扫码支付</span>
+        </div>
+        <div class="more">
+          <p></p>
+          <span>更多产品</span>
+        </div>
+        <div class="bPassivity">
+          <p></p>
+          <span>商户扫码支付</span>
+        </div>
+
+        <div class="mbApp">
+          <p></p>
+          <span>点击查看详情</span>
+        </div>
+        <div class="wx">
+          <p></p>
+          <span>公众号支付</span>
+        </div>
+        <div class="cardPay">
+          <p></p>
+          <span>卡牌支付</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="first-contet-right col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2">
+      <div class="first-contet-right-inner changeOther">
+        <span id="gridShowTitle" class="first-contet-title h0">手机App支付</span>
+        <!-- 3dRotateEle-inner -->
+        <p id="gridShowContent" class="first-contet-p h5">手机App内，只需简单的几行代码，即可接入多个主流支付方式，用户可方便的使用自己喜欢的支付方式。</p>
+      <div class="first-contet-btn-div" style="display: none;">
+      
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="first-footer base col-lg-12 row" style="display:none;">
+  <div class="first-footer-content col-md-12 col-lg-8  col-lg-offset-2 col-xs-12">
+    <div class="speedDiv" id="speedDiv">
+
+      <div class="first-footer-img">
+        <span class="first-footerImgBigBack ">
+          <span class="first-footerImgBack">
+            <span class="speedImg"></span>
+          </span>
+        </span>
+      </div>
+
+      <div class="inlineBlock">
+        <span class="first-footer-title">快速<br></span>
+        <span class="first-footer-text">
+          10分钟超快速响应<br>
+          1V1专业客服服务<br>
+          7*24小时技术支持
+        </span>
+      </div>
+
+    </div>
+    <div class="stabilityDiv" id="stabilityDiv">
+      <div class="first-footer-img">
+        <span class="first-footerImgBigBack">
+          <span class="first-footerImgBack">
+            <span class="stabilityImg"></span>
+          </span>
+        </span>
+      </div>
+      <div class="inlineBlock">
+        <span class="first-footer-title">稳定<br></span>
+        <span class="first-footer-text">多机房异地容灾系统<br>
+          服务器可用性99.9%<br>
+          专业运维团队值守
+        </span>
+      </div>
+    </div>
+ 
+
+  </div>
+</div>
+
+
+<div class="doc-section">
+      <div class="doc-aside row-wrap">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 align-self-center">
+            <div class="align-left">
+              <div class="doc-h2">企业定制化方案</div>
+              <div class="doc-h3">为集团化企业提供定制化方案，解决企业资金流集中管控困难、信息流管控力度差以及由此引发的管理成本居高不下、不利于决策及IPO等问题，最终实现资金流和现金流的统一管控，提高集团经营效率、节省成本。</div>              
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-lg-offset-2 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 align-self-center">
+            <div class="image-box">
+              <img width="100%" src="mobile/business.png" alt="" class="img-home-EC">
+            </div>    
+          </div>      
+        <div class="row row-wrap">
+
+        </div>        
+      </div>
+    </div>
+
+
+
+    <div class="doc-section">
+      <div class="doc-aside row-wrap">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 align-self-center">
+            <div class="align-left">
+              <div class="doc-h2">企业定制化方案</div>
+              <div class="doc-h3">为集团化企业提供定制化方案，解决企业资金流集中管控困难、信息流管控力度差以及由此引发的管理成本居高不下、不利于决策及IPO等问题，最终实现资金流和现金流的统一管控，提高集团经营效率、节省成本。</div>              
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-lg-offset-2 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 align-self-center">
+            <div class="image-box">
+              <img width="100%" src="mobile/business.png" alt="" class="img-home-EC">
+            </div>    
+          </div>      
+        <div class="row row-wrap">
+
+        </div>        
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="doc-section">
+        <div class="caption">专业服务</div>
+        <div class="doc-aside">
+          <div class="ps-list thumbnail-group" animate="true">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 inherit">
+                <div class="ps-list-item data-query-service thumbnail-item" id='change1' onclick="change('change1');">
+                  <img src="mobile/servicon_1_1.png" normal-url="mobile/servicon_1_1.png" active-url="mobile/servicon_1_1.png">
+                  <div class="caption">数据查询与分析服务</div>
+                  <div class="describe">
+                    提供全渠道的商户管理平台及查询APP，快速浏览当日的交易状况。可以集中进行跨渠道的交易管理，查账对账，数据分析，输出报表等
+                  </div>
+                  <span class="bg"></span>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 inherit" >
+                <div class="ps-list-item register-service thumbnail-item"  id='change2' onclick="change('change2');">
+                  <img src="mobile/servicon_2_1.png" alt="" normal-url="mobile/servicon_2_1.png" active-url="mobile/servicon_2_1.png">
+                  <div class="caption">免费代申请服务</div>
+                  <div class="describe">
+                    各类支付渠道代申请、技术对接、交易管理、数据分析等都有专业人员为您提供一对一服务<br>&nbsp;
+                  </div>
+                  <span class="bg"></span>
+                </div>
+              </div>    
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 inherit">
+                <div class="ps-list-item customer-service thumbnail-item"  id='change3' onclick="change('change3');">
+                  <img src="mobile/servicon_3_1.png" alt="" normal-url="mobile/servicon_3_1.png" active-url="mobile/servicon_3_1.png">
+                  <div class="caption">专业客服</div>
+                  <div class="describe">
+                    提供7*24专业客服服务,及时响应您的需求，随时为您解答疑问<br>&nbsp;
+                  </div>
+                  <span class="bg"></span>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 inherit">
+                <div class="ps-list-item pack-service thumbnail-item"  id='change4' onclick="change('change4');">
+                  <img src="mobile/servicon_4_1.png" alt="" normal-url="mobile/servicon_4_1.png" active-url="mobile/servicon_4_1.png">
+                  <div class="caption">产品物料打包服务</div>
+                  <div class="describe">
+                    根据商户的需求，提供打包的POS机、台卡、桌贴、说明书等产品物料，并可定制个性化扫码物料，如卡片、贴纸等
+                  </div>
+                  <span class="bg"></span>
+                </div>
+              </div>            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="doc-section">
+        <div class="caption">合作流程</div>
+        <div class="doc-aside">
+          <table class="process-line" width="100%">
+            <tbody><tr>
+              <td width="20%">
+                <div class="image-box">
+                  <img class="img-home-PI animate rotate-2D" src="mobile/icon1_1.png" alt="">
+                </div>
+              </td>
+              <td width="7%">
+                <div class="image-box">
+                  <img class="img-home-PA" src="mobile/arrow.png" alt="">
+                </div>
+              </td>
+              <td width="20%">
+                <div class="image-box">
+                  <img class="img-home-PI animate rotate-2D" src="mobile/icon2_1.png" alt="">
+                </div>
+              </td>
+              <td width="7%">
+                <div class="image-box">
+                  <img class="img-home-PA" src="mobile/arrow.png" alt="">
+                </div>
+              </td>
+              <td width="20%">
+                <div class="image-box">
+                  <img class="img-home-PI animate rotate-2D" src="mobile/icon3_1.png" alt="">
+                </div>
+              </td>
+              <td width="7%">
+                <div class="image-box">
+                  <img class="img-home-PA" src="mobile/arrow.png" alt="">
+                </div>
+              </td>
+              <td width="20%">
+                <div class="image-box">
+                  <img class="img-home-PI animate rotate-2D" src="mobile/icon4_1.png" alt="">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="caption">确定合作模式</div></td>
+              <td></td>
+              <td><div class="caption">提供资料审核</div></td>
+              <td></td>
+              <td><div class="caption">联调</div></td>
+              <td></td>
+              <td><div class="caption">上线</div></td>
+            </tr>           
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+
+    <div class="doc-section">
+      <div class="caption">合作伙伴</div>
+      <div class="doc-aside">
+        <div class="row cooprate-list">
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <img class="img-COOP" src="mobile/cooprate1_1.jpg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <img class="img-COOP" src="mobile/cooprate1_2.jpg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <img class="img-COOP" src="mobile/cooprate1_3.jpg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <img class="img-COOP" src="mobile/cooprate1_4.jpg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <img class="img-COOP" src="mobile/cooprate1_5.jpg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <img class="img-COOP" src="mobile/cooprate1_6.jpg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <img class="img-COOP" src="mobile/cooprate2_1.jpg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <img class="img-COOP" src="mobile/cooprate2_2.jpg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <img class="img-COOP" src="mobile/cooprate2_3.jpg" alt="">
+          </div>
+
+        </div>          
+      </div>
+    </div>
+
+
+ <div class="footer">
+    <div class="footer-container">
+      <dl>
+        <dd class="footer-contact">
+          <h4>联系我们</h4>
+          <div>
+            <label>商务合作：</label><span><a href="mailto:business@pay.com"><i class="icons footer-email"></i>business@pay.com</a><span> </span></span>
+          </div>
+          <div>
+            <label>售后支持：</label><span><a href="mailto:support@pay.com"><i class="icons footer-email"></i>support@pay.com</a></span>
+          </div>
+          <div>
+            <label>代理申请：</label><span><a href="mailto:commercial@pay.com"><i class="icons footer-email"></i>commercial@pay.com</a> </span>
+          </div>
+          <div>
+            <label>人才招聘：</label><span><a href="mailto:career@pay.com"><i class="icons footer-email"></i>career@pay.com</a> </span>
+          </div>
+
+          <div style="clear:both;"></div>
+        </dd>
+        <dd class="footer-company">
+          <div class="footer-logo"><img src="https://assets.megvii.com/static%2Fimages/common/footer_logo.png">
+            <h2>pay.com</h2>
+          </div>
+        
+           
+          <div class="copyright">
+
+            <p>© 2017 API聚合支付系统</p>
+          </div>
+          
+        </dd>
+      </dl>
+    </div>
+  </div>
+ 
+
+
+
+
+</body></html>

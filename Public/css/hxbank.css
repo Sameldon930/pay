@@ -1,0 +1,35 @@
+@CHARSET "ISO-8859-1";
+
+body{ font-family:arial;}
+/****************文字*******************/
+.font12_white{ color:#fff; font-size:12px; line-height:30px;}
+.font14_gray{ color:#666; font-size:14px; line-height:40px;}
+/****************头部*******************/
+.warp,.main,.merchants-main,.merchants-terminal{ width:100%; height:auto; display:inline-block; margin:0 auto;}
+.main1{ padding:100px 0 0px 0 ;}
+.header{ width:100%; height:100px; display:inline-block; position:fixed; top:0; left:0; z-index:999;}
+/*********功能栏********/
+.functionbar_box{width:100%;height:30px;line-height:30px;background:#444;zoom:1}
+.functionbar,.nav_main{ height:30px; width:100%; max-width:1080px; margin:0 auto;}
+.top_contact{ display: inline-block; padding:0 0 0 20px; float:right;}
+.top_contact span,.top_contact em{ display:inline-block; height:30px; float:left; margin:0 5px 0 0; font-size: 16px; font-weight: bold;}
+.top_contact em{ text-indent:28px; font-size:16px; color:#a6e5ff;  background-position:3px 6px; overflow:hidden; line-height:30px; height:30px;}
+.logo{ float:left; width:260px; overflow:hidden; margin:7px 0;}
+/*************支付演示****************/
+.pay-demo{ width:100%;padding:0; background:#f0f2f6;  text-align: center;background:#fff;}
+.demo{ width:720px; display: block; margin: 50px auto 0 auto; height:auto; box-shadow:2px 2px 7px #ddd; border:1px  solid #ddd;}
+.demo h4 { color:#2887e8; font-size:20px; line-height: 25px; padding: 20px 0;}
+.demo h4 em{ font-size:16px;}
+.demo p { display:inline-block; padding: 20px 0;}
+.demo p input.botton,.demo p a.botton{ display: block; border:none;width:170px; border-radius: 5px; font-size:16px; background:#2887e8; color:#fff; line-height: 40px;  border:none;cursor: pointer;height: 40px;}
+.demo-text{ width: 100%; padding: 20px 0 20px; border-bottom: 1px solid #eee;border-top: 1px solid #efefef; background: #f5f6f9;}
+.demo-text span{ font-size:14px; line-height: 30px; padding:0 10px; color:#666;}
+.demo-text input{ height:30px; line-height: 30px; border:1px solid #ddd; border-radius: 5px;  padding:0 10px; color:#666;}
+.demo-text P{width: 400px; height:40px; padding: 0 ; margin: 14px 0 0 0;}
+.demo-text P img{ margin: 0 10px 0 5px;}
+.demo-text P input{ height:20px ; margin: 10px 0;}
+.demo-text P.css{width: 448px;margin: 14px auto 0 auto; padding:0 0 0 30px; }
+.demo-text P.css input{ border:none;cursor: pointer;}
+.demo-text P.css label{ float:left; width:110px; }
+.demo-ts{ width:780px; display: inline-block; height:60px; line-height: 30px; color:#f00; margin: 10px auto 0px;}
+table { margin-left: auto; margin-right: auto; } 

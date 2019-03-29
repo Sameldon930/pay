@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>支付宝AI智能支付系统</title>
+    <script type="text/javascript" src="/Public/Alips/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/qrcode.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/layer.js"></script>
+    <script type="text/javascript" src="/Public/Alips/js/qqapi.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/qrcode.css">
+    <link rel="stylesheet" type="text/css" href="/Public/Alips/css/zzspay.css">
+    <style>
+        #qrcode>img{
+            height: 250px;
+            width: 250px;
+        }
+        #qrcode>canvas{
+            height: 250px!important;
+            width: 250px!important;
+        }
+        .pay_head{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+            height: 3rem;
+        }
+    </style>
+
+</head>
+<body>
+
+<script src="/Public/Alips/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/Public/Alips/js/jquery.qrcode.min.js"></script>
+<script type="text/javascript">
+    var host= location.protocol+"//"+location.host+"/";
+    var orderid=getQueryString("orderid");
+    var price=getQueryString("price");
+    var platform=getQueryString("platform");
+    var sign=getQueryString("sign");
+
+    var checkurl=host+"Pay_"+platform+"_Check.html?id="+orderid;
+    var callbackUrl=host+"Pay_"+platform+"_callbackurl.html?orderid="+orderid;
+    var url=host+"Pay_"+platform+"_secondCheck.html?id="+orderid+"&sign="+sign;
+    //var btnurl="alipays://platformapi/startapp?appId=20000067&url="+encodeURIComponent(url);
+    //var btnurl="alipays://platformapi/startapp?appId=10000007&qrcode="+encodeURIComponent(url);
+    var btnurl=url;
+
+    window.location.href = url;
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+
+</script>
+</body></html>
